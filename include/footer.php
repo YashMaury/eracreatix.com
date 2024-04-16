@@ -43,7 +43,7 @@
         </div>
     </div>
 </section>
-<div id="shopify-section-template--16885348139254__16744863099874f47c" class="shopify-section">
+<!-- <div id="shopify-section-template--16885348139254__16744863099874f47c" class="shopify-section">
 
     <div id="shopify-block-24399d01-009d-4d8f-a30b-95017182f37b" class="shopify-block shopify-app-block">
         <div style="margin:0 auto;max-width:1600px;">
@@ -319,7 +319,7 @@
                                         <div class='jdgm-carousel-item__review-body'>
                                             <p>The jars were airtight and serve the purpose of storing small
                                                 quantities of ingredients in the kitchen. They look good and were
-                                                packed with utmost security. Thank you Vaaree.</p>
+                                                packed with utmost security. Thank you.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +411,7 @@
                                         </div>
                                         <div class='jdgm-carousel-item__review-body'>
                                             <p>Awesome colours and fabric. Product 100% matches with the pictures
-                                                provided by Vaaree.</p>
+                                                provided.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -539,10 +539,10 @@
 
 
 
-</div>
-<section id="shopify-section-template--16885348139254__16460368750174c54a"
+</div> -->
+<!-- <section id="shopify-section-template--16885348139254__16460368750174c54a"
     class="shopify-section t4s-section t4s_bk_flickity t4s-section-all t4s_tp_cdt t4s-blog-post t4s_tp_istope">
-    <!-- sections/blog-post.liquid -->
+
     <div data-not-main
         data-ntajax-options='{"id":"template--16885348139254__16460368750174c54a","type":"AjaxDefault","isProduct":false}'
         class="t4s-section-inner t4s_nt_se_template--16885348139254__16460368750174c54a t4s_nt_se_template--16885348139254__16460368750174c54a t4s_se_template--16885348139254__16460368750174c54a t4s-container-wrap"
@@ -553,7 +553,7 @@
                     style="--heading-height: px;--tophead_mb: 10px;">
                     <div class="heading-testimonials-star ">
 
-                        <h3 class="t4s-section-title t4s-title"><span>Vaaree Journals</span></h3>
+                        <h3 class="t4s-section-title t4s-title"><span>Journals</span></h3>
                     </div><span class="t4s-section-des t4s-subtitle">Follow our blog for tips, tricks, and insights
                         on keeping your home cozy!</span>
                 </div>
@@ -562,7 +562,6 @@
             <div data-contentlm-replace
                 class="blog_grid has_post_des_1 t4s_ratio4_3 t4s_position_2 t4s_cover t4s-text-start t4s-row t4s-row-cols-lg-4 t4s-row-cols-md-2 t4s-row-cols-1 t4s-gx-md-30 t4s-gy-md-30 t4s-gx-10 t4s-gy-10">
 
-                <!-- "8 Simple False Ceiling Design Ideas for Hall" -->
                 <article class="t4s-col-item t4s-post t4s-post-item t4s-post-des-1">
                     <div class="t4s-post-inner" timeline hdt-reveal="slide-in">
                         <div class="t4s-post-thumb">
@@ -589,7 +588,7 @@
                             <div class="t4s-post-metas">
 
                                 <span class="t4s-post-author"><span class="t4s-post-author__text t4s-dib">By</span>
-                                    <span class="t4s-author-name">HOUSE OF VAAREE PRIVATE LIMITED</span>
+                                    <span class="t4s-author-name">ERA CREATIX PRIVATE LIMITED</span>
                                 </span>
 
 
@@ -604,7 +603,7 @@
 
 
                     </div>
-                </article><!-- "Top Living Room Quotes \u0026 Captions for Instagram" -->
+                </article>
                 <article class="t4s-col-item t4s-post t4s-post-item t4s-post-des-1">
                     <div class="t4s-post-inner" timeline hdt-reveal="slide-in">
                         <div class="t4s-post-thumb">
@@ -632,7 +631,7 @@
                             <div class="t4s-post-metas">
 
                                 <span class="t4s-post-author"><span class="t4s-post-author__text t4s-dib">By</span>
-                                    <span class="t4s-author-name">HOUSE OF VAAREE PRIVATE LIMITED</span>
+                                    <span class="t4s-author-name">ERA CREATIX PRIVATE LIMITED</span>
                                 </span>
 
 
@@ -647,7 +646,7 @@
 
 
                     </div>
-                </article><!-- "How to Care For Cast Iron Cookware after Cooking?" -->
+                </article>
                 <article class="t4s-col-item t4s-post t4s-post-item t4s-post-des-1">
                     <div class="t4s-post-inner" timeline hdt-reveal="slide-in">
                         <div class="t4s-post-thumb">
@@ -675,7 +674,7 @@
                             <div class="t4s-post-metas">
 
                                 <span class="t4s-post-author"><span class="t4s-post-author__text t4s-dib">By</span>
-                                    <span class="t4s-author-name">HOUSE OF VAAREE PRIVATE LIMITED</span>
+                                    <span class="t4s-author-name">ERA CREATIX PRIVATE LIMITED</span>
                                 </span>
 
 
@@ -690,7 +689,7 @@
 
 
                     </div>
-                </article><!-- "The Importance of Charity and Giving During Ramzan" -->
+                </article><
                 <article class="t4s-col-item t4s-post t4s-post-item t4s-post-des-1">
                     <div class="t4s-post-inner" timeline hdt-reveal="slide-in">
                         <div class="t4s-post-thumb">
@@ -718,7 +717,7 @@
                             <div class="t4s-post-metas">
 
                                 <span class="t4s-post-author"><span class="t4s-post-author__text t4s-dib">By</span>
-                                    <span class="t4s-author-name">HOUSE OF VAAREE PRIVATE LIMITED</span>
+                                    <span class="t4s-author-name">ERA CREATIX PRIVATE LIMITED</span>
                                 </span>
 
 
@@ -742,7 +741,7 @@
                     </svg></a></div>
         </div>
     </div>
-</section>
+</section> -->
 <section id="shopify-section-template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a"
     class="shopify-section t4s-section t4s-section-all t4s_tp_cdt t4s-custom-html">
     <!-- sections/custom-html.liquid -->
@@ -751,11 +750,11 @@
         <div class="t4s-container">
             <div class="t4s-container-inner">
                 <div class="t4s-code__html t4s-rte" hdt-reveal="slide-in">
-                    <h1><strong>Vaaree - India's Best Home Decorative Items Online</strong></h1>
+                    <h1><strong>Era Creatix - India's Best Home Decorative Items Online</strong></h1>
                     <p>Isn’t decorating your home one of the most satisfying endeavours? The home is like a canvas;
                         yours to beautify the way you like! It is a reflection of your personality and design
                         aesthetics, and this is what makes every home unique. In the same way that you hand-pick
-                        each item for your home, we at Vaaree lovingly curate our entire collection. Every home
+                        each item for your home, we at Era Creatix lovingly curate our entire collection. Every home
                         decor item, <a href="collections/bedding.html"
                             data-mce-href="collections/bedding.html"><strong>bedding decor</strong></a>, <a
                             href="collections/home-furnishings.html"
@@ -768,15 +767,15 @@
                             data-mce-href="collections/bath-decor.html"><strong>bath decor</strong></a>, and <a
                             href="collections/garden-decor.html"
                             data-mce-href="collections/garden-decor.html"><strong>garden decor</strong></a> you see
-                        at Vaaree has been selected for its versatility, beauty, workmanship, quality, and
+                        at Era Creatix has been selected for its versatility, beauty, workmanship, quality, and
                         durability. All this is to ensure that you only get the finest for your home when you shop
-                        with Vaaree home products.
+                        with Era Creatix products.
                     </p>
                     <p>The days of looking for "home decor near me" or "home decor stores near me" are over. Home
-                        décor online buying is a breeze with Vaaree. We understand the special attachment you have
+                        décor online buying is a breeze with Era Creatix. We understand the special attachment you have
                         with your home décor items as your trusted online home decoration shop in India. As a
                         result, we make certain that every home product we provide you is the best of the best.</p>
-                    <h2><strong>The Benefits of Buying Home Decor Accessories from Vaaree</strong></h2>
+                    <h2><strong>The Benefits of Buying Home Decor Accessories from Era Creatix</strong></h2>
                     <ol>
                         <li>Authentic home products that live up to your expectations with their breath-taking
                             designs.</li>
@@ -788,13 +787,13 @@
                             personality, all under one hood.</li>
                     </ol>
                     <h2><strong>Buy from Trusted Home Decor Products Brands Online</strong></h2>
-                    <p>At Vaaree we follow a curated marketplace model – wherein home items are directly procured
+                    <p>At Era Creatix we follow a curated marketplace model – wherein home items are directly procured
                         from the manufacturers. Thus, cutting the additional &amp; unnecessary middlemen costs so
                         that you can shop as frequently as you like! Furthermore, these manufacturers are handpicked
                         vendors who match our strict quality control requirements. As a result, whatever you buy
                         from us comes with a promise of sturdiness and exceptional quality. You can shop anything
                         from us and be rest assured that it will offer true value for money!</p>
-                    <h2><strong>Why Vaaree Is The Favourite Online Home Decor Accessories Store?</strong></h2>
+                    <h2><strong>Why Era Creatix Is The Favourite Online Home Decor Accessories Store?</strong></h2>
                     <p>When you get everything related to home décor and essentials in one place, why won’t it be
                         your favourite go-to place for shopping? Especially when we have a wide range of items that
                         cater to any and every home décor need that you may have!</p>
@@ -810,13 +809,13 @@
                             data-mce-href="collections/pooja-thali-sets.html"><strong>pooja thali sets</strong></a>
                         here. And since our prices are very reasonable, you can give your home a makeover every now
                         and then without worrying about a dent in your budget!</p>
-                    <h2><strong>Shop Vaaree’ s Homeware Products Online by Category</strong></h2>
-                    <p>Vaaree is an Indian e-commerce platform that offers a wide range of products, including home
-                        decor items. When it comes to home decor, Vaaree online shopping offers a variety of options
-                        to improve the look of your living areas. You can find Vaaree home decor products in various
+                    <h2><strong>Shop Era Creatix’ s Homeware Products Online by Category</strong></h2>
+                    <p>Era Creatix is an Indian e-commerce platform that offers a wide range of products, including home
+                        decor items. When it comes to home decor, Era Creatix online shopping offers a variety of options
+                        to improve the look of your living areas. You can find Era Creatix home decor products in various
                         categories, such as:</p>
                     <h3><strong>1. Shop Bedding Decor Accessories Online</strong></h3>
-                    <p>The best bedrooms are the ones with the finest linen. When it comes to bedroom decor, Vaaree
+                    <p>The best bedrooms are the ones with the finest linen. When it comes to bedroom decor, Era Creatix
                         has a shop-till-you-drop policy! That’s because our bedroom range is so extensive that you
                         will be baffled by the choices. Whether it is a <a href="collections/bedsheets.html"
                             data-mce-href="collections/bedsheets.html"><strong>bedsheets</strong></a>, <a
@@ -833,7 +832,7 @@
                         have it all right here!</p>
                     <h3><strong>2. Shop Home Furnishing Items Online</strong></h3>
                     <p>The house furnishing is the most visible component of your home to visitors. It is where you
-                        entertain and impress people with your fine taste in decor. Vaaree gives you ample options
+                        entertain and impress people with your fine taste in decor. Era Creatix gives you ample options
                         for living room items too! We have stocked the coolest <a
                             href="collections/cushions-covers.html"
                             data-mce-href="collections/cushions-covers.html"><strong>cushion covers</strong></a>, <a
@@ -856,7 +855,7 @@
                             data-mce-href="collections/bakeware.html"><strong>bakeware</strong></a>, <a
                             href="collections/kitchen-linens.html"
                             data-mce-href="collections/kitchen-linens.html"><strong>kitchen linens</strong></a>,
-                        etc. that you see at Vaaree is both utilitarian as well as pleasing to the eye. We have
+                        etc. that you see at Era Creatix is both utilitarian as well as pleasing to the eye. We have
                         tried to combine aesthetics with practicality to create a range of bespoke essentials that
                         you will love to use and flaunt!</p>
                     <h3><strong>4. Shop Dining Decor Products Online</strong></h3>
@@ -881,7 +880,7 @@
                                 Items</strong></a><strong> Online</strong>
                     </h3>
                     <p>How you do up your walls decor, what you put on your shelves, and the way you light up the
-                        rooms, are all critical elements when it comes to interior design. At Vaaree, you can shop
+                        rooms, are all critical elements when it comes to interior design. At Era Creatix, you can shop
                         decorative <a href="collections/lamps-lightings.html"
                             data-mce-href="collections/lamps-lightings.html"><strong>lamps &amp;
                                 lightings</strong></a>, <a href="collections/wall-decor.html"
@@ -907,7 +906,7 @@
                                 Decor</a></strong> and more!</p>
                     <h3><strong>6. Shop Bathroom Decor Essentials Online</strong></h3>
                     <p>Bathing rituals should never be ignored! The exuberance of wrapping yourself in a soft towel
-                        or stepping on a plush mat are the small joys of life that deserve your attention. Vaaree
+                        or stepping on a plush mat are the small joys of life that deserve your attention. Era Creatix
                         helps you make your bath time luxurious with a range of essentials like <a
                             href="collections/all-towels.html" data-mce-href="collections/all-towels.html"><strong>all
                                 towels</strong></a>, <a href="collections/bath-mats.html"
@@ -920,16 +919,16 @@
                     <h3><strong>7. Shop Garden Decor Online</strong></h3>
                     <p>The garden is everyone’s safe sanctuary. It is amidst the plants that you feel energised and
                         refreshed. Whether you have a full-fledged garden or a balcony that is filled with greens,
-                        you can select your type of garden decor items online at Vaaree. Not just <a
+                        you can select your type of garden decor items online at Era Creatix. Not just <a
                             href="collections/pots-planters.html"
                             data-mce-href="collections/pots-planters.html"><strong>pots and planters</strong></a> or
                         <a href="collections/plants-seeds.html"
                             data-mce-href="collections/plants-seeds.html"><strong>plants &amp; seeds</strong></a>,
-                        Vaaree has an amazing range of <a href="collections/gardening-accessories.html"
+                            Era Creatix has an amazing range of <a href="collections/gardening-accessories.html"
                             data-mce-href="collections/gardening-accessories.html"><strong>garden
                                 accessories</strong></a> too! And if you have a green thumb or want to try your hand
                         at gardening, treat yourself to our plants and seeds section! Phew! That’s a long list of
-                        what Vaaree has to offer for your home. As we promised, we’re a one-stop shop for all your
+                        what Era Creatix has to offer for your home. As we promised, we’re a one-stop shop for all your
                         home needs!
                     </p>
                 </div>
@@ -1297,7 +1296,7 @@
                                         </a>
                                         <a href="pages/career-opportunities.html"
                                             style="display:flex;align-items:center;line-height:2em;">
-                                            <i class="las la-exchange-alt"></i> Work At Vaaree
+                                            <i class="las la-exchange-alt"></i> Work At Era Creatix
                                         </a>
                                         <a href="pages/contact.html"
                                             style="display:flex;align-items:center;line-height:2em;">
@@ -1305,15 +1304,15 @@
                                         </a>
                                         <a href="pages/partner-with-vaaree.html"
                                             style="display:flex;align-items:center;line-height:2em;">
-                                            <i class="las la-exchange-alt"></i> Partner with Vaaree
+                                            <i class="las la-exchange-alt"></i> Partner with Era Creatix
                                         </a>
                                         <a href="pages/affiliate-partnership.html"
                                             style="display:flex;align-items:center;line-height:2em;">
                                             <i class="las la-exchange-alt"></i> Affiliate &amp; Partnership
                                         </a>
                                         <a style="display:flex;align-items:center;line-height:2em;"
-                                            href="mailto:help@vaaree.com">
-                                            <i class="las la-envelope"></i> help@vaaree.com
+                                            href="mailto:eracreatix@gmail.com">
+                                            <i class="las la-envelope"></i> eracreatix@gmail.com
                                         </a>
                                         <br>
                                     </div>
@@ -1327,7 +1326,7 @@
                                             <div class="t4s-col-item t4s-col-auto social_facebook_link">
                                                 <a title='Follow on Facebook' data-no-instant
                                                     rel="noopener noreferrer nofollow"
-                                                    href="https://www.facebook.com/vaareehome" target="_blank"
+                                                    href="https://www.facebook.com/eracreatix" target="_blank"
                                                     class="facebook" data-tooltip="top"><svg class=" t4s-icon-facebook"
                                                         role="presentation" viewBox="0 0 320 512">
                                                         <path
@@ -1337,7 +1336,7 @@
                                             <div class="t4s-col-item t4s-col-auto social_twitter_link">
                                                 <a title='Follow on Twitter' data-no-instant
                                                     rel="noopener noreferrer nofollow"
-                                                    href="https://twitter.com/vaareehome" target="_blank"
+                                                    href="https://twitter.com/eracreatix" target="_blank"
                                                     class="twitter" data-tooltip="top"><svg class=" t4s-icon-twitter"
                                                         role="presentation" viewBox="0 0 512 512">
                                                         <path
@@ -1347,7 +1346,7 @@
                                             <div class="t4s-col-item t4s-col-auto social_instagram_link">
                                                 <a title='Follow on Instagram' data-no-instant
                                                     rel="noopener noreferrer nofollow"
-                                                    href="https://www.instagram.com/vaareehome/" target="_blank"
+                                                    href="https://www.instagram.com/eracreatix/" target="_blank"
                                                     class="instagram" data-tooltip="top"><svg
                                                         class=" t4s-icon-instagram" role="presentation"
                                                         viewBox="0 0 448 512">
@@ -1358,7 +1357,7 @@
                                             <div class="t4s-col-item t4s-col-auto social_linkedin_link">
                                                 <a title='Follow on Linkedin' data-no-instant
                                                     rel="noopener noreferrer nofollow"
-                                                    href="https://in.linkedin.com/company/vaareehome" target="_blank"
+                                                    href="https://in.linkedin.com/company/eracreatix" target="_blank"
                                                     class="linkedin" data-tooltip="top"><svg class=" t4s-icon-linkedin"
                                                         role="presentation" viewBox="0 0 448 512">
                                                         <path
@@ -1368,7 +1367,7 @@
                                             <div class="t4s-col-item t4s-col-auto social_pinterest_link">
                                                 <a title='Follow on Pinterest' data-no-instant
                                                     rel="noopener noreferrer nofollow"
-                                                    href="https://www.pinterest.ca/vaareehome/" target="_blank"
+                                                    href="https://www.pinterest.ca/eracreatix/" target="_blank"
                                                     class="pinterest" data-tooltip="top"><svg
                                                         class=" t4s-icon-pinterest" role="presentation"
                                                         viewBox="0 0 384 512">
@@ -1413,37 +1412,37 @@
                                     style="--menu-mgb:px;--menu-mgb-mb:px;">
                                     <ul class="t4s-footer-linklist">
                                         <li>
-                                            <a href="collections/bedding.html" class="t4s-footer-link ">
+                                            <a href="collections.php?items=bedding" class="t4s-footer-link ">
                                                 Bedding
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collections/home-furnishings.html" class="t4s-footer-link ">
+                                            <a href="collections.php?items=home-furnishings" class="t4s-footer-link ">
                                                 Furnishings
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collections/kitchen-decor.html" class="t4s-footer-link ">
+                                            <a href="collections.php?items=kitchen-decor" class="t4s-footer-link ">
                                                 Kitchen
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collections/dining-table-decor.html" class="t4s-footer-link ">
+                                            <a href="collections.php?item=dining-table-decor" class="t4s-footer-link ">
                                                 Dining
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collections/home-decor.html" class="t4s-footer-link ">
+                                            <a href="collections.php?items=home-decor" class="t4s-footer-link ">
                                                 Home Decor
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collections/bath-decor.html" class="t4s-footer-link ">
+                                            <a href="collections.php?items=bath-decor" class="t4s-footer-link ">
                                                 Bath
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="collections/garden-decor.html" class="t4s-footer-link ">
+                                            <a href="collections.php?items=garden-decor" class="t4s-footer-link ">
                                                 Garden
                                             </a>
                                         </li>
@@ -1476,8 +1475,8 @@
                                     style="--menu-mgb:px;--menu-mgb-mb:px;">
                                     <ul class="t4s-footer-linklist">
                                         <li>
-                                            <a href="blogs/vaaree-journals.html" class="t4s-footer-link ">
-                                                Vaaree Journals
+                                            <a href="blogs/journals.html" class="t4s-footer-link ">
+                                                Journals
                                             </a>
                                         </li>
                                         <li>
@@ -1491,8 +1490,8 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="blogs/vaaree-press-hub.html" class="t4s-footer-link ">
-                                                Vaaree Press Room
+                                            <a href="blogs/press-hub.html" class="t4s-footer-link ">
+                                                Press Room
                                             </a>
                                         </li>
                                         <li>
@@ -1536,7 +1535,7 @@
                                     Subscribe to our newsletter and get 10% off your first purchase</p>
                                 <div class="t4s-newsletter-parent t4s_newsletter_se t4s-newsl-des-1 t4s-newsl-small t4s-text-start t4s-hidden-mobile-false"
                                     style="--animation: ;--delay-animation:s;--input-cl: #878787;--border-cl: #000000;--btn-cl: #ffffff;--btn-bg-cl: #222222;--btn-hover-cl: #ffffff;--btn-hover-bg-cl: #56cfe1; --mgb: 22px;--mgb-mb: 20px;--form-width:0px;--form-width-mb:0px;">
-                                    <form method="post" action="https://vaaree.com/contact#t4s-form-footer-12"
+                                    <form method="post" action="https://eracreatix.com/contact#t4s-form-footer-12"
                                         id="t4s-form-footer-12" accept-charset="UTF-8"
                                         class="t4s-pr t4s-z-100 t4s-newsletter__form" data-form-mail-agree=""><input
                                             type="hidden" name="form_type" value="customer" /><input type="hidden"
@@ -1573,34 +1572,34 @@
                                     style="--height:30px;--mgb:20px;--mgb-mb:px;"><img loading="lazy"
                                         class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
                                         alt="visa" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
                                         alt="google pay" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
                                         alt="amazon payments" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/american_express-12858714bc10cdf384b62b8f41d20f56d8c32c1b8fed98b662f2bfc158dcbcf0.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/american_express-12858714bc10cdf384b62b8f41d20f56d8c32c1b8fed98b662f2bfc158dcbcf0.svg"
                                         alt="american express" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
                                         alt="apple pay" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/maestro-d2055c6b416c46cf134f393e1df6e0ba31722b623870f954afd392092207889c.svg"
                                         alt="maestro" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/master-173035bc8124581983d4efa50cf8626e8553c2b311353fbf67485f9c1a2b88d1.svg"
                                         alt="master" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
                                         alt="paypal" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/paytm-ea638dba9d6e858f0f6c38d0b744ab791cabe2016309511ada28a5da51140909.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/paytm-ea638dba9d6e858f0f6c38d0b744ab791cabe2016309511ada28a5da51140909.svg"
                                         alt="paytm" /><img loading="lazy" class="lazyloadt4s"
                                         src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg"
-                                        data-src="//vaaree.com/cdn/shopifycloud/shopify/assets/payment_icons/cash-6536c587582689566e943aee8abd84c8b882c9b372940abb53b004a6c24736d8.svg"
+                                        data-src="//eracreatix.com/cdn/shopifycloud/shopify/assets/payment_icons/cash-6536c587582689566e943aee8abd84c8b882c9b372940abb53b004a6c24736d8.svg"
                                         alt="cash" /></div>
                             </div>
                         </div>
@@ -1653,7 +1652,7 @@
                                     </ul>
                                 </div>
                                 <div class="t4s-coppy-right" style="--mgb: 0px;--mgb-mb: 0px;">Copyright ? 2024 <span
-                                        class="t4s-cp">House of Vaaree</span> all rights reserved.</div>
+                                        class="t4s-cp">Era Creatix</span> all rights reserved.</div>
                             </div>
                         </div>
                     </div>
@@ -1672,7 +1671,7 @@
     style="bottom: 65px; right: 16px; opacity: 1; transition: opacity 0.5s ease 0s; box-sizing: border-box; direction: ltr; text-align: right; position: fixed !important; z-index: 16000160 !important;">
     <div>
         <div style="display:flex;margin:7px;position:relative;-webkit-box-pack:end;justify-content:flex-end;">
-            <a size="50" href="https://wa.me/918550822733?text=Hello" target="_blank" color="#4dc247" class="wa-link"
+            <a size="50" href="https://wa.me/9984087027?text=Hello" target="_blank" color="#4dc247" class="wa-link"
                 style="
       flex-shrink: 0;
       width: 50px;
@@ -1700,7 +1699,9 @@
             </a>
         </div>
     </div>
-</div><svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg"
+</div>
+
+<svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg"
     class="t4s-d-none">
     <defs>
 
