@@ -1,0 +1,1154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://vaaree.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://vaaree.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://vaaree.com/collections/kitchen-decor.atom"/>
+  <title>Vaaree</title>
+  <updated>2024-04-11T12:38:18+05:30</updated>
+  <author>
+    <name>Vaaree</name>
+  </author>
+  <entry>
+    <id>https://vaaree.com/products/8416430588150</id>
+    <published>2024-04-11T12:38:18+05:30</published>
+    <updated>2024-04-11T12:38:18+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-water-bottle-750-ml-set-of-five"/>
+    <title>Sip Slay Water Bottle (750 ML) - Set Of Five</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0640-1.jpg?v=1712816574"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            4316.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><style type="text/css"><!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--></style>
+<span data-sheets-userformat='{"2":14787,"3":{"1":0},"4":{"1":2,"2":16777215},"9":0,"10":1,"11":4,"14":{"1":2,"2":855309},"15":"Söhne, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", Roboto, Ubuntu, Cantarell, \"Noto Sans\", sans-serif, \"Helvetica Neue\", Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"","16":12}' data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!\n\n1. The product includes set of 2 insulated bottles.\n2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).\n3. The capacity of each bottle is 750 ml.\n4. The material of each bottle is 304 grade stainless steel.\n5. The product is dishwasher safe.\n6. The weight of each bottle is 365 gm.&quot;}" data-sheets-root="1">With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!<br><br>1. The product includes set of 2 insulated bottles.<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).<br>3. The capacity of each bottle is 750 ml.<br>4. The material of each bottle is 304 grade stainless steel.<br>5. The product is dishwasher safe.<br>6. The weight of each bottle is 365 gm.</span></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8416430588150</id>
+      <title>750ml each</title>
+      <s:price currency="INR">4316.00</s:price>
+      <s:sku>BTT9904/SKYBLUE-YELLOW-BLUE-GREEN-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412758147318</id>
+    <published>2024-04-11T12:38:17+05:30</published>
+    <updated>2024-04-11T12:38:17+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-750-ml-water-bottle-purple-yellow-set-of-two"/>
+    <title>Sip Slay 750 ML Water Insulated Bottle (Purple &amp; Yellow) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1184-1_83249c54-f94a-461f-a364-83e0cb6128d8.jpg?v=1712817001"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1726.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412758147318</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1726.00</s:price>
+      <s:sku>BTT9904/BLUE-YELLOW</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412757328118</id>
+    <published>2024-04-11T12:38:16+05:30</published>
+    <updated>2024-04-11T12:38:16+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/gleam-craft-800-ml-bottle-pink-green-set-of-two"/>
+    <title>Gleam Craft 800 ML Insulated Bottle (Pink &amp; Green) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0610-1_683c4093-f839-4a3e-8f43-e722250e333b.jpg?v=1712816356"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1758.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (3.15x3.15x11.02 inches) or (8x8x28 cm).
+<br>3. The capacity of each bottle is 800 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 412 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412757328118</id>
+      <title>800ml each</title>
+      <s:price currency="INR">1758.00</s:price>
+      <s:sku>BTT9946/PINK-GREEN</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412751397110</id>
+    <published>2024-04-11T12:38:15+05:30</published>
+    <updated>2024-04-11T12:38:15+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/misa-sip-750-ml-bottle-grey-green-set-of-two"/>
+    <title>Misa Sip 750 ML Insulated Bottle (Grey &amp; Green) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0356-1.jpg?v=1712816444"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1758.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Gone are the days of dull, uninspiring water bottles. This bottle is a vibrant symphony of hues, designed to inject a pop of personality into your hydration routine. Whether you're hitting the gym, conquering the boardroom, or simply strolling through the park, let your water bottle be an extension of your vibrant spirit!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x9.84 inches) or (7.5x7.5x25 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412751397110</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1758.00</s:price>
+      <s:sku>BTT9933/GREEN-GREY</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412765585654</id>
+    <published>2024-04-11T11:16:49+05:30</published>
+    <updated>2024-04-11T11:16:49+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/ventura-sip-1000-ml-water-bottle-pink-blue-set-of-two"/>
+    <title>Ventura Sip 1000 ML Water Insulated Bottle (Pink &amp; Blue) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1142-1_3c8dac47-a5c2-4140-9faa-370a47c78256.jpg?v=1712808865"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            2398.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Gone are the days of basic hydration vessels. This bottle is a marvel of modern design, blending extraordinary style with sleek aesthetics to create the ultimate hydration experience.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (3.31x3.31x11.61 inches) or (8x8x30 cm).
+<br>3. The capacity of each bottle is 1L or  1000 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 482 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412765585654</id>
+      <title>1000ml each</title>
+      <s:price currency="INR">2398.00</s:price>
+      <s:sku>BTT9981/BLUE-PINK</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412764930294</id>
+    <published>2024-04-11T11:16:48+05:30</published>
+    <updated>2024-04-11T11:16:48+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/verga-sip-1000-ml-water-bottle-blue-pink-set-of-two"/>
+    <title>Verga Sip 1000 ML Water Insulated Bottle (Blue &amp; Pink) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1116-1.jpg?v=1712808830"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            2318.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Gone are the days of basic hydration vessels. This bottle is a marvel of modern design, blending extraordinary style with sleek aesthetics to create the ultimate hydration experience.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (3.27x3.27x11.61 inches) or (8x8x30 cm).
+<br>3. The capacity of each bottle is 1L or 1000 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 462 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412764930294</id>
+      <title>1000ml each</title>
+      <s:price currency="INR">2318.00</s:price>
+      <s:sku>BTT9972/BLUE-PINK</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412759523574</id>
+    <published>2024-04-11T11:16:46+05:30</published>
+    <updated>2024-04-11T11:16:46+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-master-750-ml-water-bottle-green-purple-set-of-two"/>
+    <title>Sip Master 750 ML Water Bottle (Green &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1203-1.jpg?v=1712716630"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1998.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.24 inches) or (7.6x7.6x26 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of the bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 445 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412759523574</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1998.00</s:price>
+      <s:sku>BTT9903S/GREEN-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412759490806</id>
+    <published>2024-04-11T11:16:45+05:30</published>
+    <updated>2024-04-11T11:16:45+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-master-750-ml-water-bottle-green-red-set-of-two"/>
+    <title>Sip Master 750 ML Water Bottle (Green &amp; Red) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1202-1.jpg?v=1712716653"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1998.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.24 inches) or (7.6x7.6x26 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of the bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 445 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412759490806</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1998.00</s:price>
+      <s:sku>BTT9903S/GREEN-RED</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412759458038</id>
+    <published>2024-04-11T11:16:44+05:30</published>
+    <updated>2024-04-11T11:16:44+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-master-750-ml-water-bottle-white-purple-set-of-two"/>
+    <title>Sip Master 750 ML Water Bottle (White &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1201-1.jpg?v=1712716851"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1998.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.24 inches) or (7.6x7.6x26 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of the bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 445 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412759458038</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1998.00</s:price>
+      <s:sku>BTT9903S/WHITE-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412759359734</id>
+    <published>2024-04-11T11:16:43+05:30</published>
+    <updated>2024-04-11T11:16:43+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-master-750-ml-water-bottle-black-purple-set-of-two"/>
+    <title>Sip Master 750 ML Water Bottle (Black &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1198-1.jpg?v=1712716458"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1998.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.24 inches) or (7.6x7.6x26 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of the bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 445 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412759359734</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1998.00</s:price>
+      <s:sku>BTT9903S/BLACK-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412758540534</id>
+    <published>2024-04-11T11:16:42+05:30</published>
+    <updated>2024-04-11T11:16:42+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-750-ml-water-bottle-white-purple-set-of-two"/>
+    <title>Sip Slay 750 ML Water Insulated Bottle (White &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0656-1.jpg?v=1712717200"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1726.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412758540534</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1726.00</s:price>
+      <s:sku>BTT9904/WHITE-BLUE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412758474998</id>
+    <published>2024-04-11T11:16:41+05:30</published>
+    <updated>2024-04-11T11:16:41+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-750-ml-water-bottle-black-pink-set-of-two"/>
+    <title>Sip Slay 750 ML Water Insulated Bottle (Black &amp; Pink) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1173-1_b79844fa-7eed-42eb-939c-bc8fff7a39a6.jpg?v=1712716979"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1726.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412758474998</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1726.00</s:price>
+      <s:sku>BTT9904/BLACK-PINK</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412758442230</id>
+    <published>2024-04-11T11:16:40+05:30</published>
+    <updated>2024-04-11T11:16:40+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-750-ml-water-bottle-black-purple-set-of-two"/>
+    <title>Sip Slay 750 ML Water Insulated Bottle (Black &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1172-1_7678d67c-3542-4b94-8464-36b5cc2a90cb.jpg?v=1712717007"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1726.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412758442230</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1726.00</s:price>
+      <s:sku>BTT9904/BLACK-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412758376694</id>
+    <published>2024-04-11T11:16:39+05:30</published>
+    <updated>2024-04-11T11:16:39+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-750-ml-water-bottle-yellow-sky-blue-set-of-two"/>
+    <title>Sip Slay 750 ML Water Insulated Bottle (Yellow &amp; Sky Blue) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0650-1.jpg?v=1712717156"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1726.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412758376694</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1726.00</s:price>
+      <s:sku>BTT9904/SKYBLUE-YELLOW</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412758278390</id>
+    <published>2024-04-11T11:16:38+05:30</published>
+    <updated>2024-04-11T11:16:38+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/sip-slay-750-ml-water-bottle-green-pink-set-of-two"/>
+    <title>Sip Slay 750 ML Water Insulated Bottle (Green &amp; Pink) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1188-1.jpg?v=1712717040"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1726.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412758278390</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1726.00</s:price>
+      <s:sku>BTT9904/GREEN-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412755820790</id>
+    <published>2024-04-11T11:16:36+05:30</published>
+    <updated>2024-04-11T11:16:36+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/turbo-1000-ml-bottle-yellow-grey-set-of-two"/>
+    <title>Turbo 1000 ML Insulated Bottle (Yellow &amp; Grey) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0568-1.jpg?v=1712803456"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            2078.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (3.39x3.39x9.84 inches) or (9x9x25 cm).
+<br>3. The capacity of each bottle is 1L or 1000 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 448 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412755820790</id>
+      <title>1000ml each</title>
+      <s:price currency="INR">2078.00</s:price>
+      <s:sku>BTT9925/GREY-YELLOW</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412755689718</id>
+    <published>2024-04-11T11:16:35+05:30</published>
+    <updated>2024-04-11T11:16:35+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/turbo-1000-ml-bottle-black-blue-set-of-two"/>
+    <title>Turbo 1000 ML Insulated Bottle (Black &amp; Blue) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0565-1.jpg?v=1712803428"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            2078.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its minimalist design and elegant curves, it's the perfect complement to any outfit, whether you're hitting the gym, the office, or the streets. Say goodbye to dull hydration and hello to a sleek and sophisticated way to stay refreshed!</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (3.39x3.39x9.84 inches) or (9x9x25 cm).
+<br>3. The capacity of each bottle is 1L or 1000 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 448 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412755689718</id>
+      <title>1000ml each</title>
+      <s:price currency="INR">2078.00</s:price>
+      <s:sku>BTT9925/BLACK-BLUE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412753854710</id>
+    <published>2024-04-11T11:16:34+05:30</published>
+    <updated>2024-04-11T11:16:34+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/speed-650-ml-water-bottle-blue-peach-set-of-two"/>
+    <title>Speed 650 ML Water Insulated Bottle (Blue &amp; Peach) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0493-1.jpg?v=1712803569"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1758.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're sipping in style at the gym, making a statement at the office, or simply adding a touch of glamour to your day, let this bottle be your hydration essential. Because when it comes to staying hydrated, why settle for ordinary when you can be extraordinary?</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.83x2.83x9.06 inches) or (7.2x7.2x23 cm).
+<br>3. The capacity of each bottle is 650  ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 322 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412753854710</id>
+      <title>650ml each</title>
+      <s:price currency="INR">1758.00</s:price>
+      <s:sku>BTT9931/BLUE-PEACH</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412753625334</id>
+    <published>2024-04-11T11:16:33+05:30</published>
+    <updated>2024-04-11T11:16:33+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/velno-750-ml-water-bottle-pink-green-set-of-two"/>
+    <title>Velno 750 ML Water Insulated Bottle (Pink &amp; Green) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_0484-1.jpg?v=1712803541"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1998.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're sipping in style at the gym, making a statement at the office, or simply adding a touch of glamour to your day, let this bottle be your hydration essential. Because when it comes to staying hydrated, why settle for ordinary when you can be extraordinary?</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.95x2.95x10.83 inches) or (7.5x7.5x27.5 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 386 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412753625334</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1998.00</s:price>
+      <s:sku>BTT9928/PINK-GREEN</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412766732534</id>
+    <published>2024-04-11T11:15:27+05:30</published>
+    <updated>2024-04-11T11:15:27+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/quench-pal-750-ml-water-bottle-white-yellow-set-of-two"/>
+    <title>Quench Pal 750 ML Water Insulated Bottle (White &amp; Yellow) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1180-1.jpg?v=1712803081"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1806.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this: a water bottle that doesn't just quench your thirst, but elevates the entire hydration experience. With its innovative design and cutting-edge features, this vessel is more than just a bottle – it's a hydration revolution.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750  ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412766732534</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1806.00</s:price>
+      <s:sku>BTT9904S/WHITE-YELLOW</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412766666998</id>
+    <published>2024-04-11T11:15:26+05:30</published>
+    <updated>2024-04-11T11:15:26+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/quench-pal-750-ml-water-bottle-white-purple-set-of-two"/>
+    <title>Quench Pal 750 ML Water Insulated Bottle (White &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1177-1.jpg?v=1712803025"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1806.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this: a water bottle that doesn't just quench your thirst, but elevates the entire hydration experience. With its innovative design and cutting-edge features, this vessel is more than just a bottle – it's a hydration revolution.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750  ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412766666998</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1806.00</s:price>
+      <s:sku>BTT9904S/WHITE-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412766535926</id>
+    <published>2024-04-11T11:15:25+05:30</published>
+    <updated>2024-04-11T11:15:25+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/quench-pal-750-ml-water-bottle-black-green-set-of-two"/>
+    <title>Quench Pal 750 ML Water Insulated Bottle (Black &amp; Green) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1176-1.jpg?v=1712717249"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1806.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this: a water bottle that doesn't just quench your thirst, but elevates the entire hydration experience. With its innovative design and cutting-edge features, this vessel is more than just a bottle – it's a hydration revolution.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750  ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412766535926</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1806.00</s:price>
+      <s:sku>BTT9904S/BLACK-GREEN</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412766470390</id>
+    <published>2024-04-11T11:15:24+05:30</published>
+    <updated>2024-04-11T11:15:24+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/quench-pal-750-ml-water-bottle-black-sky-blue-set-of-two"/>
+    <title>Quench Pal 750 ML Water Insulated Bottle (Black &amp; Sky Blue) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1174-1.jpg?v=1712717318"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1806.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this: a water bottle that doesn't just quench your thirst, but elevates the entire hydration experience. With its innovative design and cutting-edge features, this vessel is more than just a bottle – it's a hydration revolution.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750  ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412766470390</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1806.00</s:price>
+      <s:sku>BTT9904S/BLACK-SKYBLUE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412766437622</id>
+    <published>2024-04-11T11:15:23+05:30</published>
+    <updated>2024-04-11T11:15:23+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/quench-pal-750-ml-water-bottle-black-pink-set-of-two"/>
+    <title>Quench Pal 750 ML Water Insulated Bottle (Black &amp; Pink) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1173-1_8308b92b-1c1e-4b3d-a72f-5275bf4d46cd.jpg?v=1712717269"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1806.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this: a water bottle that doesn't just quench your thirst, but elevates the entire hydration experience. With its innovative design and cutting-edge features, this vessel is more than just a bottle – it's a hydration revolution.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750  ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 365 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412766437622</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1806.00</s:price>
+      <s:sku>BTT9904S/BLACK-PEACH</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8412766404854</id>
+    <published>2024-04-11T11:15:22+05:30</published>
+    <updated>2024-04-11T11:15:22+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/quench-pal-750-ml-water-bottle-black-purple-set-of-two"/>
+    <title>Quench Pal 750 ML Water Insulated Bottle (Black &amp; Purple) - Set Of Two</title>
+    <s:type>Bottle</s:type>
+    <s:vendor>Briiton</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_1172-1_2e944699-cd5a-47da-9461-0db622039c11.jpg?v=1712717296"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Briiton<br>
+        <strong>Type: </strong>Bottle<br>
+        <strong>Price: </strong>
+            1806.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this: a water bottle that doesn't just quench your thirst, but elevates the entire hydration experience. With its innovative design and cutting-edge features, this vessel is more than just a bottle – it's a hydration revolution.</p>
+<p>1. The product includes set of 2 insulated bottles.
+<br>2. The size of each bottle is (2.99x2.99x10.63 inches) or (8x8x27 cm).
+<br>3. The capacity of each bottle is 750 ml.
+<br>4. The material of each bottle is 304 grade stainless steel.
+<br>5. The product is dishwasher safe.
+<br>6. The weight of each bottle is 395  gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Bottle</s:tag>
+    <s:tag>Bottles &amp; Tumblers</s:tag>
+    <s:tag>Kitchen</s:tag>
+    <s:tag>Stainless Steel</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8412766404854</id>
+      <title>750ml each</title>
+      <s:price currency="INR">1806.00</s:price>
+      <s:sku>BTT9904S/BLACK-PURPLE</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

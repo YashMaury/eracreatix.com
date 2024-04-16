@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://vaaree.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://vaaree.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://vaaree.com/collections/dining-table-decor.atom"/>
+  <title>Vaaree</title>
+  <updated>2024-04-11T12:05:44+05:30</updated>
+  <author>
+    <name>Vaaree</name>
+  </author>
+  <entry>
+    <id>https://vaaree.com/products/8441877790966</id>
+    <published>2024-04-11T12:05:44+05:30</published>
+    <updated>2024-04-11T12:05:44+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/mocha-glass-cup-300-ml"/>
+    <title>Mocha Glass Cup - 300 ML</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>Naturally Yours</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/AMB_9941-1_4132fcec-4b14-4dfa-9e3b-11db6cfa38bb.jpg?v=1712816930"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Naturally Yours<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            945.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Picture this, you wake up in the morning, groggy and craving that heavenly elixir we call coffee. But wait, you don't just want any old cup; you have a vessel that understands your need for both style and substance. </p>
+<p>1. The product includes 1 cup with filter.
+<br>2. The size of the product is (4x4x6 inches) or (11x11x15 cms).
+<br>3. The capacity of the product is 300ml.
+<br>4. The weight of the product is 250 gm.
+<br>5. The material of the product is glass.
+<br>6. The product is dishwasher &amp; microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Cups &amp; Kulhads</s:tag>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Mugs</s:tag>
+    <s:tag>Mugs Cups &amp; Drinkware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8441877790966</id>
+      <title>300ml</title>
+      <s:price currency="INR">945.00</s:price>
+      <s:sku>PRA1000290</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128744694</id>
+    <published>2024-04-10T16:23:22+05:30</published>
+    <updated>2024-04-10T16:23:22+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/silas-zane-glass-set-of-four"/>
+    <title>Silas Zane Glass - Set Of Four</title>
+    <s:type>Wine &amp; Champagne Glass</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ020_2.jpg?v=1712734362"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Wine &amp; Champagne Glass<br>
+        <strong>Price: </strong>
+            1400.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Hey there, wine enthusiasts and glassware aficionados, get ready to elevate your sipping experience with this chic glass!</p>
+<p>1. The product includes set of 4 glasses.
+<br>2. The size of the mug is (2.55x2.55x6.29 inches) or (6.5x6.5x16 cm).
+<br>3. The capacity of the product is 200 ml.
+<br>4. The material of the product is glass.
+<br>5. The weight of the product is 960 gm.
+<br>6. 6. The product is dishwasher safe and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Wine &amp; Champagne Glass</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128744694</id>
+      <title>200ml</title>
+      <s:price currency="INR">1400.00</s:price>
+      <s:sku>TTFJ020</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128711926</id>
+    <published>2024-04-10T16:23:20+05:30</published>
+    <updated>2024-04-10T16:23:20+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/silas-sip-glass-set-of-four"/>
+    <title>Silas Sip Glass - Set Of Four</title>
+    <s:type>Wine &amp; Champagne Glass</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ019_1.jpg?v=1712742286"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Wine &amp; Champagne Glass<br>
+        <strong>Price: </strong>
+            1400.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Hey there, wine enthusiasts and glassware aficionados, get ready to elevate your sipping experience with this chic glass!</p>
+<p>1. The product includes set of 4 glasses.
+<br>2. The size of the mug is (10.62x10.62x9 inches) or (7.6x7.6x17.5 cm).
+<br>3. The capacity of the product is 200 ml.
+<br>4. The material of the product is glass.
+<br>5. The weight of the product is 1152 gm.
+<br>6. The product is dishwasher safe and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Wine &amp; Champagne Glass</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128711926</id>
+      <title>200ml</title>
+      <s:price currency="INR">1400.00</s:price>
+      <s:sku>TTFJ019</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128679158</id>
+    <published>2024-04-10T16:23:18+05:30</published>
+    <updated>2024-04-10T16:23:18+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/blair-gala-glass-set-of-four"/>
+    <title>Blair Gala Glass - Set Of Four</title>
+    <s:type>Wine &amp; Champagne Glass</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ018_1.jpg?v=1712742048"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Wine &amp; Champagne Glass<br>
+        <strong>Price: </strong>
+            1400.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Hey there, wine enthusiasts and glassware aficionados, get ready to elevate your sipping experience with this chic glass!</p>
+<p>1. The product includes set of 4 galsses.
+<br>2. The size of the mug is (2.36x2.36x7.87 inches) or (6x6x20 cm).
+<br>3. The capacity of the product is 180 ml.
+<br>4. The material of the product is glass.
+<br>5. The weight of the product is 1200 gm.
+<br>6. The product is dishwasher safe and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Wine &amp; Champagne Glass</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128679158</id>
+      <title>180ml</title>
+      <s:price currency="INR">1400.00</s:price>
+      <s:sku>TTFJ018</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128646390</id>
+    <published>2024-04-10T16:23:15+05:30</published>
+    <updated>2024-04-10T16:23:15+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/blair-twisted-glass-set-of-four"/>
+    <title>Blair Twisted Glass - Set Of Four</title>
+    <s:type>Wine &amp; Champagne Glass</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ017_1.jpg?v=1712742065"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Wine &amp; Champagne Glass<br>
+        <strong>Price: </strong>
+            2000.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Hey there, wine enthusiasts and glassware aficionados, get ready to elevate your sipping experience with this chic glass!</p>
+<p>1. The product includes set of 4 glasses.
+<br>2. The size of the mug is (2x2x7.87 inches) or (5x5x20 cm).
+<br>3. The capacity of the product is 180 ml.
+<br>4. The material of the product is glass.
+<br>5. The weight of the product is 760 gm.
+<br>6. 6. The product is dishwasher safe and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Wine &amp; Champagne Glass</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128646390</id>
+      <title>180ml</title>
+      <s:price currency="INR">2000.00</s:price>
+      <s:sku>TTFJ017</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128548086</id>
+    <published>2024-04-10T16:23:13+05:30</published>
+    <updated>2024-04-10T16:23:13+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/mica-sterling-glass-set-of-four"/>
+    <title>Mica Sterling Glass - Set Of Four</title>
+    <s:type>Wine &amp; Champagne Glass</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ016_1.jpg?v=1712742195"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Wine &amp; Champagne Glass<br>
+        <strong>Price: </strong>
+            3000.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Hey there, wine enthusiasts and glassware aficionados, get ready to elevate your sipping experience with this chic glass!</p>
+<p>1. The product includes set of 4 glasses.
+<br>2. The size of the mug is (2x2x9 inches) or (5x5x23 cm).
+<br>3. The capacity of the product is 180 ml.
+<br>4. The material of the product is glass.
+<br>5. The weight of the product is 1080 gm.
+<br>6. 6. The product is dishwasher safe and microwave safe</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Wine &amp; Champagne Glass</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128548086</id>
+      <title>180ml</title>
+      <s:price currency="INR">3000.00</s:price>
+      <s:sku>TTFJ016</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128515318</id>
+    <published>2024-04-10T16:23:11+05:30</published>
+    <updated>2024-04-10T16:23:11+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/heinza-fanta-mug-set-of-two"/>
+    <title>Heinza Fanta Mug - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ014_1.jpg?v=1712742103"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            800.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (3.26x3.26x3.5 inches) or (9.6x9.6x9.6 cm).
+<br>3. The capacity of the product is 350 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 600 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128515318</id>
+      <title>350ml</title>
+      <s:price currency="INR">800.00</s:price>
+      <s:sku>TTFJ014</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128482550</id>
+    <published>2024-04-10T16:23:09+05:30</published>
+    <updated>2024-04-10T16:23:09+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/mica-fluted-wine-glass-set-of-four"/>
+    <title>Mica Fluted Wine Glass - Set Of Four</title>
+    <s:type>Wine &amp; Champagne Glass</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ015_1.jpg?v=1712742181"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Wine &amp; Champagne Glass<br>
+        <strong>Price: </strong>
+            2200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Hey there, wine enthusiasts and glassware aficionados, get ready to elevate your sipping experience with this chic glass!</p>
+<p>1. The product includes set of 4 glasses.
+<br>2. The size of the mug is (10.62x10.62x9 inches) or (7.6x7.6x23 cm).
+<br>3. The capacity of the product is 300 ml.
+<br>4. The material of the product is glass.
+<br>5. The weight of the product is 600 gm.
+<br>6. The product is dishwasher safe and microwave safe</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Glass</s:tag>
+    <s:tag>Wine &amp; Champagne Glass</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128482550</id>
+      <title>300ml</title>
+      <s:price currency="INR">2200.00</s:price>
+      <s:sku>TTFJ015</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128449782</id>
+    <published>2024-04-10T16:23:07+05:30</published>
+    <updated>2024-04-10T16:23:07+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/love-you-always-mug-set-of-two"/>
+    <title>Love You Always Mug - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ013_2.jpg?v=1712734283"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            800.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (3.26x3.26x3.5 inches) or (9.6x9.6x9.6 cm).
+<br>3. The capacity of the product is 350 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 680 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128449782</id>
+      <title>350ml</title>
+      <s:price currency="INR">800.00</s:price>
+      <s:sku>TTFJ013</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128351478</id>
+    <published>2024-04-10T16:23:05+05:30</published>
+    <updated>2024-04-10T16:23:05+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/romeo-heart-mug-pink-set-of-two"/>
+    <title>Romeo Heart Mug (Red) - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ012_1.jpg?v=1712742264"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            800.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (3.26x3.26x3.5 inches) or (8.3x8.3x8.9 cm).
+<br>3. The capacity of the product is 350 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 640 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128351478</id>
+      <title>350ml</title>
+      <s:price currency="INR">800.00</s:price>
+      <s:sku>TTFJ012</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128253174</id>
+    <published>2024-04-10T16:23:03+05:30</published>
+    <updated>2024-04-10T16:23:03+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/romeo-heart-mug-red-set-of-two"/>
+    <title>Romeo Heart Mug (Pink) - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ011_1.jpg?v=1712742274"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            800.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (3.26x3.26x3.5 inches) or (8.3x8.3x8.9 cm).
+<br>3. The capacity of the product is 350 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 640 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128253174</id>
+      <title>350ml</title>
+      <s:price currency="INR">800.00</s:price>
+      <s:sku>TTFJ011</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128220406</id>
+    <published>2024-04-10T16:23:01+05:30</published>
+    <updated>2024-04-10T16:23:01+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/melva-ribbed-tumbler-set-of-two"/>
+    <title>Melva Ribbed Tumbler - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ009_2.jpg?v=1712734243"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            1200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (2.99x2.99x5 inches) or (7.6x7.6x12.7 cm).
+<br>3. The capacity of the product is 350 ml.
+<br>4. The material of the product is Stoneware.
+<br>5. The weight of the product is 770 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128220406</id>
+      <title>400ml</title>
+      <s:price currency="INR">1200.00</s:price>
+      <s:sku>TTFJ009</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128187638</id>
+    <published>2024-04-10T16:22:59+05:30</published>
+    <updated>2024-04-10T16:22:59+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/fasia-ocean-mug-set-of-two"/>
+    <title>Fasia Ocean Mug - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ010_2.jpg?v=1712734252"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            1100.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (3.5x3.5x3.77 inches) or (8.9x8.9x9.6 cm).
+<br>3. The capacity of the product is 350 ml.
+<br>4. The material of the product is Stoneware.
+<br>5. The weight of the product is 600 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128187638</id>
+      <title>350ml</title>
+      <s:price currency="INR">1100.00</s:price>
+      <s:sku>TTFJ010</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128056566</id>
+    <published>2024-04-10T16:22:57+05:30</published>
+    <updated>2024-04-10T16:22:57+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/resse-stackable-khullad-set-of-four"/>
+    <title>Resse Stackable Khullad - Set Of Four</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ008_1.jpg?v=1712742255"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            1500.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With their sleek design and earthy aesthetic, they add a touch of rustic charm to your coffee routine. Plus, they're microwave safe, so you can enjoy your brew hassle-free.</p>
+<p>1. The product includes set of 4 mugs.
+<br>2. The size of the mug is (2.99x2.99x3.14 inches) or (7.6x7.6x8 cm).
+<br>3. The capacity of the product is 200 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 850 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128056566</id>
+      <title>200ml</title>
+      <s:price currency="INR">1500.00</s:price>
+      <s:sku>TTFJ008</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474128023798</id>
+    <published>2024-04-10T16:22:55+05:30</published>
+    <updated>2024-04-10T16:22:55+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/paxa-serving-bowl-set-of-two"/>
+    <title>Paxa Serving Bowl - Set Of Two</title>
+    <s:type>Pasta Plate</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ007_2.jpg?v=1712742217"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Pasta Plate<br>
+        <strong>Price: </strong>
+            1700.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're hosting a fancy dinner party, a cozy brunch with friends, or simply treating yourself to a solo dessert date, the bowl is the perfect companion.</p>
+<p>1. The product includes set of 2 plates.
+<br>2. The size of the mug is (7.59x7.59x1.96 inches) or (19.3x19.3x5 cm).
+<br>3. The material of the product is stoneware.
+<br>4. The weight of the product is 595 gm.
+<br>5. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Pasta Plate</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474128023798</id>
+      <title>7.59x7.59x1.96 inch</title>
+      <s:price currency="INR">1700.00</s:price>
+      <s:sku>TTFJ007</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474127991030</id>
+    <published>2024-04-10T16:22:53+05:30</published>
+    <updated>2024-04-10T16:22:53+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/arora-serveware-combo-sky-blue-four-piece-set"/>
+    <title>Arora Serveware Combo (Sky Blue) - Four Piece Set</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ006_3.jpg?v=1712734203"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            2200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>You're craving that perfect cup of tea to warm your soul and soothe your senses. All you need is the perfect vessel to pour it into and a stylish tray to hold it all together. </p>
+<p>1. The product includes set of 2 mugs and 2 plates.
+<br>2. The size of the product is 
+<br>Mug: (2.99x2.99x2.7 inches) or (7.6x7.6x7 cm).
+<br>Plate: (6.96x5 inches) or (17.7x12.7 cm).
+<br>3. The capacity of the mug is 200 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 1280 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474127991030</id>
+      <title>Bundles</title>
+      <s:price currency="INR">2200.00</s:price>
+      <s:sku>TTFJ006</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474127958262</id>
+    <published>2024-04-10T16:22:50+05:30</published>
+    <updated>2024-04-10T16:22:50+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/arora-serveware-combo-olive-four-piece-set"/>
+    <title>Arora Serveware Combo (Olive) - Four Piece Set</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ005_3.jpg?v=1712734191"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            2200.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>You're craving that perfect cup of tea to warm your soul and soothe your senses. All you need is the perfect vessel to pour it into and a stylish tray to hold it all together. </p>
+<p>1. The product includes set of 2 mugs and 2 plates.
+<br>2. The size of the product is
+<br>Mug: (2.99x2.99x2.7 inches) or (7.6x7.6x7 cm).
+<br>Plate: (6.96x5 inches) or (17.7x12.7 cm).
+<br>3. The capacity of the mug is 200 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 1280 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474127958262</id>
+      <title>Bundles</title>
+      <s:price currency="INR">2200.00</s:price>
+      <s:sku>TTFJ005</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474127892726</id>
+    <published>2024-04-10T16:22:48+05:30</published>
+    <updated>2024-04-10T16:22:48+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/masava-muse-mug-set-of-two"/>
+    <title>Masava Muse Mug - Set Of Two</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_TTFJ003_1.jpg?v=1712742137"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            1300.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're starting your day with a steaming cup of coffee, winding down with a soothing herbal tea, or indulging in a decadent hot chocolate, do it in style with the mug. Because every morning should begin with a little bit of comfort and a whole lot of flavor!</p>
+<p>1. The product includes set of 2 mugs.
+<br>2. The size of the mug is (3.46x3.46x3.4.92 inches) or (8.8x8.8x12.5 cm).
+<br>3. The capacity of the product is 400 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 700 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474127892726</id>
+      <title>400ml</title>
+      <s:price currency="INR">1300.00</s:price>
+      <s:sku>TTFJ003</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474127794422</id>
+    <published>2024-04-10T16:22:44+05:30</published>
+    <updated>2024-04-10T16:22:44+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/chirp-tableware-combo-four-piece-set"/>
+    <title>Chirp Tableware Combo - Four Piece Set</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_TTFJ004_2.jpg?v=1712734182"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            1998.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>This delightful duo includes a charming mug and a matching plate, both crafted from high-quality stoneware. But these pieces are more than just functional – they're bursting with personality!</p>
+<p>1. The product includes set of 2 plates and 2 mugs.
+<br>2. The size of the product is
+<br>Mug: (2.99x2.99x2.7 inches) or (7.6x7.6x7 cm).
+<br>Plate: (7.4x7.4 inches) or (19x19 cm).
+<br>3. The capacity of the mug is 200 ml.
+<br>4. The material of the product is stoneware.
+<br>5. The weight of the product is 1280 gm.
+<br>6. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474127794422</id>
+      <title>Bundles</title>
+      <s:price currency="INR">1998.00</s:price>
+      <s:sku>TTFJ004</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474127761654</id>
+    <published>2024-04-10T16:22:42+05:30</published>
+    <updated>2024-04-10T16:22:42+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/thora-flora-dessert-plate-set-of-two"/>
+    <title>Thora Flora Dessert Plate - Set Of Two</title>
+    <s:type>Quarter Plate</s:type>
+    <s:vendor>The Table Fable</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0002_TTFJ002_2.jpg?v=1712742311"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>The Table Fable<br>
+        <strong>Type: </strong>Quarter Plate<br>
+        <strong>Price: </strong>
+            1400.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're hosting a fancy dinner party, a cozy brunch with friends, or simply treating yourself to a solo dessert date, the dessert plate is the perfect companion.</p>
+<p>1. The product includes set of 2 plates.
+<br>2. The size of the mug is (5.9x5.9x3.0.98 inches) or (15x15x2.5 cm).
+<br>3. The material of the product is stoneware.
+<br>4. The weight of the product is 445 gm.
+<br>5. The product is not dishwasher and microwave safe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Quarter Plate</s:tag>
+    <s:tag>Stoneware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474127761654</id>
+      <title>5.9x5.9x3.0.98 inch</title>
+      <s:price currency="INR">1400.00</s:price>
+      <s:sku>TTFJ002</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8470312550646</id>
+    <published>2024-04-09T15:56:07+05:30</published>
+    <updated>2024-04-09T15:56:07+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/yerava-basket-with-bowl-set-of-four"/>
+    <title>Yerava Basket With Bowl - Set Of Four</title>
+    <s:type>Platter</s:type>
+    <s:vendor>Amaya Decors</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_IMG_0303.jpg?v=1712644849"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Amaya Decors<br>
+        <strong>Type: </strong>Platter<br>
+        <strong>Price: </strong>
+            2599.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With its rustic charm and unique design, it adds a touch of warmth and character to your kitchen counter or dining table. It is the perfect solution for serving snacks and dry fruits.</p>
+<p>1. The product includes a set of 3 bowl and 1 tray. 
+<br>2. The size of the product is
+<br>Bowl:  (5.0x5.0x2.0 inches) or (12.7x12.7x5.08 cms) 
+<br>Tray:  (12.0x5.0x3.0 inches) or (30x13x8 cms) 
+<br>3. The material of the product is iron 
+<br>4. The weight of the product is 1800 gm. 
+<br>5. Wipe with a soft, dry cloth.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Aluminum</s:tag>
+    <s:tag>Dining</s:tag>
+    <s:tag>Platter</s:tag>
+    <s:tag>Trays &amp; Platters</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8470312550646</id>
+      <title>Bundles</title>
+      <s:price currency="INR">2599.00</s:price>
+      <s:sku>Food_131</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8468265009398</id>
+    <published>2024-04-09T15:56:07+05:30</published>
+    <updated>2024-04-09T15:56:07+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/stardust-platter-set-of-two"/>
+    <title>Stardust Platter - Set Of Two</title>
+    <s:type>Platter</s:type>
+    <s:vendor>Amaya Decors</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_IMG_4557.jpg?v=1712649828"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Amaya Decors<br>
+        <strong>Type: </strong>Platter<br>
+        <strong>Price: </strong>
+            1299.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Imagine presenting a sumptuous array of hors d'oeuvres or decadent desserts on this exquisite platter, transforming even the simplest dish into a feast for the eyes as well as the palate.</p>
+<p>1. The product includes a set of 2 platters. 
+<br>2. The size of the product is (9.8x9.8x0.8 inches) or (25x25x2 cms) 
+<br>3. The material of the product is mild steel. 
+<br>4. The weight of the product is 700 gm. 
+<br>5. Wipe with a soft, dry cloth.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Aluminum</s:tag>
+    <s:tag>Dining</s:tag>
+    <s:tag>Platter</s:tag>
+    <s:tag>Trays &amp; Platters</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8468265009398</id>
+      <title>9.8x9.8x0.8 inch</title>
+      <s:price currency="INR">1299.00</s:price>
+      <s:sku>Food_133</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8470346825974</id>
+    <published>2024-04-09T15:54:25+05:30</published>
+    <updated>2024-04-09T15:54:25+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/filter-coffee-elegance-davara-set-set-of-four"/>
+    <title>Filter Coffee Elegance Davara Set - Set Of Four</title>
+    <s:type>Mug &amp; Tea Cup</s:type>
+    <s:vendor>Amaya Decors</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0002_IMG_3485.jpg?v=1712647231"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Amaya Decors<br>
+        <strong>Type: </strong>Mug &amp; Tea Cup<br>
+        <strong>Price: </strong>
+            2999.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>With the ideal Davara set, you can enjoy the true flavor of filter coffee in a traditional setting. handmade using traditional methods for contemporary convenience. This set is perfect for both your regular filter coffee rituals and a great gift you give to friends and family.</p>
+<p>1. The product includes set of 4 davara.
+<br>2. The size of the product is
+<br>Glass: (2x2x2.8 inches) or (5x5x7 cm).
+<br>Mug: (2.8x2.82x2 inches) or (7x7x5 cm)
+<br>3. The capacity of the product is 90 ml.
+<br>4. The material of the product is brass.
+<br>5. The weight of the product is 800 gm.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Brass</s:tag>
+    <s:tag>Dining</s:tag>
+    <s:tag>Gold</s:tag>
+    <s:tag>Mug &amp; Tea Cup</s:tag>
+    <s:tag>Mugs Cups &amp; Drinkware</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8470346825974</id>
+      <title>90ml</title>
+      <s:price currency="INR">2999.00</s:price>
+      <s:sku>Food_119</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8468278280438</id>
+    <published>2024-04-09T15:54:16+05:30</published>
+    <updated>2024-04-09T15:54:16+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/peacock-pose-ethnic-tray"/>
+    <title>Peacock Pose Ethnic Tray</title>
+    <s:type>Serving Tray</s:type>
+    <s:vendor>Amaya Decors</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_Green_Peacock_SIngle_Tray.jpg?v=1712649469"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Amaya Decors<br>
+        <strong>Type: </strong>Serving Tray<br>
+        <strong>Price: </strong>
+            899.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Made from high-quality materials, it offers a sturdy and reliable surface for serving drinks, appetizers, desserts, and more. Turning your serving moments into delightful dreamscape experiences! </p>
+<p>1. The product includes 1 serving tray.
+<br>2. The size of the product is (9.8x9.8x2.4 inches) or (25x25x6 cms).
+<br>3. The weight of the product is 600 gm.
+<br>4. The material of the product is iron.
+<br>5. Wipe with a damp cloth. Store dry after use.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Iron</s:tag>
+    <s:tag>Serving Tray</s:tag>
+    <s:tag>Trays &amp; Platters</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8468278280438</id>
+      <title>9.8x9.8x2.4 inch</title>
+      <s:price currency="INR">899.00</s:price>
+      <s:sku>Food_127</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8468278149366</id>
+    <published>2024-04-09T15:54:15+05:30</published>
+    <updated>2024-04-09T15:54:15+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/nelasa-ethnic-tray"/>
+    <title>Nelasa Ethnic Tray</title>
+    <s:type>Serving Tray</s:type>
+    <s:vendor>Amaya Decors</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_IMG_3278.jpg?v=1712647816"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Amaya Decors<br>
+        <strong>Type: </strong>Serving Tray<br>
+        <strong>Price: </strong>
+            899.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Made from high-quality materials, it offers a sturdy and reliable surface for serving drinks, appetizers, desserts, and more. Turning your serving moments into delightful dreamscape experiences! </p>
+<p>1. The product includes 1 serving tray.
+<br>2. The size of the product is (9.8x9.8x2.4 inches) or (25x25x6 cms).
+<br>3. The weight of the product is 400 gm.
+<br>4. The material of the product is iron.
+<br>5. Wipe with a damp cloth. Store dry after use.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>Dining</s:tag>
+    <s:tag>Iron</s:tag>
+    <s:tag>Serving Tray</s:tag>
+    <s:tag>Trays &amp; Platters</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8468278149366</id>
+      <title>9.8x9.8x2.4 inch</title>
+      <s:price currency="INR">899.00</s:price>
+      <s:sku>Food_150</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>

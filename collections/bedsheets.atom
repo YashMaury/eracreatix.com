@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://vaaree.com/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://vaaree.com/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://vaaree.com/collections/bedsheets.atom"/>
+  <title>Vaaree</title>
+  <updated>2024-04-10T19:29:58+05:30</updated>
+  <author>
+    <name>Vaaree</name>
+  </author>
+  <entry>
+    <id>https://vaaree.com/products/8474591265014</id>
+    <published>2024-04-10T19:29:58+05:30</published>
+    <updated>2024-04-10T19:29:58+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/yana-solid-bedsheet-light-pink"/>
+    <title>Yana Solid Bedsheet - Light Pink</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_MEL-PINK-1.jpg?v=1712754975"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1500.00 - 1680.00
+            <a href="https://vaaree.com/products/yana-solid-bedsheet-light-pink">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Solids</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591265014</id>
+      <title>Queen</title>
+      <s:price currency="INR">1500.00</s:price>
+      <s:sku>MEL-PINK-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591265014</id>
+      <title>King</title>
+      <s:price currency="INR">1680.00</s:price>
+      <s:sku>MEL-PINK-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474609352950</id>
+    <published>2024-04-10T19:28:37+05:30</published>
+    <updated>2024-04-10T19:28:37+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/mazaya-stripe-bedsheet-blue"/>
+    <title>Mazaya Stripe Bedsheet - Blue</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_IN-180-30A-L_2.jpg?v=1712754941"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1302.00 - 1470.00
+            <a href="https://vaaree.com/products/mazaya-stripe-bedsheet-blue">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Geometric</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474609352950</id>
+      <title>Queen</title>
+      <s:price currency="INR">1302.00</s:price>
+      <s:sku>IN-180-30A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474609352950</id>
+      <title>Super King</title>
+      <s:price currency="INR">1470.00</s:price>
+      <s:sku>IN-180-30A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474609189110</id>
+    <published>2024-04-10T19:28:36+05:30</published>
+    <updated>2024-04-10T19:28:36+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/nesa-flora-stripe-green-peach"/>
+    <title>Nesa Flora Stripe - Green &amp; Peach</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_IN-180-24B-L_2.jpg?v=1712753834"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1302.00 - 1470.00
+            <a href="https://vaaree.com/products/nesa-flora-stripe-green-peach">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474609189110</id>
+      <title>Queen</title>
+      <s:price currency="INR">1302.00</s:price>
+      <s:sku>IN-180-24B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474609189110</id>
+      <title>Super King</title>
+      <s:price currency="INR">1470.00</s:price>
+      <s:sku>IN-180-24B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474591297782</id>
+    <published>2024-04-10T19:28:35+05:30</published>
+    <updated>2024-04-10T19:28:35+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/yana-solid-bedsheet-light-blue"/>
+    <title>Yana Solid Bedsheet - Light Blue</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_MEL-SKYBLUE-1.jpg?v=1712754967"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1500.00 - 1680.00
+            <a href="https://vaaree.com/products/yana-solid-bedsheet-light-blue">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Solids</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591297782</id>
+      <title>Queen</title>
+      <s:price currency="INR">1500.00</s:price>
+      <s:sku>MEL-SKYBLUE-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591297782</id>
+      <title>King</title>
+      <s:price currency="INR">1680.00</s:price>
+      <s:sku>MEL-SKYBLUE-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474591199478</id>
+    <published>2024-04-10T19:28:34+05:30</published>
+    <updated>2024-04-10T19:28:34+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/yana-solid-bedsheet-aqua"/>
+    <title>Yana Solid Bedsheet - Aqua</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_MEL-AQUA-1.jpg?v=1712754984"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1500.00 - 1680.00
+            <a href="https://vaaree.com/products/yana-solid-bedsheet-aqua">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Solids</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591199478</id>
+      <title>Queen</title>
+      <s:price currency="INR">1500.00</s:price>
+      <s:sku>MEL-AQUA-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591199478</id>
+      <title>King</title>
+      <s:price currency="INR">1680.00</s:price>
+      <s:sku>MEL-AQUA-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474591101174</id>
+    <published>2024-04-10T19:28:33+05:30</published>
+    <updated>2024-04-10T19:28:33+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/yana-solid-bedsheet-beige"/>
+    <title>Yana Solid Bedsheet - Beige</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_MEL-BEIGE-1.jpg?v=1712754993"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1500.00 - 1680.00
+            <a href="https://vaaree.com/products/yana-solid-bedsheet-beige">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Solids</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591101174</id>
+      <title>Queen</title>
+      <s:price currency="INR">1500.00</s:price>
+      <s:sku>MEL-BEIGE-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591101174</id>
+      <title>King</title>
+      <s:price currency="INR">1680.00</s:price>
+      <s:sku>MEL-BEIGE-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474591035638</id>
+    <published>2024-04-10T19:28:33+05:30</published>
+    <updated>2024-04-10T19:28:33+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/ebba-floral-bedsheet-yellow"/>
+    <title>Ebba Floral Bedsheet - Yellow</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_PR-06A-1.jpg?v=1712755004"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1399.00 - 1564.29
+            <a href="https://vaaree.com/products/ebba-floral-bedsheet-yellow">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Abstract</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591035638</id>
+      <title>Queen</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>PR-06A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474591035638</id>
+      <title>Super King</title>
+      <s:price currency="INR">1564.29</s:price>
+      <s:sku>PR-06A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590970102</id>
+    <published>2024-04-10T19:28:32+05:30</published>
+    <updated>2024-04-10T19:28:32+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/ebba-floral-bedsheet-grey"/>
+    <title>Ebba Floral Bedsheet - Grey</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_PR-03A-1.jpg?v=1712755014"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1399.00 - 1564.29
+            <a href="https://vaaree.com/products/ebba-floral-bedsheet-grey">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Abstract</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590970102</id>
+      <title>Queen</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>PR-03A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590970102</id>
+      <title>Super King</title>
+      <s:price currency="INR">1564.29</s:price>
+      <s:sku>PR-03A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590871798</id>
+    <published>2024-04-10T19:28:31+05:30</published>
+    <updated>2024-04-10T19:28:31+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/oda-floral-bedsheet-beige"/>
+    <title>Oda Floral Bedsheet - Beige</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_PR-05B-1.jpg?v=1712755027"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1399.00 - 1564.29
+            <a href="https://vaaree.com/products/oda-floral-bedsheet-beige">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590871798</id>
+      <title>Queen</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>PR-05B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590871798</id>
+      <title>Super King</title>
+      <s:price currency="INR">1564.29</s:price>
+      <s:sku>PR-05B</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590740726</id>
+    <published>2024-04-10T19:28:30+05:30</published>
+    <updated>2024-04-10T19:28:30+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/ritana-floral-bedsheet-brown"/>
+    <title>Ritana Floral Bedsheet - Brown</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_02_8bd12fb2-f773-435c-a277-1bd3cc2c7751.jpg?v=1712753797"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/ritana-floral-bedsheet-brown">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590740726</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-27B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590740726</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-27B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590707958</id>
+    <published>2024-04-10T19:28:29+05:30</published>
+    <updated>2024-04-10T19:28:29+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/ritana-floral-bedsheet-green"/>
+    <title>Ritana Floral Bedsheet - Green</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_02_3bd0f9d0-2dcd-4501-a547-e67869dc3650.jpg?v=1712755060"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/ritana-floral-bedsheet-green">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590707958</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-27A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590707958</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-27A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590642422</id>
+    <published>2024-04-10T19:28:28+05:30</published>
+    <updated>2024-04-10T19:28:28+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/tropical-paradise-bedsheet-buff"/>
+    <title>Tropical Paradise Bedsheet - Buff</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_02_6b95d095-ebbc-419d-abfd-16d2db5221a3.jpg?v=1712755076"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/tropical-paradise-bedsheet-buff">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590642422</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-26B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590642422</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-26B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590609654</id>
+    <published>2024-04-10T19:28:27+05:30</published>
+    <updated>2024-04-10T19:28:27+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/tropical-paradise-bedsheet-green"/>
+    <title>Tropical Paradise Bedsheet - Green</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0003_02_3722f914-b8bf-4d19-b7d2-fef4ac7f5d53.jpg?v=1712755101"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/tropical-paradise-bedsheet-green">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590609654</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-26A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590609654</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-26A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590511350</id>
+    <published>2024-04-10T19:28:26+05:30</published>
+    <updated>2024-04-10T19:28:26+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/helga-floral-bedsheet-pink"/>
+    <title>Helga Floral Bedsheet - Pink</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0003_02.jpg?v=1712755114"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/helga-floral-bedsheet-pink">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590511350</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-25B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590511350</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-25B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590445814</id>
+    <published>2024-04-10T19:28:25+05:30</published>
+    <updated>2024-04-10T19:28:25+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/helga-floral-bedsheet-yellow"/>
+    <title>Helga Floral Bedsheet - Yellow</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_02.jpg?v=1712755127"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/helga-floral-bedsheet-yellow">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590445814</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-25A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590445814</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-25A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590413046</id>
+    <published>2024-04-10T19:28:24+05:30</published>
+    <updated>2024-04-10T19:28:24+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/jasera-ethnic-bedsheet-buff"/>
+    <title>Jasera Ethnic Bedsheet - Buff</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_02_8fa59665-7d2e-4cf4-a68f-89558f21d156.jpg?v=1712755159"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/jasera-ethnic-bedsheet-buff">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Ethnic</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590413046</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-24B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590413046</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-24B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590314742</id>
+    <published>2024-04-10T19:28:22+05:30</published>
+    <updated>2024-04-10T19:28:22+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/jasera-ethnic-bedsheet-grey"/>
+    <title>Jasera Ethnic Bedsheet - Grey</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_02_843c198d-cf43-4866-8c2b-68944bb2784c.jpg?v=1712755193"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/jasera-ethnic-bedsheet-grey">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Ethnic</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590314742</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-24A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590314742</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-24A</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590216438</id>
+    <published>2024-04-10T19:28:21+05:30</published>
+    <updated>2024-04-10T19:28:21+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/birdie-love-floral-bedsheet-purple"/>
+    <title>Birdie Love Floral Bedsheet - Purple</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_02_ec0e8e62-aad4-426e-94a2-8962dff5babd.jpg?v=1712754018"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/birdie-love-floral-bedsheet-purple">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590216438</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-22B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590216438</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-22B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590150902</id>
+    <published>2024-04-10T19:28:20+05:30</published>
+    <updated>2024-04-10T19:28:20+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/birdie-love-floral-bedsheet-olive-green"/>
+    <title>Birdie Love Floral Bedsheet - Olive Green</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_02_54c452f1-5401-474f-8e41-c4b2e9c4a0e9.jpg?v=1712755227"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/birdie-love-floral-bedsheet-olive-green">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590150902</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-22A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590150902</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-22A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590085366</id>
+    <published>2024-04-10T19:28:19+05:30</published>
+    <updated>2024-04-10T19:28:19+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/odeya-floral-bedsheet-light-blue"/>
+    <title>Odeya Floral Bedsheet - Light Blue</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_02_c53ec910-12b1-4bfd-b94d-222a3a23a013.jpg?v=1712754105"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/odeya-floral-bedsheet-light-blue">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590085366</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-21B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590085366</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-21B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474590052598</id>
+    <published>2024-04-10T19:28:18+05:30</published>
+    <updated>2024-04-10T19:28:18+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/odeya-floral-bedsheet-tea-green"/>
+    <title>Odeya Floral Bedsheet - Tea Green</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_02_ac75014e-5085-4736-a4b6-17551b7e189b.jpg?v=1712753994"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1197.00 - 1399.00
+            <a href="https://vaaree.com/products/odeya-floral-bedsheet-tea-green">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590052598</id>
+      <title>Queen</title>
+      <s:price currency="INR">1197.00</s:price>
+      <s:sku>EVT-21A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474590052598</id>
+      <title>Super King</title>
+      <s:price currency="INR">1399.00</s:price>
+      <s:sku>EVT-21A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474589954294</id>
+    <published>2024-04-10T19:28:17+05:30</published>
+    <updated>2024-04-10T19:28:17+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/liah-floral-bedsheet-white-yellow"/>
+    <title>Liah Floral Bedsheet - White &amp; Yellow</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0003_BER-07_2.jpg?v=1712755256"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            966.00 - 1113.00
+            <a href="https://vaaree.com/products/liah-floral-bedsheet-white-yellow">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589954294</id>
+      <title>Queen</title>
+      <s:price currency="INR">966.00</s:price>
+      <s:sku>BER-07A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589954294</id>
+      <title>Super King</title>
+      <s:price currency="INR">1113.00</s:price>
+      <s:sku>BER-07A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474589921526</id>
+    <published>2024-04-10T19:28:16+05:30</published>
+    <updated>2024-04-10T19:28:16+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/mazaya-stripe-bedsheet-brown"/>
+    <title>Mazaya Stripe Bedsheet - Brown</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_IN-180-30B-L_2.jpg?v=1712755175"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1302.00 - 1470.00
+            <a href="https://vaaree.com/products/mazaya-stripe-bedsheet-brown">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Whether you're snuggling up for a movie marathon, catching up on some much-needed Z's, or simply lounging around on a lazy Sunday morning, do it in style and comfort with this bedsheet. Trust us, your bed will thank you for it!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Geometric</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589921526</id>
+      <title>Super King</title>
+      <s:price currency="INR">1470.00</s:price>
+      <s:sku>IN-180-30B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589921526</id>
+      <title>Queen</title>
+      <s:price currency="INR">1302.00</s:price>
+      <s:sku>IN-180-30B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474589823222</id>
+    <published>2024-04-10T19:28:15+05:30</published>
+    <updated>2024-04-10T19:28:15+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/eira-floral-bedsheet-red"/>
+    <title>Eira Floral Bedsheet - Red</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0001_IN-180-29B-L_2.jpg?v=1712755272"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1302.00 - 1470.00
+            <a href="https://vaaree.com/products/eira-floral-bedsheet-red">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589823222</id>
+      <title>Queen</title>
+      <s:price currency="INR">1302.00</s:price>
+      <s:sku>IN-180-29B-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589823222</id>
+      <title>Super King</title>
+      <s:price currency="INR">1470.00</s:price>
+      <s:sku>IN-180-29B-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://vaaree.com/products/8474589790454</id>
+    <published>2024-04-10T19:28:13+05:30</published>
+    <updated>2024-04-10T19:28:13+05:30</updated>
+    <link rel="alternate" type="text/html" href="https://vaaree.com/products/eira-floral-bedsheet-yellow"/>
+    <title>Eira Floral Bedsheet - Yellow</title>
+    <s:type>Bedsheets</s:type>
+    <s:vendor>Athena Decor</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0000_IN-180-29A-L_2.jpg?v=1712753972"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Vendor: </strong>Athena Decor<br>
+        <strong>Type: </strong>Bedsheets<br>
+        <strong>Price: </strong>
+            1302.00 - 1470.00
+            <a href="https://vaaree.com/products/eira-floral-bedsheet-yellow">(2 variants)</a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Crafted with comfort and quality in mind, our bedsheets are made from premium, breathable materials that ensure a cozy and restful night's sleep. No more tossing and turning – just pure, uninterrupted slumber wrapped in floral elegance.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:tag>100% Cotton</s:tag>
+    <s:tag>Bedding</s:tag>
+    <s:tag>Bedsheets</s:tag>
+    <s:tag>Floral</s:tag>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589790454</id>
+      <title>Queen</title>
+      <s:price currency="INR">1302.00</s:price>
+      <s:sku>IN-180-29A-Q</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+    <s:variant>
+      <id>https://vaaree.com/products/8474589790454</id>
+      <title>Super King</title>
+      <s:price currency="INR">1470.00</s:price>
+      <s:sku>IN-180-29A-K</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+</feed>
