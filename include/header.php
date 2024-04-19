@@ -11,7 +11,7 @@
     <link rel="canonical" href="index.html" />
     <link rel="preconnect" href="https://cdn.shopify.com/" crossorigin>
     <link rel="shortcut icon" type="image/png"
-        href="cdn/shop/files/apple-icon-152x152d3ee.png?v=1674062412&amp;width=32">
+     href="cdn/shop/files/apple-icon-152x152d3ee.png?v=1674062412&amp;width=32">
     <link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152"
         href="cdn/shop/files/apple-icon-152x152c78b.png?v=1674062412&amp;width=152">
     <title>Buy Best Home Decor Items &amp; Essentials Online At Best Prices &ndash; Era Creatix</title>
@@ -54,9 +54,9 @@
         style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"
         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+"
         loading="lazy">
-    <!-- <script defer src="cdn/shop/t/130/assets/searchtap-custome313.js?v=25382822671028881101708928283"></script>
+    <script defer src="cdn/shop/t/130/assets/searchtap-custome313.js?v=25382822671028881101708928283"></script>
     <script src="cdn/shop/t/130/assets/searchtap-config2ac1.js?v=99608339423431912041706333055"></script>
-    <script defer src="cdn/shop/t/130/assets/searchtap7941.js?v=114025972196429877671708928283"></script> -->
+    <script defer src="cdn/shop/t/130/assets/searchtap7941.js?v=114025972196429877671708928283"></script>
 
     <!-- DeltaX Media optimization Tag Added By AKO 30 11 23-->
     <!-- End of DeltaX Media optimization Tag -->
@@ -496,7 +496,7 @@
                             id="sticky-header-cart-container">
                             <a href="cart.html" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
                                 <span class="t4s-pr t4s-icon-cart__wrap">
-                                    <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true"
+                                     <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true"
                                         focusable="false" role="presentation">
                                         <use href="#icon-h-cart"></use>
                                     </svg>
