@@ -1,9 +1,7 @@
 <!doctype html>
 <html class="t4sp-theme is-header--stuck t4s-hsticky__ready t4s-wrapper__custom rtl_false swatch_color_style_1 pr_border_style_1 pr_img_effect_2 enable_eff_img1_true badge_shape_1 css_for_wis_app_true shadow_round_img_false t4s-header__categories is-remove-unavai-1 t4_compare_false t4s-cart-count-0 t4s-pr-ellipsis-false
  no-js" lang="en">
-
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
@@ -56,9 +54,9 @@
         style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"
         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+"
         loading="lazy">
-    <script defer src="cdn/shop/t/130/assets/searchtap-custome313.js?v=25382822671028881101708928283"></script>
+    <!-- <script defer src="cdn/shop/t/130/assets/searchtap-custome313.js?v=25382822671028881101708928283"></script>
     <script src="cdn/shop/t/130/assets/searchtap-config2ac1.js?v=99608339423431912041706333055"></script>
-    <script defer src="cdn/shop/t/130/assets/searchtap7941.js?v=114025972196429877671708928283"></script>
+    <script defer src="cdn/shop/t/130/assets/searchtap7941.js?v=114025972196429877671708928283"></script> -->
 
     <!-- DeltaX Media optimization Tag Added By AKO 30 11 23-->
     <!-- End of DeltaX Media optimization Tag -->
@@ -177,7 +175,7 @@
                             <div class="st-search-box hidden-mobile" style="">
                                 <div class="search-input-container">
                                     <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy"
-                                        src="../cdn.shopify.com/s/files/1/0632/2526/6422/files/search-icon-website5d10.png?v=1701943026"
+                                        src=""
                                         width="24" />
                                     <input type="text" autocomplete="off" placeholder="" name="q" id="st-search"
                                         class="st-search-input">
