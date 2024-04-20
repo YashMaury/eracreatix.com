@@ -1,3 +1,7 @@
+<?php
+include "include/config.php";
+?>
+
 <!doctype html>
 <html class="t4sp-theme is-header--stuck t4s-hsticky__ready t4s-wrapper__custom rtl_false swatch_color_style_1 pr_border_style_1 pr_img_effect_2 enable_eff_img1_true badge_shape_1 css_for_wis_app_true shadow_round_img_false t4s-header__categories is-remove-unavai-1 t4_compare_false t4s-cart-count-0 t4s-pr-ellipsis-false
  no-js" lang="en">
@@ -42,10 +46,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
-    <img alt="icon" id="svgicon" width="1400" height="1400"
-        style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;"
-        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+"
-        loading="lazy">
+    <img alt="icon" id="svgicon" width="1400" height="1400" style="pointer-events: none; position: absolute; top: 0; left: 0; width: 99vw; height: 99vh; max-width: 99vw; max-height: 99vh;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+" loading="lazy">
     <!-- <script defer src="cdn/shop/t/130/assets/searchtap-custome313.js?v=25382822671028881101708928283"></script>
     <script src="cdn/shop/t/130/assets/searchtap-config2ac1.js?v=99608339423431912041706333055"></script>
     <script defer src="cdn/shop/t/130/assets/searchtap7941.js?v=114025972196429877671708928283"></script>
@@ -178,13 +179,23 @@
                                     </symbol>
                                 </svg>
                                 <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
-                                    <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
-                                        <a class="t4s-pr" href="account/login4236.html">
-                                            <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
-                                                <use href="#icon-h-account"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
+                                    <?php if (isset($_SESSION['id'])) { ?>
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
+                                            <a class="t4s-pr" href="account/index.php">
+                                                <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
+                                                    <use href="#icon-h-account"></use> <?php echo $_SESSION['username']; ?>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    <?php } else { ?>
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
+                                            <a class="t4s-pr" href="login.php">
+                                                <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
+                                                    <use href="#icon-h-account"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    <?php } ?>
                                     <div class="t4s-site-nav__icon t4s-site-nav__cart">
                                         <a href="cart.html" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
                                             <span class="t4s-pr t4s-icon-cart__wrap">
@@ -212,31 +223,22 @@
                             <div class="t4s-col t4s-col-item">
                                 <nav class="t4s-navigation t4s-text-start t4s-nav__hover_sideup t4s-nav-arrow__true">
                                     <ul data-menu-nav id="t4s-nav-ul" class="t4s-nav__ul t4s-d-inline-flex t4s-flex-wrap t4s-align-items-center">
-                                        <li id="item_header-categories-menu-0" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
-                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections.php?item=bedding" target="_self">Lamps & Lightings</a>
-                                        </li>
-                                        <li id="item_b930d1ff-5fb3-41bf-aa6c-6a84c885b9a8" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
-                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections/home-furnishings.html" target="_self">Personalie Things</a>
-                                        </li>
-                                        <li id="item_header-categories-menu-1" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
-                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections/kitchen-decor.html" target="_self">Decorative Box</a>
-                                        </li>
-                                        <li id="item_6667f76b-8135-4bc7-89d1-5d1e0dece228" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
-                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections/dining-table-decor.html" target="_self">Dining
-                                            </a>
-                                        </li>
-                                        <li id="item_d03047e3-c9b7-40e4-b971-c6fad09372f9" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
-                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections/home-decor.html" target="_self">Decor</a>
-                                        </li>
-                                        <li id="item_mega_9B3cx3" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
-                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections/kids-room-decor.html" target="_self">Kids &
-                                                Children</a>
-                                        </li>
+
+                                        <?php $sql = mysqli_query($con, "select id,categoryName  from category limit 6");
+                                        while ($row = mysqli_fetch_array($sql)) {
+                                        ?>
+                                            <li id="item_header-categories-menu-<?php echo $row['id']; ?>" data-placement="bottom" class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets ">
+                                                <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="collections.php?cid=<?php echo $row['id']; ?>" target="_self">
+                                                    <?php echo $row['categoryName']; ?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+
                                         <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li>
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="t4s-col-2 t4s-text-end t4s-col-item t4s-h-cat__html t4s-rte">
+                            <div class="t4s-col-3 t4s-text-end t4s-col-item t4s-h-cat__html t4s-rte">
                                 <div class="return">
                                     <a href="apps/return_prime.html">Return/Exchange</a>
                                     <i class="las la-envelope fs__14 ml__15"></i> <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a>
@@ -284,8 +286,7 @@
                         <div class="t4s-site-nav__icon t4s-site-nav__cart sticky-header-cart-container" id="sticky-header-cart-container">
                             <a href="cart.html" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
                                 <span class="t4s-pr t4s-icon-cart__wrap">
-                                    <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true"
-                                        focusable="false" role="presentation">
+                                    <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true" focusable="false" role="presentation">
                                         <use href="#icon-h-cart"></use>
                                     </svg>
                                     <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
