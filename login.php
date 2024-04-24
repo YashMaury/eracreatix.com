@@ -3,7 +3,7 @@ include "include/header.php";
 ?>
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
   <div id="shopify-section-template--16885347680502__heading" class="shopify-section page_section_heading">
-    <link href="../cdn/shop/t/130/assets/heading-template.aio.min5aea.css?v=61707359511722682911705900732" rel="stylesheet" type="text/css" media="all" />
+    <link href="cdn/shop/t/130/assets/heading-template.aio.min.css" rel="stylesheet" type="text/css" media="all" />
     <div class="header-banner t4s-heading-fullwidth_false   lazyloadt4s" style="--space-padding-dk:50px;--space-padding-mb:50px;--space-mg-dk:50px;--space-mg-mb:50px;--bg-cl:#000000;--op:0.54;--bg_repeat:no-repeat;--bg_size:cover;--bg_pos:center center;--height-mobile:0px;--height-desktop:0px">
       <div class="page-head t4s-pr t4s-oh page_bg_img t4s-text-center">
         <div class="t4s-container t4s-pr t4s-z-100">
@@ -65,7 +65,6 @@ include "include/header.php";
           
           <a href="#recover" class="t4s-d-block">Forgot your password?</a>
           <a class="t4s-d-inline-block" href="register.php"> New customer? Create your account</a><br>
-          <!-- <a class="t4s-d-inline-block" href="../pages/otp-login.html"> Login with OTP</a><input type="hidden" name="return_url" value="/account" /> -->
         </form>
       </div>
       <script>
