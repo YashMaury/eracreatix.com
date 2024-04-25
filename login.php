@@ -41,7 +41,7 @@ include "include/header.php";
       </div>
 
       <div id="login">
-        <form method="post" action="account/auth.php" id="customer_login" accept-charset="UTF-8" data-login-with-shop-sign-in="true" novalidate="novalidate">
+        <form method="post" action="account/login.php" id="customer_login" accept-charset="UTF-8" data-login-with-shop-sign-in="true" novalidate="novalidate">
           <input type="hidden" name="form_type" value="customer_login" />
           <input type="hidden" name="utf8" value="✓" />
           <div class="t4s_field t4s-pr t4s_mb_30">

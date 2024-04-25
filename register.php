@@ -21,14 +21,27 @@ include "include/header.php";
   <section id="shopify-section-template--16885347680502__main" class="shopify-section t4s-section t4s-section-customers t4s-container">
     <div class="t4s-customer is--login t4s-text-start">
 
-      <div id="register">
+      <div id="register" style="width: 100%;">
+      <?php  include "_message.php"; ?>
         <form method="post" action="account/register.php" id="customer_register" accept-charset="UTF-8" novalidate="novalidate">
-          <input type="hidden" name="form_type" value="customer_login" />
+          <input type="hidden" name="form_type" value="customer_register" />
           <input type="hidden" name="utf8" value="✓" />
+          <div class="t4s_field t4s-pr t4s_mb_30">
+            <input class="t4s_frm_input" type="text" name="name" id="CustomerName" autocomplete="name" autocorrect="off" autocapitalize="off" placeholder="Name">
+            <label for="CustomerName">
+              Name <span class="required">*</span>
+            </label>
+          </div>
           <div class="t4s_field t4s-pr t4s_mb_30">
             <input class="t4s_frm_input" type="email" name="email" id="CustomerEmail" autocomplete="email" autocorrect="off" autocapitalize="off" placeholder="Email">
             <label for="CustomerEmail">
               Email <span class="required">*</span>
+            </label>
+          </div>
+          <div class="t4s_field t4s-pr t4s_mb_30">
+            <input class="t4s_frm_input" type="text" name="contactno" id="CustomerPhone" autocomplete="phone" autocorrect="off" autocapitalize="off" placeholder="Mobile No.">
+            <label for="CustomerEmail">
+              Mobile No. <span class="required">*</span>
             </label>
           </div>
           <div class="t4s_field t4s-pr t4s_mb_10">
@@ -47,6 +60,36 @@ include "include/header.php";
           <a class="t4s-d-inline-block" href="login.php"> Already have a account ? Login now</a><br>
         </form>
       </div>
+
+      <script>
+        function handleInputValidation(inputElements, submitButton) {
+          function updateButtonState() {
+            const allInputsValid = inputElements.every(input => input.value.trim() !== '');
+            if (allInputsValid) {
+              submitButton.removeAttribute('disabled');
+            } else {
+              submitButton.setAttribute('disabled', 'disabled');
+            }
+          }
+
+          inputElements.forEach(inputElement => {
+            inputElement.addEventListener('input', updateButtonState);
+          });
+
+          updateButtonState();
+        }
+        //Login Handler
+        var customerLoginEmail = document.getElementById("CustomerEmail");
+        var customerLoginPassword = document.getElementById("CustomerPassword");
+        var submitLoginButton = document.querySelector("#register .t4s_btn_submmit");
+        var loginInputs = [customerLoginEmail, customerLoginPassword]
+        handleInputValidation(loginInputs, submitLoginButton);
+
+        //Recover Password Handler
+        // var recoverEmail = document.getElementById("RecoverEmail");
+        // var submitButton = document.querySelector("#recover .t4s_btn_submmit");
+        // handleInputValidation([recoverEmail], submitButton);
+      </script>
       
     </div>
   </section>
