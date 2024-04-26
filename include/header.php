@@ -1,5 +1,7 @@
 <?php
 include "include/config.php";
+$num_cart = mysqli_query($con, "select count(id) as items from wishlist");
+$count_of_cart = mysqli_fetch_array($num_cart);
 ?>
 
 <!doctype html>
@@ -51,7 +53,7 @@ include "include/config.php";
     <script src="cdn/shop/t/130/assets/searchtap-config2ac1.js?v=99608339423431912041706333055"></script>
     <script defer src="cdn/shop/t/130/assets/searchtap7941.js?v=114025972196429877671708928283"></script>
 
-    <!-- DeltaX Media optimization Tag Added By AKO 30 11 23-->
+    DeltaX Media optimization Tag Added By AKO 30 11 23-->
     <!-- End of DeltaX Media optimization Tag -->
     <script src="cdn/shop/t/130/assets/starRatingGenerator6987.js?v=143208796052626417531708928283"></script>
     <script>
@@ -183,8 +185,8 @@ include "include/config.php";
                                         <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
                                             <a class="t4s-pr" href="account/index.php">
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
-                                                    <use href="#icon-h-account"></use> <?php echo $_SESSION['username']; ?>
-                                                </svg>
+                                                    <use href="#icon-h-account"></use>
+                                                </svg> <?php echo $_SESSION['username']; ?>
                                             </a>
                                         </div>
                                     <?php } else { ?>
@@ -197,12 +199,12 @@ include "include/config.php";
                                         </div>
                                     <?php } ?>
                                     <div class="t4s-site-nav__icon t4s-site-nav__cart">
-                                        <a href="cart.html" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
+                                        <a href="cart.php" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
                                             <span class="t4s-pr t4s-icon-cart__wrap">
                                                 <svg class="t4s-icon t4s-icon--cart" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-cart"></use>
                                                 </svg>
-                                                <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
+                                                <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box"><?= $count_of_cart['items'] ?></span>
                                             </span>
                                             <span class="t4s-h-cart-totals t4s-dn t4s-truncate">
                                                 <span class="t4s-h-cart__divider t4s-dn">/</span>
@@ -284,12 +286,12 @@ include "include/config.php";
 
 
                         <div class="t4s-site-nav__icon t4s-site-nav__cart sticky-header-cart-container" id="sticky-header-cart-container">
-                            <a href="cart.html" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
+                            <a href="cart.php" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
                                 <span class="t4s-pr t4s-icon-cart__wrap">
                                     <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true" focusable="false" role="presentation">
                                         <use href="#icon-h-cart"></use>
                                     </svg>
-                                    <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box">0</span>
+                                    <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box"><?= $count_of_cart['items'] ?></span>
                                 </span>
                                 <span class="t4s-h-cart-totals t4s-dn t4s-truncate">
                                     <span class="t4s-h-cart__divider t4s-dn">/</span>

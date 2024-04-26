@@ -66,9 +66,6 @@ include "include/header.php";
                     <?php
                     $ret = mysqli_query($con, "select * from products");
                     while ($row = mysqli_fetch_array($ret)) {
-                        # code...
-
-
                     ?>
 
                         <div class="t4s-product t4s-pr-grid t4s-pr-style1 t4s-pr-7970515943670  t4s-col-item" id="7970515943670" style="position: relative;" isrecommendation=false data-product-options='{ "id":"7970515943670","cusQty":"1","available":true, "handle":"fly-high-bar-accessories-set-of-seven", "isDefault": false, "VariantFirstID": 44903127843062, "customBadge":["_Deal Of The Day"], "customBadgeHandle":["_deal-of-the-day"],"dateStart":1676358983, "compare_at_price":479000,"price":137400, "isPreoder":false,"isExternal":false,"image2":"\/\/vaaree.com\/cdn\/shop\/products\/0002_04_46c3f5a0-115e-4977-9f1b-b2edb9cdd74f.jpg?v=1686911211\u0026width=1","alt":"Buy Fly High Bar Accessories - Set Of Seven at Vaaree online | Beautiful Cocktail Tools Set to choose from","isGrouped":false,"maxQuantity":9999 }'>
@@ -109,7 +106,7 @@ include "include/header.php";
                                         </div>
                                         <?php if ($row['productAvailability'] == 'In Stock') { ?>
                                             <div class="text-center">
-                                                <a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="btn btn-primary">
+                                                <a href="account/wishlist.php?pid=<?php echo htmlentities($row['id'])?>&&action=wishlist" class="btn btn-primary">
                                                     Add to Cart
                                                 </a>
                                             </div>
