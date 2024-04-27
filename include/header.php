@@ -189,6 +189,13 @@ $count_of_cart = mysqli_fetch_array($num_cart);
                                                 </svg> <?php echo $_SESSION['username']; ?>
                                             </a>
                                         </div>
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
+                                            <a class="t4s-pr" href="account/logout.php">
+                                                <svg class="t4s-icon t4s-icon--exit" aria-hidden="true" focusable="false" role="presentation">
+                                                    <use href="#icon-h-exit"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
                                     <?php } else { ?>
                                         <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
                                             <a class="t4s-pr" href="login.php">
