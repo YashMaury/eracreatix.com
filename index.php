@@ -1,8 +1,6 @@
 <?php
 include "include/header.php";
 ?>
-
-
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
     <section id="shopify-section-template--16885348139254__e21fd993-7204-4a35-aa17-d21b1c47ca2d" class="shopify-section t4s-section t4s_bk_flickity t4s-section-all t4s_tp_cdt t4s-featured-collections">
 
