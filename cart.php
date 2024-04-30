@@ -46,36 +46,42 @@ include "include/header.php";
             ?>
 
 
-                <?php
-                while ($row = mysqli_fetch_array($list)) {
-                ?>
 
-                    <form data-cart-content="" data-cart-wrapper="" action="/cart" method="post" novalidate="" class="t4s-cartPage__form t4s-pr t4s-oh">
-                        <div class="cart-page-product-list">
-                            <input type="hidden" data-cart-attr-rm="" name="attributes[collection_items_per_row]" value="">
-                            <div class="t4s-cartPage__header">
-                                <div class="t4s-row t4s-align-items-center cart-item">
-                                    <div class="t4s-col-item col-width-auto">Products Selected</div>
-                                    <div class="cart-item-data">
-                                        <div class="t4s-text-center">mrp</div>
-                                        <div class="t4s-text-center t4s-text-lg-end cart-item-final-price last-col">Final Price</div>
-                                    </div>
+                <form data-cart-content="" data-cart-wrapper="" action="/cart" method="post" novalidate="" class="t4s-cartPage__form t4s-pr t4s-oh">
+                    <div class="cart-page-product-list">
+                        <input type="hidden" data-cart-attr-rm="" name="attributes[collection_items_per_row]" value="">
+                        <div class="t4s-cartPage__header">
+                            <div class="t4s-row t4s-align-items-center cart-item">
+                                <div class="t4s-col-item col-width-auto">Products Selected</div>
+                                <div class="cart-item-data">
+                                    <div class="t4s-text-center">mrp</div>
+                                    <div class="t4s-text-center t4s-text-lg-end cart-item-final-price last-col">Final Price</div>
                                 </div>
                             </div>
-                            <div class="t4s-cartPage__items t4s_ratioadapt t4s-product" data-cart-items="">
-                                <div class="cart-page-heading-mobile">
-                                    <span class="t4s-back-to-shop" onclick="window.history.go(-1); return false;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 17 14" fill="none">
-                                            <rect x="1" y="6.60156" width="16" height="0.8" rx="0.4" fill="black"></rect>
-                                            <path d="M7.40039 1L1.40039 7L7.40039 13" stroke="black" stroke-linejoin="round"></path>
-                                        </svg>
-                                        <span class="cart-item-info-label cart-quantity-text underlined-text">Continue Shopping</span>
-                                    </span>
-                                    <span class="cart-item-info-label cart-quantity-text">
-                                        Your Cart
-                                        (<span data-cart-count="">1</span> items)
-                                    </span>
-                                </div>
+                        </div>
+                        <div class="t4s-cartPage__items t4s_ratioadapt t4s-product" data-cart-items="">
+                            <div class="cart-page-heading-mobile">
+                                <span class="t4s-back-to-shop" onclick="window.history.go(-1); return false;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 17 14" fill="none">
+                                        <rect x="1" y="6.60156" width="16" height="0.8" rx="0.4" fill="black"></rect>
+                                        <path d="M7.40039 1L1.40039 7L7.40039 13" stroke="black" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <span class="cart-item-info-label cart-quantity-text underlined-text">Continue Shopping</span>
+                                </span>
+                                <span class="cart-item-info-label cart-quantity-text">
+                                    Your Cart
+                                    (<span data-cart-count="">2</span> items)
+                                </span>
+                            </div>
+
+
+
+
+                            <?php
+                            while ($row = mysqli_fetch_array($list)) {
+                            ?>
+
+
                                 <link href="//cdn.shopify.com/s/files/1/0632/2526/6422/t/130/assets/mobile-view-cart-item-page.css?v=562703731360515491700811841" rel="stylesheet" type="text/css" media="all">
                                 <div data-cart-item="" class="t4s-page_cart__item">
                                     <div class="t4s-row t4s-gx-md-30 t4s-gx-15 cart-item">
@@ -99,7 +105,7 @@ include "include/header.php";
                                                             <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
                                                                     <use href="#icon-cart-remove"></use>
                                                                 </svg></button>
-                                                            <input data-action-change="" data-quantity-value="" type="number" id="miniupdates_46026505519350:7aa180011dc96f7b68b268edfcbc368d" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" class="t4s-quantity-input" step="1" min="0" max="12" name="updates[]" data-current-qty="1" value="1" size="4" pattern="[0-9]*" inputmode="numeric" onchange="
+                                                            <input data-action-change="" data-quantity-value="" type="number" id="miniupdates_46026505519350:7aa180011dc96f7b68b268edfcbc368d" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" class="t4s-quantity-input" step="1" min="0" max="11" name="updates[]" data-current-qty="1" value="1" size="4" pattern="[0-9]*" inputmode="numeric" onchange="
                             helper_functions.handleMixpanelRemoveElement(
                               event,
                               'Zen Zone Towel (Navy Blue) - Set Of Four',
@@ -143,7 +149,7 @@ include "include/header.php";
                                                     <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
                                                             <use href="#icon-cart-remove"></use>
                                                         </svg></button>
-                                                    <input data-action-change="" data-quantity-value="" type="number" id="miniupdates_46026505519350:7aa180011dc96f7b68b268edfcbc368d_quantity" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" class="t4s-quantity-input" step="1" min="0" max="12" name="updates[]" data-current-qty="1" value="1" size="4" pattern="[0-9]*" inputmode="numeric" onchange="
+                                                    <input data-action-change="" data-quantity-value="" type="number" id="miniupdates_46026505519350:7aa180011dc96f7b68b268edfcbc368d_quantity" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" class="t4s-quantity-input" step="1" min="0" max="11" name="updates[]" data-current-qty="1" value="1" size="4" pattern="[0-9]*" inputmode="numeric" onchange="
                   helper_functions.handleMixpanelRemoveElement(
                     event,
                     'Zen Zone Towel (Navy Blue) - Set Of Four',
@@ -171,7 +177,7 @@ include "include/header.php";
                                                 </span>
                                             </div>
                                             <div class=" t4s-text-md-center t4s-text-start delete-cart-item">
-                                                <a href="/cart/change?quantity=0&amp;id=46026505519350:7aa180011dc96f7b68b268edfcbc368d" rel="nofollow" class="t4s-page_cart__remove t4s-tooltip-actived" data-no-instant="" data-cart-remove="" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" data-tooltip="top-start" data-t4s-tooltip="Remove this item">
+                                                <a href="/cart/change?quantity=0&amp;id=46026505519350:7aa180011dc96f7b68b268edfcbc368d" rel="nofollow" class="t4s-page_cart__remove" data-no-instant="" data-cart-remove="" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" data-tooltip="top-start" data-t4s-tooltip="Remove this item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                         <path d="M6.6665 1.33203L5.99984 1.9987H2.6665V3.33203H3.33317V13.332C3.33317 13.6802 3.46072 14.0351 3.71208 14.2865C3.96343 14.5378 4.31836 14.6654 4.6665 14.6654H11.3332C11.6813 14.6654 12.0362 14.5378 12.2876 14.2865C12.539 14.0351 12.6665 13.6802 12.6665 13.332V3.33203H13.3332V1.9987H9.99984L9.33317 1.33203H6.6665ZM4.6665 3.33203H11.3332V13.332H4.6665V3.33203ZM5.99984 4.66536V11.9987H7.33317V4.66536H5.99984ZM8.6665 4.66536V11.9987H9.99984V4.66536H8.6665Z" fill="black"></path>
                                                     </svg>
@@ -180,101 +186,111 @@ include "include/header.php";
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
+
+
+                            <?php
+                            }
+                            ?>
+
+
                         </div>
-                        <div class="t4s-cartPage__footer">
-                            <div class="cart-page-checkout">
-                                <link href="cdn/shop/t/130/assets/main-cart-checkout.css" rel="stylesheet" type="text/css" media="all">
+                    </div>
+                    <div class="t4s-cartPage__footer">
+                        <div class="cart-page-checkout">
+                            <link href="cdn/shop/t/130/assets/main-cart-checkout.css" rel="stylesheet" type="text/css" media="all">
 
 
-                                <!-- Heading -->
-                                <div class="cart-checkout-heading">Cart Summary</div>
-                                <div class="checkout-note shipping-estimate" id="shipping-estimate-date">Estimated Delivery Date : 01 May 2024</div>
-
-                                <div data-cart-prices="">
-                                    <!-- Price Total -->
-                                    <div class="card-col first-item-border">
-                                        <div class="checkout-label-normal">Item Total <span class="label-sub-text">(MRP)</span></div>
-                                        <div class="checkout-label-normal">₹999.00</div>
-                                    </div>
-
-                                    <!-- Discount -->
-                                    <div class="card-col">
-                                        <div class="checkout-label-normal mobile-text-highlighted">Discount from MRP</div>
-                                        <div class="checkout-label-normal mobile-text-highlighted">
-
-                                            <div class="checkout-label-highlighted">-₹568.00</div>
-
-                                        </div>
-                                    </div>
-
-                                    <!-- Coupon -->
 
 
-                                    <!-- Shipping -->
-                                    <div class="card-col">
+                            <!-- Heading -->
+                            <div class="cart-checkout-heading">Cart Summary</div>
+                            <div class="checkout-note shipping-estimate" id="shipping-estimate-date">Estimated Delivery Date : 06 May 2024</div>
 
+                            <div data-cart-prices="">
+                                <!-- Price Total -->
+                                <div class="card-col first-item-border">
+                                    <div class="checkout-label-normal">Item Total <span class="label-sub-text">(MRP)</span></div>
+                                    <div class="checkout-label-normal">₹3,794.00</div>
+                                </div>
 
-                                        <div class="checkout-label-normal mobile-text-highlighted">
-                                            Delivery Charges
-                                        </div>
+                                <!-- Discount -->
+                                <div class="card-col">
+                                    <div class="checkout-label-normal mobile-text-highlighted">Discount from MRP</div>
+                                    <div class="checkout-label-normal mobile-text-highlighted">
 
-                                        <div class="checkout-label-normal mobile-text-highlighted">
+                                        <div class="checkout-label-highlighted">-₹568.00</div>
 
-                                            <del>₹190.00</del><span class="checkout-label-highlighted">&nbsp;Free</span>
-
-                                        </div>
-                                    </div>
-
-                                    <!-- Final Amount -->
-                                    <div class="card-col final-amount">
-                                        <div class="checkout-label-normal">Final Amount <span class="label-sub-text">(Tax Included)</span></div>
-                                        <div class="t4s-cart__totalPrice checkout-label-normal">
-                                            ₹431.00
-                                        </div>
                                     </div>
                                 </div>
 
-                                <script>
-                                    function calculateEstimateDeliveryDate() {
-                                        const today = new Date();
-                                        const currentHour = today.getHours();
-                                        const cutOffHour = 16
-                                        const dateEnd = 5;
+                                <!-- Coupon -->
 
-                                        const daysToAdd = currentHour < cutOffHour ? parseInt(dateEnd) : parseInt(dateEnd) + 1;
-                                        const millisecondsInDay = 24 * 60 * 60 * 1000;
-                                        let targetDate = new Date(today.getTime() + daysToAdd * millisecondsInDay);
 
-                                        //Exclude Sundays
-                                        if (targetDate.getDay() === 0) {
-                                            targetDate = new Date(targetDate.getTime() + 1 * millisecondsInDay);
-                                        }
+                                <!-- Shipping -->
+                                <div class="card-col">
 
-                                        return targetDate;
+
+                                    <div class="checkout-label-normal mobile-text-highlighted">
+                                        Delivery Charges
+                                    </div>
+
+                                    <div class="checkout-label-normal mobile-text-highlighted">
+
+                                        <del>₹190.00</del><span class="checkout-label-highlighted">&nbsp;Free</span>
+
+                                    </div>
+                                </div>
+
+                                <!-- Final Amount -->
+                                <div class="card-col final-amount">
+                                    <div class="checkout-label-normal">Final Amount <span class="label-sub-text">(Tax Included)</span></div>
+                                    <div class="t4s-cart__totalPrice checkout-label-normal">
+                                        ₹3,226.00
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                function calculateEstimateDeliveryDate() {
+                                    const today = new Date();
+                                    const currentHour = today.getHours();
+                                    const cutOffHour = 16
+                                    const dateEnd = 5;
+
+                                    const daysToAdd = currentHour < cutOffHour ? parseInt(dateEnd) : parseInt(dateEnd) + 1;
+                                    const millisecondsInDay = 24 * 60 * 60 * 1000;
+                                    let targetDate = new Date(today.getTime() + daysToAdd * millisecondsInDay);
+
+                                    //Exclude Sundays
+                                    if (targetDate.getDay() === 0) {
+                                        targetDate = new Date(targetDate.getTime() + 1 * millisecondsInDay);
                                     }
 
-                                    const result = calculateEstimateDeliveryDate();
-                                    const estimatedDeliveryDateElement = document.getElementById("shipping-estimate-date");
+                                    return targetDate;
+                                }
 
-                                    const formattedDate = result.toLocaleDateString('en-US', {
-                                        day: '2-digit',
-                                        month: 'short',
-                                        year: 'numeric'
-                                    });
+                                const result = calculateEstimateDeliveryDate();
+                                const estimatedDeliveryDateElement = document.getElementById("shipping-estimate-date");
 
-                                    const dateParts = formattedDate.split(" ")
-                                    const estimatedDeliverDay = dateParts[1].replace(",", "");
-                                    const estimatedDeliveryMonth = dateParts[0];
-                                    const estimatedDeliveryYear = dateParts[2]
-                                    const estimatedDeliveryDate = `${estimatedDeliverDay} ${estimatedDeliveryMonth} ${estimatedDeliveryYear}`;
+                                const formattedDate = result.toLocaleDateString('en-US', {
+                                    day: '2-digit',
+                                    month: 'short',
+                                    year: 'numeric'
+                                });
 
-                                    estimatedDeliveryDateElement.textContent = "Estimated Delivery Date : " + estimatedDeliveryDate;
-                                </script>
-                                <div class="t4s-btn-group__checkout-update"><button type="submit" data-loading-bar="" data-confirm="ck_lumise" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">Continue To Checkout
-                                    </button>
+                                const dateParts = formattedDate.split(" ")
+                                const estimatedDeliverDay = dateParts[1].replace(",", "");
+                                const estimatedDeliveryMonth = dateParts[0];
+                                const estimatedDeliveryYear = dateParts[2]
+                                const estimatedDeliveryDate = `${estimatedDeliverDay} ${estimatedDeliveryMonth} ${estimatedDeliveryYear}`;
 
-                                    <!-- <button
+                                estimatedDeliveryDateElement.textContent = "Estimated Delivery Date : " + estimatedDeliveryDate;
+                            </script>
+                            <div class="t4s-btn-group__checkout-update"><button type="submit" data-loading-bar="" data-confirm="ck_lumise" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">Continue To Checkout
+                                </button>
+
+                                <!-- <button
                             type="button"
                             id="checkout3"
                             onclick="handleFloCheckoutBtn()"
@@ -282,14 +298,14 @@ include "include/header.php";
                           >
                             Continue To Checkout
 </button>  -->
-                                </div>
-                                <div class="checkout-note">Coupon codes can be applied in the next page</div>
                             </div>
+                            <div class="checkout-note">Coupon codes can be applied in the next page</div>
                         </div>
-                    </form>
-                <?php
-                }
-                ?>
+                    </div>
+                </form>
+
+
+
             <?php } else { ?>
 
                 <div class="t4s-mini_cart__emty t4s-text-center">

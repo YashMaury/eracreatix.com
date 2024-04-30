@@ -1,37 +1,34 @@
 <?php
-session_start();
+// session_start();
 // error_reporting(0);
 include("include/config.php");
-if(isset($_POST['submit']))
-{
-	$username=$_POST['username'];
-	$password=md5($_POST['password']);
-$ret=mysqli_query($con,"SELECT * FROM admin WHERE username='$username' and password='$password'");
-$num=mysqli_fetch_array($ret);
-if($num>0)
-{
-$extra="change-password.php";//
-$_SESSION['alogin']=$_POST['username'];
-$_SESSION['id']=$num['id'];
-$host=$_SERVER['HTTP_HOST'];
-$uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:http://$host$uri/$extra");
-exit();
-}
-else
-{
-$_SESSION['errmsg']="Invalid username or password";
-$extra="index.php";
-$host  = $_SERVER['HTTP_HOST'];
-$uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
-header("location:http://$host$uri/$extra");
-exit();
-}
+if (isset($_POST['submit'])) {
+	$username = $_POST['username'];
+	$password = md5($_POST['password']);
+	$ret = mysqli_query($con, "SELECT * FROM admin WHERE username='$username' and password='$password'");
+	$num = mysqli_fetch_array($ret);
+	if ($num > 0) {
+		$extra = "change-password.php"; //
+		$_SESSION['alogin'] = $_POST['username'];
+		$_SESSION['id'] = $num['id'];
+		$host = $_SERVER['HTTP_HOST'];
+		$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+		header("location:http://$host$uri/$extra");
+		exit();
+	} else {
+		$_SESSION['errmsg'] = "Invalid username or password";
+		$extra = "index1.php";
+		$host  = $_SERVER['HTTP_HOST'];
+		$uri  = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+		header("location:http://$host$uri/$extra");
+		exit();
+	}
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +39,7 @@ exit();
 	<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
 	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
 </head>
+
 <body>
 
 	<div class="navbar navbar-fixed-top">
@@ -51,22 +49,22 @@ exit();
 					<i class="icon-reorder shaded"></i>
 				</a>
 
-			  	<a class="brand" href="index.html">
-				  Eracreatix | Admin
-			  	</a>
+				<a class="brand" href="index.html">
+					Eracreatix | Admin
+				</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
-				
+
 					<ul class="nav pull-right">
 
 						<li><a href="http://localhost/shopping/">
-						Back to Portal
-						
-						</a></li>
+								Back to Portal
 
-						
+							</a></li>
 
-						
+
+
+
 					</ul>
 				</div><!-- /.nav-collapse -->
 			</div>
@@ -83,11 +81,11 @@ exit();
 						<div class="module-head">
 							<h3>Sign In</h3>
 						</div>
-						<span style="color:red;" >
-							<?php 
-							if(isset($_SESSION['errmsg'])){
-							echo htmlentities($_SESSION['errmsg']);
-							echo htmlentities($_SESSION['errmsg']="");
+						<span style="color:red;">
+							<?php
+							if (isset($_SESSION['errmsg'])) {
+								echo htmlentities($_SESSION['errmsg']);
+								echo htmlentities($_SESSION['errmsg'] = "");
 							}
 							?>
 						</span>
@@ -99,7 +97,7 @@ exit();
 							</div>
 							<div class="control-group">
 								<div class="controls row-fluid">
-						<input class="span12" type="password" id="inputPassword" name="password" placeholder="Password">
+									<input class="span12" type="password" id="inputPassword" name="password" placeholder="Password">
 								</div>
 							</div>
 						</div>
@@ -107,7 +105,7 @@ exit();
 							<div class="control-group">
 								<div class="controls clearfix">
 									<button type="submit" class="btn btn-primary pull-right" name="submit">Login</button>
-									
+
 								</div>
 							</div>
 						</div>
@@ -119,7 +117,7 @@ exit();
 
 	<div class="footer">
 		<div class="container">
-			 
+
 
 			<b class="copyright">&copy; 2024 Eracreatix </b> All rights reserved.
 		</div>

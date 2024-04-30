@@ -90,11 +90,11 @@ include "include/header.php";
                                     <div class="t4s-product-btns2">
                                         <div data-replace-wishlist data-tooltip="right"></div>
                                         <div data-replace-compare data-tooltip="right"></div>
-                                    </div><a data-pr-href class="t4s-full-width-link" href="products/fly-high-bar-accessories-set-of-seven.html" aria-label="Product View"></a>
+                                    </div><a data-pr-href class="t4s-full-width-link" href="products.php?pid=<?=$row['id'];?>" aria-label="Product View"></a>
                                 </div>
                                 <div class="t4s-product-info">
                                     <div class="t4s-product-info__inner">
-                                        <h3 class="t4s-product-title"><a data-pr-href href="products/fly-high-bar-accessories-set-of-seven.html">
+                                        <h3 class="t4s-product-title"><a data-pr-href href="products.php?pid=<?=$row['id'];?>">
                                             <?php echo htmlentities($row['productName']);?>
                                         </a></h3>
                                         <p class="grid-product__material">

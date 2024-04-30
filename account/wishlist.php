@@ -8,6 +8,6 @@ if (isset($_GET['pid']) && $_GET['action'] == "wishlist") {
         header('location:login.php');
     } else {
         mysqli_query($con, "insert into wishlist(userId,productId) values('" . $_SESSION['id'] . "','$pid')");
-        header('location:my-wishlist.php');
+        header('location: '. $_SERVER['HTTP_REFERER']);
     }
 }
