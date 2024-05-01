@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
     <section id="shopify-section-template--16885347778806__main" class="shopify-section t4s-section t4s-section-main t4s-section-main-product t4s_tp_flickity">
-        <link href="//vaaree.com/cdn/shop/t/130/assets/popup-styles.aio.min.css?v=81759424435262703281714373885" rel="stylesheet" type="text/css" media="all">
+        <link href="cdn/shop/t/130/assets/popup-styles.aio.min.css" rel="stylesheet" type="text/css" media="all">
         <?php
         $ret = mysqli_query($con, "select * from products where id='" . $_GET['pid'] . "' ");
         while ($rws = mysqli_fetch_array($ret)) {
@@ -79,13 +79,6 @@ if (isset($_POST['submit'])) {
                                                     <span class="lazyloadt4s-loader"></span>
                                                 </div>
                                             </div>
-                                            <!-- <div id="pdp-imagegallery-3" data-product-single-media-wrapper="" data-main-slide="" class="t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152436371702" data-nt-media-id="template--16885347778806__main-33152436371702" data-media-type="image" data-grname="" data-grpvl="">
-                                            <div data-t4s-gallery--open="" class="t4s_ratio t4s-product__media" style="--aspect-ratioapt:1.0;--mw-media:800px">
-                                                <noscript><img src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage1']); ?>" alt="" srcset="//vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=288 288w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=576 576w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=750 750w" width="1090" height="1090" loading="lazy" class="t4s-img-noscript" sizes="(min-width: 1500px) 1500px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"></noscript>
-                                                <img loading="lazy" data-master="//vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" data-widths="[100,200,400,600,700,800,900,1000,1200,1400,1600]" data-optimumx="2" data-sizes="auto" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20800%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" width="800" height="800" alt="" data-srcset="//vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=100 100w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=200 200w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=400 400w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=600 600w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=700 700w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=800 800w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=900 900w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1000 1000w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1200 1200w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1400 1400w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1600 1600w" sizes="280px" srcset="//vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=100 100w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=200 200w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=400 400w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=600 600w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=700 700w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=800 800w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=900 900w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1000 1000w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1200 1200w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1400 1400w, //vaaree.com/cdn/shop/files/Untitled-1_0003_MHMP044_03.jpg?v=1714030242&amp;width=1600 1600w">
-                                                <span class="lazyloadt4s-loader"></span>
-                                            </div>
-                                        </div> -->
                                         </div>
                                         <link href="cdn/shop/t/130/assets/single-pr-badge.css?v=156237653161220365901695367397" rel="stylesheet" media="all" onload="this.media='all'">
                                         <div data-product-single-badge="" data-sort="sale,new,soldout,preOrder,custom" class="t4s-single-product-badge t4s-pa t4s-pe-none t4s-op-0"></div>
@@ -176,17 +169,17 @@ if (isset($_POST['submit'])) {
 
                                     <div class="t4s-col-item">
                                         <script>
-                                            var couponsSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/coupon-icon.svg?v=59759816259572521101711546592"} height=40 width=40 alt="coupon discount svg">`,
-                                                plusSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/coupon-plus.svg?v=31888299237565135211711546593"} height=16 width=16 alt="plus icon svg">`,
-                                                additionalOfferSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/additional-offer-svg.svg?v=104060319331156136561711546591"} height=40 width=40 alt="additional offers svg">`,
-                                                creditCardSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/credit-card.svg?v=79212992460706527181711546593"} height=24 width=24 alt="credit card svg">`,
-                                                clipboardCopySvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/clipboard-copy.svg?v=25933601689747333111711546592"} height=20 width=20 alt="copy to clipboard svg">`,
-                                                downChevronSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/down-chevron.svg?v=127311544472227462511711546594"} height=12 width=12 alt="down chevron svg">`,
-                                                checkCircleSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/check-circle.svg?v=21160731288057521831711546592"} height=20 width=20 alt="check circle svg">`,
-                                                animationRectangle = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/animation_rectangle.png?v=161857274409988414171711723908"} class="animation-rectangle" height=80 width=120 alt="animation background">`,
-                                                percentSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/percent.svg?v=14461041010724030461711723911"} height=16 width=16 alt="percent svg">`;
+                                            var couponsSvg = `<img src=${"cdn/shop/t/130/assets/coupon-icon.svg?v=59759816259572521101711546592"} height=40 width=40 alt="coupon discount svg">`,
+                                                plusSvg = `<img src=${"cdn/shop/t/130/assets/coupon-plus.svg?v=31888299237565135211711546593"} height=16 width=16 alt="plus icon svg">`,
+                                                additionalOfferSvg = `<img src=${"cdn/shop/t/130/assets/additional-offer-svg.svg?v=104060319331156136561711546591"} height=40 width=40 alt="additional offers svg">`,
+                                                creditCardSvg = `<img src=${"cdn/shop/t/130/assets/credit-card.svg?v=79212992460706527181711546593"} height=24 width=24 alt="credit card svg">`,
+                                                clipboardCopySvg = `<img src=${"cdn/shop/t/130/assets/clipboard-copy.svg?v=25933601689747333111711546592"} height=20 width=20 alt="copy to clipboard svg">`,
+                                                downChevronSvg = `<img src=${"cdn/shop/t/130/assets/down-chevron.svg?v=127311544472227462511711546594"} height=12 width=12 alt="down chevron svg">`,
+                                                checkCircleSvg = `<img src=${"cdn/shop/t/130/assets/check-circle.svg?v=21160731288057521831711546592"} height=20 width=20 alt="check circle svg">`,
+                                                animationRectangle = `<img src=${"cdn/shop/t/130/assets/animation_rectangle.png?v=161857274409988414171711723908"} class="animation-rectangle" height=80 width=120 alt="animation background">`,
+                                                percentSvg = `<img src=${"cdn/shop/t/130/assets/percent.svg?v=14461041010724030461711723911"} height=16 width=16 alt="percent svg">`;
                                         </script>
-                                        <script src="cdn/shop/t/130/assets/dynamic-offers.js="></script>
+                                        <script src="cdn/shop/t/130/assets/dynamic-offers.js"></script>
                                         <link href="cdn/shop/t/130/assets/best-offers-popup.css" rel="stylesheet" type="text/css" media="all">
                                         <link href="cdn/shop/t/130/assets/dynamic-offers.css" rel="stylesheet" type="text/css" media="all">
 
@@ -209,12 +202,12 @@ if (isset($_POST['submit'])) {
                                             </span>
                                         </div> -->
 
-                                        <script src="//vaaree.com/cdn/shop/t/130/assets/best-offers-popup.js?v=48476218894681853801708928275"></script>
+                                        <script src="cdn/shop/t/130/assets/best-offers-popup.js"></script>
 
                                     </div>
 
                                     <div class="t4s-liquid_0a41e004-c096-4334-9d23-1052de9af88a t4s-pr__custom-liquid t4s-rte t4s-col-item"></div>
-                                    <link href="//vaaree.com/cdn/shop/t/130/assets/accordion-pdp.aio.min.css?v=27258793570670853651711985982" rel="stylesheet" type="text/css" media="all">
+                                    <link href="cdn/shop/t/130/assets/accordion-pdp.aio.min.css" rel="stylesheet" type="text/css" media="all">
                                     <div class="t4s-col-item product_form_container">
                                         <div class="horizontal-divider-pdp"></div>
 
@@ -257,7 +250,7 @@ if (isset($_POST['submit'])) {
                                                         </button>
                                                     </div><input type="hidden" name="product-id" value="8520322056438"><input type="hidden" name="section-id" value="template--16885347778806__main">
                                                 </form>
-                                                <link href="//vaaree.com/cdn/shop/t/130/assets/ani-atc.min.css?v=52256569023357465441695367398" rel="stylesheet" media="all" onload="this.media='all'">
+                                                <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
                                             </div>
                                         </div>
                                         <script>
@@ -284,14 +277,14 @@ if (isset($_POST['submit'])) {
 
 
 
-                                    <link rel="stylesheet" href="//vaaree.com/cdn/shop/t/130/assets/estimate-delivery-return.css?v=70974381520045779241712046285" media="all">
-                                    <script async="" src="//vaaree.com/cdn/shop/t/130/assets/custom-modal.js?v=59334560308171411681712046283"></script>
+                                    <link rel="stylesheet" href="cdn/shop/t/130/assets/estimate-delivery-return.css" media="all">
+                                    <script async="" src="cdn/shop/t/130/assets/custom-modal.js"></script>
 
                                     <div id="t4s-delivery" class="t4s-pr_delivery  t4s-ch t4s-dn section delivery-return-section" data-order-delivery="{ &quot;timezone&quot;:false, &quot;format_day&quot;:&quot;t44, t45 t46&quot;, &quot;mode&quot;:&quot;1&quot;, &quot;cut_day&quot;: &quot;SAT,SUN&quot;, &quot;estimateStartDate&quot;: 3, &quot;estimateEndDate&quot;: 5, &quot;time&quot;:&quot;16:00:00&quot;, &quot;hideWithPreorder&quot;:true }">
-                                        <link href="//vaaree.com/cdn/shop/t/130/assets/ani-atc.min.css?v=52256569023357465441695367398" rel="stylesheet" media="all" onload="this.media='all'">
+                                        <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
                                         <div class="section">
                                             <div class="section-heading-container">
-                                                <img src="//vaaree.com/cdn/shop/t/130/assets/map-pin-delivery.svg?v=30084962104887388481712046286" height="16" width="16" class="map-pin-delivery">
+                                                <img src="cdn/shop/t/130/assets/map-pin-delivery.svg" height="16" width="16" class="map-pin-delivery">
                                                 <span class="section-heading">Check Delivery Time</span>
                                                 <!-- <span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
 <path d="M17.7572 5.42077C17.4943 5.3207 17.2792 5.12054 17.1598 4.84534L16.0365 2.4185C15.7736 1.84306 15.2 1.46778 14.5786 1.46778H12.0931V0.967399C12.0931 0.442001 11.6868 0.0416981 11.2088 0.0416981L0.38239 0C0.167295 0 -5.66244e-07 0.175133 -5.66244e-07 0.400303C-5.66244e-07 0.625474 0.167295 0.800606 0.38239 0.800606L11.1849 0.842305C11.2566 0.842305 11.3283 0.917361 11.3283 0.992418V8.89841H4.92327C4.75598 8.14784 4.11069 7.5724 3.32201 7.5724C2.53333 7.5724 1.88805 8.14784 1.72075 8.89841H0.908176C0.836478 8.89841 0.76478 8.82335 0.76478 8.74829V0.400303C0.76478 0.175132 0.597484 0 0.38239 0C0.167295 0 -5.66244e-07 0.175133 -5.66244e-07 0.400303L0 8.74829C0 9.27369 0.406289 9.674 0.884276 9.674H1.74465C1.91195 10.4246 2.55723 11 3.34591 11C4.13459 11 4.77988 10.4246 4.94717 9.674H11.7346H13.3359C13.5031 10.4246 14.1484 11 14.9371 11C15.7258 11 16.3711 10.4246 16.5384 9.674H17.9484C18.522 9.674 19 9.17362 19 8.57316V7.19712C18.9522 6.39651 18.4742 5.69598 17.7572 5.42077ZM3.34591 10.2244C2.84403 10.2244 2.46164 9.79909 2.46164 9.29871C2.46164 8.79833 2.86793 8.37301 3.34591 8.37301C3.8478 8.37301 4.23019 8.79833 4.23019 9.29871C4.23019 9.79909 3.8478 10.2244 3.34591 10.2244ZM14.9132 10.2244C14.4113 10.2244 14.0289 9.79909 14.0289 9.29871C14.0289 8.77331 14.4352 8.37301 14.9132 8.37301C15.4151 8.37301 15.7975 8.79833 15.7975 9.29871C15.7975 9.79909 15.3912 10.2244 14.9132 10.2244ZM18.2113 8.57316C18.2113 8.74829 18.0679 8.89841 17.9006 8.89841H16.4906C16.3233 8.14784 15.678 7.5724 14.8893 7.5724C14.1245 7.5724 13.4553 8.14784 13.2881 8.89841H12.0453V5.39575H15.4868C15.7019 5.39575 15.8692 5.22062 15.8692 4.99545C15.8692 4.77028 15.7019 4.59515 15.4868 4.59515H12.0931V2.21835H14.5786C14.9132 2.21835 15.2239 2.4185 15.3673 2.71873L16.4906 5.14556C16.7057 5.59591 17.0642 5.92115 17.5182 6.09629C17.9484 6.2464 18.2352 6.67172 18.2352 7.14708V8.57316H18.2113Z" fill="black"/>
@@ -657,8 +650,8 @@ if (isset($_POST['submit'])) {
 
 
                                                 <div class="available_offers-image " style="order:5">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/VAAREE5_pdp.jpg?v=1711537676 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="VAAREE5" onclick="copyCouponCode(this)"></div>
+                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/ERA5_pdp.jpg?v=1711537676 " width="280" height="96">
+                                                    <div class="imageOverlay" data-coupon-title="ERA5" onclick="copyCouponCode(this)"></div>
                                                 </div>
 
 
@@ -667,8 +660,8 @@ if (isset($_POST['submit'])) {
 
                                                 <div class="available_offers-image " style="order:5">
                                                     <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src=" 
-https://cdn.shopify.com/s/files/1/0632/2526/6422/files/VAAREE10_pdp.jpg?v=1711537676 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="VAAREE10" onclick="copyCouponCode(this)"></div>
+https://cdn.shopify.com/s/files/1/0632/2526/6422/files/ERA10_pdp.jpg?v=1711537676 " width="280" height="96">
+                                                    <div class="imageOverlay" data-coupon-title="ERA10" onclick="copyCouponCode(this)"></div>
                                                 </div>
 
 
@@ -1020,7 +1013,7 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
 
 
 
-                                    <link href="//vaaree.com/cdn/shop/t/130/assets/product-tabs.aio.min.css?v=150022279741132493061711985986" rel="stylesheet" type="text/css" media="all">
+                                    <link href="cdn/shop/t/130/assets/product-tabs.aio.min.css" rel="stylesheet" type="text/css" media="all">
                                     <style data-shopify="">
                                         .t4s-product-tabs-wrapper-template--16885347778806__main {
                                             --bg-tabs: #f6f6f8;
@@ -1398,7 +1391,7 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
             }
         </style>
     </section>
-    <div id="shopify-section-template--16885347778806__frequently_bought_VxKBmx" class="shopify-section t4s-section">
+    <!-- <div id="shopify-section-template--16885347778806__frequently_bought_VxKBmx" class="shopify-section t4s-section">
         <link href="//vaaree.com/cdn/shop/t/130/assets/frequently-bought.css?v=4336206074569771721711722350" rel="stylesheet" type="text/css" media="all">
 
 
@@ -1445,7 +1438,7 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
             </div>
         </div>
 
-    </div>
+    </div> -->
     <div id="shopify-section-template--16885347778806__product_reviews_cXiX3K" class="shopify-section t4s-section">
         <link href="//vaaree.com/cdn/shop/t/130/assets/product_review.css?v=95052198324561611891711722352" rel="stylesheet" type="text/css" media="all">
 

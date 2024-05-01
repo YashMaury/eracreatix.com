@@ -32,9 +32,6 @@ include "include/header.php";
         </svg>
         <div class="t4s-container">
 
-            <?php
-            $list = mysqli_query($con, "select * from wishlist");
-            ?>
 
             <div class="t4s-cookie-message t4s-dn">Enable cookies to use the shopping cart</div>
             <div class="cart-page-heading-desktop cart-item-info-label">
@@ -46,8 +43,7 @@ include "include/header.php";
             ?>
 
 
-
-                <form data-cart-content="" data-cart-wrapper="" action="/cart" method="post" novalidate="" class="t4s-cartPage__form t4s-pr t4s-oh">
+                <form data-cart-content="" data-cart-wrapper="" action="account/cart.php" method="post" novalidate="" class="t4s-cartPage__form t4s-pr t4s-oh">
                     <div class="cart-page-product-list">
                         <input type="hidden" data-cart-attr-rm="" name="attributes[collection_items_per_row]" value="">
                         <div class="t4s-cartPage__header">
@@ -70,19 +66,20 @@ include "include/header.php";
                                 </span>
                                 <span class="cart-item-info-label cart-quantity-text">
                                     Your Cart
-                                    (<span data-cart-count="">2</span> items)
+                                    (<span><?= $count_of_cart['items'] ?></span> items)
                                 </span>
                             </div>
 
 
-
-
                             <?php
-                            while ($row = mysqli_fetch_array($list)) {
+                            if (isset($_SESSION['id'])) {
+                                $list = mysqli_query($con, "select products.productName from products left join wishlist as cart on products.id = cart.productId where `userId` = '" . $_SESSION['id'] . "'");
+                                while ($row = mysqli_fetch_array($list)) {
+                                }
                             ?>
 
 
-                                <link href="//cdn.shopify.com/s/files/1/0632/2526/6422/t/130/assets/mobile-view-cart-item-page.css?v=562703731360515491700811841" rel="stylesheet" type="text/css" media="all">
+                                <!-- <link href="//cdn.shopify.com/s/files/1/0632/2526/6422/t/130/assets/mobile-view-cart-item-page.css?v=562703731360515491700811841" rel="stylesheet" type="text/css" media="all"> -->
                                 <div data-cart-item="" class="t4s-page_cart__item">
                                     <div class="t4s-row t4s-gx-md-30 t4s-gx-15 cart-item">
                                         <div class="t4s-col-12 t4s-col-md-12 t4s-col-lg-5 t4s-col-item cart-product-info">
@@ -98,21 +95,13 @@ include "include/header.php";
                                                         </span></div>
                                                 </a>
                                                 <div class="t4s-page_cart__info">
-                                                    <div class="cart_page_title">Zen Zone Towel (Navy Blue) - Set Of Four</div>
+                                                    <div class="cart_page_title"><?php print_r($row); ?></div>
                                                     <div class="t4s-page_cart__actions">
                                                         <span class="cart-item-info-label">Qty :</span>
                                                         <span data-quantity-wrapper="" class="t4s-quantity-wrapper t4s-quantity-cart-item">
                                                             <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
                                                                     <use href="#icon-cart-remove"></use>
                                                                 </svg></button>
-                                                            <input data-action-change="" data-quantity-value="" type="number" id="miniupdates_46026505519350:7aa180011dc96f7b68b268edfcbc368d" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" class="t4s-quantity-input" step="1" min="0" max="11" name="updates[]" data-current-qty="1" value="1" size="4" pattern="[0-9]*" inputmode="numeric" onchange="
-                            helper_functions.handleMixpanelRemoveElement(
-                              event,
-                              'Zen Zone Towel (Navy Blue) - Set Of Four',
-                              '46026505519350',
-                              'CL-PL-4PCS-NVY-IN'
-                            )
-                          ">
                                                             <button data-quantity-selector="" data-increase-qty="" type="button" class="t4s-quantity-selector is--plus"><svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                                     <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
                                                                 </svg></button>
@@ -149,14 +138,6 @@ include "include/header.php";
                                                     <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
                                                             <use href="#icon-cart-remove"></use>
                                                         </svg></button>
-                                                    <input data-action-change="" data-quantity-value="" type="number" id="miniupdates_46026505519350:7aa180011dc96f7b68b268edfcbc368d_quantity" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" class="t4s-quantity-input" step="1" min="0" max="11" name="updates[]" data-current-qty="1" value="1" size="4" pattern="[0-9]*" inputmode="numeric" onchange="
-                  helper_functions.handleMixpanelRemoveElement(
-                    event,
-                    'Zen Zone Towel (Navy Blue) - Set Of Four',
-                    '46026505519350',
-                    'CL-PL-4PCS-NVY-IN'
-                  )
-                ">
                                                     <button data-quantity-selector="" data-increase-qty="" type="button" class="t4s-quantity-selector is--plus"><svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                             <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
                                                         </svg></button>

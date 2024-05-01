@@ -1,7 +1,12 @@
 <?php
 include "include/config.php";
-$num_cart = mysqli_query($con, "select count(id) as items from wishlist");
-$count_of_cart = mysqli_fetch_array($num_cart);
+if (isset($_SESSION['id'])) {
+    $num_cart = mysqli_query($con, "select count(id) as items from wishlist where `userId` = '" . $_SESSION['id'] . "'");
+    $count_of_cart = mysqli_fetch_array($num_cart);
+} else {
+    $count_of_cart = ['items' => 0];
+}
+
 ?>
 
 <!doctype html>
@@ -194,7 +199,7 @@ $count_of_cart = mysqli_fetch_array($num_cart);
                                                 <!-- <svg class="t4s-icon t4s-icon--exit" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-exit"></use>
                                                 </svg> -->
-                                                <img src="media/logout.png" width="20px" alt="logout" >
+                                                <img src="media/logout.png" width="20px" alt="logout">
                                             </a>
                                         </div>
                                     <?php } else { ?>
