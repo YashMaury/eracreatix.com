@@ -39,7 +39,7 @@ include "include/header.php";
             </div>
 
             <?php
-            if ($count_of_cart > 0) {
+            if ($count_of_cart['items'] > 0) {
             ?>
 
 
@@ -55,7 +55,7 @@ include "include/header.php";
                                 </div>
                             </div>
                         </div>
-                        <div class="t4s-cartPage__items t4s_ratioadapt t4s-product" data-cart-items="">
+                        <div class="t4s-cartPage__items t4s_ratioadapt t4s-product">
                             <div class="cart-page-heading-mobile">
                                 <span class="t4s-back-to-shop" onclick="window.history.go(-1); return false;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 17 14" fill="none">
@@ -70,21 +70,30 @@ include "include/header.php";
                                 </span>
                             </div>
 
+                            <link href="cdn/shop/t/130/assets/mobile-view-cart-item-page.css" rel="stylesheet" type="text/css" media="all">
+
 
                             <?php
-                            if (isset($_SESSION['id'])) {
-                                $list = mysqli_query($con, "select products.productName from products left join wishlist as cart on products.id = cart.productId where `userId` = '" . $_SESSION['id'] . "'");
-                                while ($row = mysqli_fetch_array($list)) {
-                                }
+                            $list = mysqli_query($con, "
+                                        select 
+                                        products.id,
+                                        products.productName, 
+                                        products.productImage1,
+                                        products.productPrice
+                                        from products left join 
+                                        cart as cart 
+                                        on products.id = cart.productId 
+                                        where `userId` = '" . $_SESSION['id'] . "'");
+                            while ($row = mysqli_fetch_array($list)) {
                             ?>
 
-
-                                <!-- <link href="//cdn.shopify.com/s/files/1/0632/2526/6422/t/130/assets/mobile-view-cart-item-page.css?v=562703731360515491700811841" rel="stylesheet" type="text/css" media="all"> -->
-                                <div data-cart-item="" class="t4s-page_cart__item">
+                                <div class="t4s-page_cart__item">
                                     <div class="t4s-row t4s-gx-md-30 t4s-gx-15 cart-item">
                                         <div class="t4s-col-12 t4s-col-md-12 t4s-col-lg-5 t4s-col-item cart-product-info">
                                             <div class="t4s-page_cart__infos t4s-d-flex">
-                                                <a href="/products/zen-zone-towel-navy-blue-set-of-four?variant=46026505519350" class="t4s-page_cart__img t4s-pr t4s-oh t4s_ratio t4s-bg-11 t4s-child-lazyloaded" style="background: url(//cdn.shopify.com/s/files/1/0632/2526/6422/files/0000__LMC8759.jpg?v=1709645985&amp;width=1);--aspect-ratioapt:1.0"><img loading="lazy" class="lazyautosizes lazyloadt4sed" width="120" height="120" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-widths="[120, 240]" data-sizes="auto" alt="" data-srcset="//cdn.shopify.com/s/files/1/0632/2526/6422/files/0000__LMC8759.jpg?v=1709645985&amp;width=120 120w, //cdn.shopify.com/s/files/1/0632/2526/6422/files/0000__LMC8759.jpg?v=1709645985&amp;width=240 240w" sizes="102px" srcset="//cdn.shopify.com/s/files/1/0632/2526/6422/files/0000__LMC8759.jpg?v=1709645985&amp;width=120 120w, //cdn.shopify.com/s/files/1/0632/2526/6422/files/0000__LMC8759.jpg?v=1709645985&amp;width=240 240w">
+
+                                                <a href="products.php?pid=<?php echo $row['id']; ?>" class="t4s-page_cart__img t4s-pr t4s-oh t4s_ratio t4s-bg-11 t4s-child-lazyloaded" style="background: url(admin/productimages/<?php echo htmlentities($row['id']); ?>/<?php echo htmlentities($row['productImage1']); ?>);--aspect-ratioapt:1.0">
+                                                    <img loading="lazy" class="lazyautosizes lazyloadt4sed" width="120" height="120" src="admin/productimages/<?php echo htmlentities($row['id']); ?>/<?php echo htmlentities($row['productImage1']); ?>" alt="">
                                                     <div class="t4s-cart-ld__bar t4s-pe-none t4s-dn" hidden=""><span>
                                                             <svg width="16" height="16" hidden="" class="t4s-cart-spinner" focusable="false" role="presentation" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                                                                 <circle class="t4s-path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
@@ -92,88 +101,64 @@ include "include/header.php";
                                                             <svg class="t4s-cart-check" viewBox="0 0 448 512" width="16" height="16" hidden="">
                                                                 <use href="#icon-cart-check"></use>
                                                             </svg>
-                                                        </span></div>
+                                                        </span>
+                                                    </div>
                                                 </a>
+
                                                 <div class="t4s-page_cart__info">
-                                                    <div class="cart_page_title"><?php print_r($row); ?></div>
-                                                    <div class="t4s-page_cart__actions">
+                                                    <div class="cart_page_title"><?php echo $row['productName']; ?></div>
+                                                    <div class="t4s-page_cart__actions t4s-align-items-center t4s-d-flex">
                                                         <span class="cart-item-info-label">Qty :</span>
-                                                        <span data-quantity-wrapper="" class="t4s-quantity-wrapper t4s-quantity-cart-item">
+                                                        <span class="t4s-quantity-wrapper t4s-quantity-cart-item">
                                                             <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
                                                                     <use href="#icon-cart-remove"></use>
-                                                                </svg></button>
+                                                                </svg>
+                                                            </button>
                                                             <button data-quantity-selector="" data-increase-qty="" type="button" class="t4s-quantity-selector is--plus"><svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                                     <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
-                                                                </svg></button>
+                                                                </svg>
+                                                            </button>
                                                         </span>
                                                     </div>
-                                                    <div class="t4s-page_cart__meta"><span class="t4s-cart_meta_variant cart-item-info-label">
-                                                            Size : <span class="selected-variant">Bundles</span>
-                                                        </span>
-
-
-                                                        <div class="lowstock-pill">
-                                                            <span class="lowstock-pill-text">Stock ending soon</span>
-                                                        </div>
-
-                                                    </div>
+                                                    <!-- <div class="t4s-page_cart__meta">
+                                                            <span class="t4s-cart_meta_variant cart-item-info-label">
+                                                                Size : <span class="selected-variant">Bundles</span>
+                                                            </span>
+                                                            <div class="lowstock-pill">
+                                                                <span class="lowstock-pill-text">Stock ending soon</span>
+                                                            </div>
+                                                        </div> -->
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Mobile View Block-->
-                                        <div class="mobile-view-right-block">
-                                            <!-- MRP -->
-                                            <div class="t4s-text-lg-center t4s-text-md-center t4s-text-end t4s-cart_meta_prices_wrap">
-                                                <div class="t4s-cart_meta_prices">
-                                                    <div class="t4s-cart_price">
-                                                        <div class="vertical-alignment"><del>MRP ₹999.00</del></div><ins>₹431.00</ins>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <!-- Quantity -->
-                                            <div class="quantity-cart-page">
-                                                <span data-quantity-wrapper="" class="t4s-quantity-wrapper t4s-quantity-cart-item">
-                                                    <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
-                                                            <use href="#icon-cart-remove"></use>
-                                                        </svg></button>
-                                                    <button data-quantity-selector="" data-increase-qty="" type="button" class="t4s-quantity-selector is--plus"><svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
-                                                            <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
-                                                        </svg></button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <!-- Mobile View Block End-->
                                         <div class="cart-item-data">
                                             <div class="t4s-text-lg-center t4s-text-md-center t4s-text-start t4s-cart_meta_prices_wrap">
                                                 <div class="t4s-cart_meta_prices">
-                                                    <div class="t4s-cart_price"><ins>₹431.00</ins>
-                                                        <div><del>₹999.00</del></div>
+                                                    <div class="t4s-cart_price">₹<?php echo $row['productPrice']; ?>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="t4s-text-lg-end t4s-text-md-center t4s-text-start cart-item-final-price">
-                                                <span class="t4s-cart-item-price">₹431.00
+                                                <span class="t4s-cart-item-price">₹<?php echo $row['productPrice']; ?>
                                                 </span>
                                             </div>
                                             <div class=" t4s-text-md-center t4s-text-start delete-cart-item">
-                                                <a href="/cart/change?quantity=0&amp;id=46026505519350:7aa180011dc96f7b68b268edfcbc368d" rel="nofollow" class="t4s-page_cart__remove" data-no-instant="" data-cart-remove="" data-id="46026505519350:7aa180011dc96f7b68b268edfcbc368d" data-tooltip="top-start" data-t4s-tooltip="Remove this item">
+                                                <a href="account/cart.php?pid=<?php echo $row['id']; ?>&action=delete-item" class="t4s-page_cart__remove t4s-tooltip-actived" alt="Remove this item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                         <path d="M6.6665 1.33203L5.99984 1.9987H2.6665V3.33203H3.33317V13.332C3.33317 13.6802 3.46072 14.0351 3.71208 14.2865C3.96343 14.5378 4.31836 14.6654 4.6665 14.6654H11.3332C11.6813 14.6654 12.0362 14.5378 12.2876 14.2865C12.539 14.0351 12.6665 13.6802 12.6665 13.332V3.33203H13.3332V1.9987H9.99984L9.33317 1.33203H6.6665ZM4.6665 3.33203H11.3332V13.332H4.6665V3.33203ZM5.99984 4.66536V11.9987H7.33317V4.66536H5.99984ZM8.6665 4.66536V11.9987H9.99984V4.66536H8.6665Z" fill="black"></path>
                                                     </svg>
                                                 </a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
-
-
 
                             <?php
                             }
                             ?>
-
 
                         </div>
                     </div>
@@ -181,18 +166,16 @@ include "include/header.php";
                         <div class="cart-page-checkout">
                             <link href="cdn/shop/t/130/assets/main-cart-checkout.css" rel="stylesheet" type="text/css" media="all">
 
-
-
-
                             <!-- Heading -->
                             <div class="cart-checkout-heading">Cart Summary</div>
-                            <div class="checkout-note shipping-estimate" id="shipping-estimate-date">Estimated Delivery Date : 06 May 2024</div>
+                            <div class="checkout-note shipping-estimate" id="shipping-estimate-date"></div>
 
-                            <div data-cart-prices="">
+                            <div>
                                 <!-- Price Total -->
                                 <div class="card-col first-item-border">
                                     <div class="checkout-label-normal">Item Total <span class="label-sub-text">(MRP)</span></div>
-                                    <div class="checkout-label-normal">₹3,794.00</div>
+                                    <div class="checkout-label-normal">₹<?php //array_sum(array_column($row, 'id')); 
+                                                                        ?></div>
                                 </div>
 
                                 <!-- Discount -->
@@ -200,7 +183,7 @@ include "include/header.php";
                                     <div class="checkout-label-normal mobile-text-highlighted">Discount from MRP</div>
                                     <div class="checkout-label-normal mobile-text-highlighted">
 
-                                        <div class="checkout-label-highlighted">-₹568.00</div>
+                                        <div class="checkout-label-highlighted">-₹0</div>
 
                                     </div>
                                 </div>
@@ -218,7 +201,7 @@ include "include/header.php";
 
                                     <div class="checkout-label-normal mobile-text-highlighted">
 
-                                        <del>₹190.00</del><span class="checkout-label-highlighted">&nbsp;Free</span>
+                                        <del>₹100</del><span class="checkout-label-highlighted">&nbsp;Free</span>
 
                                     </div>
                                 </div>
@@ -268,7 +251,9 @@ include "include/header.php";
 
                                 estimatedDeliveryDateElement.textContent = "Estimated Delivery Date : " + estimatedDeliveryDate;
                             </script>
-                            <div class="t4s-btn-group__checkout-update"><button type="submit" data-loading-bar="" data-confirm="ck_lumise" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">Continue To Checkout
+                            <div class="t4s-btn-group__checkout-update">
+                                <button type="submit" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
+                                    Continue To Checkout
                                 </button>
 
                                 <!-- <button
@@ -294,8 +279,16 @@ include "include/header.php";
                         <path d="M263.4 103.4C269.7 97.18 279.8 97.18 286.1 103.4L320 137.4L353.9 103.4C360.2 97.18 370.3 97.18 376.6 103.4C382.8 109.7 382.8 119.8 376.6 126.1L342.6 160L376.6 193.9C382.8 200.2 382.8 210.3 376.6 216.6C370.3 222.8 360.2 222.8 353.9 216.6L320 182.6L286.1 216.6C279.8 222.8 269.7 222.8 263.4 216.6C257.2 210.3 257.2 200.2 263.4 193.9L297.4 160L263.4 126.1C257.2 119.8 257.2 109.7 263.4 103.4zM80 0C87.47 0 93.95 5.17 95.6 12.45L100 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H158.2L172.8 352H496C504.8 352 512 359.2 512 368C512 376.8 504.8 384 496 384H160C152.5 384 146.1 378.8 144.4 371.5L67.23 32H16C7.164 32 0 24.84 0 16C0 7.164 7.164 0 16 0H80zM107.3 64L150.1 256H487.8L541.8 64H107.3zM128 456C128 425.1 153.1 400 184 400C214.9 400 240 425.1 240 456C240 486.9 214.9 512 184 512C153.1 512 128 486.9 128 456zM184 480C197.3 480 208 469.3 208 456C208 442.7 197.3 432 184 432C170.7 432 160 442.7 160 456C160 469.3 170.7 480 184 480zM512 456C512 486.9 486.9 512 456 512C425.1 512 400 486.9 400 456C400 425.1 425.1 400 456 400C486.9 400 512 425.1 512 456zM456 432C442.7 432 432 442.7 432 456C432 469.3 442.7 480 456 480C469.3 480 480 469.3 480 456C480 442.7 469.3 432 456 432z"></path>
                     </svg>
                     <h4 class="t4s-cart_page_heading">Your cart is empty.</h4>
-                    <div class="t4s-cart_page_txt">Before proceed to checkout you must add some products to your shopping cart.<br> You will find a lot of interesting products on our "Shop" page.</div>
-                    <p class="t4s-return-to-shop"><a data-loading-bar="" class="t4s-btn-cart__emty t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-btn-effect-default t4s-justify-content-center t4s-truncate" href="index.php">Return To Shop</a></p>
+                    <div class="t4s-cart_page_txt">
+                        Before proceed to checkout you must add some products to your shopping cart.
+                        <br>
+                        You will find a lot of interesting products on our "Shop" page.
+                    </div>
+                    <p class="t4s-return-to-shop">
+                        <a class="t4s-btn-cart__emty t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-color-primary t4s-btn-effect-default t4s-justify-content-center t4s-truncate" href="index.php">
+                            Return To Shop
+                        </a>
+                    </p>
                 </div>
 
             <?php } ?>

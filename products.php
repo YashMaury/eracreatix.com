@@ -232,7 +232,7 @@ if (isset($_POST['submit'])) {
                                                                 </button>
                                                             </div>
                                                             <!-- render t4s_wis_cp.liquid -->
-                                                            <a href="account/wishlist.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=wishlist" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <a href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
                                                             </a>
                                                             <!-- <button data-animation-atc="{ &quot;ani&quot;:&quot;t4s-ani-shake&quot;,&quot;time&quot;:6000 }" type="submit" name="add" data-atc-form="" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">

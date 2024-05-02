@@ -114,7 +114,7 @@ include "include/header.php";
                                         </div>
                                         <?php if ($row['productAvailability'] == 'In Stock') { ?>
                                             <div class="text-center">
-                                                <a href="account/wishlist.php?pid=<?php echo htmlentities($row['id']) ?>&&action=wishlist" 
+                                                <a href="account/cart.php?pid=<?php echo htmlentities($row['id']) ?>&&action=cart" 
                                                 class="t4s-product-form__submit t4s-btn t4s-btn-style-default 
                                                 t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  
                                                 t4s-btn-effect-sweep-to-top t4s-btn-loading__svg"
