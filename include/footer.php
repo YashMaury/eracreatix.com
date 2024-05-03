@@ -727,6 +727,15 @@
 <script src="cdn/shop/t/130/assets/nouislider.min.js"></script>
 <script src="cdn/shop/t/130/assets/des_adm.min.js"></script>
 <script src="cdn/shop/t/130/assets/t4s-instant-page.min.js"></script>
+<script src="cdn/shop/t/130/assets/reviewOther.aio.min.js"></script>
+<script src="cdn/shop/t/130/assets/t4s-currencies.min.js"></script>
+<script src="cdn/shop/t/130/assets/threesixty.min.js"></script>
+<script src="cdn/shop/t/130/assets/hand.min.js"></script>
+<script src="cdn/shop/t/130/assets/typed.min.js"></script>
+<link href="cdn/shop/t/130/assets/mini-cart.aio.min.css">
+<link href="cdn/shop/t/130/assets/mobile_nav.aio.min.css">
+<link href="cdn/shop/t/130/assets/login-sidebar.aio.min.css">
+<link href="cdn/shop/t/130/assets/search-hidden.aio.min.css">
 
 <template id="btns_pr_temp">[split_t4snt][split_t4snt][split_t4snt][split_t4snt]</template>
 <template id="t4s_temp_modal">

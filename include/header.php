@@ -20,7 +20,7 @@ if (isset($_SESSION['id'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="theme-color" content="#fff">
-    <link rel="canonical" href="index.html" />
+    <link rel="canonical" href="index.php" />
     <link rel="preconnect" href="https://cdn.shopify.com/" crossorigin>
     <link rel="shortcut icon" type="image/png" href="cdn/shop/files/apple-icon-152x152d3ee.png?v=1674062412&amp;width=32">
     <link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="cdn/shop/files/apple-icon-152x152c78b.png?v=1674062412&amp;width=152">
@@ -118,8 +118,8 @@ if (isset($_SESSION['id'])) {
 
         </div>
         <header id="shopify-section-header-categories-menu" class="shopify-section t4s-section t4s-section-header t4s-is-header-categories-menu">
-            <link href="cdn/shop/t/130/assets/searchtap-sticky-mobile59dd.css?v=72416738382921796941704321960" rel="stylesheet" type="text/css" media="all" />
-            <link href="cdn/shop/t/130/assets/searchbar-animationdb98.css?v=113187690931086993301705988226" rel="stylesheet" type="text/css" media="all" />
+            <link href="cdn/shop/t/130/assets/searchtap-sticky-mobile59dd.css" rel="stylesheet" type="text/css" media="all" />
+            <link href="cdn/shop/t/130/assets/searchbar-animationdb98.css" rel="stylesheet" type="text/css" media="all" />
 
             <!-- Design 3 code ends-->
 
@@ -128,22 +128,27 @@ if (isset($_SESSION['id'])) {
                 <div class="t4s-section-header__mid t4s-pr">
                     <div class="t4s-container">
                         <div data-header-height class="t4s-row t4s-gx-15 t4s-gx-md-30 t4s-align-items-center" style="">
-                            <div class="t4s-col-md-4 t4s-col-3 t4s-d-lg-none t4s-col-item"><a href="index.html" data-menu-drawer data-drawer-options='{ "id":"#t4s-menu-drawer" }' class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
-                                        <rect width="30" height="1.5"></rect>
+                            <div class="t4s-col-md-4 t4s-col-3 t4s-d-lg-none t4s-col-item">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
+                                    <rect width="30" height="1.5"></rect>
+                                    <a href="index.html" class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu">
                                         <rect y="7" width="20" height="1.5"></rect>
                                         <rect y="14" width="30" height="1.5"></rect>
-                                    </svg></a></div>
+                                    </a>
+                                </svg> -->
+                                <!-- <a href="index.html" class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu"> -->
+                                <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a>
+                            </div>
                             <div class="t4s-col-lg-3 t4s-col-md-4 t4s-col-6 t4s-text-center t4s-text-lg-start t4s-col-item">
                                 <div class=" t4s-header__logo t4s-lh-1"><a class="t4s-d-inline-block" href="index.php">
                                         <img loading="lazy" srcset="media/logoo.png 2x" src="media/logoo.png" class="header__normal-logo t4s-d-none t4s-d-lg-block" width="50" height="43" alt="Era Creatix" style="width: 50px">
-
                                         <img loading="lazy" srcset="media/logoo.png 2x" src="media/logoo.png" class="header__sticky-logo t4s-d-none t4s-d-none" width="50" height="43" alt="Era Creatix" style="width: 50px">
                                         <img loading="lazy" srcset="media/logoo.png 2x" src="media/logoo.png" class="header__mobile-logo t4s-d-lg-none" width="50" height="43" alt="Era Creatix" style="width: 50px">
                                     </a></div>
                             </div>
 
                             <!-- Added by team Searchtap -->
-                            <div class="st-search-box hidden-mobile" style="">
+                            <div class="st-search-box hidden-mobile">
                                 <div class="search-input-container">
                                     <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
                                     <input type="text" autocomplete="off" placeholder="" name="q" id="st-search" class="st-search-input">
@@ -234,7 +239,7 @@ if (isset($_SESSION['id'])) {
 
                 <div class="t4s-section-header__bot t4s-d-none t4s-d-lg-block">
                     <div class="t4s-container">
-                        <div data-header-height2 class="t4s-row t4s-g-0 t4s-align-items-center">
+                        <div class="t4s-row t4s-g-0 t4s-align-items-center">
                             <div class="t4s-col t4s-col-item">
                                 <nav class="t4s-navigation t4s-text-start t4s-nav__hover_sideup t4s-nav-arrow__true">
                                     <ul data-menu-nav id="t4s-nav-ul" class="t4s-nav__ul t4s-d-inline-flex t4s-flex-wrap t4s-align-items-center">
@@ -264,25 +269,53 @@ if (isset($_SESSION['id'])) {
                     </div>
 
                 </div>
+                <div class="t4s-section-header__bot t4s-d-block t4s-d-lg-none">
+                    <div class="t4s-container">
+                        <div class="t4s-row t4s-g-0 t4s-align-items-center">
+                            <div class="t4s-col t4s-col-item">
+                                <nav class="t4s-navigation t4s-text-start t4s-nav__hover_sideup t4s-nav-arrow__true">
+                                    <ul data-menu-nav id="t4s-nav-ul" class="t4s-nav__ul  t4s-flex-wrap t4s-align-items-center">
+
+                                        <?php $sql = mysqli_query($con, "select id,categoryName  from category limit 6");
+                                        while ($row = mysqli_fetch_array($sql)) {
+                                        ?>
+                                            <li class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets">
+                                                <a class="t4s-d-flex t4s-align-items-center t4s-pr" href="collections.php?cid=<?php echo $row['id']; ?>" target="_self">
+                                                    <?php echo $row['categoryName']; ?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
+
+                                        <!-- <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li> -->
+                                        <li class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets" style="margin-bottom: 10px;">
+                                            <a href="">Return/Exchange</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
                 <!--  Added by team searchtap    -->
-
-
 
                 <div id="header-with-edd">
                     <div class='search-tap-mobile' id="search-tap-with-icons">
-                        <div class="sticky-header-menu t4s-d-lg-none" id="push-menu-sticky"><a href="index.html" data-menu-drawer data-drawer-options='{ "id":"#t4s-menu-drawer" }' class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
+                        <div class="sticky-header-menu t4s-d-lg-none" id="push-menu-sticky">
+                            <a href="index.php" data-drawer-options='{ "id":"#t4s-menu-drawer" }' class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
                                     <rect width="30" height="1.5"></rect>
                                     <rect y="7" width="20" height="1.5"></rect>
                                     <rect y="14" width="30" height="1.5"></rect>
-                                </svg></a></div>
-
-
-
+                                </svg>
+                            </a>
+                        </div>
 
                         <div class="st-search-box hidden-desktop">
                             <!-- <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">  -->
                             <div class="search-input-container">
-                                <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="../cdn.shopify.com/s/files/1/0632/2526/6422/files/search-icon-website5d10.png?v=1701943026" width="24" />
+                                <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
                                 <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">
                                 <div class="placeholder-label animation">
                                     <span class="common-text">Search for</span>
@@ -315,21 +348,11 @@ if (isset($_SESSION['id'])) {
                     </div>
                     <div class="sticky-edd-container"></div>
                 </div>
-                <script src="cdn/shop/t/130/assets/sticky-header-scroll1b87.js?v=50575463609269467261708928284"></script>
-
+                <script src="cdn/shop/t/130/assets/sticky-header-scroll1b87.js"></script>
 
             </div>
 
-
-
-
         </header>
         <div id="shopify-section-custom-tag-color" class="shopify-section">
-
-
-
-
-
-
 
         </div>

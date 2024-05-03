@@ -4,7 +4,7 @@ include "include/header.php";
 
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
     <section id="shopify-section-template--16885347549430__custom_liquid_DyjpwP" class="shopify-section t4s-section t4s-section-all t4s-custom-liquid"><!-- sections/custom-liquid.liquid -->
-        <div class="t4s-section-inner t4s_nt_se_template--16885347549430__custom_liquid_DyjpwP t4s_se_template--16885347549430__custom_liquid_DyjpwP t4s-container-fluid" style="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: ;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: ;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: ;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
+        <div class="t4s-section-inner t4s_nt_se_template--16885347549430__custom_liquid_DyjpwP t4s_se_template--16885347549430__custom_liquid_DyjpwP t4s-container-fluid">
             <div class="t4s-code__liquid" hdt-reveal="slide-in"></div>
         </div>
 
@@ -273,12 +273,7 @@ include "include/header.php";
 
                             <div class="collection--img handle-overlap">
 
-                                <img loading="lazy" style="object-position: ;
-                     
-                       --image-adjustment:2px;
-                       --image-adjustment-mb:2px;
-                    
-                     " class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff subcollection-img " data-src="//vaaree.com/cdn/shop/collections/buy-product-title-at-vaaree-online_c27fe59f-ea63-483e-887d-8b5e25f58447.jpg?v=1706522983&width=1" data-widths=[100,200,400,600,700,800,900,1000,1200,1400,1600,2400] data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=800 height=800 alt="subcollection Floral Prints ">
+                                <img loading="lazy" style="--image-adjustment:2px;--image-adjustment-mb:2px;" class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff subcollection-img " data-src="//vaaree.com/cdn/shop/collections/buy-product-title-at-vaaree-online_c27fe59f-ea63-483e-887d-8b5e25f58447.jpg?v=1706522983&width=1" data-widths=[100,200,400,600,700,800,900,1000,1200,1400,1600,2400] data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=800 height=800 alt="subcollection Floral Prints ">
                             </div>
                             <div class="collection--text">
                                 Floral Prints
@@ -304,12 +299,7 @@ include "include/header.php";
 
                             <div class="collection--img handle-overlap">
 
-                                <img loading="lazy" style="object-position: ;
-                     
-                       --image-adjustment:2px;
-                       --image-adjustment-mb:2px;
-                    
-                     " class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff subcollection-img " data-src="//vaaree.com/cdn/shop/collections/buy-product-title-at-vaaree-online_187f18be-6dab-4e5a-8282-ccb947f869df.jpg?v=1706522977&width=1" data-widths=[100,200,400,600,700,800,900,1000,1200,1400,1600,2400] data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=800 height=800 alt="subcollection Ethnic Prints ">
+                                <img loading="lazy" style="--image-adjustment:2px;--image-adjustment-mb:2px;" class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff subcollection-img " data-src="//vaaree.com/cdn/shop/collections/buy-product-title-at-vaaree-online_187f18be-6dab-4e5a-8282-ccb947f869df.jpg?v=1706522977&width=1" data-widths=[100,200,400,600,700,800,900,1000,1200,1400,1600,2400] data-optimumx="2" data-sizes="auto" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width=800 height=800 alt="subcollection Ethnic Prints ">
                             </div>
                             <div class="collection--text">
                                 Ethnic Prints

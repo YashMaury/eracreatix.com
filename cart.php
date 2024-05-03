@@ -77,6 +77,7 @@ include "include/header.php";
                             $list = mysqli_query($con, "
                                         select 
                                         products.id,
+                                        cart.id as cartId,
                                         products.productName, 
                                         products.productImage1,
                                         products.productPrice
@@ -84,6 +85,8 @@ include "include/header.php";
                                         cart as cart 
                                         on products.id = cart.productId 
                                         where `userId` = '" . $_SESSION['id'] . "'");
+                            ?>
+                            <?php
                             while ($row = mysqli_fetch_array($list)) {
                             ?>
 
@@ -110,11 +113,24 @@ include "include/header.php";
                                                     <div class="t4s-page_cart__actions t4s-align-items-center t4s-d-flex">
                                                         <span class="cart-item-info-label">Qty :</span>
                                                         <span class="t4s-quantity-wrapper t4s-quantity-cart-item">
-                                                            <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus"><svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
+                                                            <button type="button" class="t4s-quantity-selector is--minus">
+                                                                <svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
                                                                     <use href="#icon-cart-remove"></use>
                                                                 </svg>
                                                             </button>
-                                                            <button data-quantity-selector="" data-increase-qty="" type="button" class="t4s-quantity-selector is--plus"><svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
+                                                            <input 
+                                                                type="number" 
+                                                                class="t4s-quantity-input" 
+                                                                step="1" 
+                                                                min="0" max="7" 
+                                                                name="updates[]" 
+                                                                value="1" 
+                                                                size="4" 
+                                                                pattern="[0-9]*" 
+                                                                inputmode="numeric" 
+                                                                onchange="">
+                                                            <button type="button" class="t4s-quantity-selector is--plus">
+                                                                <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                                     <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
                                                                 </svg>
                                                             </button>
@@ -145,7 +161,7 @@ include "include/header.php";
                                                 </span>
                                             </div>
                                             <div class=" t4s-text-md-center t4s-text-start delete-cart-item">
-                                                <a href="account/cart.php?pid=<?php echo $row['id']; ?>&action=delete-item" class="t4s-page_cart__remove t4s-tooltip-actived" alt="Remove this item">
+                                                <a href="account/cart.php?pid=<?php echo $row['cartId']; ?>&action=delete-item" class="t4s-page_cart__remove t4s-tooltip-actived" alt="Remove this item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                         <path d="M6.6665 1.33203L5.99984 1.9987H2.6665V3.33203H3.33317V13.332C3.33317 13.6802 3.46072 14.0351 3.71208 14.2865C3.96343 14.5378 4.31836 14.6654 4.6665 14.6654H11.3332C11.6813 14.6654 12.0362 14.5378 12.2876 14.2865C12.539 14.0351 12.6665 13.6802 12.6665 13.332V3.33203H13.3332V1.9987H9.99984L9.33317 1.33203H6.6665ZM4.6665 3.33203H11.3332V13.332H4.6665V3.33203ZM5.99984 4.66536V11.9987H7.33317V4.66536H5.99984ZM8.6665 4.66536V11.9987H9.99984V4.66536H8.6665Z" fill="black"></path>
                                                     </svg>
@@ -174,7 +190,7 @@ include "include/header.php";
                                 <!-- Price Total -->
                                 <div class="card-col first-item-border">
                                     <div class="checkout-label-normal">Item Total <span class="label-sub-text">(MRP)</span></div>
-                                    <div class="checkout-label-normal">₹<?php //array_sum(array_column($row, 'id')); 
+                                    <div class="checkout-label-normal">₹<?php //print_r(array_sum(array_column($summary, 'productPrice')));
                                                                         ?></div>
                                 </div>
 
