@@ -48,7 +48,8 @@ if (isset($_SESSION['id'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Harmonia+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" media="print" onload="this.media='all'">
-    <link href="cdn/shop/t/130/assets/minified_css.minae1a.css?v=5227850076568898271712046286" rel="stylesheet">
+    <link href="cdn/shop/t/130/assets/minified_css.minae1a.css" rel="stylesheet">
+    <link href="cdn/search.css" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
@@ -312,23 +313,33 @@ if (isset($_SESSION['id'])) {
                             </a>
                         </div>
 
-                        <div class="st-search-box hidden-desktop">
-                            <!-- <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">  -->
-                            <div class="search-input-container">
-                                <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
-                                <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">
-                                <div class="placeholder-label animation">
-                                    <span class="common-text">Search for</span>
-                                    <span class="text-container-searchbar">
+                        <form class="input-group">
+                            <div class="st-search-box hidden-desktop">
+                                <!-- <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">  -->
+                                <div class="search-input-container">
+                                    <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
+                                    <input type="text" autocomplete="off" placeholder="" id="search2" class="st-search-input" 
+                                    onkeydown="key_pressed_in_search(event)" 
+                                    oninput="find_search_results(this)" 
+                                    onfocus="find_search_results(this)">
+                                    <!-- <button type="button" id="learntocode_searchbtn" class="input-group-text btn btn-primary border-3" onclick="click_learntocode_search_btn()">
+                                        <img alt="Delivery Time Icon" height="11" src="media/search.png" width="24" />
+                                    </button> -->
+                                    <div class="placeholder-label animation">
+                                        <span class="common-text">Search for</span>
+                                        <span class="text-container-searchbar">
 
-                                        <span class="text">Bedsheets</span>
-                                        <span class="text">Cushion covers</span>
-                                        <span class="text">Dining sets</span>
+                                            <span class="text">Bedsheets</span>
+                                            <span class="text">Cushion covers</span>
+                                            <span class="text">Dining sets</span>
 
-                                    </span>
+                                        </span>
+                                    </div>
+                                    <div id="listofsearchresults">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
 
 
                         <div class="t4s-site-nav__icon t4s-site-nav__cart sticky-header-cart-container" id="sticky-header-cart-container">

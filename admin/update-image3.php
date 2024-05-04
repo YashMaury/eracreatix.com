@@ -1,7 +1,7 @@
 
 <?php
 include('include/config.php');
-if(isset($_SESSION['alogin']))
+if(!isset($_SESSION['alogin']))
 	{	
 header('location:index.php');
 }

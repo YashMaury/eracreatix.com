@@ -99,7 +99,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Description</label>
+											<label class="control-label" for="basicinput">Image</label>
 											<div class="controls">
 												<input type="file" class="span8" name="image">
 											</div>

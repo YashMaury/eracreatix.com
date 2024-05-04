@@ -987,7 +987,7 @@
         };
     }())
 </script>
-
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 <div id="st-autocomplete-container"></div>
 <link href="cdn/shop/t/130/assets/searchtap-custome7d6.css?v=67774144590414137131708928282" rel="stylesheet" type="text/css" media="all" />
 <div id="magic-checkout-data-container">
@@ -1013,6 +1013,10 @@
 
 
 </div>
+
+<?php //include "searchList.php"; ?>
+
+
 </body>
 
 </html>
