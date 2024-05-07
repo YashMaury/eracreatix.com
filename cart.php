@@ -78,6 +78,7 @@ include "include/header.php";
                                         select 
                                         products.id,
                                         cart.id as cartId,
+                                        cart.quantity,
                                         products.productName, 
                                         products.productImage1,
                                         products.productPrice
@@ -113,37 +114,19 @@ include "include/header.php";
                                                     <div class="t4s-page_cart__actions t4s-align-items-center t4s-d-flex">
                                                         <span class="cart-item-info-label">Qty :</span>
                                                         <span class="t4s-quantity-wrapper t4s-quantity-cart-item">
-                                                            <button type="button" class="t4s-quantity-selector is--minus">
-                                                                <svg class="remove-icon-cart-page" viewBox="0 0 24 24" width="17">
-                                                                    <use href="#icon-cart-remove"></use>
+                                                            <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
+                                                                <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
+                                                                    <path d="M10 0v2H0V0z" fill="currentColor"></path>
                                                                 </svg>
                                                             </button>
-                                                            <input 
-                                                                type="number" 
-                                                                class="t4s-quantity-input" 
-                                                                step="1" 
-                                                                min="0" max="7" 
-                                                                name="updates[]" 
-                                                                value="1" 
-                                                                size="4" 
-                                                                pattern="[0-9]*" 
-                                                                inputmode="numeric" 
-                                                                onchange="">
-                                                            <button type="button" class="t4s-quantity-selector is--plus">
+                                                            <input type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="<?=$row['quantity']?>" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
+                                                            <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
                                                                 <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                                     <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
                                                                 </svg>
                                                             </button>
                                                         </span>
                                                     </div>
-                                                    <!-- <div class="t4s-page_cart__meta">
-                                                            <span class="t4s-cart_meta_variant cart-item-info-label">
-                                                                Size : <span class="selected-variant">Bundles</span>
-                                                            </span>
-                                                            <div class="lowstock-pill">
-                                                                <span class="lowstock-pill-text">Stock ending soon</span>
-                                                            </div>
-                                                        </div> -->
 
                                                 </div>
                                             </div>

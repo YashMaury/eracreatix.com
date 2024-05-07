@@ -161,7 +161,7 @@ include "include/header.php";
 
     </div>
     <div class="t4s-prs-footer t4s-has-btn-view-all t4s-text-center" style="margin-bottom: 25px;">
-        <a class="t4s-btn t4s-viewall-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-true t4s-btn-color-dark t4s-btn-effect-default" href="collections/dinner-plate-quarter-plates.html">
+        <a class="t4s-btn t4s-viewall-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-true t4s-btn-color-dark t4s-btn-effect-default" href="all-collections.php">
             View All
             <svg class="t4s-btn-icon" viewBox="0 0 14 10">
                 <use xlink:href="#t4s-icon-btn"></use>

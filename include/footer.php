@@ -1,5 +1,4 @@
-<section id="shopify-section-template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a" class="shopify-section t4s-section t4s-section-all t4s_tp_cdt t4s-custom-html">
-    <!-- sections/custom-html.liquid -->
+<!-- <section id="shopify-section-template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a" class="shopify-section t4s-section t4s-section-all t4s_tp_cdt t4s-custom-html">
     <div class="t4s-section-inner t4s_nt_se_template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a t4s_se_template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a t4s-se-container" style="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: ;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: ;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
         <div class="t4s-container">
             <div class="t4s-container-inner">
@@ -118,7 +117,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 </main>
 
 <footer id="t4s-footer">

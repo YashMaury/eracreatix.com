@@ -167,40 +167,9 @@ if (isset($_POST['submit'])) {
                                     </div>
 
                                     <div class="t4s-col-item">
-                                        <script>
-                                            var couponsSvg = `<img src=${"cdn/shop/t/130/assets/coupon-icon.svg?v=59759816259572521101711546592"} height=40 width=40 alt="coupon discount svg">`,
-                                                plusSvg = `<img src=${"cdn/shop/t/130/assets/coupon-plus.svg?v=31888299237565135211711546593"} height=16 width=16 alt="plus icon svg">`,
-                                                additionalOfferSvg = `<img src=${"cdn/shop/t/130/assets/additional-offer-svg.svg?v=104060319331156136561711546591"} height=40 width=40 alt="additional offers svg">`,
-                                                creditCardSvg = `<img src=${"cdn/shop/t/130/assets/credit-card.svg?v=79212992460706527181711546593"} height=24 width=24 alt="credit card svg">`,
-                                                clipboardCopySvg = `<img src=${"cdn/shop/t/130/assets/clipboard-copy.svg?v=25933601689747333111711546592"} height=20 width=20 alt="copy to clipboard svg">`,
-                                                downChevronSvg = `<img src=${"cdn/shop/t/130/assets/down-chevron.svg?v=127311544472227462511711546594"} height=12 width=12 alt="down chevron svg">`,
-                                                checkCircleSvg = `<img src=${"cdn/shop/t/130/assets/check-circle.svg?v=21160731288057521831711546592"} height=20 width=20 alt="check circle svg">`,
-                                                animationRectangle = `<img src=${"cdn/shop/t/130/assets/animation_rectangle.png?v=161857274409988414171711723908"} class="animation-rectangle" height=80 width=120 alt="animation background">`,
-                                                percentSvg = `<img src=${"cdn/shop/t/130/assets/percent.svg?v=14461041010724030461711723911"} height=16 width=16 alt="percent svg">`;
-                                        </script>
                                         <script src="cdn/shop/t/130/assets/dynamic-offers.js"></script>
                                         <link href="cdn/shop/t/130/assets/best-offers-popup.css" rel="stylesheet" type="text/css" media="all">
                                         <link href="cdn/shop/t/130/assets/dynamic-offers.css" rel="stylesheet" type="text/css" media="all">
-
-                                        <!-- <div class="dynamic-offer-info" id="dynamic-offer-info" style="--animated-icon-bkg:url('//vaaree.com/cdn/shop/t/130/assets/discount-star.svg?v=144037551424494719631711723909')">
-                                            <img src="//vaaree.com/cdn/shop/t/130/assets/animation_rectangle.png?v=161857274409988414171711723908" class="animation-rectangle" height="80" width="120" alt="animation background">
-                                            <span class="popup_discount_text">
-                                                <span class="offer-icon">
-                                                    <div class="animated-icon-container">
-                                                        <div class="rotating-svg-background"></div>
-                                                        <img src="//vaaree.com/cdn/shop/t/130/assets/percent.svg?v=14461041010724030461711723911" height="16" width="16" alt="percent svg">
-                                                    </div>
-                                                </span>
-                                                <span class="popup_text">
-                                                    Get it for <b>₹2515.50</b>
-                                                </span>
-                                            </span>
-                                            <span class="offer_count_text">
-                                                With 2 offers
-                                                <img src="//vaaree.com/cdn/shop/t/130/assets/down-chevron.svg?v=127311544472227462511711546594" height="12" width="12" alt="down chevron svg">
-                                            </span>
-                                        </div> -->
-
                                         <script src="cdn/shop/t/130/assets/best-offers-popup.js"></script>
 
                                     </div>
@@ -210,44 +179,35 @@ if (isset($_POST['submit'])) {
                                     <div class="t4s-col-item product_form_container">
                                         <div class="horizontal-divider-pdp"></div>
 
-
                                         <div class="t4s-product-form__variants is-no-pick__false  is-remove-soldout-false is-btn-full-width__false is-btn-atc-txt-3 is-btn-ck-txt-3 is--fist-ratio-false" style=" --wishlist-color: #222222;--wishlist-hover-color: #56cfe1;--wishlist-active-color: #e81e1e;--compare-color: #222222;--compare-hover-color: #56cfe1;--compare-active-color: #222222;">
-                                            <div data-callbackvariant="" id="t4s-callBackVariantproduct-form-8520322056438template--16885347778806__main">
-                                                <form method="post" action="/cart/add" id="product-form-8520322056438template--16885347778806__main" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-                                                    <input name="id" value="46448138453238" type="hidden">
+                                            <div>
+                                                <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                                                    <input name="pid" value="<?=$_GET['pid'];?>" type="hidden">
+                                                    <input name="action" value="cart" type="hidden">
                                                     <div class="t4s-product-form__buttons" style="--pr-btn-round:40px;">
                                                         <div class="t4s-d-flex t4s-flex-wrap">
-                                                            <div data-quantity-wrapper="" class="t4s-quantity-wrapper t4s-product-form__qty">
-                                                                <button data-quantity-selector="" data-decrease-qty="" type="button" class="t4s-quantity-selector is--minus" aria-label="ATC reduce quantity">
+                                                            <div class="t4s-quantity-wrapper t4s-product-form__qty">
+                                                                <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
                                                                     <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
                                                                         <path d="M10 0v2H0V0z" fill="currentColor"></path>
                                                                     </svg>
                                                                 </button>
-                                                                <input data-quantity-value="" type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
-                                                                <button data-quantity-selector="" data-increase-qty="" type="button" class="t4s-quantity-selector is--plus" aria-label="ATC increase quantity">
+                                                                <input type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
+                                                                <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
                                                                     <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                                         <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
                                                                     </svg>
                                                                 </button>
                                                             </div>
                                                             <!-- render t4s_wis_cp.liquid -->
-                                                            <a href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <!-- <a href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
-                                                            </a>
-                                                            <!-- <button data-animation-atc="{ &quot;ani&quot;:&quot;t4s-ani-shake&quot;,&quot;time&quot;:6000 }" type="submit" name="add" data-atc-form="" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
-                                                                    <span class="t4s-btn-atc_text">
-                                                                        Add to cart
-                                                                    </span>
-                                                                    <span class="t4s-loading__spinner" hidden="">
-                                                                        <svg width="16" height="16" hidden="" class="t4s-svg-spinner" focusable="false" role="presentation" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                                                            <circle class="t4s-path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                                                                        </svg>
-                                                                    </span>
-                                                                </button> -->
-                                                        </div><button data-class="t4s-mfp-btn-close-inline" data-id="t4s-pr-popup__notify-stock" data-storageid="notify-stock46448138453238" data-mfp-src="" data-open-mfp-ajax="" class="t4s-pr__notify-stock" type="button" data-notify-stock-btn="" data-variant-id="46448138453238" data-root-url="/" style="display: none">
-                                                            Notify Me When Available
-                                                        </button>
-                                                    </div><input type="hidden" name="product-id" value="8520322056438"><input type="hidden" name="section-id" value="template--16885347778806__main">
+                                                            </a> -->
+                                                            <button type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                                Add to Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </form>
                                                 <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
                                             </div>
@@ -462,475 +422,68 @@ if (isset($_POST['submit'])) {
                                             </div>
                                         </div>
                                     </div>
-                                    <script src="https://cdn.hyperspeed.me/script/vaaree.com/cdn/shop/t/130/assets/edd.js?v=62618964849751655441713514985"></script>
-                                    <script>
-                                        var pageType = `product`;
-                                        var apiUsername = "vaaree".trim();
-                                        var apiKey = "666df8a8-f2e9-4fdf-a9cf-30350459b629".trim();
-                                        var vendorPincodeStr = JSON.stringify({
-                                            "Bagooze": "132103",
-                                            "Mark Home": "400053",
-                                            "Linen Design Company Private Limited": "122003",
-                                            "Jaipur Fabric": "302015",
-                                            "Jaipur Prime": "302029",
-                                            "Kotton Culture": "452010",
-                                            "Mrid Cera": "303107",
-                                            "vaareehome": "132103",
-                                            "Haber Living": "641603",
-                                            "Lush & Beyond": "122002",
-                                            "Hitkari": "121003",
-                                            "Indus People": "110030",
-                                            "Easy Goods": "302039",
-                                            "Rajasthani Kart": "302018",
-                                            "Smart Serve": "400064",
-                                            "Green Heirloom": "682016",
-                                            "The White Ink Decor": "201312",
-                                            "Rena Germany": "396230",
-                                            "Chhavi India": "132103",
-                                            "Devarsh Handicrafts": "302029",
-                                            "Export House": "140308",
-                                            "Shreshmo": "400002",
-                                            "Preciso Fashion": "600018",
-                                            "Green Girgit": "121009",
-                                            "Naksh": "400062",
-                                            "Blessing Crafts": "244001",
-                                            "Kanpur Flower Cycling Pvt. Ltd": "209305",
-                                            "Vedas Exports": "342008",
-                                            "KRJ Retail Private Limited": "201301",
-                                            "Mahadev Mill": "380002",
-                                            "Aashi Gifts": "302022",
-                                            "Tree Of Life": "110020",
-                                            "Rad Living": "201305",
-                                            "Lighting Hours": "302029",
-                                            "New Era Enterprises": "110015",
-                                            "Ugaoo Agritech Private Limited": "410507",
-                                            "Sino India": "132103",
-                                            "Abstract India": "132103",
-                                            "JD creations": "201012",
-                                            "Femora": "302013",
-                                            "Halos": "201010",
-                                            "Clasiko India": "132103",
-                                            "Decor Mart": "201301",
-                                            "Athena": "421302",
-                                            "Gayatri Attraction": "302029",
-                                            "Shree Radhe": "360003",
-                                            "Rajasthan Decor": "302017",
-                                            "Klotthe": "245101",
-                                            "Home Studios": "382445",
-                                            "Edya Home": "281001",
-                                            "Blocks Of India": "302029",
-                                            "LIT Lamps": "400037",
-                                            "The Conversion": "122001",
-                                            "Duli India": "110074",
-                                            "Embassy": "560018",
-                                            "Nestroots": "122016",
-                                            "Kolorabia Designs": "122001",
-                                            "Wisdom Decor": "132103",
-                                            "Hiyanshi Creations": "132103",
-                                            "Tailoring India": "394210",
-                                            "Urban Dream": "132103",
-                                            "Homesake": "201307",
-                                            "999 Store": "110047",
-                                            "Bella True": "132103",
-                                            "Bella Casa": "302022",
-                                            "Good Homes": "302001",
-                                            "Artment": "110030",
-                                            "Art Street": "201308",
-                                            "Sambhav Clothings": "560053",
-                                            "Elemntl Designs": "201301",
-                                            "Arrabi": "245101",
-                                            "Aarohi Creations": "302029",
-                                            "Sundram Hastkala": "201010",
-                                            "The Table Fable": "122003",
-                                            "Allo Innoware": "401028",
-                                            "Auram Cookware": "400086",
-                                            "Advance Cork International": "201301",
-                                            "Vaaree": "132103",
-                                            "Asian Handicrafts": "201010",
-                                            "Gopalas": "302022",
-                                            "Fourwalls": "201301",
-                                            "DA Studios": "110025",
-                                            "Sourcing India Inc": "131029",
-                                            "Craftsman India Online": "686671",
-                                            "The Wishing Chair": "110049",
-                                            "Akeeratly": "110052",
-                                            "Vaaree Panipat": "132103",
-                                            "Flag Bearer": "110037",
-                                            "Lock N Lock": "421302",
-                                            "Curio Cart": "201301",
-                                            "Decor Mart Khurja": "203131",
-                                            "Posh N Plush": "282002",
-                                            "The Scented Stories": "560062",
-                                            "Basik Innovation LLP": "396191",
-                                            "SATVIK": "110035",
-                                            "Rago Inc": "132103",
-                                            "Casa Decor": "201310",
-                                            "Coral Tree": "122001",
-                                            "AsianHandicrafts": "403505",
-                                            "Vaaree": "403001",
-                                            "TreeOfLife": "403901"
-                                        });
-                                        var vendorPincode = JSON.parse(vendorPincodeStr);
-                                        var vendorName = "Mason Home";
-                                        var productTags = ["[\"Bins", "Bins \u0026 Boxes \u0026 Baskets", "Boxes \u0026 Baskets\/Storage Basket\"]", "Faux Leather", "Organisers", "Storage \u0026 Organisers", "Storage Box"];
-                                        var fbvFilterTagName = "FBV" || "fbv";
-                                        var defaultNumberOfDays = 4;
-                                        var defaultNumberOfDaysFBV = 3;
-                                        var pageType = `product`;
 
-                                        function init() {
-                                            if (pageType === 'product') {
-                                                var pincodeInputContainer = document.getElementById("input-container");
-                                                var defaultEstimateDeliveryInfo = document.getElementsByClassName("default-estimate-delivery-info")[0];
-                                                var deliveryTextElement = document.getElementsByClassName(`t4s-default-end_delivery`)[0];
-                                                var deliveryInfoFbv = document.getElementsByClassName("delivery-info-fbv")[0];
-                                                var estimateDeliveryDateElementFbv = document.getElementsByClassName("t4s-end_delivery-fbv")[0];
-                                                if (fbvTagExist(productTags)) {
-                                                    deliveryInfoFbv.style.display = "flex";
-                                                    defaultEstimateDeliveryInfo.style.display = "none";
-                                                    estimateDeliveryDateElementFbv.textContent = `3 Day Delivery`;
-                                                } else if (deliveryTextElement) {
-                                                    deliveryTextElement.textContent = `9:00PM on ${calculateDeliveryDate(defaultNumberOfDays, 0)}`;
-                                                }
-                                                var pincodeInput = document.getElementById("pincode-input");
-                                                pincodeInputContainer.addEventListener("submit", handleCheckButton);
-                                                pincodeInput.addEventListener("input", handlePincodeInput);
-                                                pincodeInputContainer.addEventListener("click", () => focusOnInput('pincode-input'));
-                                                var storedPincode = getLocalStorageItem(localStorageKeys.deliveryPincode) || document.getElementById("pincode-input").value;
-                                                storedPincode && showEstimateDeliveryDate(storedPincode, productTags);
-                                            }
-                                            if (pageType === 'collection') {
-                                                var pincodeInputContainer = document.getElementById("edd-form-pincode");
-                                                setDefaultDateInCollectionPage(defaultNumberOfDays, 8520322056438, productTags);
-                                                var doesPincodeExists = getLocalStorageItem('delivery-pincode');
-                                                if (window.innerWidth < 768) {
-                                                    doesPincodeExists ?
-                                                        document.querySelector('.sticky-filter-sort-container').style.top = '85px' :
-                                                        document.querySelector('.sticky-filter-sort-container').style.top = '66px';
-                                                }
-                                                var storedPincode = getLocalStorageItem(localStorageKeys.deliveryPincode);
-                                                pincodeInputContainer && pincodeInputContainer.addEventListener("click", () => focusOnInput('pincode-input-plp'));
-                                                storedPincode && showEstimateDeliveryDateonPlpPage(storedPincode, 8520322056438, productTags);
-                                                window.addEventListener('popstate', function(event) {
-                                                    if (event.state && event.state.page === '/collections') {
-                                                        window.location.reload();
-                                                    }
-                                                });
-                                            }
-                                        }
-                                        init();
-                                    </script>
-
-
-
-
-
-
-
-                                    <link href="//vaaree.com/cdn/shop/t/130/assets/all_available_offers_pdp.css?v=140918229545949887191711722347" rel="stylesheet" type="text/css" media="all">
-                                    <div class="available_offers_container t4s-col-item" style=" --mg-bo-top:20px;
-             --mg-bo-bottom:20px;
-             --mg-bo-top-mb:20px;
-             --mg-bo-bottom-mb:20px;">
-                                        <div class="horizontal-divider-pdp"></div>
-                                        <div class="available_offers_head">
-                                            All Available Offers
-                                        </div>
-                                        <link href="//vaaree.com/cdn/shop/t/130/assets/carousel_pdp_container.css?v=24881465933026492551711985983" rel="stylesheet" type="text/css" media="all">
-                                        <div class="available_offers_content">
-                                            <div class="container-icon-back" style="top:32%;">
-                                                <img src="//vaaree.com/cdn/shop/t/130/assets/back-arrow-white.svg?v=23514945633119969111711722348" height="32" width="32" alt="back arrow svg">
-                                            </div>
-                                            <div class="main_content_wrapper" style="gap:12px">
-
-
-
-
-
-
-                                                <div class="available_offers-image " style="order:5">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/ERA5_pdp.jpg?v=1711537676 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="ERA5" onclick="copyCouponCode(this)"></div>
-                                                </div>
-
-
-
-
-
-                                                <div class="available_offers-image " style="order:5">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src=" 
-https://cdn.shopify.com/s/files/1/0632/2526/6422/files/ERA10_pdp.jpg?v=1711537676 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="ERA10" onclick="copyCouponCode(this)"></div>
-                                                </div>
-
-
-
-
-
-                                                <div class="available_offers-image " style="order:5">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff lazyloadt4sed" src=" 
-https://cdn.shopify.com/s/files/1/0632/2526/6422/files/FLAT600_pdp.jpg?v=1711537676 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="FLAT600" onclick="copyCouponCode(this)"></div>
-                                                </div>
-
-
-
-
-
-                                                <div class="available_offers-image " style="order:5">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff lazyloadt4sed" src=" 
-https://cdn.shopify.com/s/files/1/0632/2526/6422/files/flat-2000.jpg?v=1711723825 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="FLAT2000" onclick="copyCouponCode(this)"></div>
-                                                </div>
-
-
-
-
-
-                                                <div class="available_offers-image " style="order:5">
-                                                    <img loading="lazy" class="lazyloadt4s t4s-lz--fadeIn t4s-obj-eff" src=" 
-https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=1711537677 " width="280" height="96">
-                                                    <div class="imageOverlay" data-coupon-title="CUSHIONLOVE" onclick="copyCouponCode(this)"></div>
-                                                </div>
-
-
-                                            </div>
-                                            <div class="container-icon-next" style="top:32%;">
-                                                <img src="//vaaree.com/cdn/shop/t/130/assets/next-arrow-white.svg?v=142587812265876562051711722351" height="32" width="32" alt="next arrow svg">
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            document.addEventListener("DOMContentLoaded", function() {
-                                                var mainSlider = document.querySelector(`.available_offers_content`);
-                                                var sliderContainer = mainSlider.querySelector('.main_content_wrapper');
-                                                var sliderLeftArrow = mainSlider.querySelector('.container-icon-back');
-                                                var sliderRightArrow = mainSlider.querySelector('.container-icon-next');
-                                                var sliderScrollStep = 280;
-
-                                                sliderLeftArrow.style.opacity = '0';
-                                                sliderContainer.addEventListener('scroll', () => {
-                                                    if (sliderContainer.scrollLeft === 0) {
-                                                        sliderLeftArrow.style.opacity = '0';
-                                                    } else {
-                                                        sliderLeftArrow.style.opacity = '1';
-                                                    }
-
-                                                    if (sliderContainer.scrollLeft + sliderContainer.clientWidth >= sliderContainer.scrollWidth) {
-                                                        sliderRightArrow.style.opacity = '0';
-                                                    } else {
-                                                        sliderRightArrow.style.opacity = '1';
-                                                    }
-                                                });
-
-                                                sliderLeftArrow.addEventListener("click", function() {
-                                                    sliderContainer.scrollBy({
-                                                        left: -sliderScrollStep,
-                                                        behavior: 'smooth'
-                                                    });
-                                                });
-                                                sliderRightArrow.addEventListener("click", function() {
-                                                    sliderContainer.scrollBy({
-                                                        left: sliderScrollStep,
-                                                        behavior: 'smooth'
-                                                    });
-                                                });
-
-                                                if (sliderContainer.scrollWidth > sliderContainer.clientWidth) {
-                                                    sliderLeftArrow.style.display = "block";
-                                                    sliderRightArrow.style.display = "block";
-                                                } else {
-                                                    sliderLeftArrow.style.display = "none";
-                                                    sliderRightArrow.style.display = "none";
-                                                }
-                                            });
-                                        </script>
-                                    </div>
-                                    <script>
-                                        function getCopyText() {
-                                            return `
-      <div class="pdp-toast-wrapper">
-        <img src=${"//vaaree.com/cdn/shop/t/130/assets/check-circle.svg?v=21160731288057521831711546592"} height=20 width=20 alt="check circle svg">
-        <span>Coupon code has been copied.</span>
-      </div>
-    `
-                                        }
-
-                                        function copyTextToClipboardPdp(str, e) {
-                                            if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
-                                                var copyText = getCopyText();
-                                                $('body').append(copyText);
-                                                e.style.pointerEvents = "none";
-                                                var removeToast = setInterval(() => {
-                                                    $(".pdp-toast-wrapper")[0].remove();
-                                                    e.style.pointerEvents = "all";
-                                                    clearInterval(removeToast);
-                                                }, 3000)
-                                                return navigator.clipboard.writeText(str);
-                                            }
-                                            return Promise.reject('The Clipboard API is not available.');
-                                        }
-
-                                        function copyCouponCode(e) {
-                                            var couponCode = e.getAttribute("data-coupon-title")
-                                            copyTextToClipboardPdp(couponCode, e);
-                                        }
-                                        var priorityCoupons = document.querySelectorAll(".set_coupon_priority");
-                                        if (priorityCoupons.length > 0) {
-                                            priorityCoupons.forEach((coupon, index) => {
-                                                coupon.style.order = index + 1;
-                                            })
-                                        }
-                                    </script>
-
-
-
-
-
-                                    <link href="//vaaree.com/cdn/shop/t/130/assets/bank_offers.css?v=103558164800311413151711722348" rel="stylesheet" type="text/css" media="all">
-                                    <div class="bank-offer-container t4s-col-item" style=" --mg-bo-top:20px;
-             --mg-bo-bottom:30px;
-             --mg-bo-top-mb:0px;
-             --mg-bo-bottom-mb:30px;">
-                                        <div class="bank_offers_head">
-                                            Bank Offers
-                                        </div>
-                                        <link href="//vaaree.com/cdn/shop/t/130/assets/carousel_pdp_container.css?v=24881465933026492551711985983" rel="stylesheet" type="text/css" media="all">
-                                        <div class="bank_offers_content">
-                                            <div class="container-icon-back" style="top:27%;">
-                                                <img src="//vaaree.com/cdn/shop/t/130/assets/back-arrow-white.svg?v=23514945633119969111711722348" height="32" width="32" alt="back arrow svg">
-                                            </div>
-                                            <div class="main_content_wrapper" style="gap:12px">
-
-
-                                                <div class="bank-offer-image">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/hdfc_new_pdp.jpg?v=1711535923 " width="" height="">
-                                                </div>
-
-                                                <div class="bank-offer-image">
-                                                    <img loading="lazy" class="t4s-lz--fadeIn t4s-obj-eff ls-is-cached lazyloadt4sed" src=" https://cdn.shopify.com/s/files/1/0632/2526/6422/files/mobi_new_pdp.jpg?v=1711535922" width="" height="">
-                                                </div>
-
-
-                                            </div>
-                                            <div class="container-icon-next" style="top:27%;">
-                                                <img src="//vaaree.com/cdn/shop/t/130/assets/next-arrow-white.svg?v=142587812265876562051711722351" height="32" width="32" alt="next arrow svg">
-                                            </div>
-                                        </div>
-
-                                        <script>
-                                            document.addEventListener("DOMContentLoaded", function() {
-                                                var mainSlider = document.querySelector(`.bank_offers_content`);
-                                                var sliderContainer = mainSlider.querySelector('.main_content_wrapper');
-                                                var sliderLeftArrow = mainSlider.querySelector('.container-icon-back');
-                                                var sliderRightArrow = mainSlider.querySelector('.container-icon-next');
-                                                var sliderScrollStep = 280;
-
-                                                sliderLeftArrow.style.opacity = '0';
-                                                sliderContainer.addEventListener('scroll', () => {
-                                                    if (sliderContainer.scrollLeft === 0) {
-                                                        sliderLeftArrow.style.opacity = '0';
-                                                    } else {
-                                                        sliderLeftArrow.style.opacity = '1';
-                                                    }
-
-                                                    if (sliderContainer.scrollLeft + sliderContainer.clientWidth >= sliderContainer.scrollWidth) {
-                                                        sliderRightArrow.style.opacity = '0';
-                                                    } else {
-                                                        sliderRightArrow.style.opacity = '1';
-                                                    }
-                                                });
-
-                                                sliderLeftArrow.addEventListener("click", function() {
-                                                    sliderContainer.scrollBy({
-                                                        left: -sliderScrollStep,
-                                                        behavior: 'smooth'
-                                                    });
-                                                });
-                                                sliderRightArrow.addEventListener("click", function() {
-                                                    sliderContainer.scrollBy({
-                                                        left: sliderScrollStep,
-                                                        behavior: 'smooth'
-                                                    });
-                                                });
-
-                                                if (sliderContainer.scrollWidth > sliderContainer.clientWidth) {
-                                                    sliderLeftArrow.style.display = "block";
-                                                    sliderRightArrow.style.display = "block";
-                                                } else {
-                                                    sliderLeftArrow.style.display = "none";
-                                                    sliderRightArrow.style.display = "none";
-                                                }
-                                            });
-                                        </script>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
+                                    <br>
 
                                     <div class="product-highlight-container is--tab-position__external t4s-col-item">
-                                        <div class="t4s-tabs t4s-type-accordion" data-t4s-tabs="">
-                                            <div class="t4s-tab-wrapper t4s-active" data-t4s-tab-wrapper="">
-                                                <a id="t44_description_block" class="t4s-tab__title t4s-fwm t4s-ch" href="#t4s-description_block" rel="nofollow" data-t4s-tab-item="" data-no-instant="">
+                                        <div class="t4s-tabs t4s-type-accordion t4s-tabs-enabled t4s-tabs-accordion-enabled">
+                                            <div class="t4s-tab-wrapper" id="t44_highlight_block_status">
+                                                <a id="t44_highlight_block" class="t4s-tab__title t4s-fwm t4s-ch" rel="nofollow">
                                                     <span class="t4s-tab__text">
                                                         Product Highlight
                                                     </span>
                                                     <span class="t4s-tab__icon"></span>
                                                 </a>
-                                                <div id="t4s-description_block" class="t4s-rte t4s-tab-content t4s-remove-border" data-t4s-tab-content="">
-                                                    <link href="//vaaree.com/cdn/shop/t/130/assets/product-highlight.css?v=124748732631043092001711985986" rel="stylesheet" type="text/css" media="all">
-
+                                                <div id="t4s-highlight_block" class="t4s-rte t4s-tab-content t4s-remove-border">
+                                                    <link href="cdn/shop/t/130/assets/product-highlight.css" rel="stylesheet" type="text/css" media="all">
+                                                    <script>
+                                                        $('#t44_highlight_block').click(function() {
+                                                            $('#t4s-highlight_block').toggle();
+                                                            $('#t44_highlight_block_status').toggleClass('t4s-active');
+                                                        });
+                                                    </script>
                                                     <div class="product-highlight-content">
                                                         <div class="trust-banner-container">
                                                             <span>
                                                                 <div class="trust-banner-logo">
-                                                                    <img src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/vaaree_trust_banner_logo.webp?v=1711526611" height="24" width="24">
                                                                     <span class="trust-banner-title">Trust</span>
                                                                 </div>
                                                             </span>
                                                             <span class="trust-banner-text">Best quality from verified manufacturers</span>
                                                         </div>
                                                         <div class="product-info-bullets">
-
-
-
-
+                                                            <div class="product-info-bullet">
+                                                                <div class="product-info-bullet-heading">Size</div>
+                                                                <div class="product-info-bullet-text-icon">
+                                                                    <span id="product-info-size">Medium</span>
+                                                                </div>
+                                                            </div>
                                                             <div class="product-info-bullet">
                                                                 <div class="product-info-bullet-heading">Material</div>
                                                                 <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-material">Faux Leather</span>
+                                                                    <span id="product-info-material">Bone China</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-info-bullet">
+                                                                <div class="product-info-bullet-heading">Design Style</div>
+                                                                <div class="product-info-bullet-text-icon">
+                                                                    <span id="product-info-design-style">Traditional</span>
 
                                                                 </div>
                                                             </div>
-
-
-
-
-
-
-
-
-
-
+                                                            <div class="product-info-bullet">
+                                                                <div class="product-info-bullet-heading">Type</div>
+                                                                <div class="product-info-bullet-text-icon">
+                                                                    <span id="product-info-type">Wall Mount, Table Top</span>
+                                                                </div>
+                                                            </div>
                                                             <div class="product-info-bullet">
                                                                 <div class="product-info-bullet-heading">Color</div>
                                                                 <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-color">Gold</span>
-
+                                                                    <span id="product-info-color">Multicolor</span>
                                                                 </div>
                                                             </div>
-
-
-
                                                         </div>
-
 
                                                         <div class="product-info-care-instruction">
                                                             <div class="product-info-heading">
@@ -946,34 +499,33 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="product-information-container is--tab-position__external t4s-col-item">
-                                        <div class="t4s-tabs t4s-type-accordion" data-t4s-tabs="">
-                                            <div class="t4s-tab-wrapper t4s-active" data-t4s-tab-wrapper="">
-                                                <a id="t44_description_block" class="t4s-tab__title t4s-fwm t4s-ch" href="#t4s-description_block" rel="nofollow" data-t4s-tab-item="" data-no-instant="">
+                                        <div class="t4s-tabs t4s-type-accordion t4s-tabs-enabled t4s-tabs-accordion-enabled">
+                                            <div class="t4s-tab-wrapper" id="t44_description_block_status">
+                                                <a id="t44_description_block" class="t4s-tab__title t4s-fwm t4s-ch">
                                                     <span class="t4s-tab__text">
                                                         Product Description
                                                     </span>
                                                     <span class="t4s-tab__icon"></span>
                                                 </a>
-                                                <div id="t4s-description_block" class="t4s-rte t4s-tab-content t4s-remove-border" data-t4s-tab-content="">
+                                                <div id="t4s-description_block" class="t4s-rte t4s-tab-content t4s-remove-border">
+                                                    <script>
+                                                        $('#t44_description_block').click(function() {
+                                                            $('#t4s-description_block').toggle();
+                                                            $('#t44_description_block_status').toggleClass('t4s-active');
+                                                        });
+                                                    </script>
                                                     <div class="product-information-tab">
-                                                        <p>This versatile organizer is more than just a storage solution; it's a lifestyle upgrade that helps you reclaim your space and streamline your belongings with ease and style.</p>
+                                                        <p>Transform your space into a canvas of timeless elegance with our exquisite collection of decorative wall plates, adorned with captivating traditional gond art. Each plate tells a story of heritage and craftsmanship, bringing the rich tapestry of Indian culture to your walls!</p>
 
-                                                        <p>1. The product includes 1 storage box.
-                                                            <br>2. The size of the product is (15x6x6 inches) or (37x14x15 cms).
-                                                            <br>3. The weight of the product is 1560 gm.
-                                                            <br>4. The material of the product is faux leather.
-                                                            <br>5. Wipe with a soft, cry cloth.
+                                                        <p>1. The product includes 1 wall plate.
+                                                            <br>2. The size of the product is (10.4x10.4x1 inches) or (26x26x2.5 cms).
+                                                            <br>3. The material of the product is bone china.
+                                                            <br>4. The weight of the product is 300 gm.
+                                                            <br>5. Clean with a soft,dry cloth to avoid scratches. Don not use any soapy solution to clean.
+                                                            <br>6. The product comes with a hanging clip attached behing &amp; a stand.
                                                         </p>
                                                     </div>
-
-
-
-
-
-
-
                                                     <style>
                                                         .product-size-table {
                                                             margin-bottom: 15px;
@@ -1003,14 +555,10 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
                                                             }
                                                         }
                                                     </style>
-
-                                                    <!-- Syntax error in tag 'render' - Template name must be a quoted string -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-
 
                                     <link href="cdn/shop/t/130/assets/product-tabs.aio.min.css" rel="stylesheet" type="text/css" media="all">
                                     <style data-shopify="">
@@ -1020,18 +568,25 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
                                         }
                                     </style>
                                     <div class="t4s-product-tabs-wrapper t4s-col-item t4s-product-tabs-wrapper-template--16885347778806__main is--tab-design__accordion is--tab-design-mb__accordion is--tab-layout__content_full is--tab-position__external">
-                                        <div class="t4s-container" timeline="" hdt-reveal="slide-in">
-                                            <div class="t4s-tabs t4s-type-tabs t4s-accordion-mb-true" data-t4s-tabs="" data-t4s-accordion-pr="">
-                                                <div class="t4s-tab-wrapper" data-t4s-tab-wrapper="">
-                                                    <a id="t44_a6872568-6cc2-4467-bb91-a8c5e76a3b53" href="#t4s_tab_a6872568-6cc2-4467-bb91-a8c5e76a3b53" rel="nofollow" class="t4s-tab__title t4s-fwm t4s-ch" data-t4s-tab-item="" data-no-instant=""><span class="t4s-tab__text">Additional Info</span><span class="t4s-tab__icon"></span></a>
-                                                    <div id="t4s_tab_a6872568-6cc2-4467-bb91-a8c5e76a3b53" class="t4s-rte t4s-tab-content" data-t4s-tab-content="">
-                                                        <p><strong>Seller Name:</strong> <br>AMS Retail LLP</p>
-                                                        <p><strong>Seller Address:<br></strong><span class="metafield-multi_line_text_field">Floor No 1, 1 and 2, Plot No - 69D, Amar Niwas, Bhulabhai Desai Road, Cumballa Hill, Mumbai, Mumbai, Maharashtra, 400026</span></p>
-                                                        <p><strong>Manufacturer Details:<br></strong><span class="metafield-multi_line_text_field">Floor No 1, 1 and 2, Plot No - 69D, Amar Niwas, Bhulabhai Desai Road, Cumballa Hill, Mumbai, Mumbai, Maharashtra, 400026</span></p>
-                                                        <p><strong>Importer Details: <br></strong></p>
-                                                        <p><strong>Packer Details:<br></strong><span class="metafield-multi_line_text_field">Floor No 1, 1 and 2, Plot No - 69D, Amar Niwas, Bhulabhai Desai Road, Cumballa Hill, Mumbai, Mumbai, Maharashtra, 400026</span></p>
+                                        <div class="t4s-container" style="--animation-order: 0;">
+                                            <div class="t4s-tabs t4s-accordion-mb-true t4s-tabs-enabled t4s-tabs-accordion-enabled t4s-type-accordion">
+                                                <div class="t4s-tab-wrapper " id="t44_info_status">
+                                                    <a id="t44_info_block" class="t4s-tab__title t4s-fwm t4s-ch">
+                                                        <span class="t4s-tab__text">Additional Info</span><span class="t4s-tab__icon"></span></a>
+                                                    <div id="t4s-info_block" class="t4s-rte t4s-tab-content t4s-active">
+                                                        <script>
+                                                            $('#t44_info_block').click(function() {
+                                                                $('#t4s-info_block').toggle();
+                                                                $('#t44_info_status').toggleClass('t4s-active');
+                                                            });
+                                                        </script>
+                                                        <p><strong>Seller Name:</strong> <br>Dessine Art</p>
+                                                        <p><strong>Seller Address:<br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
+                                                        <p><strong>Manufacturer Details:<br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
+                                                        <p><strong>Importer Details: <br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
+                                                        <p><strong>Packer Details:<br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
                                                         <p><strong>Country Of Origin:<br></strong>India</p>
-                                                        <p><strong>Grievance Redressal:</strong><br>Subject: Contact Seller - AMS Retail LLP<br>Write To: DHI Innovations, Bannerghatta Main Rd, Venugopal Reddy Layout, Arekere, Bengaluru, Karnataka 560076</p>
+                                                        <p><strong>Grievance Redressal:</strong><br>Subject: Contact Seller - Dessine Art<br>Write To: DHI Innovations, Bannerghatta Main Rd, Venugopal Reddy Layout, Arekere, Bengaluru, Karnataka 560076</p>
 
                                                     </div>
                                                 </div>
@@ -1039,21 +594,27 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
                                         </div>
                                     </div>
                                     <div class="return-exchange-container is--tab-position__external t4s-col-item">
-                                        <div class="t4s-tabs t4s-type-accordion" data-t4s-tabs="">
-                                            <div class="t4s-tab-wrapper" data-t4s-tab-wrapper="">
-                                                <a id="t44_description_block" class="t4s-tab__title t4s-fwm t4s-ch" href="#t4s-description_block" rel="nofollow" data-t4s-tab-item="" data-no-instant="">
+                                        <div class="t4s-tabs t4s-type-accordion">
+                                            <div class="t4s-tab-wrapper" id="t44_policy_block_status">
+                                                <a id="t44_policy_block" class="t4s-tab__title t4s-fwm t4s-ch">
                                                     <span class="t4s-tab__text">
                                                         Returns and Exchange Policy
                                                     </span>
                                                     <span class="t4s-tab__icon"></span>
                                                 </a>
-                                                <div id="t4s-description_block" class="t4s-rte t4s-tab-content t4s-remove-border" data-t4s-tab-content="">
-                                                    <link href="//vaaree.com/cdn/shop/t/130/assets/return-exchange.css?v=151226502337694297591711985987" rel="stylesheet" type="text/css" media="all">
+                                                <div id="t4s-policy_block" class="t4s-rte t4s-tab-content t4s-remove-border">
+                                                    <script>
+                                                        $('#t44_policy_block').click(function() {
+                                                            $('#t4s-policy_block').toggle();
+                                                            $('#t44_policy_block_status').toggleClass('t4s-active');
+                                                        });
+                                                    </script>
+                                                    <link href="cdn/shop/t/130/assets/return-exchange.css" rel="stylesheet" type="text/css" media="all">
 
 
                                                     <div class="return-exchange-content">
                                                         <div class="return-exchange-banner-container">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/return-exchange-icon.svg?v=86537622152815233461711722353" height="32" width="32" alt="return-exchange">
+                                                            <img src="cdn/shop/t/130/assets/return-exchange-icon.svg" height="32" width="32" alt="return-exchange">
                                                             <span class="return-exchange-text">Free Returns in 48 hours</span>
                                                         </div>
                                                         <div class="return-exchange-policy-details">
@@ -1066,7 +627,7 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
                                                                 </li>
                                                                 <li>Product cannot be returned once used.</li>
                                                                 <li>One free replacement allowed for undamaged products.</li>
-                                                                <li>Read more about Return &amp; Exchange policy here : <a href="//vaaree.com/policies/refund-policy" class="refund-policy-link">Refund policy</a></li>
+                                                                <li>Read more about Return &amp; Exchange policy here : <a href="policies/refund-policy" class="refund-policy-link">Refund policy</a></li>
                                                             </ol>
                                                         </div>
                                                     </div>
@@ -1551,6 +1112,7 @@ https://cdn.shopify.com/s/files/1/0632/2526/6422/files/CUSHIONLOVE_pdp.jpg?v=171
 
     </section>
 </main>
+
 
 
 <?php

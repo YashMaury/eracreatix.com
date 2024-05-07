@@ -2,7 +2,13 @@
 include "include/header.php";
 $page_category = mysqli_query($con, "select id,categoryName, categoryImage  from category where `id`='" . $_GET['cid'] . "'");
 $page_category_row = mysqli_fetch_array($page_category);
-$ret = mysqli_query($con, "select * from products where `category` = '" . $_GET['cid'] . "' ");
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+    $ret = mysqli_query($con, "select * from products where `category` = '" . $_GET['cid'] . "' limit " . $_GET['page'] * 2);
+} else {
+    $page = 1;
+    $ret = mysqli_query($con, "select * from products where `category` = '" . $_GET['cid'] . "' limit 2");
+}
 
 ?>
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -12,17 +18,17 @@ $ret = mysqli_query($con, "select * from products where `category` = '" . $_GET[
             <div class="collection-heading-container">
                 <div class="collection-heading-introduction">
                     <h1 class="collection-title"><?= $page_category_row['categoryName']; ?></h1>
-                    <div class="collection-description">Grab our varied bedsheet styles and design and slumber like a champion.</div>
+                    <div class="collection-description">Grab our varied products styles and design and slumber like a champion.</div>
                 </div>
                 <div class="collection-sales-count">
                     <div class="collection-sales-count-gif">
-                        <img alt="sales-counter" class="sales-count-gif" height="14px" loading="lazy" src="cdn/shop/t/130/assets/sales_count_live.gif?v=108634221033204322221696354366" width="14px">
+                        <!-- <img alt="sales-counter" class="sales-count-gif" height="14px" loading="lazy" src="cdn/shop/t/130/assets/sales_count_live.gif?v=108634221033204322221696354366" width="14px"> -->
                         <span class="sales-count-value sales-count-value-mobile collection-sales-count-text">14699</span>
                     </div>
-                    <div class="collection-sales-count-text">
+                    <!-- <div class="collection-sales-count-text">
                         <span class="sales-count-value sales-count-value-desktop">14699</span>
                         <span class="sales-count-text">Bedsheets delivered recently</span>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
@@ -488,15 +494,15 @@ $ret = mysqli_query($con, "select * from products where `category` = '" . $_GET[
 
                     </div>
                     <div class="t4s-row">
-                        <div data-ntajax-container="" data-has-filters="" data-ntajax-options="{&quot;id&quot;:&quot;template--16885348434166__main&quot;,&quot;type&quot;:&quot;LmDefault&quot;,&quot;typeFilters&quot;:&quot;facets&quot;,&quot;isProduct&quot;:true,&quot;updateURL&quot;:true,&quot;updateURLPrev&quot;:true,&quot;sort_by&quot;:&quot;manual&quot;}" data-collection-url="/collections/bedsheets" class="t4s-col-item t4s-col-12 t4s-main-area t4s-main-collection-page is--enabled">
-                            <div data-contentlm-replace="" class="t4s_box_pr_grid t4s-products  t4s-text-default t4s_ratio1_1  t4s_position_default t4s_contain t4s-row  t4s-justify-content-center t4s-row-cols-2 t4s-row-cols-md-3 t4s-row-cols-lg-4 t4s-gx-md-30 t4s-gy-md-10 t4s-gx-15 t4s-gy-4">
+                        <div class="t4s-col-item t4s-col-12 t4s-main-area t4s-main-collection-page is--enabled">
+                            <div class="t4s_box_pr_grid t4s-products  t4s-text-default t4s_ratio1_1  t4s_position_default t4s_contain t4s-row  t4s-justify-content-center t4s-row-cols-2 t4s-row-cols-md-3 t4s-row-cols-lg-4 t4s-gx-md-30 t4s-gy-md-10 t4s-gx-15 t4s-gy-4">
 
 
 
 
                                 <?php while ($products = mysqli_fetch_array($ret)) { ?>
 
-                                    <div class="t4s-product t4s-pr-grid t4s-pr-style1 t4s-pr-8195757703414 t4s-col-item is-t4s-pr-created" id="8195757703414" style="position: relative;" isrecommendation="false" data-product-options="{ &quot;id&quot;:&quot;8195757703414&quot;,&quot;cusQty&quot;:&quot;1&quot;,&quot;available&quot;:true, &quot;handle&quot;:&quot;evara-floral-bedsheet-cream&quot;, &quot;isDefault&quot;: false, &quot;VariantFirstID&quot;: 45488987767030, &quot;customBadge&quot;:null, &quot;customBadgeHandle&quot;:null,&quot;dateStart&quot;:1697519843, &quot;compare_at_price&quot;:314900,&quot;price&quot;:220400, &quot;isPreoder&quot;:false,&quot;isExternal&quot;:false,&quot;image2&quot;:&quot;\/\/vaaree.com\/cdn\/shop\/files\/BN1A1100.jpg?v=1697644856\u0026width=1&quot;,&quot;alt&quot;:&quot;Buy Evara Floral Bedsheet - Cream Online in India | Bedsheets on Vaaree&quot;,&quot;isGrouped&quot;:false,&quot;maxQuantity&quot;:9999 }">
+                                    <div class="t4s-product t4s-pr-grid t4s-pr-style1 t4s-pr-8195757703414 t4s-col-item is-t4s-pr-created" id="8195757703414" style="position: relative;">
 
                                         <div class="t4s-product-wrapper">
                                             <div class="t4s-product-inner t4s-pr t4s-oh">
@@ -511,11 +517,11 @@ $ret = mysqli_query($con, "select * from products where `category` = '" . $_GET[
                                                 <div class="t4s-product-btns">
                                                 </div>
                                                 <div class="t4s-product-btns2">
-                                                </div><a data-pr-href="" class="t4s-full-width-link is--href-replaced" href="/collections/bedsheets/products/evara-floral-bedsheet-cream" aria-label="Product View"></a>
+                                                </div><a data-pr-href="" class="t4s-full-width-link is--href-replaced" href="products.php?pid=<?= $products['id'] ?>" aria-label="Product View"></a>
                                             </div>
                                             <div class="t4s-product-info">
                                                 <div class="t4s-product-info__inner">
-                                                    <h3 class="t4s-product-title"><a data-pr-href="" href="/collections/bedsheets/products/evara-floral-bedsheet-cream" class="is--href-replaced"><?= $products['productName']; ?></a></h3>
+                                                    <h3 class="t4s-product-title"><a data-pr-href="" href="products.php?pid=<?= $products['id'] ?>" class="is--href-replaced"><?= $products['productName']; ?></a></h3>
                                                     <p class="grid-product__material">
                                                         100% Cotton
                                                         - 200 TC
@@ -558,8 +564,8 @@ $ret = mysqli_query($con, "select * from products where `category` = '" . $_GET[
 
                             </div>
                             <div class="t4s-row t4s-prs-footer t4s-has-btn-infinite t4s-text-center">
-                                <div data-wrap-lm="" class="t4s-pagination-wrapper t4s-w-100 hdt-reveal--offscreen" timeline="" hdt-reveal="slide-in" observed="">
-                                    <a data-load-more="" data-load-onscroll="" href="/collections/bedsheets?page=2" class="t4s-pr t4s-loadmore-btn t4s-btn-loading__svg t4s-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-false t4s-btn-color-primary t4s-btn-effect-rectangle-out t4s-lm-onscroll-init">
+                                <div class="t4s-pagination-wrapper t4s-w-100 hdt-reveal--offscreen">
+                                    <a href="collections.php?cid=<?= $_GET['cid']; ?>&page=<?=$page+1;?>" class="t4s-pr t4s-loadmore-btn t4s-btn-loading__svg t4s-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-false t4s-btn-color-primary t4s-btn-effect-rectangle-out t4s-lm-onscroll-init">
                                         <span class="t4s-btn-atc_text">Load More</span>
 
                                         <div class="t4s-loading__spinner t4s-dn">
