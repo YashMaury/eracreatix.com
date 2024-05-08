@@ -568,8 +568,8 @@ details[open] .t4s-tab__icon:before {
 }
 @media screen and (max-width: 749px) {
   .t4s-product-form__buttons .t4s-product-form__submit {
-    margin-top: 10px;
-    /* display: none; */
+    margin-top: 0;
+    display: none;
   }
   .product-info-icon {
     position: absolute;

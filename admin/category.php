@@ -32,9 +32,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 	}
 
 	if (isset($_GET['del'])) {
-		$sql = mysqli_query($con, "select categoryImage from category where `id`='".$_GET['id']."'");
-		while ($row = mysqli_fetch_array($sql)){
-			unlink('uploads/category/'.$row['categoryImage']);
+		$sql = mysqli_query($con, "select categoryImage from category where `id`='" . $_GET['id'] . "'");
+		while ($row = mysqli_fetch_array($sql)) {
+			unlink('uploads/category/' . $row['categoryImage']);
 		}
 		mysqli_query($con, "delete from category where id = '" . $_GET['id'] . "'");
 		$_SESSION['delmsg'] = "Category deleted !!";

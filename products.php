@@ -14,7 +14,6 @@ if (isset($_POST['submit'])) {
 
 ?>
 
-
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
     <div id="shopify-section-template--16885347778806__breadcrumb" class="shopify-section t4s-section t4s-pr_breadcrumbs">
         <link href="cdn/shop/t/130/assets/breadcrumbs.aio.min.css" rel="stylesheet" type="text/css" media="all">
@@ -24,7 +23,7 @@ if (isset($_POST['submit'])) {
                     <div class="t4s-col t4s-col-item">
 
                         <nav class="t4s-pr-breadcrumb">
-                            <a href="/" class="t4s-dib">Home</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                            <a href="index.php" class="t4s-dib">Home</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path>
                             </svg><span>Mobile</span>
                         </nav>
@@ -47,43 +46,49 @@ if (isset($_POST['submit'])) {
                 <div class="t4s-row">
                     <div class="t4s-col-item t4s-col-12 t4s-main-area">
                         <div data-product-featured="{&quot;id&quot;:&quot;8520322056438&quot;,&quot;isMainProduct&quot;:true, &quot;sectionId&quot;:&quot;template--16885347778806__main&quot;, &quot;disableSwatch&quot;:true, &quot;media&quot;: true,&quot;enableHistoryState&quot;: true, &quot;formID&quot;: &quot;#product-form-8520322056438template--16885347778806__main&quot;, &quot;removeSoldout&quot;:false, &quot;changeVariantByImg&quot;:true, &quot;isNoPick&quot;:false,&quot;hasSoldoutUnavailable&quot;:false,&quot;enable_zoom_click_mb&quot;:true,&quot;main_click&quot;:&quot;pswp&quot;,&quot;canMediaGroup&quot;:false,&quot;isGrouped&quot;:false,&quot;hasIsotope&quot;:true,&quot;available&quot;:true, &quot;customBadge&quot;:null, &quot;customBadgeHandle&quot;:null,&quot;dateStart&quot;:1713507353, &quot;compare_at_price&quot;:279500,&quot;price&quot;:279500, &quot;isPreoder&quot;:false, &quot;showFirstMedia&quot;:false, &quot;isSticky&quot;:true, &quot;isStickyMB&quot;:true, &quot;stickyShow&quot;:&quot;1&quot;, &quot;useStickySelect&quot;: false }" class="t4s-row t4s-row__product is-zoom-type__external" data-t4s-zoom-main="">
+
                             <div class="t4s-col-md-7 t4s-col-12 t4s-col-item t4s-product__media-wrapper badge-on_product">
-
-
-
 
                                 <div class="t4s-row t4s-g-0" timeline="" hdt-reveal="slide-in">
                                     <div data-product-single-media-group="" class="t4s-col-12 t4s-col-item t4s-pr pdp-image-gallery-mobile">
                                         <div class="indicators"><span class="dots"></span><span class="dots"></span><span class="dots"></span><span class="dots"></span></div>
                                         <div data-media-sizes="4" data-t4s-gallery="" data-t4s-thumb-true="" data-main-media="" class="t4s-row t4s-g-10 t4s-slide-eff-fade flickityt4s isotopet4s isotopet4s-later carousel-disable-md t4s_ratioadapt t4s_position_8 t4s_contain t4s-flicky-slider t4s-slider-btn-true t4s-slider-btn-style-default t4s-slider-btn-round t4s-slider-btn-small t4s-slider-btn-cl-light t4s-slider-btn-vi-always t4s-slider-btn-hidden-mobile-false " data-isotopet4s-js="{&quot;transitionDuration&quot;: 0,&quot;itemSelector-&quot;:&quot;[data-main-slide]:not(.is--media-hide)&quot;,&quot;filter&quot;: &quot;[data-main-slide]:not(.is--media-hide)&quot;, &quot;layoutMode&quot;:&quot;packery&quot; }" data-flickityt4s-js="{&quot;cellSelector&quot;: &quot;[data-main-slide]:not(.is--media-hide)&quot;,&quot;isFilter&quot;:false,&quot;watchCSS&quot;: true,&quot;imagesLoaded&quot;: 0,&quot;adaptiveHeight&quot;: 1, &quot;contain&quot;: 1, &quot;groupCells&quot;: &quot;100%&quot;, &quot;dragThreshold&quot; : 6, &quot;cellAlign&quot;: &quot;left&quot;,&quot;wrapAround&quot;: true,&quot;prevNextButtons&quot;: true,&quot;percentPosition&quot;: 1,&quot;pageDots&quot;: false, &quot;autoPlay&quot; : 0, &quot;pauseAutoPlayOnHover&quot; : true , &quot;t4sid&quot;: &quot;template--16885347778806__main&quot;, &quot;thumbNav&quot;: false, &quot;thumbVertical&quot;: false, &quot;isMedia&quot;: true }" id="pdp-media-gridAZ">
 
-                                            <div id="pdp-imagegallery-0" data-product-single-media-wrapper="" data-main-slide="" class="t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152436109558" data-nt-media-id="template--16885347778806__main-33152436109558" data-media-type="image" data-grname="" data-grpvl="">
+                                            <div style="width: 100%;" class=" mySlides t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152436109558" data-nt-media-id="template--16885347778806__main-33152436109558" data-media-type="image" data-grname="" data-grpvl="">
                                                 <div data-t4s-gallery--open="" class="t4s_ratio t4s-product__media" style="--aspect-ratioapt:1.0;--mw-media:800px">
                                                     <noscript><img src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage1']); ?>" alt="" width="1090" height="1090" loading="lazy" class="t4s-img-noscript" sizes="(min-width: 1500px) 1500px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"></noscript>
                                                     <img loading="lazy" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage1']); ?>" width="800" height="800" alt="">
                                                     <span class="lazyloadt4s-loader"></span>
                                                 </div>
                                             </div>
-                                            <div id="pdp-imagegallery-1" data-product-single-media-wrapper="" data-main-slide="" class="t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152436240630" data-nt-media-id="template--16885347778806__main-33152436240630" data-media-type="image" data-grname="" data-grpvl="">
+                                            <div style="width: 100%;" class="mySlides t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152436240630" data-nt-media-id="template--16885347778806__main-33152436240630" data-media-type="image" data-grname="" data-grpvl="">
                                                 <div data-t4s-gallery--open="" class="t4s_ratio t4s-product__media" style="--aspect-ratioapt:1.0;--mw-media:800px">
                                                     <noscript><img src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage2']); ?>" alt="" width="1090" height="1090" loading="lazy" class="t4s-img-noscript" sizes="(min-width: 1500px) 1500px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"></noscript>
-                                                    <img loading="lazy" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage1']); ?>" width="800" height="800" alt="">
+                                                    <img loading="lazy" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage2']); ?>" width="800" height="800" alt="">
                                                     <span class="lazyloadt4s-loader"></span>
                                                 </div>
                                             </div>
-                                            <div id="pdp-imagegallery-2" data-product-single-media-wrapper="" data-main-slide="" class="t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152435978486" data-nt-media-id="template--16885347778806__main-33152435978486" data-media-type="image" data-grname="" data-grpvl="">
+                                            <div style="width: 100%;" class="mySlides t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152435978486" data-nt-media-id="template--16885347778806__main-33152435978486" data-media-type="image" data-grname="" data-grpvl="">
                                                 <div data-t4s-gallery--open="" class="t4s_ratio t4s-product__media" style="--aspect-ratioapt:1.0;--mw-media:800px">
                                                     <noscript><img src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage3']); ?>" alt="" width="1090" height="1090" loading="lazy" class="t4s-img-noscript" sizes="(min-width: 1500px) 1500px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"></noscript>
-                                                    <img loading="lazy" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage1']); ?>" width="800" height="800" alt="">
+                                                    <img loading="lazy" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage3']); ?>" width="800" height="800" alt="">
                                                     <span class="lazyloadt4s-loader"></span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <link href="cdn/shop/t/130/assets/single-pr-badge.css?v=156237653161220365901695367397" rel="stylesheet" media="all" onload="this.media='all'">
+                                        <center>
+                                            <div style="margin:8px;" class="t4s-d-block t4s-align-items-center">
+                                                <button class="t4s-pr t4s-loadmore-btn t4s-btn-loading__svg t4s-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-false t4s-btn-color-primary t4s-btn-effect-rectangle-out t4s-lm-onscroll-init" onclick="plusDivs(-1)">&#10094; Previous</button>
+                                                <button class="t4s-pr t4s-loadmore-btn t4s-btn-loading__svg t4s-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-false t4s-btn-color-primary t4s-btn-effect-rectangle-out t4s-lm-onscroll-init" onclick="plusDivs(1)">Next &#10095;</button>
+                                            </div>
+                                        </center>
+                                            <link href="cdn/shop/t/130/assets/single-pr-badge.css" rel="stylesheet" media="all" onload="this.media='all'">
                                         <div data-product-single-badge="" data-sort="sale,new,soldout,preOrder,custom" class="t4s-single-product-badge t4s-pa t4s-pe-none t4s-op-0"></div>
                                     </div>
                                 </div>
                             </div>
+
+
                             <div data-t4s-zoom-info="" class="t4s-col-md-5 t4s-col-12 t4s-product__info-wrapper t4s-pr">
                                 <div id="product-zoom-template--16885347778806__main" class="t4s-product__zoom-wrapper"></div>
                                 <div id="ProductInfo-template--template--16885347778806__main__main" class="t4s-product__info-container t4s-product__info-container--sticky" timeline="" hdt-reveal="slide-in">
@@ -182,7 +187,7 @@ if (isset($_POST['submit'])) {
                                         <div class="t4s-product-form__variants is-no-pick__false  is-remove-soldout-false is-btn-full-width__false is-btn-atc-txt-3 is-btn-ck-txt-3 is--fist-ratio-false" style=" --wishlist-color: #222222;--wishlist-hover-color: #56cfe1;--wishlist-active-color: #e81e1e;--compare-color: #222222;--compare-hover-color: #56cfe1;--compare-active-color: #222222;">
                                             <div>
                                                 <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-                                                    <input name="pid" value="<?=$_GET['pid'];?>" type="hidden">
+                                                    <input name="pid" value="<?= $_GET['pid']; ?>" type="hidden">
                                                     <input name="action" value="cart" type="hidden">
                                                     <div class="t4s-product-form__buttons" style="--pr-btn-round:40px;">
                                                         <div class="t4s-d-flex t4s-flex-wrap">
@@ -260,7 +265,7 @@ if (isset($_POST['submit'])) {
                                                 <span class="input-info enter-pincode-text" style="display:none">Please enter PIN code to check delivery time</span>
                                                 <div class="locate-container">
                                                     <form id="input-container" class="input-container">
-                                                        <img src="//vaaree.com/cdn/shop/t/130/assets/check-circle-tick.svg?v=84341413364330923741712046283" height="16" width="16" class="check_tick_img" style="display: block;">
+                                                        <img src="vaaree.com/cdn/shop/t/130/assets/check-circle-tick.svg?v=84341413364330923741712046283" height="16" width="16" class="check_tick_img" style="display: block;">
                                                         <input type="tel" placeholder="Enter PIN code" id="pincode-input" class="pincode-input" maxlength="6" onfocusout="focusOutInput()" style="border: 1px solid var(--discount-badge); font-weight: 600; color: var(--discount-badge); padding-left: 36px;">
                                                         <span class="verified-icon" style="display: block;">
                                                             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -371,8 +376,8 @@ if (isset($_POST['submit'])) {
                                                 <div class="check-delivery-badges-wrapper">
                                                     <div class="check-delivery-badge-container" onclick="openModal('https://cdn.shopify.com/s/files/1/0632/2526/6422/files/fastdelivery.png?v=1711651779', 'Free Delivery', '<div class=discount-bage-info-text>Free delivery all over India<br/>No minimum purchase value</div>')">
                                                         <div class="check-delivery-badges">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/fastdelivery.svg?v=174925100420235694131712046285" height="32" width="32" class="delivery-badges-img">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/fastdelivery.svg?v=174925100420235694131712046285" height="32" width="32" class="delivery-badges-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
 
                                                         </div>
                                                         <div class="check-delivery-badge-text">
@@ -383,8 +388,8 @@ if (isset($_POST['submit'])) {
 
                                                     <div class="check-delivery-badge-container" id="return-policy-badge" onclick="openModal(  'https://cdn.shopify.com/s/files/1/0632/2526/6422/files/return.png?v=1711651779',  'Free return within 48 hours' ,  '<ol class=discount-bage-info-text><li>1. Return within 48 hour of delivery under the following conditions:<br/>&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbspa: Damaged or defective product <br/>&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbspb: Wrong or missing product</li><li>2. Product cannot be returned once used.</li><li>3. One free replacement allowed for undamaged products.</li><li>4. Read more about Return &amp; Exchange policy here : <a href=https://vaaree.com/policies/refund-policy>Refund policy</a> </li></ol>'  )">
                                                         <div class="check-delivery-badges">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/freereturn.svg?v=43860404808781033611712046285" height="32" width="32" class="delivery-badges-img">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/freereturn.svg?v=43860404808781033611712046285" height="32" width="32" class="delivery-badges-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
 
                                                         </div>
                                                         <div class="check-delivery-badge-text">
@@ -396,8 +401,8 @@ if (isset($_POST['submit'])) {
 
                                                     <div class="check-delivery-badge-container" onclick="openModal('https://cdn.shopify.com/s/files/1/0632/2526/6422/files/cod.png?v=1711651779', 'Cash on delivery', '<div class=discount-bage-info-text>COD option available for orders valued between ₹500 and ₹10,000. Available in selected PIN codes only.</div>')">
                                                         <div class="check-delivery-badges">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/cod.svg?v=101598686710400310521712046283" height="32" width="32" class="delivery-badges-img">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/cod.svg?v=101598686710400310521712046283" height="32" width="32" class="delivery-badges-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
 
                                                         </div>
                                                         <div class="check-delivery-badge-text">
@@ -409,8 +414,8 @@ if (isset($_POST['submit'])) {
                                                     <div id="prepaid-badge" class="check-delivery-badge-container" style="display:flex " onclick="openModal('https://cdn.shopify.com/s/files/1/0632/2526/6422/files/save30.png?v=1711651779', 'Save with prepaid', '<div class=discount-bage-info-text>Save additional FLAT Rs.30 OFF on orders above Rs.999 on UPI or Card payments.<br/>+ more pre-paid discounts available in checkout page</div>')">
 
                                                         <div class="check-delivery-badges">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/save30.svg?v=3411804986206849471712046287" height="32" width="32" class="delivery-badges-img">
-                                                            <img src="//vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/save30.svg?v=3411804986206849471712046287" height="32" width="32" class="delivery-badges-img">
+                                                            <img src="vaaree.com/cdn/shop/t/130/assets/help-circle.svg?v=5531441427321620001712046286" height="12" width="12" class="delivery-badges-info-img">
 
                                                         </div>
                                                         <div class="check-delivery-badge-text">
@@ -846,41 +851,8 @@ if (isset($_POST['submit'])) {
 
 
 
-        <script type="application/json" id="ModelJson-template--16885347778806__main">
-            []
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org/",
-                "@type": "Product",
-                "name": "Vida Storage Box",
-                "url": "https://vaaree.com/products/vida-storage-box",
-                "image": [
-                    "https://vaaree.com/cdn/shop/files/Untitled-1_0001_MHMP044_01.jpg?v=1714030754&width=800"
-                ],
-                "description": "This versatile organizer is more than just a storage solution; it\u0026#39;s a lifestyle upgrade that helps you reclaim your space and streamline your belongings with ease and style.1. The product includes 1 storage box.2. The size of the product is (15x6x6 inches) or (37x14x15 cms).3. The weight of the product is 1560 gm.4. The material of the product is faux leather.5. Wipe with a soft, cry cloth.",
-                "sku": "MHMP044",
-                "mpn": "",
-                "productID": "8520322056438",
-                "brand": {
-                    "@type": "Brand",
-                    "name": "Mason Home"
-                },
-                "offers": {
-                    "@type": "Offer",
-                    "sku": "MHMP044",
-                    "availability": "http://schema.org/InStock",
-                    "price": "2795.0",
-                    "priceCurrency": "INR",
-                    "itemCondition": "https://schema.org/NewCondition",
-                    "url": "https://vaaree.com/products/vida-storage-box",
-                    "mpn": "",
-                    "priceValidUntil": "2025-04-30"
-                }
-            }
-        </script>
 
-        <script defer="" src="//vaaree.com/cdn/shop/t/130/assets/carousel-indicator.aio.min.js?v=166128055259712722911703745379"></script>
+        <script defer="" src="cdn/shop/t/130/assets/carousel-indicator.aio.min.js"></script>
 
         <script>
             $(window).on('load', function() {
@@ -910,7 +882,7 @@ if (isset($_POST['submit'])) {
                 const timeRemaining = targetTimestamp - currentTimestamp;
                 const hoursRemaining = Math.floor(timeRemaining / (1000 * 60 * 60));
                 const minutesRemaining = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                const clockSvg = `<img src=${"//vaaree.com/cdn/shop/t/130/assets/clock.svg?v=178405084131402220231711985983"} height=12 width=12 alt="clock svg">`
+                const clockSvg = `<img src=${"vaaree.com/cdn/shop/t/130/assets/clock.svg?v=178405084131402220231711985983"} height=12 width=12 alt="clock svg">`
 
                 const countdownElement = document.getElementById("countdown-inline");
                 if (countdownElement) {
@@ -1112,6 +1084,75 @@ if (isset($_POST['submit'])) {
 
     </section>
 </main>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var mainSlider = document.querySelector(`.available_offers_content`);
+        var sliderContainer = mainSlider.querySelector('.main_content_wrapper');
+        var sliderLeftArrow = mainSlider.querySelector('.container-icon-back');
+        var sliderRightArrow = mainSlider.querySelector('.container-icon-next');
+        var sliderScrollStep = 280;
+
+        sliderLeftArrow.style.opacity = '0';
+        sliderContainer.addEventListener('scroll', () => {
+            if (sliderContainer.scrollLeft === 0) {
+                sliderLeftArrow.style.opacity = '0';
+            } else {
+                sliderLeftArrow.style.opacity = '1';
+            }
+
+            if (sliderContainer.scrollLeft + sliderContainer.clientWidth >= sliderContainer.scrollWidth) {
+                sliderRightArrow.style.opacity = '0';
+            } else {
+                sliderRightArrow.style.opacity = '1';
+            }
+        });
+
+        sliderLeftArrow.addEventListener("click", function() {
+            sliderContainer.scrollBy({
+                left: -sliderScrollStep,
+                behavior: 'smooth'
+            });
+        });
+        sliderRightArrow.addEventListener("click", function() {
+            sliderContainer.scrollBy({
+                left: sliderScrollStep,
+                behavior: 'smooth'
+            });
+        });
+
+        if (sliderContainer.scrollWidth > sliderContainer.clientWidth) {
+            sliderLeftArrow.style.display = "block";
+            sliderRightArrow.style.display = "block";
+        } else {
+            sliderLeftArrow.style.display = "none";
+            sliderRightArrow.style.display = "none";
+        }
+    });
+</script>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
 
 
 

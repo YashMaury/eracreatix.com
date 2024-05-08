@@ -193,14 +193,14 @@ if (isset($_SESSION['id'])) {
                                 </svg>
                                 <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
                                     <?php if (isset($_SESSION['login'])) { ?>
-                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
                                             <a class="t4s-pr" href="account/index.php">
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-account"></use>
                                                 </svg> <?php echo $_SESSION['username']; ?>
                                             </a>
                                         </div>
-                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
                                             <a class="t4s-pr" href="account/logout.php">
                                                 <!-- <svg class="t4s-icon t4s-icon--exit" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-exit"></use>
@@ -209,7 +209,7 @@ if (isset($_SESSION['id'])) {
                                             </a>
                                         </div>
                                     <?php } else { ?>
-                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-md-inline-block">
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
                                             <a class="t4s-pr" href="login.php">
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-account"></use>
@@ -303,14 +303,14 @@ if (isset($_SESSION['id'])) {
 
                 <div id="header-with-edd">
                     <div class='search-tap-mobile' id="search-tap-with-icons">
-                        <div class="sticky-header-menu t4s-d-lg-none" id="push-menu-sticky">
+                        <!-- <div class="sticky-header-menu t4s-d-lg-none" id="push-menu-sticky">
                             <a href="index.php" data-drawer-options='{ "id":"#t4s-menu-drawer" }' class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
                                     <rect width="30" height="1.5"></rect>
                                     <rect y="7" width="20" height="1.5"></rect>
                                     <rect y="14" width="30" height="1.5"></rect>
                                 </svg>
-                            </a>
+                            </a> -->
                         </div>
 
                         <form class="input-group">
