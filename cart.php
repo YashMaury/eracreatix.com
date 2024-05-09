@@ -81,14 +81,22 @@ include "include/header.php";
                                         cart.quantity,
                                         products.productName, 
                                         products.productImage1,
-                                        products.productPrice
+                                        products.productPrice,
+                                        products.productPriceBeforeDiscount,
+                                        products.shippingCharge
                                         from products left join 
                                         cart as cart 
                                         on products.id = cart.productId 
                                         where `userId` = '" . $_SESSION['id'] . "'");
+                            $cart_mrp = 0;
+                            $cart_new_mrp = 0;
+                            $cart_shipping = 0;
                             ?>
                             <?php
                             while ($row = mysqli_fetch_array($list)) {
+                                $cart_mrp += $row['productPriceBeforeDiscount'] * $row['quantity'];
+                                $cart_new_mrp += $row['productPrice'] * $row['quantity'];
+                                $cart_shipping += $row['shippingCharge'];
                             ?>
 
                                 <div class="t4s-page_cart__item">
@@ -114,17 +122,17 @@ include "include/header.php";
                                                     <div class="t4s-page_cart__actions t4s-align-items-center t4s-d-flex">
                                                         <span class="cart-item-info-label">Qty :</span>
                                                         <span class="t4s-quantity-wrapper t4s-quantity-cart-item">
-                                                            <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
+                                                            <!-- <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
                                                                 <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
                                                                     <path d="M10 0v2H0V0z" fill="currentColor"></path>
                                                                 </svg>
-                                                            </button>
-                                                            <input type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="<?=$row['quantity']?>" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
-                                                            <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
+                                                            </button> -->
+                                                            <input readonly type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="<?= $row['quantity'] ?>" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
+                                                            <!-- <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
                                                                 <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
                                                                     <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
                                                                 </svg>
-                                                            </button>
+                                                            </button> -->
                                                         </span>
                                                     </div>
 
@@ -135,12 +143,14 @@ include "include/header.php";
                                         <div class="cart-item-data">
                                             <div class="t4s-text-lg-center t4s-text-md-center t4s-text-start t4s-cart_meta_prices_wrap">
                                                 <div class="t4s-cart_meta_prices">
-                                                    <div class="t4s-cart_price">₹<?php echo $row['productPrice']; ?>
+                                                    <div class="t4s-cart_price">
+                                                        ₹<?php echo $row['productPrice']; ?>
+                                                        <small><del>₹<?php echo $row['productPriceBeforeDiscount']; ?></del></small>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="t4s-text-lg-end t4s-text-md-center t4s-text-start cart-item-final-price">
-                                                <span class="t4s-cart-item-price">₹<?php echo $row['productPrice']; ?>
+                                                <span class="t4s-cart-item-price">₹<?php echo $row['productPrice'] * $row['quantity']; ?>
                                                 </span>
                                             </div>
                                             <div class=" t4s-text-md-center t4s-text-start delete-cart-item">
@@ -173,35 +183,32 @@ include "include/header.php";
                                 <!-- Price Total -->
                                 <div class="card-col first-item-border">
                                     <div class="checkout-label-normal">Item Total <span class="label-sub-text">(MRP)</span></div>
-                                    <div class="checkout-label-normal">₹<?php //print_r(array_sum(array_column($summary, 'productPrice')));
-                                                                        ?></div>
+                                    <div class="checkout-label-normal">
+                                        ₹ <?= $cart_mrp; ?>
+                                    </div>
                                 </div>
 
                                 <!-- Discount -->
                                 <div class="card-col">
                                     <div class="checkout-label-normal mobile-text-highlighted">Discount from MRP</div>
                                     <div class="checkout-label-normal mobile-text-highlighted">
-
-                                        <div class="checkout-label-highlighted">-₹0</div>
-
+                                        <div class="checkout-label-highlighted">-₹<?= $cart_mrp - $cart_new_mrp; ?></div>
                                     </div>
                                 </div>
-
-                                <!-- Coupon -->
-
-
+                                <!-- Discount -->
+                                <div class="card-col">
+                                    <div class="checkout-label-normal mobile-text-highlighted">MRP after discount</div>
+                                    <div class="checkout-label-normal mobile-text-highlighted">
+                                        <div class="checkout-label-highlighted">₹<?= $cart_new_mrp; ?></div>
+                                    </div>
+                                </div>
                                 <!-- Shipping -->
                                 <div class="card-col">
-
-
                                     <div class="checkout-label-normal mobile-text-highlighted">
                                         Delivery Charges
                                     </div>
-
                                     <div class="checkout-label-normal mobile-text-highlighted">
-
-                                        <del>₹100</del><span class="checkout-label-highlighted">&nbsp;Free</span>
-
+                                        <span class="checkout-label-highlighted">₹<?= $cart_shipping; ?></span>
                                     </div>
                                 </div>
 
@@ -209,7 +216,7 @@ include "include/header.php";
                                 <div class="card-col final-amount">
                                     <div class="checkout-label-normal">Final Amount <span class="label-sub-text">(Tax Included)</span></div>
                                     <div class="t4s-cart__totalPrice checkout-label-normal">
-                                        ₹3,226.00
+                                        ₹<?= $cart_new_mrp+$cart_shipping ?>
                                     </div>
                                 </div>
                             </div>

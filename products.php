@@ -165,7 +165,7 @@ if (isset($_POST['submit'])) {
                                         <div id="pdp-price-reviews" class="t4s-product__price-review t4s-col-item" style="--price-size:20px;--price-weight:400;--price-color:#262727;--price-sale-color:#ba4444;">
 
 
-                                            <div class="t4s-product-price" data-pr-price="" data-product-price="" data-saletype="1">MRP ₹<?php echo htmlentities($rws['productPrice']); ?>
+                                            <div class="t4s-product-price" data-pr-price="" data-product-price="" data-saletype="1">MRP ₹<?php echo htmlentities($rws['productPrice']); ?><small><del>₹<?php echo htmlentities($rws['productPriceBeforeDiscount']); ?></del></small>
                                             </div>
                                         </div>
                                         <div class="tax_text t4s-col-item">Inclusion of all taxes</div>

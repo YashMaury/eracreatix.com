@@ -523,11 +523,14 @@ if (isset($_GET['page'])) {
                                                 <div class="t4s-product-info__inner">
                                                     <h3 class="t4s-product-title"><a data-pr-href="" href="products.php?pid=<?= $products['id'] ?>" class="is--href-replaced"><?= $products['productName']; ?></a></h3>
                                                     <p class="grid-product__material">
-                                                        100% Cotton
-                                                        - 200 TC
+                                                        <?= $products['productCompany'] ?>
                                                     </p>
                                                     <div class="t4s-product-price" data-pr-price="" data-product-price="">
-                                                        <span class="t4s-price-from"><span class="t4s-price-from">From</span> ₹2,204.00</span><del>₹3,149.00</del>
+                                                        <span class="t4s-price-from">
+                                                            <span class="t4s-price-from">From</span>
+                                                            ₹<?= $products['productPrice'] ?>
+                                                        </span>
+                                                        <del>₹<?= $products['productPriceBeforeDiscount'] ?></del>
                                                         <span class="t4s-badge-discountprice">30%Off</span>
                                                     </div>
                                                     <div class="delivery_date_wrapper" id="delivery_date_wrapper_8195757703414" style="display: none;">
@@ -586,112 +589,112 @@ if (isset($_GET['page'])) {
         </div>
     </section>
 
-<script>
-    (function() {
-        // disable_right_click_img
-        document.addEventListener("mousedown", function(event) {
-            if ((event.target || event.srcElement).tagName.toLowerCase() === "img") {
-                // Middle-click to open in new tab
-                if (event.which == 2) {
+    <script>
+        (function() {
+            // disable_right_click_img
+            document.addEventListener("mousedown", function(event) {
+                if ((event.target || event.srcElement).tagName.toLowerCase() === "img") {
+                    // Middle-click to open in new tab
+                    if (event.which == 2) {
+                        event.preventDefault();
+                    }
+                }
+            });
+            document.addEventListener("contextmenu", function(event) {
+                if ((event.target || event.srcElement).tagName.toLowerCase() === "img") {
                     event.preventDefault();
                 }
+            });
+            // disable_right_click_bg_img
+            document.addEventListener("contextmenu", function(event) {
+                if ((event.target || event.srcElement).style.backgroundImage) {
+                    event.preventDefault();
+                }
+            });
+            // Drag and drop <img loading="lazy"> elements
+            const disableDragAndDropT4s = function() {
+                document.body.setAttribute("ondragstart", "return false;");
+                document.body.setAttribute("ondrop", "return false;");
+            };
+            if (document.readyState === "complete") {
+                disableDragAndDropT4s();
+            } else {
+                document.addEventListener("DOMContentLoaded", disableDragAndDropT4s);
             }
-        });
-        document.addEventListener("contextmenu", function(event) {
-            if ((event.target || event.srcElement).tagName.toLowerCase() === "img") {
-                event.preventDefault();
+        }());
+    </script>
+    </div>
+    <div id="shopify-section-slider_config" class="shopify-section t4s-section t4s-section-config t4s_tp_flickity t4s-section-admn-fixed">
+        <style data-shopify>
+            .t4s-flicky-slider.t4s-slider-btn-cl-custom1 {
+                --btn-color: #ffffff;
+                --btn-background: #abb1b4;
+                --btn-border: #abb1b4;
+                --btn-color-hover: #ffffff;
+                --btn-background-hover: #E8C463;
+                --btn-border-hover: #E8C463;
             }
-        });
-        // disable_right_click_bg_img
-        document.addEventListener("contextmenu", function(event) {
-            if ((event.target || event.srcElement).style.backgroundImage) {
-                event.preventDefault();
+
+            .t4s-flicky-slider.t4s-slider-btn-style-outline.t4s-slider-btn-cl-custom1 {
+                --btn-color: #abb1b4;
+                --btn-border: #abb1b4;
+                --btn-color-hover: #ffffff;
+                --btn-background-hover: #E8C463;
             }
-        });
-        // Drag and drop <img loading="lazy"> elements
-        const disableDragAndDropT4s = function() {
-            document.body.setAttribute("ondragstart", "return false;");
-            document.body.setAttribute("ondrop", "return false;");
-        };
-        if (document.readyState === "complete") {
-            disableDragAndDropT4s();
-        } else {
-            document.addEventListener("DOMContentLoaded", disableDragAndDropT4s);
-        }
-    }());
-</script>
-</div>
-<div id="shopify-section-slider_config" class="shopify-section t4s-section t4s-section-config t4s_tp_flickity t4s-section-admn-fixed">
-    <style data-shopify>
-        .t4s-flicky-slider.t4s-slider-btn-cl-custom1 {
-            --btn-color: #ffffff;
-            --btn-background: #abb1b4;
-            --btn-border: #abb1b4;
-            --btn-color-hover: #ffffff;
-            --btn-background-hover: #E8C463;
-            --btn-border-hover: #E8C463;
-        }
 
-        .t4s-flicky-slider.t4s-slider-btn-style-outline.t4s-slider-btn-cl-custom1 {
-            --btn-color: #abb1b4;
-            --btn-border: #abb1b4;
-            --btn-color-hover: #ffffff;
-            --btn-background-hover: #E8C463;
-        }
+            .t4s-flicky-slider.t4s-slider-btn-style-simple.t4s-slider-btn-cl-custom1 {
+                --btn-color: #abb1b4;
+                --btn-border: #abb1b4;
+                --btn-color-hover: #E8C463;
+                --btn-border-hover: #E8C463;
+            }
 
-        .t4s-flicky-slider.t4s-slider-btn-style-simple.t4s-slider-btn-cl-custom1 {
-            --btn-color: #abb1b4;
-            --btn-border: #abb1b4;
-            --btn-color-hover: #E8C463;
-            --btn-border-hover: #E8C463;
-        }
+            .t4s-flicky-slider.t4s-dots-cl-custom1 {
+                --dots-background: #abb1b4;
+                --dots-background2: #ffffff;
+            }
 
-        .t4s-flicky-slider.t4s-dots-cl-custom1 {
-            --dots-background: #abb1b4;
-            --dots-background2: #ffffff;
-        }
+            .t4s-dots-style-number.t4s-dots-cl-custom1 {
+                --dots-cl: #ffffff;
+                --bg-dots-cl: #abb1b4;
+            }
+        </style>
+        <style data-shopify>
+            .t4s-flicky-slider.t4s-slider-btn-cl-custom2 {
+                --btn-color: #ffffff;
+                --btn-background: #7a7a7a;
+                --btn-border: #7a7a7a;
+                --btn-color-hover: #ffffff;
+                --btn-background-hover: #7a7a7a;
+                --btn-border-hover: #7a7a7a;
+            }
 
-        .t4s-dots-style-number.t4s-dots-cl-custom1 {
-            --dots-cl: #ffffff;
-            --bg-dots-cl: #abb1b4;
-        }
-    </style>
-    <style data-shopify>
-        .t4s-flicky-slider.t4s-slider-btn-cl-custom2 {
-            --btn-color: #ffffff;
-            --btn-background: #7a7a7a;
-            --btn-border: #7a7a7a;
-            --btn-color-hover: #ffffff;
-            --btn-background-hover: #7a7a7a;
-            --btn-border-hover: #7a7a7a;
-        }
+            .t4s-flicky-slider.t4s-slider-btn-style-outline.t4s-slider-btn-cl-custom2 {
+                --btn-color: #7a7a7a;
+                --btn-border: #7a7a7a;
+                --btn-color-hover: #ffffff;
+                --btn-background-hover: #7a7a7a;
+            }
 
-        .t4s-flicky-slider.t4s-slider-btn-style-outline.t4s-slider-btn-cl-custom2 {
-            --btn-color: #7a7a7a;
-            --btn-border: #7a7a7a;
-            --btn-color-hover: #ffffff;
-            --btn-background-hover: #7a7a7a;
-        }
+            .t4s-flicky-slider.t4s-slider-btn-style-simple.t4s-slider-btn-cl-custom2 {
+                --btn-color: #7a7a7a;
+                --btn-border: #7a7a7a;
+                --btn-color-hover: #7a7a7a;
+                --btn-border-hover: #7a7a7a;
+            }
 
-        .t4s-flicky-slider.t4s-slider-btn-style-simple.t4s-slider-btn-cl-custom2 {
-            --btn-color: #7a7a7a;
-            --btn-border: #7a7a7a;
-            --btn-color-hover: #7a7a7a;
-            --btn-border-hover: #7a7a7a;
-        }
+            .t4s-flicky-slider.t4s-dots-cl-custom2 {
+                --dots-background: #7a7a7a;
+                --dots-background2: #ffffff;
+            }
 
-        .t4s-flicky-slider.t4s-dots-cl-custom2 {
-            --dots-background: #7a7a7a;
-            --dots-background2: #ffffff;
-        }
-
-        .t4s-dots-style-number.t4s-dots-cl-custom2 {
-            --dots-cl: #ffffff;
-            --bg-dots-cl: #7a7a7a;
-        }
-    </style>
+            .t4s-dots-style-number.t4s-dots-cl-custom2 {
+                --dots-cl: #ffffff;
+                --bg-dots-cl: #7a7a7a;
+            }
+        </style>
 
 
-    <?php
-    include "include/footer.php";
-    ?>
+        <?php
+        include "include/footer.php";
+        ?>
