@@ -521,15 +521,7 @@ if (isset($_POST['submit'])) {
                                                         });
                                                     </script>
                                                     <div class="product-information-tab">
-                                                        <p>Transform your space into a canvas of timeless elegance with our exquisite collection of decorative wall plates, adorned with captivating traditional gond art. Each plate tells a story of heritage and craftsmanship, bringing the rich tapestry of Indian culture to your walls!</p>
-
-                                                        <p>1. The product includes 1 wall plate.
-                                                            <br>2. The size of the product is (10.4x10.4x1 inches) or (26x26x2.5 cms).
-                                                            <br>3. The material of the product is bone china.
-                                                            <br>4. The weight of the product is 300 gm.
-                                                            <br>5. Clean with a soft,dry cloth to avoid scratches. Don not use any soapy solution to clean.
-                                                            <br>6. The product comes with a hanging clip attached behing &amp; a stand.
-                                                        </p>
+                                                        <p><?=$rws['productDescription'];?></p>
                                                     </div>
                                                     <style>
                                                         .product-size-table {
