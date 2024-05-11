@@ -1,5 +1,4 @@
 <?php
-session_start();
 include('include/config.php');
 if (strlen($_SESSION['alogin']) == 0) {
 	header('location:index.php');
@@ -33,9 +32,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 	}
 
 	if (isset($_GET['del'])) {
-		$sql = mysqli_query($con, "select categoryImage from category where `id`='".$_GET['id']."'");
-		while ($row = mysqli_fetch_array($sql)){
-			unlink('uploads/category/'.$row['categoryImage']);
+		$sql = mysqli_query($con, "select categoryImage from category where `id`='" . $_GET['id'] . "'");
+		while ($row = mysqli_fetch_array($sql)) {
+			unlink('uploads/category/' . $row['categoryImage']);
 		}
 		mysqli_query($con, "delete from category where id = '" . $_GET['id'] . "'");
 		$_SESSION['delmsg'] = "Category deleted !!";
@@ -100,7 +99,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 										<div class="control-group">
-											<label class="control-label" for="basicinput">Description</label>
+											<label class="control-label" for="basicinput">Image</label>
 											<div class="controls">
 												<input type="file" class="span8" name="image">
 											</div>
