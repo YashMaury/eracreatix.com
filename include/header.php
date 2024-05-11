@@ -129,23 +129,23 @@ if (isset($_SESSION['id'])) {
                 <div class="t4s-section-header__mid t4s-pr">
                     <div class="t4s-container">
                         <div data-header-height class="t4s-row t4s-gx-15 t4s-gx-md-30 t4s-align-items-center" style="">
-                            <div class="t4s-col-md-4 t4s-col-3 t4s-d-lg-none t4s-col-item">
-                                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
+                            <div class="t4s-col-md-4 t4s-col-3 t4s-d-lg-none t4s-col-item" id="t4s-menu-drawer-opener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="16" viewBox="0 0 30 16" fill="currentColor">
                                     <rect width="30" height="1.5"></rect>
-                                    <a href="index.html" class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu">
-                                        <rect y="7" width="20" height="1.5"></rect>
-                                        <rect y="14" width="30" height="1.5"></rect>
-                                    </a>
-                                </svg> -->
-                                <!-- <a href="index.html" class="t4s-push-menu-btn  t4s-lh-1 t4s-d-flex t4s-align-items-center" aria-label="Sidebar Menu"> -->
-                                <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a>
+                                    <rect y="7" width="20" height="1.5"></rect>
+                                    <rect y="14" width="30" height="1.5"></rect>
+                                </svg>
+                                <!-- <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a> -->
+                                <!-- <img src="media/logoo.png" class="t4s-d-lg-block" width="50" height="43" alt="Era Creatix" style="width: 50px"> -->
                             </div>
                             <div class="t4s-col-lg-3 t4s-col-md-4 t4s-col-6 t4s-text-center t4s-text-lg-start t4s-col-item">
-                                <div class=" t4s-header__logo t4s-lh-1"><a class="t4s-d-inline-block" href="index.php">
-                                        <img loading="lazy" srcset="media/logoo.png 2x" src="media/logoo.png" class="header__normal-logo t4s-d-none t4s-d-lg-block" width="50" height="43" alt="Era Creatix" style="width: 50px">
-                                        <img loading="lazy" srcset="media/logoo.png 2x" src="media/logoo.png" class="header__sticky-logo t4s-d-none t4s-d-none" width="50" height="43" alt="Era Creatix" style="width: 50px">
-                                        <img loading="lazy" srcset="media/logoo.png 2x" src="media/logoo.png" class="header__mobile-logo t4s-d-lg-none" width="50" height="43" alt="Era Creatix" style="width: 50px">
-                                    </a></div>
+                                <div class=" t4s-header__logo t4s-lh-1">
+                                    <a class="t4s-d-inline-block" href="index.php">
+                                        <img src="media/logoo.png" class="header__normal-logo t4s-d-none t4s-d-lg-block" alt="Era Creatix" style="width: 50px">
+                                        <img src="media/logoo.png" class="header__sticky-logo t4s-d-none t4s-d-none" alt="Era Creatix" style="width: 50px">
+                                        <img src="media/logoo.png" class="header__mobile-logo t4s-d-lg-none" alt="Era Creatix" style="width: 50px">
+                                    </a>
+                                </div>
                             </div>
 
                             <!-- Added by team Searchtap -->
@@ -167,9 +167,6 @@ if (isset($_SESSION['id'])) {
                                     </div>
                                 </div>
                             </div>
-
-
-
 
                             <div class="t4s-col-lg-3 t4s-col-md-4 t4s-col-3 t4s-text-end t4s-col-group_btns t4s-col-item t4s-lh-1 t4s-flex-item">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="t4s-d-none">
@@ -193,19 +190,16 @@ if (isset($_SESSION['id'])) {
                                 </svg>
                                 <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
                                     <?php if (isset($_SESSION['login'])) { ?>
-                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-lg-inline-block">
                                             <a class="t4s-pr" href="account/index.php">
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-account"></use>
                                                 </svg> <?php echo $_SESSION['username']; ?>
                                             </a>
                                         </div>
-                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
+                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-lg-inline-block">
                                             <a class="t4s-pr" href="account/logout.php">
-                                                <!-- <svg class="t4s-icon t4s-icon--exit" aria-hidden="true" focusable="false" role="presentation">
-                                                    <use href="#icon-h-exit"></use>
-                                                </svg> -->
-                                                <img src="media/logout.png" width="20px" alt="logout">
+                                                <img src="media/logout.png" style="max-width: none;" width="25px" alt="logout">
                                             </a>
                                         </div>
                                     <?php } else { ?>
@@ -218,7 +212,7 @@ if (isset($_SESSION['id'])) {
                                         </div>
                                     <?php } ?>
                                     <div class="t4s-site-nav__icon t4s-site-nav__cart">
-                                        <a href="cart.php" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
+                                        <a href="cart.php" data-drawer-options='{ "id":"#t4s-mini_cart" }'>
                                             <span class="t4s-pr t4s-icon-cart__wrap">
                                                 <svg class="t4s-icon t4s-icon--cart" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-cart"></use>
@@ -255,15 +249,17 @@ if (isset($_SESSION['id'])) {
                                             </li>
                                         <?php } ?>
 
-                                        <!-- <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li> -->
-                                        <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="#pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li>
+                                        <!-- <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item ">
+                                            <a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a>
+                                        </li> -->
                                     </ul>
                                 </nav>
                             </div>
                             <div class="t4s-col-3 t4s-text-end t4s-col-item t4s-h-cat__html t4s-rte">
                                 <div class="return">
                                     <a href="">Return/Exchange</a>
-                                    <i class="las la-envelope fs__14 ml__15"></i> <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a>
+                                    <i class="las la-envelope fs__14 ml__15"></i>
+                                    <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a>
                                 </div>
                             </div>
                         </div>
@@ -271,36 +267,6 @@ if (isset($_SESSION['id'])) {
                     </div>
 
                 </div>
-                <div class="t4s-section-header__bot t4s-d-block t4s-d-lg-none">
-                    <div class="t4s-container">
-                        <div class="t4s-row t4s-g-0 t4s-align-items-center">
-                            <div class="t4s-col t4s-col-item">
-                                <nav class="t4s-navigation t4s-text-start t4s-nav__hover_sideup t4s-nav-arrow__true">
-                                    <ul data-menu-nav id="t4s-nav-ul" class="t4s-nav__ul  t4s-flex-wrap t4s-align-items-center">
-
-                                        <?php $sql = mysqli_query($con, "select id,categoryName  from category limit 6");
-                                        while ($row = mysqli_fetch_array($sql)) {
-                                        ?>
-                                            <li class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets">
-                                                <a class="t4s-d-flex t4s-align-items-center t4s-pr" href="collections.php?cid=<?php echo $row['id']; ?>" target="_self">
-                                                    <?php echo $row['categoryName']; ?>
-                                                </a>
-                                            </li>
-                                        <?php } ?>
-
-                                        <!-- <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li> -->
-                                        <li class="t4s-type__mega menu-width__cus t4s-menu-item has--children menu-has__offsets" style="margin-bottom: 10px;">
-                                            <a href="">Return/Exchange</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!--  Added by team searchtap    -->
 
                 <div id="header-with-edd">
                     <div class='search-tap-mobile' id="search-tap-with-icons">
@@ -312,59 +278,132 @@ if (isset($_SESSION['id'])) {
                                     <rect y="14" width="30" height="1.5"></rect>
                                 </svg>
                             </a> -->
-                        </div>
+                    </div>
 
-                        <form class="input-group">
-                            <div class="st-search-box hidden-desktop">
-                                <!-- <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">  -->
-                                <div class="search-input-container">
-                                    <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
-                                    <input type="text" autocomplete="off" placeholder="" id="search2" class="st-search-input" 
-                                    onkeydown="key_pressed_in_search(event)" 
-                                    oninput="find_search_results(this)" 
-                                    onfocus="find_search_results(this)">
-                                    <!-- <button type="button" id="learntocode_searchbtn" class="input-group-text btn btn-primary border-3" onclick="click_learntocode_search_btn()">
+                    <form class="input-group">
+                        <div class="st-search-box hidden-desktop">
+                            <!-- <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">  -->
+                            <div class="search-input-container">
+                                <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
+                                <input type="text" autocomplete="off" placeholder="" id="search2" class="st-search-input" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this)">
+                                <!-- <button type="button" id="learntocode_searchbtn" class="input-group-text btn btn-primary border-3" onclick="click_learntocode_search_btn()">
                                         <img alt="Delivery Time Icon" height="11" src="media/search.png" width="24" />
                                     </button> -->
-                                    <div class="placeholder-label animation">
-                                        <span class="common-text">Search for</span>
-                                        <span class="text-container-searchbar">
+                                <div class="placeholder-label animation">
+                                    <span class="common-text">Search for</span>
+                                    <span class="text-container-searchbar">
 
-                                            <span class="text">Bedsheets</span>
-                                            <span class="text">Cushion covers</span>
-                                            <span class="text">Dining sets</span>
+                                        <span class="text">Bedsheets</span>
+                                        <span class="text">Cushion covers</span>
+                                        <span class="text">Dining sets</span>
 
-                                        </span>
-                                    </div>
-                                    <div id="listofsearchresults">
-                                    </div>
+                                    </span>
+                                </div>
+                                <div id="listofsearchresults">
                                 </div>
                             </div>
-                        </form>
-
-
-                        <div class="t4s-site-nav__icon t4s-site-nav__cart sticky-header-cart-container" id="sticky-header-cart-container">
-                            <a href="cart.php" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
-                                <span class="t4s-pr t4s-icon-cart__wrap">
-                                    <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true" focusable="false" role="presentation">
-                                        <use href="#icon-h-cart"></use>
-                                    </svg>
-                                    <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box"><?= $count_of_cart['items'] ?></span>
-                                </span>
-                                <span class="t4s-h-cart-totals t4s-dn t4s-truncate">
-                                    <span class="t4s-h-cart__divider t4s-dn">/</span>
-                                    <span data-cart-tt-price class="t4s-h-cart__total">₹0.00</span>
-                                </span>
-                            </a>
                         </div>
+                    </form>
+
+
+                    <div class="t4s-site-nav__icon t4s-site-nav__cart sticky-header-cart-container" id="sticky-header-cart-container">
+                        <a href="cart.php" data-drawer-delay- data-drawer-options='{ "id":"#t4s-mini_cart" }'>
+                            <span class="t4s-pr t4s-icon-cart__wrap">
+                                <svg class="t4s-icon t4s-icon--cart sticky-header-cart-icon" aria-hidden="true" focusable="false" role="presentation">
+                                    <use href="#icon-h-cart"></use>
+                                </svg>
+                                <span data-cart-count class="t4s-pa t4s-op-0 t4s-ts-op t4s-count-box"><?= $count_of_cart['items'] ?></span>
+                            </span>
+                            <span class="t4s-h-cart-totals t4s-dn t4s-truncate">
+                                <span class="t4s-h-cart__divider t4s-dn">/</span>
+                                <span data-cart-tt-price class="t4s-h-cart__total">₹0.00</span>
+                            </span>
+                        </a>
                     </div>
-                    <div class="sticky-edd-container"></div>
                 </div>
-                <script src="cdn/shop/t/130/assets/sticky-header-scroll1b87.js"></script>
-
+                <div class="sticky-edd-container"></div>
             </div>
+            <script src="cdn/shop/t/130/assets/sticky-header-scroll1b87.js"></script>
 
-        </header>
-        <div id="shopify-section-custom-tag-color" class="shopify-section">
+    </div>
 
+    </header>
+
+    <div id="t4s-menu-drawer" class="t4s-drawer t4s-drawer__left" aria-hidden="true">
+        <div class="t4s-drawer__header">
+            <span>Menu</span>
         </div>
+        <div data-tab-mb-content="" id="shopify-mb_nav" class="t4s-mb-tab__content is--active">
+            <div id="shopify-section-mb_nav" class="shopify-section t4s-sp-section-mb-nav">
+                <ul id="menu-mb__ul" class="t4s-mb__menu" data-section-id="mb_nav">
+
+
+                    <?php
+                    $sql = mysqli_query($con, "select *  from category limit 6");
+                    while ($row = mysqli_fetch_array($sql)) {
+                    ?>
+
+                        <li id="item_mb_nav-0" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-has-children t4s-only_icon_false">
+                            <a href="collections.php?cid=<?= $row['id']; ?>" target="_self">
+                                <span class="t4s-nav_link_txt t4s-d-flex t4s-align-items-center"><?= $row['categoryName']; ?></span>
+                                <div class="t4s-mb-nav-right-container">
+                                    <span class="t4s-mb-nav__new-product-count-badge t4s-mb-nav__item_level0">
+                                        +1 New
+                                    </span>
+                                    <span class="t4s-mb-nav__vertical-divider"></span>
+                                    <!-- <span class="t4s-mb-nav__icon"></span> -->
+                                </div>
+                            </a>
+
+                        </li>
+
+                    <?php } ?>
+
+                    <li id="item_6085db0f-af41-41b9-ae4b-e133255307e9" class="t4s-menu-item t4s-item-level-0">
+                        <a href="" target="_self">Return/Exchange</a>
+                    </li>
+                    <li id="item_c4affdec-4074-4ce1-8f90-cf3726c5067a" class="t4s-menu-item t4s-item-level-0">
+                        <a href="contact.php" target="_self">Contact Us</a>
+                    </li>
+
+                    <?php if (isset($_SESSION['login'])) { ?>
+                        <li id="account-menu" class="t4s-menu-item t4s-item-level-0 t4s-menu-item-btns t4s-menu-item-acount t4s-menu-item-has-children t4s-only_icon_false">
+                            <a>
+                                <span class="t4s-d-inline-block">
+                                    <svg width="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>My account</span>
+                                <span class="t4s-mb-nav__icon"></span>
+                            </a>
+                            <ul id="account-submenu" class="t4s-sub-menu" style="display: none;">
+                                <li><a href="account/dashboard.php">Dashboard</a></li>
+                                <li><a href="account/addresses.php">Addresses</a></li>
+                                <li><a href="account/logout.php" data-no-instant="">Logout</a></li>
+                            </ul>
+                        </li>
+                        <script>
+                            $('#account-menu').click(function() {
+                                $('#account-submenu').toggle();
+                                $('#account-menu').toggleClass('is--opend');
+                            });
+                        </script>
+                    <?php } else { ?>
+                        <li class="t4s-menu-item t4s-item-level-0">
+                            <a href="login.php" target="_self">Login</a>
+                        </li>
+                    <?php } ?>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button id="t4s-menu-drawer-closer" class="t4s-drawer-menu__close t4s-pe-none t4s-op-0 t4s-pf" aria-hidden="true" aria-label="Close menu, categories">
+        <svg class="t4s-iconsvg-close" role="presentation" viewBox="0 0 16 14">
+            <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+        </svg>
+    </button>
+
+    <div id="shopify-section-custom-tag-color" class="shopify-section">
+
+    </div>

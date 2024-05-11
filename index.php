@@ -36,6 +36,16 @@ include "include/header.php";
                 </div>
             </div>
     </section>
+
+    <div class="t4s-prs-footer t4s-has-btn-view-all t4s-text-center" style="margin-bottom: 25px;">
+        <a class="t4s-btn t4s-viewall-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-true t4s-btn-color-dark t4s-btn-effect-default" href="all-collections.php">
+            View All
+            <svg class="t4s-btn-icon" viewBox="0 0 14 10">
+                <use xlink:href="#t4s-icon-btn"></use>
+            </svg>
+        </a>
+    </div>
+
     <section id="shopify-section-template--16885348139254__top_heading_BQcfam" class="shopify-section t4s-section t4s-section-all">
 
 
@@ -70,37 +80,40 @@ include "include/header.php";
 
                         <div class="t4s-product t4s-pr-grid t4s-pr-style1 t4s-pr-7970515943670  t4s-col-item" id="7970515943670" style="position: relative;" isrecommendation=false data-product-options='{ "id":"7970515943670","cusQty":"1","available":true, "handle":"fly-high-bar-accessories-set-of-seven", "isDefault": false, "VariantFirstID": 44903127843062, "customBadge":["_Deal Of The Day"], "customBadgeHandle":["_deal-of-the-day"],"dateStart":1676358983, "compare_at_price":479000,"price":137400, "isPreoder":false,"isExternal":false,"image2":"\/\/vaaree.com\/cdn\/shop\/products\/0002_04_46c3f5a0-115e-4977-9f1b-b2edb9cdd74f.jpg?v=1686911211\u0026width=1","alt":"Buy Fly High Bar Accessories - Set Of Seven at Vaaree online | Beautiful Cocktail Tools Set to choose from","isGrouped":false,"maxQuantity":9999 }'>
 
-                            <span class="item__badge badge--deal-of-the-day" style="">
+                            <!-- <span class="item__badge badge--deal-of-the-day" style="">
                                 Deal Of The Day
-                            </span>
+                            </span> -->
 
                             <style>
                                 .t4s_ratio img {
                                     object-fit: inherit;
                                 }
                             </style>
-                            <div class="t4s-product-wrapper" timeline>
-                                <div data-cacl-slide class="t4s-product-inner t4s-pr t4s-oh">
-                                    <div class="t4s-product-img t4s_ratio" data-style="--aspect-ratioapt: 1.0">
-                                        <img class="t4s-product-main-img" src="admin/productimages/<?php echo htmlentities($row['id']); ?>/<?php echo htmlentities($row['productImage1']); ?>" width="800" height="800" alt="Buy <?php echo htmlentities($row['productName']); ?> EraCreatix online | Beautiful Cocktail Tools Set to choose from">
+                            <div class="t4s-product-wrapper">
+                                <div class="t4s-product-inner t4s-pr t4s-oh">
+                                    <div class="t4s-product-img t4s_ratio">
+                                        <img class="t4s-product-main-img" src="admin/productimages/<?php echo htmlentities($row['id']); ?>/<?php echo htmlentities($row['productImage1']); ?>" width="800" height="800" alt="Buy <?php echo htmlentities($row['productName']); ?> | EraCreatix ">
                                     </div>
-                                    <div data-product-badge data-sort="sale,new,soldout,preOrder,custom" class="t4s-product-badge"></div>
+                                    <div class="t4s-product-badge"></div>
                                     <div class="t4s-product-btns">
-                                        <div data-replace-quickview></div>
-                                        <div data-replace-atc data-has-qty></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
                                     <div class="t4s-product-btns2">
-                                        <div data-replace-wishlist data-tooltip="right"></div>
-                                        <div data-replace-compare data-tooltip="right"></div>
-                                    </div><a data-pr-href class="t4s-full-width-link" href="products.php?pid=<?= $row['id']; ?>" aria-label="Product View"></a>
+                                        <div data-tooltip="right"></div>
+                                        <div data-tooltip="right"></div>
+                                    </div>
+                                    <a class="t4s-full-width-link" href="products.php?pid=<?= $row['id']; ?>" aria-label="Product View"></a>
                                 </div>
                                 <div class="t4s-product-info">
                                     <div class="t4s-product-info__inner">
-                                        <h3 class="t4s-product-title"><a data-pr-href href="products.php?pid=<?= $row['id']; ?>">
+                                        <h3 class="t4s-product-title">
+                                            <a href="products.php?pid=<?= $row['id']; ?>">
                                                 <?php echo htmlentities($row['productName']); ?>
-                                            </a></h3>
+                                            </a>
+                                        </h3>
                                         <p class="grid-product__material">
-                                            Stainless Steel
+                                            <?= $row['productCompany'] ?>
                                         </p>
                                         <div class="t4s-product-price">
                                             <span class="t4s-mrp-price">
@@ -109,16 +122,14 @@ include "include/header.php";
                                             <del>
                                                 ₹<?php echo htmlentities($row['productPriceBeforeDiscount']); ?>
                                             </del>
-                                            <!-- <span class="t4s-badge-discountprice">71%Off</span> -->
+                                            <span class="t4s-badge-discountprice"><?= round((($row['productPriceBeforeDiscount'] - $row['productPrice']) / $row['productPriceBeforeDiscount']) * 100, 2); ?>%Off</span>
                                             <!-- <div class="todays-offer-price">₹1,374.00 - Today&#39;s Offer</div> -->
                                         </div>
                                         <?php if ($row['productAvailability'] == 'In Stock') { ?>
                                             <div class="text-center">
-                                                <a href="account/cart.php?pid=<?php echo htmlentities($row['id']) ?>&&action=cart" 
-                                                class="t4s-product-form__submit t4s-btn t4s-btn-style-default 
+                                                <a href="account/cart.php?pid=<?php echo htmlentities($row['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default 
                                                 t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  
-                                                t4s-btn-effect-sweep-to-top t4s-btn-loading__svg"
-                                                style="padding: 10px">
+                                                t4s-btn-effect-sweep-to-top t4s-btn-loading__svg" style="padding: 10px">
                                                     Add to Cart
                                                 </a>
                                             </div>
@@ -159,18 +170,14 @@ include "include/header.php";
         </div>
     </section>
 
-    </div>
-    <div class="t4s-prs-footer t4s-has-btn-view-all t4s-text-center" style="margin-bottom: 25px;">
-        <a class="t4s-btn t4s-viewall-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-true t4s-btn-color-dark t4s-btn-effect-default" href="all-collections.php">
+    <!-- <div class="t4s-prs-footer t4s-has-btn-view-all t4s-text-center" style="margin-bottom: 25px;">
+        <a class="t4s-btn t4s-viewall-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-true t4s-btn-color-dark t4s-btn-effect-default" href="all-products.php">
             View All
             <svg class="t4s-btn-icon" viewBox="0 0 14 10">
                 <use xlink:href="#t4s-icon-btn"></use>
             </svg>
         </a>
-    </div>
-    </div>
-    </div>
-    </section>
+    </div> -->
 
 
     <?php

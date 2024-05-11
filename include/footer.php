@@ -121,7 +121,7 @@
 </main>
 
 <footer id="t4s-footer">
-    <section id="shopify-section-footer" class="shopify-section t4s-section t4s-section-footer t4s_tp_cdt t4s-footer">
+    <section id="shopify-section-footer" class="shopify-section t4s-section t4s-section-footer t4s_tp_cdt t4s-footer hidden-mobile">
         <!-- sections/footer1.liquid -->
         <div class="t4s-section-inner t4s_nt_se_footer t4s_se_footer t4s-container-wrap t4s-footer-has-border t4s-footer-border-full " style="--bg-color: #f6f6f8;--bg-gradient: ;--border-cl: #e8e8e1;--mg-top: ;--mg-right: auto;--mg-bottom: ;--mg-left:auto;--pd-top: 75px;--pd-right: ;--pd-bottom: 75px;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: ;--mgtb-left: auto;--pdtb-top: 75px;--pdtb-right: ;--pdtb-bottom: 75px;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: ;--mgmb-left: auto;--pdmb-top: 25px;--pdmb-right: ;--pdmb-bottom: 25px;--pdmb-left: ;">
             <div class="t4s-container">
@@ -216,46 +216,15 @@
                             <div data-footer-content class="t4s-footer-content">
                                 <div class="t4s-footer-menu t4s-footer-menu-style1" style="--menu-mgb:px;--menu-mgb-mb:px;">
                                     <ul class="t4s-footer-linklist">
-                                        <li>
-                                            <a href="collections.php?items=bedding" class="t4s-footer-link ">
-                                                Bedding
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="collections.php?items=home-furnishings" class="t4s-footer-link ">
-                                                Furnishings
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="collections.php?items=kitchen-decor" class="t4s-footer-link ">
-                                                Kitchen
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="collections.php?item=dining-table-decor" class="t4s-footer-link ">
-                                                Dining
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="collections.php?items=home-decor" class="t4s-footer-link ">
-                                                Home Decor
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="collections.php?items=bath-decor" class="t4s-footer-link ">
-                                                Bath
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="collections.php?items=garden-decor" class="t4s-footer-link ">
-                                                Garden
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="pages/lookbook.html" class="t4s-footer-link ">
-                                                Inspiration
-                                            </a>
-                                        </li>
+                                        <?php $sql = mysqli_query($con, "select * from category limit 7");
+                                        while ($row = mysqli_fetch_array($sql)) {
+                                        ?>
+                                            <li>
+                                                <a href="collections.php?cid=<?= $row['id'] ?>" class="t4s-footer-link ">
+                                                    <?= $row['categoryName'] ?>
+                                                </a>
+                                            </li>
+                                        <?php } ?>
                                     </ul>
                                 </div>
                             </div>
@@ -274,23 +243,8 @@
                                 <div class="t4s-footer-menu t4s-footer-menu-style1" style="--menu-mgb:px;--menu-mgb-mb:px;">
                                     <ul class="t4s-footer-linklist">
                                         <li>
-                                            <a href="blogs/journals.html" class="t4s-footer-link ">
-                                                Journals
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="pages/pro-tips-for-product-care.html" class="t4s-footer-link ">
-                                                Pro Tips For Product Care
-                                            </a>
-                                        </li>
-                                        <li>
                                             <a href="pages/about-us.html" class="t4s-footer-link ">
                                                 About Us
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="blogs/press-hub.html" class="t4s-footer-link ">
-                                                Press Room
                                             </a>
                                         </li>
                                         <li>
@@ -1013,8 +967,29 @@
 
 </div>
 
-<?php //include "searchList.php"; ?>
+<?php //include "searchList.php"; 
+?>
 
+<script>
+    $('#t4s-menu-drawer-opener').click(function() {
+        if ($('#t4s-menu-drawer').attr("aria-hidden")) {
+            $('#t4s-menu-drawer').attr("aria-hidden", false);
+            $('#t4s-menu-drawer-closer').css('opacity', 1);
+        } else {
+            $('#t4s-menu-drawer').attr("aria-hidden", true);
+            $('#t4s-menu-drawer-closer').css('opacity', 0);
+        }
+    });
+    $('#t4s-menu-drawer-closer').click(function() {
+        if ($('#t4s-menu-drawer').attr("aria-hidden")) {
+            $('#t4s-menu-drawer').attr("aria-hidden", true);
+            $('#t4s-menu-drawer-closer').css('opacity', 0);
+        } else {
+            $('#t4s-menu-drawer').attr("aria-hidden", false);
+            $('#t4s-menu-drawer-closer').css('opacity', 1);
+        }
+    });
+</script>
 
 </body>
 
