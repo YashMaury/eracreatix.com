@@ -243,13 +243,13 @@ $count_of_cart = mysqli_fetch_array($num_cart);
                                             </li>
                                         <?php } ?>
 
-                                        <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li>
+                                        <li id="item_b56f35b6-1f8e-4c91-833b-2301c3a688ed" class="t4s-type__simple t4s-menu-item "><a class="t4s-lh-1 t4s-d-flex t4s-align-items-center t4s-pr" href="#pages/lookbook.html" target="_blank" style="color:#EEA289">Inspiration</a></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="t4s-col-3 t4s-text-end t4s-col-item t4s-h-cat__html t4s-rte">
                                 <div class="return">
-                                    <a href="apps/return_prime.html">Return/Exchange</a>
+                                    <a href="#apps/return_prime.html">Return/Exchange</a>
                                     <i class="las la-envelope fs__14 ml__15"></i> <a class="cg" href="mailto:eracreatix@gmail.com">eracreatix@gmail.com</a>
                                 </div>
                             </div>
