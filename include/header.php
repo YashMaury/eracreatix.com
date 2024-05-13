@@ -191,7 +191,7 @@ if (isset($_SESSION['id'])) {
                                 <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
                                     <?php if (isset($_SESSION['login'])) { ?>
                                         <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-lg-inline-block">
-                                            <a class="t4s-pr" href="account/index.php">
+                                            <a class="t4s-pr" href="account/dashboard.php">
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-account"></use>
                                                 </svg> <?php echo $_SESSION['username']; ?>
