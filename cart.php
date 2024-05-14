@@ -259,10 +259,10 @@ include "include/header.php";
                                 estimatedDeliveryDateElement.textContent = "Estimated Delivery Date : " + estimatedDeliveryDate;
                             </script>
                             <div class="t4s-btn-group__checkout-update">
-                                <!-- <button type="submit" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
+                                <a href="account/checkout.php" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
                                     Continue To Checkout
-                                </button> -->
-                                <form action="payment/pay.php" method="post" enctype="multipart/form-data">
+                                </a>
+                                <!-- <form action="payment/pay.php" method="post" enctype="multipart/form-data">
                                     <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
                                     <input type="hidden" name="amount" value="<?= $cart_new_mrp + $cart_shipping ?>" autocomplete="off" required>
                                     <input type="hidden" name="name" value="<?php echo $_SESSION['username']; ?>" readonly>
@@ -271,7 +271,7 @@ include "include/header.php";
                                     <button type="submit" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
                                         Continue To Checkout
                                     </button>
-                                </form>
+                                </form> -->
 
 
                                 <!-- <button

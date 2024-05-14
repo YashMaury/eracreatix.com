@@ -2,7 +2,7 @@
 // include '../../constant.php';
 require('config.php');
 
-// session_start();
+session_start();
 
 require('razorpay-php/Razorpay.php');
 
@@ -35,25 +35,19 @@ if (empty($_POST['razorpay_payment_id']) === false) {
 
 if ($success === true) {
 
-
     $html = "Payment Successfull........";
 
-    foreach ($result3 as $key => $value) {
-        foreach ($value as $key1 => $value1) {
+    if (!empty($_SESSION['email'])) {
+        $headers = "From: eracreatix@gmail.com \r\n";
+        $headers .= "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 
-            if (!empty($value1->email)) {
-                $headers = "From: eracreatix@gmail.com \r\n";
-                $headers .= "MIME-Version: 1.0" . "\r\n";
-                $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+        $to = trim($_SESSION['email']);
+        $subject = "Your order is placed successfully!";
 
-                $to = trim($value1->email);
-                $subject = "Your registration is successfully completed!";
+        $message = "Dear <b>" . $_SESSION['username'] . "</b> ,<br/> Welcome, <br />Your order has been placed successfully!<br/><br/>Your order id is <br /><br /><br />Visit us <a href='eracreatix.com' target='_blank'>eracreatix.com</a> to get check status. <br /><br/>Thanks <br/> Team ERA Creatix";
 
-                $message = "Dear <b>" . $value1->full_name . "</b> ,<br/> Welcome, <br />Your order has been placed successfully!<br/><br/>Your order id is <br /><br /><br />Visit us <a href='eracreatix.com' target='_blank'>eracreatix.com</a> to get check status. <br /><br/>Thanks <br/> Team ERA Creatix";
-
-                mail($to, $subject, $message, $headers);
-            }
-        }
+        mail($to, $subject, $message, $headers);
     }
 
 
@@ -76,5 +70,5 @@ if ($success === true) {
 echo $html;
 
 // echo '<script type="text/javascript">
-// window.location = "https://pspteam.org/recruitment.php"
+// window.location = "https://eracreatix.com/recruitment.php"
 // </script>';

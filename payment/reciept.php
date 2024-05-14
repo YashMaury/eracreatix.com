@@ -1,4 +1,4 @@
 <?php
-include '../../constant.php';
 
-include "response/success.php";
+// include "response/success.php";
+echo "Payment Completed";
