@@ -193,7 +193,7 @@ if (isset($_SESSION['id'])) {
                                 </svg>
                                 <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
                                     <?php if (isset($_SESSION['login'])) { ?>
-                                        <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
+                                        <div class="t4s-site-0nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
                                             <a class="t4s-pr" href="account/index.php">
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-account"></use>
