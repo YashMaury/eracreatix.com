@@ -1,23 +1,9 @@
 <?php
 include "include/header.php";
-$address = mysqli_query($con, "select id,categoryName, categoryImage  from category where `id`='" . $_GET['cid'] . "'");
-$fetch_address = mysqli_fetch_array($address);
+$address = mysqli_query($con, "select * from address where `user_id` = '" . $_SESSION['id'] . "' ");
+$count_address = mysqli_query($con, "select count(id) as count from address where `user_id` = '" . $_SESSION['id'] . "' ");
+$fetch_count_address = mysqli_fetch_array($count_address);
 
-// if (isset($_POST['submit'])) {
-//     if (!isset($_SESSION['login'])) {
-//         header('location: ../login.php');
-//     } else {
-//         if (isset($_POST['form_type']) == "customer_address") {
-//             mysqli_query($con, "insert into address(user_id,name,shippingStreet,shippingAddress,shippingCity,shippingPincode,shippingState,shippingCountry,regDate) values('" . $_SESSION['id'] . "','" . $_POST['name'] . "','" . $_POST['shippingStreet'] . "','" . $_POST['shippingAddress'] . "','" . $_POST['shippingCity'] . "','" . $_POST['shippingPincode'] . "','" . $_POST['shippingState'] . "','" . $_POST['shippingCountry'] . "','" . date("Y-m-d h:i:s") . "')");
-//             $_SESSION['message'] = "Address added successfully";
-//             header("Location: addresses.php");
-//             exit();
-//         } else {
-//             header('location: addresses.php');
-//             exit();
-//         }
-//     }
-// }
 ?>
 
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
@@ -64,7 +50,7 @@ $fetch_address = mysqli_fetch_array($address);
                             </a>
                             <h2 id="AddressNewHeading" class="t4s_title_addresses">Add New Address</h2>
                         </div>
-                        <form method="post" action="address_insert.php" id="address_form_new" accept-charset="UTF-8" aria-labelledby="AddressNewHeading" class="t4s-container">
+                        <form method="post" action="address_func.php" id="address_form_new" accept-charset="UTF-8" aria-labelledby="AddressNewHeading" class="t4s-container">
                             <input type="hidden" name="form_type" value="customer_address">
                             <input type="hidden" name="utf8" value="✓">
                             <div class="t4s_field t4s-pr">
@@ -377,16 +363,12 @@ $fetch_address = mysqli_fetch_array($address);
                                         <option value="Zambia">Zambia</option>
                                         <option value="Zimbabwe">Zimbabwe</option>
                                     </select>
-                                    <!--
-                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
-                  <use href="#icon-caret" />
-                </svg>
-              -->
+
                                 </div>
                             </div>
                             <div class="set-default-addr">
-                                <input type="checkbox" id="address_default_address_new" name="address[default]" value="1">
-                                <label for="address_default_address_new" class="select-addr-label">Set as default address</label>
+                                <!-- <input type="checkbox" id="address_default_address_new" name="default" value="1">
+                                <label for="address_default_address_new" class="select-addr-label">Set as default address</label> -->
                             </div>
                             <div class="customer-sticky-wrapper save-address">
                                 <button type="submit" name="submit" class="t4s_btn_black customer-sticky-button" id="save-address">
@@ -409,7 +391,7 @@ $fetch_address = mysqli_fetch_array($address);
                     </div>
 
                     <?php
-                    if (true) {
+                    if ($fetch_count_address['count'] <= 0) {
                     ?>
 
                         <div class="customer-sticky-wrapper add-new-address desktop-addr-button" id="desktop_address_button">
@@ -429,22 +411,35 @@ $fetch_address = mysqli_fetch_array($address);
 
                     <?php } else { ?>
                         <div class="list-info">
-                            <div class="address-head">
+                            <?php
+                            while ($fetch_address = mysqli_fetch_array($address)) {
+                            ?>
 
-                                mungra
-
-                            </div>
-                            <div class="address-text">
-                                SUjanganj,50,
-                                220202 Jaunpur, Uttar Pradesh,
-                                India
-                            </div>
-                            <div class="address-buttons-container">
-                                <button class="btn_black" type="button" id="EditFormButton_9002028957942" aria-label="Edit address 1" aria-controls="EditAddress_9002028957942" aria-expanded="false" data-address-id="9002028957942">
-                                    EDIT
-                                </button>
-                                <button class="btn_white" type="button" aria-label="DELETE 1" data-target="/account/addresses/9002028957942" data-confirm-message="Are you sure you wish to delete this address?">
-                                    DELETE
+                                <div class="address-head">
+                                    <?= $fetch_address['name'] ?> - <?= $fetch_address['shippingCity'] ?>
+                                </div>
+                                <div class="address-text">
+                                    <?= $fetch_address['shippingStreet'] ?>,
+                                    <?= $fetch_address['shippingAddress'] ?>,
+                                    <?= $fetch_address['shippingCity'] ?>,
+                                    <?= $fetch_address['shippingPincode'] ?>,
+                                    <?= $fetch_address['shippingState'] ?>,
+                                    <?= $fetch_address['shippingCountry'] ?>
+                                </div>
+                                <br>
+                                <div class="address-buttons-container t4s-d-flex t4s-align-items-center t4s-justify-content-between">
+                                    <!-- <a href="address_func.php?edit=<?= //$fetch_address['id'] ?>" class="btn_black">
+                                        EDIT
+                                    </a> -->
+                                    <a href="address_func.php?delete=<?= $fetch_address['id'] ?>" class="btn_black">
+                                        DELETE
+                                    </a>
+                                </div>
+                                <br>
+                            <?php } ?>
+                            <div class="add-btn">
+                                <button class="t4s_btn_black customer-sticky-button add-address-default" type="submit" name="submit" id="add-address">
+                                    Add Address
                                 </button>
                             </div>
                         </div>
