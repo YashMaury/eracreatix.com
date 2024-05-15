@@ -43,7 +43,8 @@ include "include/header.php";
             ?>
 
 
-                <form data-cart-content="" data-cart-wrapper="" action="account/cart.php" method="post" novalidate="" class="t4s-cartPage__form t4s-pr t4s-oh">
+                <!-- <form data-cart-content="" data-cart-wrapper="" action="account/cart.php" method="post" novalidate="" class="t4s-cartPage__form t4s-pr t4s-oh"> -->
+                <div class="t4s-cartPage__form t4s-pr t4s-oh">
                     <div class="cart-page-product-list">
                         <input type="hidden" data-cart-attr-rm="" name="attributes[collection_items_per_row]" value="">
                         <div class="t4s-cartPage__header">
@@ -216,7 +217,7 @@ include "include/header.php";
                                 <div class="card-col final-amount">
                                     <div class="checkout-label-normal">Final Amount <span class="label-sub-text">(Tax Included)</span></div>
                                     <div class="t4s-cart__totalPrice checkout-label-normal">
-                                        ₹<?= $cart_new_mrp+$cart_shipping ?>
+                                        ₹<?= $cart_new_mrp + $cart_shipping ?>
                                     </div>
                                 </div>
                             </div>
@@ -258,9 +259,20 @@ include "include/header.php";
                                 estimatedDeliveryDateElement.textContent = "Estimated Delivery Date : " + estimatedDeliveryDate;
                             </script>
                             <div class="t4s-btn-group__checkout-update">
-                                <button type="submit" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
+                                <a href="account/checkout.php" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
                                     Continue To Checkout
-                                </button>
+                                </a>
+                                <!-- <form action="payment/pay.php" method="post" enctype="multipart/form-data">
+                                    <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
+                                    <input type="hidden" name="amount" value="<?= $cart_new_mrp + $cart_shipping ?>" autocomplete="off" required>
+                                    <input type="hidden" name="name" value="<?php echo $_SESSION['username']; ?>" readonly>
+                                    <input type="hidden" name="contact" value="<?php echo $_SESSION['contact']; ?>" readonly>
+                                    <input type="hidden" name="email" value="<?php echo $_SESSION['login']; ?>" readonly>
+                                    <button type="submit" name="checkout" class="t4s-btn__checkout t4s-btn t4s-btn-base t4s-btn-style-default t4s-btn-size-large t4s-btn-color-primary t4s-btn-effect-default t4s-w-100 t4s-justify-content-center t4s-truncate">
+                                        Continue To Checkout
+                                    </button>
+                                </form> -->
+
 
                                 <!-- <button
                             type="button"
@@ -274,7 +286,8 @@ include "include/header.php";
                             <div class="checkout-note">Coupon codes can be applied in the next page</div>
                         </div>
                     </div>
-                </form>
+                </div>
+                <!-- </form> -->
 
 
 

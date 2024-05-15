@@ -229,18 +229,6 @@ if (isset($_POST['submit'])) {
                                         </script>
                                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
                                     <link rel="stylesheet" href="cdn/shop/t/130/assets/estimate-delivery-return.css" media="all">
                                     <script async="" src="cdn/shop/t/130/assets/custom-modal.js"></script>
 

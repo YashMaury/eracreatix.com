@@ -197,13 +197,13 @@ if (isset($_GET['page'])) {
                     ?>
 
                         <div>
-                            <a href=" collections.php?cid=<?= $row['categoryid'] ?>" class="collection-image_wrapper flex">
+                            <a href=" collections.php?cid=<?= $row['categoryid'] ?>" class="collection-image_wrapper flex" style="background-color: light-grey;">
                                 <div class="collection--img handle-overlap">
                                     <!-- <img class="t4s-obj-eff subcollection-img collection-image-main lazyautosizes" src="<?php echo "admin/uploads/category/" . $row['categoryImage']; ?>" width="800" height="800" alt="subcollection Abstract Patterns ">
                                     <img class="t4s-lz--fadeIn t4s-obj-eff collection-frame" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Category_Icons-24_1_bb87cf2e-e8b4-45b2-814e-5b9229281d11.png?v=1714742226 " alt="subcollection Fabulous Indian "> -->
                                 </div>
                                 <div class="collection--text">
-                                    <?php echo $row['subcategory']; ?>
+                                    <b><?php echo $row['subcategory']; ?></b>
                                 </div>
                             </a>
                         </div>
@@ -527,41 +527,60 @@ if (isset($_GET['page'])) {
                                                     </p>
                                                     <div class="t4s-product-price" data-pr-price="" data-product-price="">
                                                         <span class="t4s-price-from">
-                                                            <span class="t4s-price-from">From</span>
+                                                            <!-- <span class="t4s-price-from">From</span> -->
                                                             ₹<?= $products['productPrice'] ?>
                                                         </span>
                                                         <del>₹<?= $products['productPriceBeforeDiscount'] ?></del>
-                                                        <span class="t4s-badge-discountprice">30%Off</span>
+                                                        <span class="t4s-badge-discountprice">
+                                                            <?= round((($products['productPriceBeforeDiscount'] - $products['productPrice']) / $products['productPriceBeforeDiscount']) * 100, 2); ?>%Off</span>
                                                     </div>
-                                                    <div class="delivery_date_wrapper" id="delivery_date_wrapper_8195757703414" style="display: none;">
+                                                    <div class="delivery_date_wrapper t4s-d-none" id="delivery_date_wrapper_8195757703414">
                                                         <span class="delivery_date_section">Delivery by</span>
-                                                        <span id="t4s-end_delivery_8195757703414" class="delivery_date"></span>
+                                                        <span id="shipping-estimate-date" class="delivery_date"></span>
                                                     </div>
                                                     <link href="cdn/shop/t/130/assets/delivery_date_fbv.css" rel="stylesheet" type="text/css" media="all">
-                                                    <!-- <div class="delivery-info-fbv delivery-info-fbv-plp" id="delivery_date_wrapper_fbv_8195757703414" style="display: flex;">
-                                                        <svg width="51" height="20" viewBox="0 0 51 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fbv-icon">
-                                                            <rect width="50.9091" height="20" rx="10" fill="#E8C463"></rect>
-                                                            <path d="M16.7308 5.8277C16.7761 5.63729 16.6317 5.45453 16.436 5.45453H11.0139C10.8748 5.45453 10.7536 5.54916 10.7199 5.68406L10.4926 6.59315C10.4448 6.78441 10.5895 6.96968 10.7866 6.96968H16.2197C16.36 6.96968 16.482 6.87332 16.5145 6.73679L16.7308 5.8277Z" fill="#262727"></path>
-                                                            <path d="M25.0608 5.45453C25.2494 5.45453 25.3922 5.62493 25.3591 5.8106L25.1561 6.95279C25.1304 7.09742 25.0046 7.20278 24.8577 7.20278H21.6633C21.5157 7.20278 21.3897 7.30901 21.3646 7.45439L21.1323 8.80378C21.1004 8.98897 21.243 9.15823 21.4309 9.15823H23.4785C23.6678 9.15823 23.8108 9.33003 23.7764 9.51627L23.5775 10.5937C23.551 10.7374 23.4257 10.8417 23.2795 10.8417H21.0151C20.8679 10.8417 20.7419 10.9476 20.7166 11.0926L20.1568 14.2946C20.1314 14.4396 20.0055 14.5454 19.8583 14.5454H18.2597C18.0713 14.5454 17.9286 14.3753 17.9613 14.1897L19.4601 5.70485C19.4857 5.56007 19.6115 5.45453 19.7585 5.45453H25.0608Z" fill="#262727"></path>
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2167 7.81143C33.1218 8.34669 32.9016 8.79131 32.5563 9.14528C32.3515 9.3552 32.1224 9.52716 31.869 9.66117C31.73 9.73472 31.7349 10.0187 31.8699 10.0995C32.05 10.2072 32.2054 10.3467 32.3361 10.518C32.5865 10.846 32.7117 11.2302 32.7117 11.6705C32.7117 11.8087 32.6987 11.9425 32.6728 12.072C32.5433 12.8317 32.1721 13.4361 31.5591 13.885C30.9462 14.3253 30.1649 14.5454 29.2152 14.5454H25.3418C25.1533 14.5454 25.0106 14.3753 25.0434 14.1897L26.5421 5.70485C26.5677 5.56007 26.6935 5.45453 26.8405 5.45453H30.6785C31.4987 5.45453 32.1333 5.62288 32.5822 5.95958C33.0311 6.29628 33.2556 6.76248 33.2556 7.35818C33.2556 7.50495 33.2426 7.65603 33.2167 7.81143ZM29.5907 9.14528C29.962 9.14528 30.2598 9.06327 30.4843 8.89924C30.7088 8.7352 30.8469 8.49778 30.8987 8.18698C30.9073 8.13519 30.9116 8.06612 30.9116 7.97978C30.9116 7.72942 30.8296 7.53948 30.6656 7.40998C30.5016 7.27185 30.2598 7.20278 29.9404 7.20278H28.745C28.5976 7.20278 28.4716 7.30883 28.4464 7.45406L28.2148 8.7905C28.1827 8.97579 28.3253 9.14528 28.5134 9.14528H29.5907ZM30.4713 11.7741C30.4886 11.6705 30.4972 11.5928 30.4972 11.541C30.4972 11.2907 30.4066 11.0964 30.2253 10.9583C30.044 10.8115 29.7936 10.7381 29.4742 10.7381H28.1224C27.9755 10.7381 27.8497 10.8436 27.8241 10.9883L27.5689 12.4283C27.536 12.614 27.6787 12.7842 27.8672 12.7842H29.1375C29.5174 12.7842 29.8195 12.6979 30.044 12.5252C30.2685 12.3526 30.4109 12.1022 30.4713 11.7741Z" fill="#262727"></path>
-                                                            <path d="M38.2691 11.4707C38.1363 11.7343 37.7435 11.6719 37.6989 11.3802L36.8326 5.71178C36.81 5.56382 36.6827 5.45453 36.533 5.45453H34.7981C34.6095 5.45453 34.4667 5.62499 34.4998 5.81068L36.0106 14.2955C36.0364 14.4401 36.1621 14.5454 36.309 14.5454H38.6443C38.7564 14.5454 38.8593 14.4836 38.9119 14.3846L43.4202 5.89975C43.5275 5.69791 43.3812 5.45453 43.1526 5.45453H41.4865C41.3721 5.45453 41.2674 5.51901 41.2159 5.62122L38.2691 11.4707Z" fill="#262727"></path>
-                                                            <path d="M11.3986 9.48854C11.426 9.34571 11.5509 9.24241 11.6963 9.24241H15.6508C15.8436 9.24241 15.9874 9.42019 15.9471 9.60879L15.7528 10.5179C15.7229 10.6577 15.5994 10.7576 15.4564 10.7576H11.5225C11.3323 10.7576 11.1892 10.5844 11.2249 10.3976L11.3986 9.48854Z" fill="#262727"></path>
-                                                            <path d="M15.2604 13.3856C15.2929 13.2002 15.1502 13.0303 14.962 13.0303H7.98358C7.84453 13.0303 7.72332 13.1249 7.68959 13.2598L7.46232 14.1689C7.41451 14.3602 7.55916 14.5454 7.7563 14.5454H14.8026C14.9497 14.5454 15.0756 14.4397 15.101 14.2947L15.2604 13.3856Z" fill="#262727"></path>
-                                                        </svg>
-                                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="thundering-icon">
-                                                            <path d="M6.85918 1L0.90918 9.4H5.80918L4.75918 15L10.7092 6.6H5.80918L6.85918 1Z" fill="#E8C463" stroke="#262727" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-
-                                                        <span class="t4s-end_delivery-fbv" id="t4s-end_delivery_fbv_8195757703414">Delivery Tomorrow</span>
-
-                                                    </div> -->
-                                                    <div id="t4s-end_delivery_8195757703414"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 <?php } ?>
 
+                                <script>
+                                    function calculateEstimateDeliveryDate() {
+                                        const today = new Date();
+                                        const currentHour = today.getHours();
+                                        const cutOffHour = 16
+                                        const dateEnd = 5;
+
+                                        const daysToAdd = currentHour < cutOffHour ? parseInt(dateEnd) : parseInt(dateEnd) + 1;
+                                        const millisecondsInDay = 24 * 60 * 60 * 1000;
+                                        let targetDate = new Date(today.getTime() + daysToAdd * millisecondsInDay);
+
+                                        //Exclude Sundays
+                                        if (targetDate.getDay() === 0) {
+                                            targetDate = new Date(targetDate.getTime() + 1 * millisecondsInDay);
+                                        }
+
+                                        return targetDate;
+                                    }
+
+                                    const result = calculateEstimateDeliveryDate();
+                                    const estimatedDeliveryDateElement = document.getElementById("shipping-estimate-date");
+
+                                    const formattedDate = result.toLocaleDateString('en-US', {
+                                        day: '2-digit',
+                                        month: 'short',
+                                        year: 'numeric'
+                                    });
+
+                                    const dateParts = formattedDate.split(" ")
+                                    const estimatedDeliverDay = dateParts[1].replace(",", "");
+                                    const estimatedDeliveryMonth = dateParts[0];
+                                    const estimatedDeliveryYear = dateParts[2]
+                                    const estimatedDeliveryDate = `${estimatedDeliverDay} ${estimatedDeliveryMonth} ${estimatedDeliveryYear}`;
+
+                                    estimatedDeliveryDateElement.textContent = "Estimated Delivery Date : " + estimatedDeliveryDate;
+                                </script>
 
 
 

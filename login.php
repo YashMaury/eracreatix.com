@@ -19,7 +19,16 @@ include "include/header.php";
     </style>
   </div>
   <section id="shopify-section-template--16885347680502__main" class="shopify-section t4s-section t4s-section-customers t4s-container">
+    <p>
+      <?php
+        if (isset($_SESSION['errmsg'])) {
+          echo "<p style='background-color: #f8d7da;color: #58151c;padding: 10px 10px; text-align:center'>".$_SESSION['errmsg']."</p>";
+          unset($_SESSION['errmsg']);
+        }
+      ?>
+    </p>
     <div class="t4s-customer is--login t4s-text-start">
+
 
       <div id="recover">
         <h2 class="t4s_mb_20">Reset your password</h2>
