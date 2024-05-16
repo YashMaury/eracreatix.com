@@ -6,6 +6,7 @@ include "include/header.php";
     <section id="shopify-section-template--16885348630774__main" class="shopify-section t4s-section t4s-section-main t4s-main-cart">
         <link rel="stylesheet" href="cdn/shop/t/130/assets/main-cart.aio.min.css" media="all">
         <link rel="stylesheet" href="cdn/shop/t/130/assets/main-cart-page-new.css" media="all">
+        <link rel="stylesheet" href="cdn/shop/t/130/assets/mobile-view-cart-item-page.css" media="all">
         <svg class="t4s-d-none">
             <symbol id="icon-cart-remove" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="3 6 5 6 21 6"></polyline>
@@ -122,21 +123,51 @@ include "include/header.php";
                                                     <div class="cart_page_title"><?php echo $row['productName']; ?></div>
                                                     <div class="t4s-page_cart__actions t4s-align-items-center t4s-d-flex">
                                                         <span class="cart-item-info-label">Qty :</span>
-                                                        <span class="t4s-quantity-wrapper t4s-quantity-cart-item">
-                                                            <!-- <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
-                                                                <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
-                                                                    <path d="M10 0v2H0V0z" fill="currentColor"></path>
-                                                                </svg>
-                                                            </button> -->
-                                                            <input readonly type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="<?= $row['quantity'] ?>" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
-                                                            <!-- <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
-                                                                <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
-                                                                    <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
-                                                                </svg>
-                                                            </button> -->
-                                                        </span>
+                                                        <form action="account/cart.php?update_cart=true" name="update_cart" method="post">
+                                                            <span class="t4s-quantity-wrapper t4s-quantity-cart-item">
+                                                                <input readonly type="hidden" class="t4s-quantity-input" name="id" value="<?= $row['cartId'] ?>">
+                                                                <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown(); this.form.submit()" aria-label="ATC reduce quantity">
+                                                                    <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
+                                                                        <path d="M10 0v2H0V0z" fill="currentColor"></path>
+                                                                    </svg>
+                                                                </button>
+                                                                <input readonly type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="<?= $row['quantity'] ?>" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
+                                                                <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp(); this.form.submit()" aria-label="ATC increase quantity">
+                                                                    <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
+                                                                        <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </span>
+                                                        </form>
                                                     </div>
 
+                                                    <div class="mobile-view-right-block">
+                                                        <p>
+                                                            <a href="account/cart.php?pid=<?php echo $row['cartId']; ?>&action=delete-item" class="t4s-page_cart__remove t4s-tooltip-actived" alt="Remove this item">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                    <path d="M6.6665 1.33203L5.99984 1.9987H2.6665V3.33203H3.33317V13.332C3.33317 13.6802 3.46072 14.0351 3.71208 14.2865C3.96343 14.5378 4.31836 14.6654 4.6665 14.6654H11.3332C11.6813 14.6654 12.0362 14.5378 12.2876 14.2865C12.539 14.0351 12.6665 13.6802 12.6665 13.332V3.33203H13.3332V1.9987H9.99984L9.33317 1.33203H6.6665ZM4.6665 3.33203H11.3332V13.332H4.6665V3.33203ZM5.99984 4.66536V11.9987H7.33317V4.66536H5.99984ZM8.6665 4.66536V11.9987H9.99984V4.66536H8.6665Z" fill="black"></path>
+                                                                </svg>
+                                                                Remove from cart
+                                                            </a>
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mobile-view-right-block">
+                                            <!-- MRP -->
+                                            <div class="t4s-text-lg-center t4s-text-md-center t4s-text-end t4s-cart_meta_prices_wrap">
+                                                <div class="t4s-cart_meta_prices">
+                                                    <div class="t4s-cart_price">
+                                                        <div class="vertical-alignment">
+                                                            <del>MRP ₹<?php echo $row['productPriceBeforeDiscount']; ?></del>
+                                                        </div>
+                                                        <ins>₹<?php echo $row['productPrice'] ?></ins>
+                                                        <br>
+                                                        <ins>Total Price ₹<?php echo $row['productPrice'] * $row['quantity']; ?></ins>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

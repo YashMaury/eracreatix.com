@@ -42,7 +42,7 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                             <div class="select-addr-label top-space">
                                 <label for="AddressCountryNew">Select Address</label>
                                 <div class="select">
-                                    <select id="AddressCountryNew" name="address" data-default="" autocomplete="country">
+                                    <select id="selectAddressopt" name="address" autocomplete="address" required>
                                         <?php
                                         while ($row = mysqli_fetch_array($address)) {
                                         ?>
@@ -53,6 +53,9 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                                 </div>
                             </div>
                             <br>
+                            <div>
+                                <p><a href="checkout_address.php">Add new address</a></p>
+                            </div>
                             <div class="customer-sticky-wrapper save-address">
                                 <button type="button" class="t4s_btn_black customer-sticky-button" id="save-address">
                                     Continue
@@ -90,8 +93,14 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
         <script>
             $("#save-address").click(function() {
                 // alert('Hellooooo');
-                $("#SelectAddress").toggle();
-                $("#SelectPayment").toggle();
+                var ifselected = $("#selectAddressopt").val();
+                // alert(ifselected);
+                if (ifselected !== "" && ifselected !== null) {
+                    $("#SelectAddress").toggle();
+                    $("#SelectPayment").toggle();
+                } else {
+                    alert('Please select Address.');
+                }
             })
         </script>
 

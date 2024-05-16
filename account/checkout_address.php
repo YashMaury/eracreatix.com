@@ -1,8 +1,6 @@
 <?php
 include "include/header.php";
 $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SESSION['id'] . "' ");
-$count_address = mysqli_query($con, "select count(id) as count from address where `user_id` = '" . $_SESSION['id'] . "' ");
-$fetch_count_address = mysqli_fetch_array($count_address);
 
 ?>
 
@@ -28,55 +26,45 @@ $fetch_count_address = mysqli_fetch_array($count_address);
                     </symbol>
                 </svg>
                 <div>
+                    <form method="post" action="checkout_func.php" id="address_form_new" accept-charset="UTF-8" aria-labelledby="AddressNewHeading" class="t4s-container">
+                        <input type="hidden" name="form_type" value="place_order">
+                        <input type="hidden" name="utf8" value="✓">
 
+                        <div id="SelectAddress" class="add-form">
+                            <div class="address-header-wrapper" id="stickySubHeader">
+                                <a class="t4s-d-flex" id="back-arrow-from-new"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                        <path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" fill="#000000" class="color000 svgShape"></path>
+                                    </svg></a>
+                                <h2 id="AddressNewHeading" class="t4s_title_addresses">Ckeckout option</h2>
+                            </div>
 
-                    <!-- <div class="no-address-container">
-                        <div class="heading">No Address Found</div>
-                        <div class="subheading">Add your address and get your favorite Vaaree products right to your doorstep!</div>
-                        <div class="add-btn">
-                            <button class="t4s_btn_black customer-sticky-button add-address-default" type="button" aria-expanded="false" aria-controls="AddAddress">
-                                Add Address
-                            </button>
-                        </div>
-                    </div> -->
-
-                    <div id="AddAddress" class="add-form" style="display: none">
-                        <div class="address-header-wrapper" id="stickySubHeader">
-                            <a class="t4s-d-flex" id="back-arrow-from-new">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                    <path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" fill="#000000" class="color000 svgShape"></path>
-                                </svg>
-                            </a>
-                            <h2 id="AddressNewHeading" class="t4s_title_addresses">Add New Address</h2>
-                        </div>
-                        <form method="post" action="address_func.php" id="address_form_new" accept-charset="UTF-8" aria-labelledby="AddressNewHeading" class="t4s-container">
                             <input type="hidden" name="form_type" value="customer_address">
                             <input type="hidden" name="utf8" value="✓">
                             <div class="t4s_field t4s-pr">
-                                <input class="t4s_frm_input" type="text" id="AddressFirstNameNew" name="name" value="" autocomplete="given-name" placeholder="Full Name">
+                                <input class="t4s_frm_input" type="text" id="name" name="name" value="" autocomplete="given-name" placeholder="Full Name">
                                 <label for="AddressFirstNameNew">Full Name</label>
                             </div>
                             <div class="t4s_field t4s-pr">
-                                <input class="t4s_frm_input" type="text" id="AddressAddress2New" name="shippingStreet" value="" autocomplete="address-line2" placeholder="Apartment, Flat, House Number">
+                                <input class="t4s_frm_input" type="text" id="shippingStreet" name="shippingStreet" value="" autocomplete="address-line2" placeholder="Apartment, Flat, House Number">
                                 <label for="AddressAddress2New">Street No., Landamark</label>
                             </div>
                             <div class="t4s_field t4s-pr">
-                                <input class="t4s_frm_input" type="text" id="AddressAddress1New" name="shippingAddress" value="" autocomplete="address-line1" placeholder="Address">
+                                <input class="t4s_frm_input" type="text" id="shippingAddress" name="shippingAddress" value="" autocomplete="address-line1" placeholder="Address">
                                 <label for="AddressAddress1New">Address</label>
                             </div>
                             <div class="t4s_field t4s-pr">
-                                <input class="t4s_frm_input" type="text" id="AddressZipNew" name="shippingPincode" value="" autocapitalize="characters" autocomplete="postal-code" placeholder="Pin Code">
+                                <input class="t4s_frm_input" type="text" id="shippingPincode" name="shippingPincode" value="" autocapitalize="characters" autocomplete="postal-code" placeholder="Pin Code">
                                 <label for="AddressZipNew">Pin Code</label>
                             </div>
                             <div class="t4s_field t4s-pr">
-                                <input class="t4s_frm_input" type="text" id="AddressCityNew" name="shippingCity" value="" autocomplete="address-level2" placeholder="City">
+                                <input class="t4s_frm_input" type="text" id="shippingCity" name="shippingCity" value="" autocomplete="address-level2" placeholder="City">
                                 <label for="AddressCityNew">City</label>
                             </div>
                             <div id="AddressProvinceContainerNew" style="" class="select-addr-label top-space">
-                                <label for="AddressProvinceNew">State</label>
+                                <label for="shippingState">State</label>
                                 <div class="select">
-                                    <select id="AddressProvinceNew" name="shippingState" data-default="" autocomplete="address-level1">
+                                    <select id="shippingState" name="shippingState" data-default="" autocomplete="address-level1">
                                         <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                                         <option value="Andhra Pradesh">Andhra Pradesh</option>
                                         <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -120,9 +108,9 @@ $fetch_count_address = mysqli_fetch_array($count_address);
                             </div>
 
                             <div class="select-addr-label ">
-                                <label for="AddressCountryNew">Country/region</label>
+                                <label for="shippingCountry">Country/region</label>
                                 <div class="select">
-                                    <select id="AddressCountryNew" name="shippingCountry" data-default="" autocomplete="country">
+                                    <select id="shippingCountry" name="shippingCountry" data-default="" autocomplete="country">
                                         <option value="India">India</option>
                                         <option value="---">---</option>
                                         <option value="Afghanistan">Afghanistan</option>
@@ -367,238 +355,67 @@ $fetch_count_address = mysqli_fetch_array($count_address);
                                 </div>
                             </div>
                             <div class="set-default-addr">
-                                <!-- <input type="checkbox" id="address_default_address_new" name="default" value="1">
-                                <label for="address_default_address_new" class="select-addr-label">Set as default address</label> -->
                             </div>
+
+                            <br>
                             <div class="customer-sticky-wrapper save-address">
-                                <button type="submit" name="submit" class="t4s_btn_black customer-sticky-button" id="save-address">
-                                    Save Address
+                                <button type="button" class="t4s_btn_black customer-sticky-button" id="save-address">
+                                    Continue
                                 </button>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div id="SelectPayment" class="add-form" style="display: none;">
+                            <div class="address-header-wrapper" id="stickySubHeader">
+                                <a class="t4s-d-flex" id="back-arrow-from-new"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                        <path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" fill="#000000" class="color000 svgShape"></path>
+                                    </svg></a>
+                                <h2 id="AddressNewHeading" class="t4s_title_addresses">Ckeckout option</h2>
+                            </div>
+
+                            <div class="set-default-addr">
+                                <input type="radio" id="address_default_address_new" name="method[]" value="COD" required>
+                                <label for="address_default_address_new" class="select-addr-label">COD</label>
+                            </div>
+                            <div class="set-default-addr">
+                                <input type="radio" id="address_default_address_new" name="method[]" value="1" disabled>
+                                <label for="address_default_address_new" class="select-addr-label">Pay Now (Not avaialable)</label>
+                            </div>
+                            <!-- <br> -->
+                            <div class="customer-sticky-wrapper save-address">
+                                <button type="submit" name="submit" class="t4s_btn_black customer-sticky-button">
+                                    Place Order
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <ul role="list" class="address-list t4s-container">
-                    <div class="list-info">
-                        <div class="address-header-wrapper" id="stickySubHeaderAddrList">
-                            <a href="dashboard.php" class="t4s-d-flex" id="back-arrow-from-list">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                    <path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" fill="#000000" class="color000 svgShape"></path>
-                                </svg></a>
-                            <h2 class="t4s_title_addresses">Saved Addresses</h2>
-                        </div>
-                    </div>
-
-                    <?php
-                    if ($fetch_count_address['count'] <= 0) {
-                    ?>
-
-                        <div class="customer-sticky-wrapper add-new-address desktop-addr-button" id="desktop_address_button">
-
-                            <div id="NoAddress" class="no-address-desktop-container">
-                                <div class="heading">No Address Found</div>
-                                <div class="subheading">Add your address and get your favorite Vaaree products right to your doorstep!</div>
-                                <div class="add-btn">
-                                    <button class="t4s_btn_black customer-sticky-button add-address-default" type="submit" name="submit" id="add-address">
-                                        Add Address
-                                    </button>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    <?php } else { ?>
-                        <div class="list-info">
-                            <?php
-                            while ($fetch_address = mysqli_fetch_array($address)) {
-                            ?>
-
-                                <div class="address-head">
-                                    <?= $fetch_address['name'] ?> - <?= $fetch_address['shippingCity'] ?>
-                                </div>
-                                <div class="address-text">
-                                    <?= $fetch_address['shippingStreet'] ?>,
-                                    <?= $fetch_address['shippingAddress'] ?>,
-                                    <?= $fetch_address['shippingCity'] ?>,
-                                    <?= $fetch_address['shippingPincode'] ?>,
-                                    <?= $fetch_address['shippingState'] ?>,
-                                    <?= $fetch_address['shippingCountry'] ?>
-                                </div>
-                                <br>
-                                <div class="address-buttons-container t4s-d-flex t4s-align-items-center t4s-justify-content-between">
-                                    <a href="address_func.php?delete=<?= $fetch_address['id'] ?>" class="btn_black">
-                                        DELETE
-                                    </a>
-                                </div>
-                                <br>
-                            <?php } ?>
-                            <div class="add-btn">
-                                <button class="t4s_btn_black customer-sticky-button add-address-default" type="submit" name="submit" id="add-address">
-                                    Add Address
-                                </button>
-                            </div>
-                        </div>
-                    <?php } ?>
-
-                </ul>
             </div>
         </div>
         <script>
-            $("#add-address").click(function() {
+            $("#save-address").click(function() {
                 // alert('Hellooooo');
-                $("#AddAddress").toggle();
-                $("#NoAddress").toggle();
+                var address = $("#shippingAddress").val();
+                var street = $("#shippingStreet").val();
+                var city = $("#shippingCity").val();
+                // alert(ifselected);
+                if (address !== "" && address !== null) {
+                    if (street !== "" && street !== null) {
+                        if (city !== "" && city !== null) {
+                            $("#SelectAddress").toggle();
+                            $("#SelectPayment").toggle();
+                        } else {
+                            alert('Please select Address.');
+                        }
+                    } else {
+                        alert('Please select Address.');
+                    }
+                } else {
+                    alert('Please select Address.');
+                }
             })
         </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
-                var addAddressButton = document.querySelectorAll('#add-address');
-                var saveAddressButton = document.getElementById('save-address');
-                var editAddressButtons = document.querySelectorAll('[id^="EditFormButton_"]');
-                var updateAddressButtons = document.querySelectorAll('[id^="update-address"]');
-                var backButtonFromNew = document.getElementById('back-arrow-from-new');
-                var backButtonFromEdit = document.querySelectorAll('#back-arrow-from-edit');
-                var backButtonFromList = document.getElementById('back-arrow-from-list');
-                var addForm = document.querySelector('.add-form');
-                var editForms = document.querySelectorAll('[id^="EditAddress_"]');
-                var listInfo = document.querySelectorAll('.list-info');
-                var addressList = document.querySelectorAll('.address-list');
-                var desktopAddAddressButton = document.getElementById('desktop_address_button');
-                var stickySubHeader = document.querySelector('#stickySubHeader');
-                var stickySubHeaderEdit = document.querySelector('#stickySubHeaderEdit');
-                var stickySubHeaderAddrList = document.querySelector('#stickySubHeaderAddrList');
-                var defaultAddressCheckboxContainer = document.querySelectorAll('.set-default-addr');
-                var addAddressDefault = document.querySelector('.add-address-default')
-                var noAddressContainer = document.querySelector('.no-address-container')
 
-                // Function to toggle visibility of elements
-                function toggleVisibility(show, hide) {
-                    if (show) {
-                        if (show.length !== undefined) {
-                            show.forEach(function(element, index) {
-                                element.style.display = 'block'
-                            })
-                        } else {
-                            show.style.display = 'block'
-                        }
-
-                    } else {
-
-                    }
-                    if (hide) {
-                        if (hide.length !== undefined) {
-                            hide.forEach(function(element, index) {
-                                element.style.display = 'none'
-                            })
-                        } else {
-                            hide.style.display = 'none'
-                        }
-
-                    };
-                }
-
-                function clearForm(formId) {
-                    const form = document.getElementById(formId);
-
-                    if (form) {
-                        // Iterate through all form elements
-                        Array.from(form.elements).forEach(element => {
-                            // Check if the element is an input, textarea, or select
-                            if (['input', 'textarea', 'select', 'checkbox'].includes(element.tagName.toLowerCase())) {
-                                element.value = '';
-                            }
-                        });
-                    }
-                }
-
-                function addStickyEffect(element) {
-                    if (window.innerWidth > 768) {
-                        return;
-                    }
-                    var showAtScroll = 100;
-                    var isSticky = false;
-
-                    window.onscroll = function() {
-                        if (window.pageYOffset > showAtScroll && !isSticky) {
-                            element.classList.add('sticky');
-                            isSticky = true;
-                        } else if (window.pageYOffset <= showAtScroll && isSticky) {
-                            element.classList.remove('sticky');
-                            isSticky = false;
-                        }
-                    };
-                }
-
-                document.addEventListener('DOMContentLoaded', function() {
-                    addStickyEffect(stickySubHeaderAddrList);
-                });
-
-                // Add event listener for add new button
-                addAddressButton.forEach(function(button, index) {
-                    button.addEventListener('click', function() {
-                        addStickyEffect(stickySubHeader);
-                        toggleVisibility(addForm, addressList);
-                    });
-                });
-                backButtonFromNew.addEventListener('click', function() {
-                    clearForm('add-new-address')
-                    toggleVisibility(addressList, addForm);
-                    addStickyEffect(stickySubHeaderAddrList);
-                    var addressSize = 0
-                    if (addressSize == 0) {
-                        noAddressContainer && (noAddressContainer.style.display = "flex");
-                    }
-                });
-                backButtonFromEdit.forEach(function(button, index) {
-                    button.addEventListener('click', function() {
-                        clearForm('edit-new-address')
-                        toggleVisibility(listInfo, editForms);
-                        window.innerWidth > 768 ? toggleVisibility(desktopAddAddressButton, editForms) : '';
-                        addStickyEffect(stickySubHeaderAddrList);
-                    });
-                });
-                backButtonFromList.addEventListener('click', function() {
-                    window.location.href = '/account'
-                });
-                // Add event listener for save address button
-                saveAddressButton.addEventListener('click', function() {
-                    toggleVisibility(addressList, addForm);
-                });
-
-                // Add event listeners for edit buttons
-                editAddressButtons.forEach(function(button, index) {
-                    var editForm = editForms[index];
-                    button.addEventListener('click', function() {
-                        toggleVisibility(editForm, listInfo);
-                        window.innerWidth > 768 ? toggleVisibility(editForm, desktopAddAddressButton) : '';
-                        addStickyEffect(stickySubHeaderEdit);
-                    });
-                });
-
-                // Add event listeners for update buttons
-                updateAddressButtons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        toggleVisibility(listInfo, editForms);
-                        window.innerWidth > 768 ? toggleVisibility(desktopAddAddressButton, editForms) : '';
-                    });
-                });
-
-                defaultAddressCheckboxContainer.forEach(function(checkbox) {
-                    var input = checkbox.querySelector('input[type="checkbox"]');
-                    if (checkbox.classList.contains('checked')) {
-                        input.checked = true;
-                    }
-                });
-
-                addAddressDefault?.addEventListener("click", () => {
-                    noAddressContainer && (noAddressContainer.style.display = "none");
-                })
-
-            });
-        </script>
     </section>
 </main>
 
