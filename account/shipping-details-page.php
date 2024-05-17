@@ -94,12 +94,13 @@ $fetch_count_orders = mysqli_fetch_array($count_orders);
                             <tr>
                                 <td><?php echo $cnt; ?></td>
                                 <td class="cart-image">
-                                    <a class="entry-thumbnail" href="detail.html">
+                                    <a class="entry-thumbnail" href="../products.php?pid=<?php echo $row['opid']; ?>">
                                         <img src="../admin/productimages/<?php echo $row['proid']; ?>/<?php echo $row['pimg1']; ?>" alt="" width="84" height="146">
                                     </a>
                                 </td>
                                 <td class="cart-product-name-info">
-                                    <h4 class='cart-product-description'><a href="product-details.php?pid=<?php echo $row['opid']; ?>">
+                                    <h4 class='cart-product-description'>
+                                        <a href="../products.php?pid=<?php echo $row['opid']; ?>">
                                             <?php echo $row['pname']; ?></a></h4>
 
 

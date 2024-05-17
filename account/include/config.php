@@ -10,6 +10,7 @@ if (mysqli_connect_errno())
 {
  echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
+date_default_timezone_set('asia/kolkata');
 
 // define('DB_SERVER','localhost');
 // define('DB_USER','glintqnj_shopping');

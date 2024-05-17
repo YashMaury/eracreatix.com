@@ -59,7 +59,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<th>Email </th>
 												<th>Contact no</th>
 												<th>Shippping Address/City/State/Pincode </th>
-												<th>Billing Address/City/State/Pincode </th>
+												<!-- <th>Billing Address/City/State/Pincode </th> -->
 												<th>Reg. Date </th>
 
 											</tr>
@@ -69,14 +69,15 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<?php $query = mysqli_query($con, "select * from users");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query)) {
+												$address_query = mysqli_query($con, "select * from address where `user_id` = '" . $row['id'] . "' ");
+												$address_row = mysqli_fetch_array($address_query);
 											?>
 												<tr>
 													<td><?php echo htmlentities($cnt); ?></td>
 													<td><?php echo htmlentities($row['name']); ?></td>
 													<td><?php echo htmlentities($row['email']); ?></td>
 													<td> <?php echo htmlentities($row['contactno']); ?></td>
-													<td><?php echo htmlentities($row['shippingAddress'] . "," . $row['shippingCity'] . "," . $row['shippingState'] . "-" . $row['shippingPincode']); ?></td>
-													<td><?php echo htmlentities($row['billingAddress'] . "," . $row['billingCity'] . "," . $row['billingState'] . "-" . $row['billingPincode']); ?></td>
+													<td><?php echo htmlentities($address_row['shippingAddress'] . "," . $address_row['shippingCity'] . "," . $address_row['shippingState'] . "-" . $address_row['shippingPincode']); ?></td>
 													<td><?php echo htmlentities($row['regDate']); ?></td>
 
 												<?php $cnt = $cnt + 1;

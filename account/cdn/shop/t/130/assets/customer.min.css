@@ -795,7 +795,7 @@ li[data-address] {
     }
 
     .customer-sticky-wrapper {
-        position: fixed
+        position: relative
     }
 
     .hide-in-desktop {
@@ -803,7 +803,7 @@ li[data-address] {
     }
 
     .desktop-addr-button {
-        display: none
+        display: block
     }
 }
 

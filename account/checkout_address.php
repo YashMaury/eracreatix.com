@@ -27,7 +27,7 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                 </svg>
                 <div>
                     <form method="post" action="checkout_func.php" id="address_form_new" accept-charset="UTF-8" aria-labelledby="AddressNewHeading" class="t4s-container">
-                        <input type="hidden" name="form_type" value="place_order">
+                        <input type="hidden" name="form_type" value="place_order_with_address">
                         <input type="hidden" name="utf8" value="✓">
 
                         <div id="SelectAddress" class="add-form">
@@ -38,9 +38,6 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                                     </svg></a>
                                 <h2 id="AddressNewHeading" class="t4s_title_addresses">Ckeckout option</h2>
                             </div>
-
-                            <input type="hidden" name="form_type" value="customer_address">
-                            <input type="hidden" name="utf8" value="✓">
                             <div class="t4s_field t4s-pr">
                                 <input class="t4s_frm_input" type="text" id="name" name="name" value="" autocomplete="given-name" placeholder="Full Name">
                                 <label for="AddressFirstNameNew">Full Name</label>
