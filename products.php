@@ -82,7 +82,7 @@ if (isset($_POST['submit'])) {
                                                 <button class="t4s-pr t4s-loadmore-btn t4s-btn-loading__svg t4s-btn t4s-btn-base t4s-btn-style-outline t4s-btn-size-large t4s-btn-icon-false t4s-btn-color-primary t4s-btn-effect-rectangle-out t4s-lm-onscroll-init" onclick="plusDivs(1)">Next &#10095;</button>
                                             </div>
                                         </center>
-                                            <link href="cdn/shop/t/130/assets/single-pr-badge.css" rel="stylesheet" media="all" onload="this.media='all'">
+                                        <link href="cdn/shop/t/130/assets/single-pr-badge.css" rel="stylesheet" media="all" onload="this.media='all'">
                                         <div data-product-single-badge="" data-sort="sale,new,soldout,preOrder,custom" class="t4s-single-product-badge t4s-pa t4s-pe-none t4s-op-0"></div>
                                     </div>
                                 </div>
@@ -188,7 +188,8 @@ if (isset($_POST['submit'])) {
                                             <div>
                                                 <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
                                                     <input name="pid" value="<?= $_GET['pid']; ?>" type="hidden">
-                                                    <input name="action" value="cart" type="hidden">
+                                                    <input id="action" name="action" value="cart" type="hidden">
+                                                    <input id="buy_now" name="buy_now" value="buy_now" type="hidden">
                                                     <div class="t4s-product-form__buttons" style="--pr-btn-round:40px;">
                                                         <div class="t4s-d-flex t4s-flex-wrap">
                                                             <div class="t4s-quantity-wrapper t4s-product-form__qty">
@@ -205,15 +206,26 @@ if (isset($_POST['submit'])) {
                                                                 </button>
                                                             </div>
                                                             <!-- render t4s_wis_cp.liquid -->
-                                                            <!-- <a href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <!-- <a style="border: 3px solid #e8c463" href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
                                                             </a> -->
-                                                            <button type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <button id="add_to_cart" style="border: 3px solid #e8c463" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
+                                                            </button>
+                                                            <button id="buy_now_btn" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                                Buy Now
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </form>
+                                                <script>
+                                                    $("#buy_now_btn").click(function() {
+                                                        $("#action").remove();
+                                                    });
+                                                    $("#add_to_cart").click(function() {
+                                                        $("#buy_now").remove();
+                                                    });
+                                                </script>
                                                 <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
                                             </div>
                                         </div>
@@ -509,7 +521,7 @@ if (isset($_POST['submit'])) {
                                                         });
                                                     </script>
                                                     <div class="product-information-tab">
-                                                        <p><?=$rws['productDescription'];?></p>
+                                                        <p><?= $rws['productDescription']; ?></p>
                                                     </div>
                                                     <style>
                                                         .product-size-table {

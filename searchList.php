@@ -1,13 +1,23 @@
+<?php 
+// include "include/config.php";
+?>
 <script>
     var pagesArr = [
 
         <?php
         // include "include/config.php";
-        $sql = mysqli_query($con, "select id,categoryName, categoryImage from category");
+        $sql = mysqli_query($con, "select * from category");
         while ($row = mysqli_fetch_array($sql)) {
-        ?>["", "collections.php?cid=<?php echo $row['id']; ?>", "<?php echo $row['categoryName']; ?>"],
+        ?>
+        ["", "collections.php?cid=<?php echo $row['id']; ?>", "<?php echo $row['categoryName']; ?>"],
         <?php } ?>
-        // ["", "profile_view.php?id=<?php //echo $row['id']; ?>", "<?php //echo $row['businessName']; ?>"],
+        <?php
+        // include "include/config.php";
+        $sql = mysqli_query($con, "select * from products");
+        while ($row = mysqli_fetch_array($sql)) {
+        ?>
+        ["", "products.php?pid=<?php echo $row['id']; ?>", "<?php echo $row['productName']; ?>"],
+        <?php } ?>
     ];
 
 

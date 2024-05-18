@@ -9,9 +9,28 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 	if (isset($_POST['submit'])) {
 		$category = $_POST['category'];
-		$description = $_POST['description'];
 		$id = intval($_GET['id']);
-		$sql = mysqli_query($con, "update category set categoryName='$category',categoryDescription='$description',updationDate='$currentTime' where id='$id'");
+		if (!empty($_FILES['image'])) {
+			$query = mysqli_query($con, "select * from category where id='$id'");
+			$row = mysqli_fetch_array($query);
+			unlink('uploads/category/'.$row['categoryImage']);
+			$path = "uploads/category/";
+			if (!is_dir($path)) {
+				mkdir($path, 0777, true);
+				// echo "directory created";
+			}
+			$filename = time() . ".png";
+			$target_file = $path . $filename;
+			if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+				$sql = mysqli_query($con, "update category set categoryName='$category',categoryImage='$filename',updationDate='$currentTime' where id='$id'");
+			} else {
+				exit();
+			}
+			// exit();
+		} else {
+			$sql = mysqli_query($con, "update category set categoryName='$category',updationDate='$currentTime' where id='$id'");
+			// exit();
+		}
 		$_SESSION['msg'] = "Category Updated !!";
 	}
 
@@ -56,7 +75,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 									<br />
 
-									<form class="form-horizontal row-fluid" name="Category" method="post">
+									<form class="form-horizontal row-fluid" name="Category" method="post" enctype="multipart/form-data">
 										<?php
 										$id = intval($_GET['id']);
 										$query = mysqli_query($con, "select * from category where id='$id'");
@@ -71,9 +90,10 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Description</label>
+												<label class="control-label" for="basicinput">Category Image</label>
 												<div class="controls">
-													<textarea class="span8" name="description" rows="5"><?php echo  htmlentities($row['categoryDescription']); ?></textarea>
+													<input type="file" name="image" id="image">
+													<small>If you want to change image then upload, otherwise not.</small>
 												</div>
 											</div>
 										<?php } ?>

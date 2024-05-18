@@ -152,20 +152,22 @@ if (isset($_SESSION['id'])) {
                             <div class="st-search-box hidden-mobile">
                                 <div class="search-input-container">
                                     <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
-                                    <input type="text" autocomplete="off" placeholder="" name="q" id="st-search" class="st-search-input">
+                                    <input type="text" autocomplete="off" placeholder="Search for products and categories" id="search2" class="st-search-input" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this)">
                                     <div class="placeholder-label animation">
-                                        <span class="common-text">Search for</span>
+                                        <!-- <span class="common-text">Search for</span> -->
 
-                                        <span class="text-container-searchbar">
+                                        <!-- <span class="text-container-searchbar">
 
                                             <span class="text">Bedsheets</span>
                                             <span class="text">Cushion covers</span>
                                             <span class="text">Dining sets</span>
 
-                                        </span>
+                                        </span> -->
 
                                     </div>
                                 </div>
+                            </div>
+                            <div id="listofsearchresults">
                             </div>
 
                             <div class="t4s-col-lg-3 t4s-col-md-4 t4s-col-3 t4s-text-end t4s-col-group_btns t4s-col-item t4s-lh-1 t4s-flex-item">
@@ -285,23 +287,23 @@ if (isset($_SESSION['id'])) {
                             <!-- <input type="text" autocomplete="off" placeholder="" name="q" id="st-search-mobile" class="st-search-input">  -->
                             <div class="search-input-container">
                                 <img alt="Delivery Time Icon" class="searchbar-icon" height="11" loading="lazy" src="media/search.png" width="24" />
-                                <input type="text" autocomplete="off" placeholder="" id="search2" class="st-search-input" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this)">
+                                <input type="text" autocomplete="off" placeholder="Search for products and categories" id="search2" class="st-search-input" onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)" onfocus="find_search_results(this)">
                                 <!-- <button type="button" id="learntocode_searchbtn" class="input-group-text btn btn-primary border-3" onclick="click_learntocode_search_btn()">
                                         <img alt="Delivery Time Icon" height="11" src="media/search.png" width="24" />
                                     </button> -->
                                 <div class="placeholder-label animation">
-                                    <span class="common-text">Search for</span>
+                                    <!-- <span class="common-text">Search for</span>
                                     <span class="text-container-searchbar">
 
                                         <span class="text">Bedsheets</span>
                                         <span class="text">Cushion covers</span>
                                         <span class="text">Dining sets</span>
 
-                                    </span>
-                                </div>
-                                <div id="listofsearchresults">
+                                    </span> -->
                                 </div>
                             </div>
+                        </div>
+                        <div id="listofsearchresults">
                         </div>
                     </form>
 
