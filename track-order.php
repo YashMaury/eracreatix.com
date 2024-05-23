@@ -29,24 +29,24 @@ include "include/header.php";
     </p>
     <div class="t4s-customer is--login t4s-text-start">
       <div id="login">
-        <form method="post" action="account/login.php" id="customer_login" accept-charset="UTF-8" data-login-with-shop-sign-in="true" novalidate="novalidate">
-          <input type="hidden" name="form_type" value="customer_login" />
+        <form method="post" action="account/track-order.php" id="customer_login" accept-charset="UTF-8" data-login-with-shop-sign-in="true" novalidate="novalidate">
+          <input type="hidden" name="form_type" value="track_order" />
           <input type="hidden" name="utf8" value="✓" />
-          <div class="t4s_field t4s-pr t4s_mb_30">
+          <!-- <div class="t4s_field t4s-pr t4s_mb_30">
             <input class="t4s_frm_input" type="text" name="email" id="CustomerEmail" autocomplete="email" autocorrect="off" autocapitalize="off" placeholder="Order No.">
             <label for="CustomerEmail">
               Email <span class="required">*</span>
             </label>
-          </div>
+          </div> -->
           <div class="t4s_field t4s-pr t4s_mb_10">
-            <input class="t4s_frm_input" type="text" value="" name="password" id="CustomerPassword" autocomplete="current-password" placeholder="Mobile No.">
+            <input class="t4s_frm_input" type="text" value="" name="order_id" id="CustomerPassword" autocomplete="current-password" placeholder="Mobile No.">
             <label for="CustomerPassword">
-              Password <span class="required">*</span>
+              Order Id <span class="required">*</span>
             </label>
           </div>
 
           <div class="t4s_field t4s_mb_20">
-            <button type="submit" class="t4s_btn_submmit t4s-btn t4s-btn-base t4s-btn-full-width t4s-btn-style-default t4s-btn-size-medium t4s-btn-color-dark t4s-btn-effect-overlay-run" disabled>
+            <button type="submit" class="t4s_btn_submmit t4s-btn t4s-btn-base t4s-btn-full-width t4s-btn-style-default t4s-btn-size-medium t4s-btn-color-dark t4s-btn-effect-overlay-run">
               Track your order
             </button>
           </div>

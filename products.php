@@ -191,7 +191,7 @@ if (isset($_POST['submit'])) {
                                                     <input id="action" name="action" value="cart" type="hidden">
                                                     <input id="buy_now" name="buy_now" value="buy_now" type="hidden">
                                                     <div class="t4s-product-form__buttons" style="--pr-btn-round:40px;">
-                                                        <div class="t4s-d-flex t4s-flex-wrap">
+                                                        <div class="t4s-d- t4s-flex-wrap">
                                                             <div class="t4s-quantity-wrapper t4s-product-form__qty">
                                                                 <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
                                                                     <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
@@ -212,7 +212,7 @@ if (isset($_POST['submit'])) {
                                                             <button id="add_to_cart" style="border: 3px solid #e8c463" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
                                                             </button>
-                                                            <button id="buy_now_btn" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <button id="buy_now_btn" style="margin: 5px;" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Buy Now
                                                             </button>
                                                         </div>

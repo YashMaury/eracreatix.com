@@ -1,6 +1,6 @@
 <?php
 include "include/header.php";
-$address = mysqli_query($con, "select * from address where `user_id` = '" . $_SESSION['id'] . "' ");
+$address = mysqli_query($con, "select * from address where `user_id` = '" . $_SESSION['id'] . "' and `for_order` is null ");
 
 ?>
 
@@ -46,7 +46,7 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                                         <?php
                                         while ($row = mysqli_fetch_array($address)) {
                                         ?>
-                                            <option value="<?= $row['id'] ?>"><?= $row['name'] ?> - <?= $row['shippingCity'] ?></option>
+                                            <option value="<?= $row['id'] ?>"><?= $row['shippingName'] ?> - <?= $row['shippingCity'] ?> / <?= $row['billingName'] ?> - <?= $row['billingCity'] ?></option>
                                         <?php } ?>
                                     </select>
 
