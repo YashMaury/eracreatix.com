@@ -61,6 +61,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
+												<th> Order_id</th>
 												<th> Name</th>
 												<th width="50">Email /Contact no</th>
 												<th>Shipping Address</th>
@@ -80,31 +81,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 											$from = date('Y-m-d') . " " . $f1;
 											$t1 = "23:59:59";
 											$to = date('Y-m-d') . " " . $t1;
-											$query1 = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.quantity as quantity,orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.address is not null and orders.orderDate Between '$from' and '$to'");
-											$query2 = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,orders.shippingAddress as shippingaddress,orders.shippingCity as shippingcity,orders.shippingState as shippingstate,orders.shippingPincode as shippingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.quantity as quantity,orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join products on products.id=orders.productId where orders.address is null and orders.orderDate Between '$from' and '$to'");
+											$query1 = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.order_id as order_id, orders.quantity as quantity,orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderDate Between '$from' and '$to'");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query1)) {
 											?>
 												<tr>
 													<td><?php echo htmlentities($cnt); ?></td>
-													<td><?php echo htmlentities($row['username']); ?></td>
-													<td><?php echo htmlentities($row['useremail']); ?>/<?php echo htmlentities($row['usercontact']); ?></td>
-
-													<td><?php echo htmlentities($row['shippingaddress'] . "," . $row['shippingcity'] . "," . $row['shippingstate'] . "-" . $row['shippingpincode']); ?></td>
-													<td><?php echo htmlentities($row['productname']); ?></td>
-													<td><?php echo htmlentities($row['quantity']); ?></td>
-													<td><?php echo htmlentities($row['quantity'] * $row['productprice'] + $row['shippingcharge']); ?></td>
-													<td><?php echo htmlentities($row['orderdate']); ?></td>
-													<td> <a href="updateorder.php?oid=<?php echo htmlentities($row['id']); ?>" title="Update order" target="_blank"><i class="icon-edit"></i></a>
-													</td>
-												</tr>
-
-											<?php $cnt = $cnt + 1;
-											}
-											while ($row = mysqli_fetch_array($query2)) {
-											?>
-												<tr>
-													<td><?php echo htmlentities($cnt); ?></td>
+													<td><?php echo htmlentities($row['order_id']); ?></td>
 													<td><?php echo htmlentities($row['username']); ?></td>
 													<td><?php echo htmlentities($row['useremail']); ?>/<?php echo htmlentities($row['usercontact']); ?></td>
 
