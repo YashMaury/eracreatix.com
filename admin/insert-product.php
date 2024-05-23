@@ -11,6 +11,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$productcompany = $_POST['productCompany'];
 		$productprice = $_POST['productprice'];
 		$productpricebd = $_POST['productpricebd'];
+		$producthighlight = $_POST['producthighlight'];
+		$additionalInfo = $_POST['additionalInfo'];
+		$refundandExchange = $_POST['refundandExchange'];
 		$productdescription = $_POST['productDescription'];
 		$productscharge = $_POST['productShippingcharge'];
 		$productavailability = $_POST['productAvailability'];
@@ -19,7 +22,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$productimage3 = $_FILES["productimage3"]["name"];
 		//for getting product id
 		$query = mysqli_query($con, "select max(id) as pid from products");
+		//print_r($query);
 		$result = mysqli_fetch_array($query);
+		//print_r($result);
 		$productid = $result['pid'] + 1;
 		$dir = "productimages/$productid";
 		if (!is_dir($dir)) {
@@ -29,8 +34,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 		move_uploaded_file($_FILES["productimage1"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage1"]["name"]);
 		move_uploaded_file($_FILES["productimage2"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage2"]["name"]);
 		move_uploaded_file($_FILES["productimage3"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage3"]["name"]);
-		$sql = mysqli_query($con, "insert into products(category,subCategory,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount) values('$category','$subcat','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd')");
-		$_SESSION['msg'] = "Product Inserted Successfully !!";
+		$sql = mysqli_query($con, "insert into products(category,subCategory,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,refundandExchange) values('$category','$subcat','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
+		 $_SESSION['msg'] = "Product Inserted Successfully !!";
 	}
 
 
@@ -163,6 +168,27 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">Product Description</label>
 											<div class="controls">
 												<textarea name="productDescription" placeholder="Enter Product Description" rows="6" class="span8 tip">
+</textarea>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Product Highlight</label>
+											<div class="controls">
+												<textarea name="producthighlight" placeholder="Enter Product Highlight" rows="6" class="span8 tip">
+</textarea>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Additional Info</label>
+											<div class="controls">
+												<textarea name="additionalInfo" placeholder="Enter Product Additional Info" rows="6" class="span8 tip">
+</textarea>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Refund and Exchange Policy</label>
+											<div class="controls">
+												<textarea name="refundandExchange" placeholder="Enter Product Refund Exchange" rows="6" class="span8 tip">
 </textarea>
 											</div>
 										</div>

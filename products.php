@@ -450,55 +450,14 @@ if (isset($_POST['submit'])) {
                                                     <div class="product-highlight-content">
                                                         <div class="trust-banner-container">
                                                             <span>
-                                                                <div class="trust-banner-logo">
-                                                                    <span class="trust-banner-title">Trust</span>
-                                                                </div>
+                                                                
+                                                                <p><?= $rws['producthighlight']; ?></p>
+                                                                
                                                             </span>
-                                                            <span class="trust-banner-text">Best quality from verified manufacturers</span>
                                                         </div>
-                                                        <div class="product-info-bullets">
-                                                            <div class="product-info-bullet">
-                                                                <div class="product-info-bullet-heading">Size</div>
-                                                                <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-size">Medium</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-info-bullet">
-                                                                <div class="product-info-bullet-heading">Material</div>
-                                                                <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-material">Bone China</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-info-bullet">
-                                                                <div class="product-info-bullet-heading">Design Style</div>
-                                                                <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-design-style">Traditional</span>
-
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-info-bullet">
-                                                                <div class="product-info-bullet-heading">Type</div>
-                                                                <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-type">Wall Mount, Table Top</span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="product-info-bullet">
-                                                                <div class="product-info-bullet-heading">Color</div>
-                                                                <div class="product-info-bullet-text-icon">
-                                                                    <span id="product-info-color">Multicolor</span>
-                                                                </div>
-                                                            </div>
                                                         </div>
 
-                                                        <div class="product-info-care-instruction">
-                                                            <div class="product-info-heading">
-                                                                Care Instruction
-                                                            </div>
-                                                            <div class="product-info-text">
-                                                                Wipe With Clean Dry Cloth
-                                                            </div>
-                                                        </div>
-
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -577,13 +536,9 @@ if (isset($_POST['submit'])) {
                                                                 $('#t44_info_status').toggleClass('t4s-active');
                                                             });
                                                         </script>
-                                                        <p><strong>Seller Name:</strong> <br>Dessine Art</p>
-                                                        <p><strong>Seller Address:<br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
-                                                        <p><strong>Manufacturer Details:<br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
-                                                        <p><strong>Importer Details: <br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
-                                                        <p><strong>Packer Details:<br></strong><span class="metafield-multi_line_text_field">Dessine Art, I-34/13, ground floor, sailing club, lane-1, Okhla</span></p>
-                                                        <p><strong>Country Of Origin:<br></strong>India</p>
-                                                        <p><strong>Grievance Redressal:</strong><br>Subject: Contact Seller - Dessine Art<br>Write To: DHI Innovations, Bannerghatta Main Rd, Venugopal Reddy Layout, Arekere, Bengaluru, Karnataka 560076</p>
+                                                        
+                                                        <p><?= $rws['additionalInfo']; ?></p>
+                                                        
 
                                                     </div>
                                                 </div>
@@ -611,21 +566,11 @@ if (isset($_POST['submit'])) {
 
                                                     <div class="return-exchange-content">
                                                         <div class="return-exchange-banner-container">
-                                                            <img src="cdn/shop/t/130/assets/return-exchange-icon.svg" height="32" width="32" alt="return-exchange">
-                                                            <span class="return-exchange-text">Free Returns in 48 hours</span>
+                                                            <!-- <img src="cdn/shop/t/130/assets/return-exchange-icon.svg" height="32" width="32" alt="return-exchange">
+                                                            <span class="return-exchange-text">Free Returns in 48 hours</span> -->
                                                         </div>
                                                         <div class="return-exchange-policy-details">
-                                                            <ol type="1">
-                                                                <li> Return Within 48 hours of delivery under the following conditions:
-                                                                    <ol class="sub-item">
-                                                                        <li>Damaged or defective product.</li>
-                                                                        <li>Wrong or missing product.</li>
-                                                                    </ol>
-                                                                </li>
-                                                                <li>Product cannot be returned once used.</li>
-                                                                <li>One free replacement allowed for undamaged products.</li>
-                                                                <li>Read more about Return &amp; Exchange policy here : <a href="policies/refund-policy" class="refund-policy-link">Refund policy</a></li>
-                                                            </ol>
+                                                          <?= $rws['refundandExchange']; ?>
                                                         </div>
                                                     </div>
                                                 </div>
