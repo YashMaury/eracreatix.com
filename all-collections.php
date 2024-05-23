@@ -162,8 +162,8 @@ $page_category_row = mysqli_fetch_array($page_category);
                         <div style="max-width: 200px;">
                             <a href="collections.php?cid=<?php echo $row['id']; ?>" class="collection-image_wrapper flex">
                                 <div class="collection--img handle-overlap">
-                                    <img class="t4s-obj-eff subcollection-img collection-image-main lazyautosizes" src="<?php echo "admin/uploads/category/" . $row['categoryImage']; ?>" width="800" height="800" alt="<?= $row['categoryImage']; ?>">
-                                    <img class="t4s-lz--fadeIn t4s-obj-eff collection-frame" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Category_Icons-24_1_bb87cf2e-e8b4-45b2-814e-5b9229281d11.png?v=1714742226 " alt="subcollection Fabulous Indian ">
+                                    <img style="width: 100%; height:100%;" class="t4s-obj-eff subcollection-img collection-image-main lazyautosizes" src="<?php echo "admin/uploads/category/" . $row['categoryImage']; ?>" width="800" height="800" alt="<?= $row['categoryImage']; ?>">
+                                    <img style="width: 100%; height:100%;" class="t4s-lz--fadeIn t4s-obj-eff collection-frame" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Category_Icons-24_1_bb87cf2e-e8b4-45b2-814e-5b9229281d11.png?v=1714742226 " alt="subcollection Fabulous Indian ">
                                 </div>
                                 <div class="collection--text">
                                     <?php echo $row['categoryName']; ?>

@@ -23,7 +23,7 @@ if (isset($_GET['page'])) {
                 <div class="collection-sales-count">
                     <div class="collection-sales-count-gif">
                         <!-- <img alt="sales-counter" class="sales-count-gif" height="14px" loading="lazy" src="cdn/shop/t/130/assets/sales_count_live.gif?v=108634221033204322221696354366" width="14px"> -->
-                        <span class="sales-count-value sales-count-value-mobile collection-sales-count-text">14699</span>
+                        <!-- <span class="sales-count-value sales-count-value-mobile collection-sales-count-text">14699</span> -->
                     </div>
                     <!-- <div class="collection-sales-count-text">
                         <span class="sales-count-value sales-count-value-desktop">14699</span>

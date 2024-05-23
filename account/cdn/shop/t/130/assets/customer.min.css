@@ -711,7 +711,7 @@ li[data-address] {
     align-items: center;
     margin-top: 20px;
     gap: 10px;
-    margin-bottom: 50px
+    margin-bottom: 20px
 }
 
 .account-title-wrapper {
@@ -795,7 +795,7 @@ li[data-address] {
     }
 
     .customer-sticky-wrapper {
-        position: fixed
+        position: relative
     }
 
     .hide-in-desktop {
@@ -803,7 +803,7 @@ li[data-address] {
     }
 
     .desktop-addr-button {
-        display: none
+        display: block
     }
 }
 
