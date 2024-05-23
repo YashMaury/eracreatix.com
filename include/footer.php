@@ -1,123 +1,3 @@
-<!-- <section id="shopify-section-template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a" class="shopify-section t4s-section t4s-section-all t4s_tp_cdt t4s-custom-html">
-    <div class="t4s-section-inner t4s_nt_se_template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a t4s_se_template--16885348139254__8605f537-8d2a-403b-a9a5-2dfc3f4cd23a t4s-se-container" style="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: ;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: ;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
-        <div class="t4s-container">
-            <div class="t4s-container-inner">
-                <div class="t4s-code__html t4s-rte" hdt-reveal="slide-in">
-                    <h1><strong>Era Creatix - India's Best Home Decorative Items Online</strong></h1>
-                    <p>Isn’t decorating your home one of the most satisfying endeavours? The home is like a canvas;
-                        yours to beautify the way you like! It is a reflection of your personality and design
-                        aesthetics, and this is what makes every home unique. In the same way that you hand-pick
-                        each item for your home, we at Era Creatix lovingly curate our entire collection. Every home
-                        decor item, <a href="collections/bedding.html" data-mce-href="collections/bedding.html"><strong>bedding decor</strong></a>, <a href="collections/home-furnishings.html" data-mce-href="collections/home-furnishings.html"><strong>home furnishing</strong></a>,
-                        <a href="collections/kitchen-decor.html" data-mce-href="collections/kitchen-decor.html"><strong>kitchen decor</strong></a>, <a href="collections/dining-table-decor.html" data-mce-href="collections/dining-table-decor.html"><strong>dining table
-                                decor</strong></a>, <a href="collections/bath-decor.html" data-mce-href="collections/bath-decor.html"><strong>bath decor</strong></a>, and <a href="collections/garden-decor.html" data-mce-href="collections/garden-decor.html"><strong>garden decor</strong></a> you see
-                        at Era Creatix has been selected for its versatility, beauty, workmanship, quality, and
-                        durability. All this is to ensure that you only get the finest for your home when you shop
-                        with Era Creatix products.
-                    </p>
-                    <p>The days of looking for "home decor near me" or "home decor stores near me" are over. Home
-                        décor online buying is a breeze with Era Creatix. We understand the special attachment you have
-                        with your home décor items as your trusted online home decoration shop in India. As a
-                        result, we make certain that every home product we provide you is the best of the best.</p>
-                    <h2><strong>The Benefits of Buying Home Decor Accessories from Era Creatix</strong></h2>
-                    <ol>
-                        <li>Authentic home products that live up to your expectations with their breath-taking
-                            designs.</li>
-                        <li>Focus on product quality across categories to ensure you get only the most premium
-                            range.</li>
-                        <li>Affordable pricing that does not burn a hole in your pocket every time you pick
-                            something for your space.</li>
-                        <li>Products across all home categories for every different theme, mood, and home
-                            personality, all under one hood.</li>
-                    </ol>
-                    <h2><strong>Buy from Trusted Home Decor Products Brands Online</strong></h2>
-                    <p>At Era Creatix we follow a curated marketplace model – wherein home items are directly procured
-                        from the manufacturers. Thus, cutting the additional &amp; unnecessary middlemen costs so
-                        that you can shop as frequently as you like! Furthermore, these manufacturers are handpicked
-                        vendors who match our strict quality control requirements. As a result, whatever you buy
-                        from us comes with a promise of sturdiness and exceptional quality. You can shop anything
-                        from us and be rest assured that it will offer true value for money!</p>
-                    <h2><strong>Why Era Creatix Is The Favourite Online Home Decor Accessories Store?</strong></h2>
-                    <p>When you get everything related to home décor and essentials in one place, why won’t it be
-                        your favourite go-to place for shopping? Especially when we have a wide range of items that
-                        cater to any and every home décor need that you may have!</p>
-                    <p>Whether you are celebrating Christmas or Diwali, you will always find the right <a href="collections/diwali-store.html" data-mce-href="collections/diwali-store.html"><strong>Diwali decoration
-                                items</strong></a> &amp; <a href="collections/xmas-store.html" data-mce-href="collections/xmas-store.html"><strong>Christmas decorations
-                                items</strong></a><span><strong>,</strong></span> <a href="collections/festive-decor.html" data-mce-href="collections/festive-decor.html"><strong>festival decoration
-                                items</strong></a>, <a href="collections/pooja-thali-sets.html" data-mce-href="collections/pooja-thali-sets.html"><strong>pooja thali sets</strong></a>
-                        here. And since our prices are very reasonable, you can give your home a makeover every now
-                        and then without worrying about a dent in your budget!</p>
-                    <h2><strong>Shop Era Creatix’ s Homeware Products Online by Category</strong></h2>
-                    <p>Era Creatix is an Indian e-commerce platform that offers a wide range of products, including home
-                        decor items. When it comes to home decor, Era Creatix online shopping offers a variety of options
-                        to improve the look of your living areas. You can find Era Creatix home decor products in various
-                        categories, such as:</p>
-                    <h3><strong>1. Shop Bedding Decor Accessories Online</strong></h3>
-                    <p>The best bedrooms are the ones with the finest linen. When it comes to bedroom decor, Era Creatix
-                        has a shop-till-you-drop policy! That’s because our bedroom range is so extensive that you
-                        will be baffled by the choices. Whether it is a <a href="collections/bedsheets.html" data-mce-href="collections/bedsheets.html"><strong>bedsheets</strong></a>, <a href="collections/dohar.html" data-mce-href="collections/dohar.html"><strong>dohars</strong></a>, <a href="collections/comforter.html" data-mce-href="collections/comforter.html"><strong>comforters</strong></a>, <a href="collections/duvet-covers.html" data-mce-href="collections/duvet-covers.html"><strong>duvet covers</strong></a>, <a href="collections/bedcover.html" data-mce-href="collections/bedcover.html"><strong>bedcovers</strong></a>, or <a href="collections/pillow-cover.html" data-mce-href="collections/pillow-cover.html"><strong>pillow covers</strong></a>, we
-                        have it all right here!</p>
-                    <h3><strong>2. Shop Home Furnishing Items Online</strong></h3>
-                    <p>The house furnishing is the most visible component of your home to visitors. It is where you
-                        entertain and impress people with your fine taste in decor. Era Creatix gives you ample options
-                        for living room items too! We have stocked the coolest <a href="collections/cushions-covers.html" data-mce-href="collections/cushions-covers.html"><strong>cushion covers</strong></a>, <a href="collections/fillers.html" data-mce-href="collections/fillers.html"><strong>cushion
-                                fillers</strong></a>, and <a href="collections/throws.html" data-mce-href="collections/throws.html"><strong>sofa throws</strong></a> for your couch.
-                        As well as magnificent <a href="collections/diwan-sets.html" data-mce-href="collections/diwan-sets.html"><strong>diwan sets</strong></a> and charming
-                        <a href="collections/curtains.html" data-mce-href="collections/curtains.html"><strong>curtains</strong></a> to tie the space
-                        together with exquisite grace.
-                    </p>
-                    <h3><strong>3. Shop Kitchen Decor Products Online</strong></h3>
-                    <p>Kitchen products are treated as essentials, but that does not mean they have to be boring,
-                        right? The selection of <a href="collections/storage-containers.html" data-mce-href="collections/storage-containers.html"><strong>storage &amp;
-                                containers</strong></a>, <a href="collections/cookware.html" data-mce-href="collections/cookware.html"><strong>cookware</strong></a>, <a href="collections/bakeware.html" data-mce-href="collections/bakeware.html"><strong>bakeware</strong></a>, <a href="collections/kitchen-linens.html" data-mce-href="collections/kitchen-linens.html"><strong>kitchen linens</strong></a>,
-                        etc. that you see at Era Creatix is both utilitarian as well as pleasing to the eye. We have
-                        tried to combine aesthetics with practicality to create a range of bespoke essentials that
-                        you will love to use and flaunt!</p>
-                    <h3><strong>4. Shop Dining Decor Products Online</strong></h3>
-                    <p>When it comes to shopping for dining decor products online, there are several platforms that
-                        offer a wide variety of options. Here are some popular dining items like <a href="collections/mugs-cups-drinkware.html" data-mce-href="collections/mugs-cups-drinkware.html"><strong>mugs, cups &amp;
-                                drinkware</strong></a>, <a href="collections/bowls.html" data-mce-href="collections/bowls.html"><strong>bowls</strong></a>, <a href="collections/cutlery.html" data-mce-href="collections/cutlery.html"><strong>cutlery
-                                &amp; salad spoons</strong></a>, <a href="collections/trays-platters.html" data-mce-href="collections/trays-platters.html"><strong>trays &amp;
-                                platters</strong></a>, <a href="collections/dinner-plate-quarter-plates.html" data-mce-href="collections/dinner-plate-quarter-plates.html"><strong>dinner plate &amp;
-                                quarter plates</strong></a>, <a href="collections/dinner-sets.html" data-mce-href="collections/dinner-sets.html"><strong>dinner sets</strong></a>, <a href="collections/barware.html" data-mce-href="collections/barware.html"><strong>barware</strong></a>.</p>
-                    <h3>
-                        <strong>5. Shop </strong><a href="collections/home-decor.html" data-mce-href="collections/home-decor.html"><strong>Home Decor
-                                Items</strong></a><strong> Online</strong>
-                    </h3>
-                    <p>How you do up your walls decor, what you put on your shelves, and the way you light up the
-                        rooms, are all critical elements when it comes to interior design. At Era Creatix, you can shop
-                        decorative <a href="collections/lamps-lightings.html" data-mce-href="collections/lamps-lightings.html"><strong>lamps &amp;
-                                lightings</strong></a>, <a href="collections/wall-decor.html" data-mce-href="collections/wall-decor.html"><strong>wall decor items</strong></a>, <a href="collections/showpieces-vases.html" data-mce-href="collections/showpieces-vases.html"><strong>showpieces &amp;
-                                vases</strong></a>, <a href="collections/religious-spiritual-items.html" data-mce-href="collections/religious-spiritual-items.html"><strong>religious &amp;
-                                spiritual items</strong></a>, to set the right mood, as well as fancy vases to add
-                        some flower power. These are just a few of the more amazing things we have in store for you.
-                    </p>
-                    <h4>Popular Home décor Products:</h4>
-                    <p><strong><a href="products/gold-coraline-chandelier.html">Gold Coraline Chandelier</a>, <a href="products/adiah-wall-lamp.html">Adiah Wall Lamp</a>, <a href="products/vintage-station-wall-clock.html">Vintage Station Wall Clock</a>, <a href="products/modern-haveli-lantern.html">Modern Haveli Lantern</a>, <a href="products/retro-station-wall-clock.html">Retro Station Wall Clock</a>, <a href="products/shahi-darbar-wall-lamp.html">Shahi Darbar Wall Lamp</a>, <a href="products/red-vintage-car-wall-art.html">Red Vintage Car Wall Art</a>, <a href="products/pop-art-wall-clock.html">Pop Art Wall Clock</a>, <a href="products/vintage-pulley-wall-lamp.html">Vintage Pulley Wall Lamp</a>, <a href="products/flavian-peacock-wall-decor.html">Flavian Peacock Wall
-                                Decor</a></strong> and more!</p>
-                    <h3><strong>6. Shop Bathroom Decor Essentials Online</strong></h3>
-                    <p>Bathing rituals should never be ignored! The exuberance of wrapping yourself in a soft towel
-                        or stepping on a plush mat are the small joys of life that deserve your attention. Era Creatix
-                        helps you make your bath time luxurious with a range of essentials like <a href="collections/all-towels.html" data-mce-href="collections/all-towels.html"><strong>all
-                                towels</strong></a>, <a href="collections/bath-mats.html" data-mce-href="collections/bath-mats.html"><strong>bathroom mats</strong></a>, <a href="collections/soap-dispenser.html" data-mce-href="collections/soap-dispenser.html"><strong>soap dish &amp;
-                                dispenser</strong></a>, and <a href="collections/bathroom-mirrors.html" data-mce-href="collections/bathroom-mirrors.html"><strong>bathroom mirrors</strong></a>.
-                    </p>
-                    <h3><strong>7. Shop Garden Decor Online</strong></h3>
-                    <p>The garden is everyone’s safe sanctuary. It is amidst the plants that you feel energised and
-                        refreshed. Whether you have a full-fledged garden or a balcony that is filled with greens,
-                        you can select your type of garden decor items online at Era Creatix. Not just <a href="collections/pots-planters.html" data-mce-href="collections/pots-planters.html"><strong>pots and planters</strong></a> or
-                        <a href="collections/plants-seeds.html" data-mce-href="collections/plants-seeds.html"><strong>plants &amp; seeds</strong></a>,
-                        Era Creatix has an amazing range of <a href="collections/gardening-accessories.html" data-mce-href="collections/gardening-accessories.html"><strong>garden
-                                accessories</strong></a> too! And if you have a green thumb or want to try your hand
-                        at gardening, treat yourself to our plants and seeds section! Phew! That’s a long list of
-                        what Era Creatix has to offer for your home. As we promised, we’re a one-stop shop for all your
-                        home needs!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 </main>
 
 <footer id="t4s-footer">
@@ -146,17 +26,16 @@
                                             <i class="las la-exchange-alt"></i> Track Your Order
                                         </a>
                                         <a href="pages/career-opportunities.html" style="display:flex;align-items:center;line-height:2em;">
-                                            <i class="las la-exchange-alt"></i> Work At Era Creatix
+                                            <i class="las la-exchange-alt"></i> Business Hours
+
                                         </a>
                                         <a href="pages/contact.html" style="display:flex;align-items:center;line-height:2em;">
                                             <i class="las la-exchange-alt"></i> Contact Us
                                         </a>
                                         <a href="pages/partner-with-vaaree.html" style="display:flex;align-items:center;line-height:2em;">
-                                            <i class="las la-exchange-alt"></i> Partner with Era Creatix
+                                            <i class="las la-exchange-alt"></i> Feedback and Support
                                         </a>
-                                        <a href="pages/affiliate-partnership.html" style="display:flex;align-items:center;line-height:2em;">
-                                            <i class="las la-exchange-alt"></i> Affiliate &amp; Partnership
-                                        </a>
+                                        
                                         <a style="display:flex;align-items:center;line-height:2em;" href="mailto:eracreatix@gmail.com">
                                             <i class="las la-envelope"></i> eracreatix@gmail.com
                                         </a>
@@ -259,7 +138,17 @@
                                         </li>
                                         <li>
                                             <a href="pages/avada-sitemap.html" class="t4s-footer-link ">
-                                                HTML Sitemap
+                                            Our Team
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="pages/avada-sitemap.html" class="t4s-footer-link ">
+                                            FAQs
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="pages/avada-sitemap.html" class="t4s-footer-link ">
+                                            Client Testimonials
                                             </a>
                                         </li>
                                     </ul>

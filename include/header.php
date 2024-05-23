@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 include "include/config.php";
 if (isset($_SESSION['id'])) {
     $num_cart = mysqli_query($con, "select count(id) as items from cart where `userId` = '" . $_SESSION['id'] . "'");
@@ -13,7 +14,6 @@ if (isset($_SESSION['id'])) {
 <html class="t4sp-theme is-header--stuck t4s-hsticky__ready t4s-wrapper__custom rtl_false swatch_color_style_1 pr_border_style_1 pr_img_effect_2 enable_eff_img1_true badge_shape_1 css_for_wis_app_true shadow_round_img_false t4s-header__categories is-remove-unavai-1 t4_compare_false t4s-cart-count-0 t4s-pr-ellipsis-false
  no-js" lang="en">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
