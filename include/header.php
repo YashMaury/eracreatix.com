@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
 include "include/config.php";
 if (isset($_SESSION['id'])) {
     $num_cart = mysqli_query($con, "select count(id) as items from cart where `userId` = '" . $_SESSION['id'] . "'");
@@ -13,7 +14,6 @@ if (isset($_SESSION['id'])) {
 <html class="t4sp-theme is-header--stuck t4s-hsticky__ready t4s-wrapper__custom rtl_false swatch_color_style_1 pr_border_style_1 pr_img_effect_2 enable_eff_img1_true badge_shape_1 css_for_wis_app_true shadow_round_img_false t4s-header__categories is-remove-unavai-1 t4_compare_false t4s-cart-count-0 t4s-pr-ellipsis-false
  no-js" lang="en">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
     <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
@@ -190,13 +190,8 @@ if (isset($_SESSION['id'])) {
                                 </svg>
                                 <div class="t4s-site-nav__icons t4s-use__kalles is--hover2 t4s-h-cart__design1 t4s-lh-1 t4s-d-inline-flex t4s-align-items-center">
                                     <?php if (isset($_SESSION['login'])) { ?>
-<<<<<<< HEAD
-                                        <div class="t4s-site-0nav__icon t4s-site-nav__account t4s-pr t4s-d-md-inline-block">
-                                            <a class="t4s-pr" href="account/index.php">
-=======
                                         <div class="t4s-site-nav__icon t4s-site-nav__account t4s-pr t4s-d-none t4s-d-lg-inline-block">
                                             <a class="t4s-pr" href="account/dashboard.php">
->>>>>>> f93c9e6f65fe12a8432c693e4503685e4d9d68d8
                                                 <svg class="t4s-icon t4s-icon--account" aria-hidden="true" focusable="false" role="presentation">
                                                     <use href="#icon-h-account"></use>
                                                 </svg> <?php echo $_SESSION['username']; ?>
