@@ -72,6 +72,13 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                             </div>
 
                             <div class="set-default-addr">
+                                <label for="address_default_address_new" class="select-addr-label">GSTN (optional)</label>
+                                <input type="text" id="address_default_address_new" name="gstn" value="" required>
+                            </div>
+                            <!-- <br> -->
+                            <hr width="100%" size="5px" style="background-color: #000;max-width: inherit;">
+                            <!-- <br> -->
+                            <div class="set-default-addr">
                                 <input type="radio" id="address_default_address_new" name="method[]" value="COD" required>
                                 <label for="address_default_address_new" class="select-addr-label">COD</label>
                             </div>

@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
                 $method = $methods;
             }
             foreach ($cart as $key => $value) {
-                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $_POST['address'] . "','" . $order_id . "','" . date("Y-m-d h:i:s") . "', '" . $method . "')");
+                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,GSTN,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $_POST['address'] . "','" . $order_id . "','".$_POST['gstn']."','" . date("Y-m-d h:i:s") . "', '" . $method . "')");
                 mysqli_query($con, "DELETE FROM cart WHERE `cart`.`id` = '" . $value['id'] . "'");
             }
             $_SESSION['message'] = "Order placed successfully";
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
                 $method = $methods;
             }
             foreach ($cart as $key => $value) {
-                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $lastInsertedID . "','" . $order_id . "','" . date("Y-m-d h:i:s") . "', '" . $method . "')");
+                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,GSTN,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $lastInsertedID . "','" . $order_id . "','".$_POST['gstn']."','" . date("Y-m-d h:i:s") . "', '" . $method . "')");
                 mysqli_query($con, "DELETE FROM cart WHERE `cart`.`id` = '" . $value['id'] . "'");
             }
             $_SESSION['message'] = "Order placed successfully";

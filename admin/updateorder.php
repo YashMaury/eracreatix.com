@@ -96,8 +96,11 @@ if (strlen($_SESSION['alogin']) == 0) {
               <td class="fontkink"><span class="fontkink1">
                   <select name="status" class="fontkink" required="required">
                     <option value="">Select Status</option>
-                    <option value="in Process">In Process</option>
+                    <option value="In Process">In Process</option>
+                    <option value="In Transit">In Transit</option>
                     <option value="Delivered">Delivered</option>
+                    <option value="Cancelled">Cancelled</option>
+                    <option value="Refunded">Refunded</option>
                   </select>
                 </span></td>
             </tr>
@@ -105,7 +108,13 @@ if (strlen($_SESSION['alogin']) == 0) {
             <tr style=''>
               <td class="fontkink1">Remark:</td>
               <td class="fontkink" align="justify"><span class="fontkink">
-                  <textarea cols="50" rows="7" name="remark" required="required"></textarea>
+                  <!-- <textarea cols="50" rows="7" name="remark" required="required"></textarea> -->
+                  <select name="remark" class="fontkink" required="required">
+                    <option value="">Select Remark</option>
+                    <option value="Product delivered successfully"> Product delivered successfully</option>
+                    <option value="Product out for delivery"> Product out for delivery</option>
+                    <option value="Product ready for Shipping"> Product ready for Shipping</option>
+                  </select>
                 </span></td>
             </tr>
             <tr>
