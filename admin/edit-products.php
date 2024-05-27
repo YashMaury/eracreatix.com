@@ -5,17 +5,23 @@ if (!isset($_SESSION['alogin'])) {
 } else {
 	$pid = intval($_GET['id']); // product id
 	if (isset($_POST['submit'])) {
+		$skuId = $_POST['skuId'];
 		$category = $_POST['category'];
 		$subcat = $_POST['subcategory'];
 		$productname = $_POST['productName'];
 		$productcompany = $_POST['productCompany'];
 		$productprice = $_POST['productprice'];
 		$productpricebd = $_POST['productpricebd'];
+		$producthighlight = $_POST['producthighlight'];
+		$additionalInfo = $_POST['additionalInfo'];
+		$refundandExchange = $_POST['refundandExchange'];
 		$productdescription = $_POST['productDescription'];
 		$productscharge = $_POST['productShippingcharge'];
 		$productavailability = $_POST['productAvailability'];
-
-		$sql = mysqli_query($con, "update  products set category='$category',subCategory='$subcat',productName='$productname',productCompany='$productcompany',productPrice='$productprice',productDescription='$productdescription',shippingCharge='$productscharge',productAvailability='$productavailability',productPriceBeforeDiscount='$productpricebd' where id='$pid' ");
+		$productimage1 = $_FILES["productimage1"]["name"];
+		$productimage2 = $_FILES["productimage2"]["name"];
+		$productimage3 = $_FILES["productimage3"]["name"];
+		$sql = mysqli_query($con, "update  products set  skuId='$skuId',category='$category',subCategory='$subcat',productName='$productname',productCompany='$productcompany',productPrice='$productprice', producthighlight='$producthighlight', additionalInfo='$additionalInfo', refundandExchange='$refundandExchange', productDescription='$productdescription',shippingCharge='$productscharge',productAvailability='$productavailability',productPriceBeforeDiscount='$productpricebd' where id='$pid' ");
 		$_SESSION['msg'] = "Product Updated Successfully !!";
 	}
 
@@ -124,7 +130,13 @@ if (!isset($_SESSION['alogin'])) {
 												</div>
 											</div>
 
-
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product SKU-ID</label>
+												<div class="controls">
+													<input type="text" name="skuId" placeholder="Enter Product Comapny Name" value="<?php echo htmlentities($row['skuId']); ?>" class="span8 tip" required>
+												</div>
+											</div>
+	
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Sub Category</label>
 												<div class="controls">
@@ -162,6 +174,35 @@ if (!isset($_SESSION['alogin'])) {
 													<input type="text" name="productprice" placeholder="Enter Product Price" value="<?php echo htmlentities($row['productPrice']); ?>" class="span8 tip" required>
 												</div>
 											</div>
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product Highlights</label>
+												<div class="controls">
+													<textarea name="producthighlight" placeholder="Enter Product Description" rows="6" class="span8 tip">
+<?php echo htmlentities($row['producthighlight']); ?>
+</textarea>
+												</div>
+
+											</div>
+
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product Additional Info</label>
+												<div class="controls">
+													<textarea name="additionalInfo" placeholder="Enter Product Description" rows="6" class="span8 tip">
+<?php echo htmlentities($row['additionalInfo']); ?>
+</textarea>
+												</div>
+
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Refund and Exchange</label>
+												<div class="controls">
+													<textarea name="refundandExchange" placeholder="Enter Product Description" rows="6" class="span8 tip">
+<?php echo htmlentities($row['refundandExchange']); ?>
+</textarea>
+												</div>
+
+											</div>
+											
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Description</label>

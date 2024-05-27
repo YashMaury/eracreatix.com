@@ -5,6 +5,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 } else {
 
 	if (isset($_POST['submit'])) {
+		$skuId = $_POST['skuId'];
 		$category = $_POST['category'];
 		$subcat = $_POST['subcategory'];
 		$productname = $_POST['productName'];
@@ -34,7 +35,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		move_uploaded_file($_FILES["productimage1"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage1"]["name"]);
 		move_uploaded_file($_FILES["productimage2"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage2"]["name"]);
 		move_uploaded_file($_FILES["productimage3"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage3"]["name"]);
-		$sql = mysqli_query($con, "insert into products(category,subCategory,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,refundandExchange) values('$category','$subcat','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
+		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,refundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
 		 $_SESSION['msg'] = "Product Inserted Successfully !!";
 	}
 
@@ -112,6 +113,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<br />
 
 									<form class="form-horizontal row-fluid" name="insertproduct" method="post" enctype="multipart/form-data">
+									
+									<div class="control-group">
+											<label class="control-label" for="basicinput">SKU-ID</label>
+											<div class="controls">
+												<input type="text" name="skuId" placeholder="Enter Product SKU ID" class="span8 tip" required>
+											</div>
+										</div>
+
 
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Category</label>
