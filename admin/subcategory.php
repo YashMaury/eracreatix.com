@@ -5,9 +5,28 @@ if (strlen($_SESSION['alogin']) == 0) {
 } else {
 	if (isset($_POST['submit'])) {
 		$category = $_POST['category'];
-		$subcat = $_POST['subcategory'];
-		$sql = mysqli_query($con, "insert into subcategory(categoryid,subcategory) values('$category','$subcat')");
+		$subcategory = $_POST['subcategory'];
+		if (!empty($_POST['subcategory'])) {
+			$path = "uploads/subcategory/";
+			if (!is_dir($path)) {
+				mkdir($path, 0777, true);
+				// echo "directory created";
+			}
+			$filename = time() . ".png";
+			$target_file = $path . $filename;
+			if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+				$sql = mysqli_query($con, "insert into subcategory(categoryid,subcategory, subcategoryImage) values('$category','$subcategory','$filename')");
+				// $_SESSION['msg'] = "SubCategory Created !!";
+			} else {
+				exit();
+			}
+		} else {
+			$_SESSION['delmsg'] = "Failed to upload image !!";
+		}
 		$_SESSION['msg'] = "SubCategory Created !!";
+		header("Location: subcategory.php");
+
+		exit();
 	}
 
 	if (isset($_GET['del'])) {
@@ -63,7 +82,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 									<br />
 
-									<form class="form-horizontal row-fluid" name="subcategory" method="post">
+									<form class="form-horizontal row-fluid" name="subcategory" method="post" enctype="multipart/form-data">
 
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Category</label>
@@ -84,6 +103,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">SubCategory Name</label>
 											<div class="controls">
 												<input type="text" placeholder="Enter SubCategory Name" name="subcategory" class="span8 tip" required>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">SubCategory Image</label>
+											<div class="controls">
+												<input type="file" placeholder="Choose SubCategory Image" name="image" class="span8 tip" required>
 											</div>
 										</div>
 
@@ -109,7 +134,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<tr>
 												<th>#</th>
 												<th>Category</th>
-												<th>Description</th>
+												<th>SubCategory</th>
+												<th>SubCategory Image</th>
 												<th>Creation date</th>
 												<th>Last Updated</th>
 												<th>Action</th>
@@ -117,7 +143,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 										</thead>
 										<tbody>
 
-											<?php $query = mysqli_query($con, "select subcategory.id,category.categoryName,subcategory.subcategory,subcategory.creationDate,subcategory.updationDate from subcategory join category on category.id=subcategory.categoryid");
+											<?php $query = mysqli_query($con, "select subcategory.id,category.categoryName,subcategory.subcategory,subcategory.subcategoryImage,subcategory.creationDate,subcategory.updationDate from subcategory join category on category.id=subcategory.categoryid");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query)) {
 											?>
@@ -125,6 +151,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													<td><?php echo htmlentities($cnt); ?></td>
 													<td><?php echo htmlentities($row['categoryName']); ?></td>
 													<td><?php echo htmlentities($row['subcategory']); ?></td>
+													<td><img width="120px" src="uploads/subcategory/<?php echo htmlentities($row['subcategoryImage']); ?>" alt="<?php echo htmlentities($row['subcategoryImage']); ?>" ></td>
 													<td> <?php echo htmlentities($row['creationDate']); ?></td>
 													<td><?php echo htmlentities($row['updationDate']); ?></td>
 													<td>

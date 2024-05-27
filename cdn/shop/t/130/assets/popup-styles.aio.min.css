@@ -810,11 +810,12 @@ div#t4s-tab-reviewtemplate--16837625184502__main {
   background: #fff;
 }
 #pdp-product-title {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 35px;
+  /* line-height: 16px; */
+  font-weight: bold;
   margin-right: 12px;
   color: var(--title-color);
-  font-weight: unset !important;
+  /* font-weight: unset !important; */
 }
 .sort-by-btn-box {
   display: flex;

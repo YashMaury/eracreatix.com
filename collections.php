@@ -170,141 +170,40 @@ if (isset($_GET['page'])) {
         </script>
 
     </div>
-    <div id="shopify-section-template--16885348434166__1575786c-e189-41b8-bf2e-7d8626ddebe2" class="shopify-section">
-        <link rel="stylesheet" href="cdn/shop/t/130/assets/sub-collection-with-slider-common.aio.min.css" media="all">
-        <link rel="stylesheet" href="cdn/shop/t/130/assets/common-slider-container.aio.min.css" media="all">
-        <div id="slider-container-sub-collection-container" style="padding-top: 10px;padding-bottom: 24px">
-            <div class="slider-sub-container">
-                <div class="container-icon-back">
-                    <span class="back-icon" style="top: 43%; opacity: 0; display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="10" fill="black" fill-opacity="0.4"></circle>
-                            <path d="M13 16L7 10L13 4" stroke="white" stroke-linejoin="round"></path>
-                        </svg>
-                    </span>
-                </div>
+    <section id="shopify-section-template--16885348139254__e21fd993-7204-4a35-aa17-d21b1c47ca2d" class="shopify-section t4s-section t4s_bk_flickity t4s-section-all t4s_tp_cdt t4s-featured-collections">
 
-                <!-- <style>
-                    .setsize{
-                        width: 180px;
-                    }
-                </style> -->
+        <div class="t4s-section-inner t4s_nt_se_template--16885348139254__e21fd993-7204-4a35-aa17-d21b1c47ca2d t4s_se_template--16885348139254__e21fd993-7204-4a35-aa17-d21b1c47ca2d t4s-container-wrap" style="--bg-color: ;--bg-gradient: ;--border-cl: #e5e5e5;--mg-top: ;--mg-right: auto;--mg-bottom: 30px;--mg-left:auto;--pd-top: 30px;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: 30px;--mgtb-left: auto;--pdtb-top: 30px;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 20px;--mgmb-left: auto;--pdmb-top: 20px;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
+            <div class="t4s-container">
+                <div class="t4s-list-collections t4s-has-collection5 t4s-collection-border-false t4s_ratio1_1 t4s_position_8 t4s_cover t4s-row  t4s-justify-content-center t4s-row-cols-lg-6 t4s-row-cols-md-3 t4s-row-cols-3 t4s-gx-md-30 t4s-gy-md-30 t4s-gx-20 t4s-gy-20" style="--title-cl-pri: #222222;--title-cl-pri-hover: #000000;--title-cl-second: #fff;--title-cl-second-hover: #fff;--subtitle-cl: #ffffff;--subtitle-cl2: #222;--count-cl-pri: #222222;--count-cl-second: #fff;--border-cl: #e5e5e5;--item-rd: 50%;--item-pd: 0px;--space-bottom: 15px;--space-bottom-tb: 20px;--space-bottom-mb: 15px;">
 
-                <div class="main-items-slider " id="subcollection-slider" style="gap: 30px; display: flex;">
-                    <?php
-                    $sql = mysqli_query($con, "select id,subcategory, categoryid from subcategory where `categoryid`='" . $_GET['cid'] . "' ");
+
+                    <?php $sql = mysqli_query($con, "select * from subcategory where `categoryId` = '" . $_GET['cid'] . "'");
                     while ($row = mysqli_fetch_array($sql)) {
                     ?>
 
-                        <div>
-                            <a href=" collections.php?cid=<?= $row['categoryid'] ?>" class="collection-image_wrapper flex" style="background-color: light-grey;">
-                                <div class="collection--img handle-overlap">
-                                    <!-- <img class="t4s-obj-eff subcollection-img collection-image-main lazyautosizes" src="<?php echo "admin/uploads/category/" . $row['categoryImage']; ?>" width="800" height="800" alt="subcollection Abstract Patterns ">
-                                    <img class="t4s-lz--fadeIn t4s-obj-eff collection-frame" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Category_Icons-24_1_bb87cf2e-e8b4-45b2-814e-5b9229281d11.png?v=1714742226 " alt="subcollection Fabulous Indian "> -->
-                                </div>
-                                <div class="collection--text">
-                                    <b><?php echo $row['subcategory']; ?></b>
-                                </div>
-                            </a>
-                        </div>
+                        <div class="t4s-col-item t4s-collection-item t4s-coll-style-5" data-select-flickity>
+                            <div class="t4s-cat-content t4s-source-image t4s-eff t4s-eff-none t4s-eff-img-none t4s-text-center t4s-pr t4s-oh" timeline hdt-reveal="slide-in">
+                                <div class="t4s-coll-img t4s-pr" data-cacl-slide>
 
-                        <!---->
+                                    <a class="t4s_cat_item_link t4s-img-wrap t4s-d-block" href="collections.php?cid=<?php echo $row['id']; ?>" target="_self">
+                                        <div class="t4s_ratio t4s-bg-11" style="--aspect-ratioapt: 1.0;background: url(cdn/shop/collections/buy-product-title-at-vaaree-online_d4251e91-8e08-4929-b0ec-89c57eb7aa9ccd26.jpg?v=1710244392&amp;width=1); ">
+                                            <img src="<?php echo "admin/uploads/subcategory/" . $row['subcategoryImage']; ?>" width="800" height="800" alt="Buy <?php echo $row['subcategory']; ?> at ERA Creatix , best home decor store in India">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="t4s-cate-wrapper">
+                                    <a class="t4s-cat-title" href="collections.php?cid=<?php echo $row['id']; ?>" target="_self">
+                                        <span class="t4s-text"><?php echo $row['subcategory']; ?></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                     <?php } ?>
 
-
-                </div>
-                <div class="container-icon-next">
-                    <span class="next-icon" style="top: 43%; display: none;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="10" transform="rotate(-180 10 10)" fill="black" fill-opacity="0.4"></circle>
-                            <path d="M7 4L13 10L7 16" stroke="white" stroke-linejoin="round"></path>
-                        </svg>
-                    </span>
                 </div>
             </div>
-        </div>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                var sliderId = "slider-container-sub-collection-container"
-                var sliderContainer = document.querySelector(`#${sliderId} .slider-sub-container .main-items-slider`);
-                var sliderLeftArrow = document.querySelector(`#${sliderId} .container-icon-back .back-icon`);
-                var sliderRightArrow = document.querySelector(`#${sliderId} .container-icon-next .next-icon`);
-                var sliderScrollStep = 220;
-
-                sliderLeftArrow.style.opacity = '0';
-                sliderContainer.addEventListener('scroll', () => {
-                    if (sliderContainer.scrollLeft === 0) {
-                        sliderLeftArrow.style.opacity = '0';
-                    } else {
-                        sliderLeftArrow.style.opacity = '1';
-                    }
-
-                    if (sliderContainer.scrollLeft + sliderContainer.clientWidth >= sliderContainer.scrollWidth) {
-                        sliderRightArrow.style.opacity = '0';
-                    } else {
-                        sliderRightArrow.style.opacity = '1';
-                    }
-                });
-
-                sliderLeftArrow.addEventListener("click", function() {
-                    sliderContainer.scrollBy({
-                        left: -sliderScrollStep,
-                        behavior: 'smooth'
-                    });
-                });
-                sliderRightArrow.addEventListener("click", function() {
-                    sliderContainer.scrollBy({
-                        left: sliderScrollStep,
-                        behavior: 'smooth'
-                    });
-                });
-
-                if (sliderContainer.scrollWidth > sliderContainer.clientWidth) {
-                    sliderLeftArrow.style.display = "block";
-                    sliderRightArrow.style.display = "block";
-                } else {
-                    sliderLeftArrow.style.display = "none";
-                    sliderRightArrow.style.display = "none";
-                }
-            });
-        </script>
-
-        <script>
-            function removeClassOnMediaQueryBanner(mediaQuery, className) {
-                var sliderId = "slider-container-sub-collection-container"
-                var mainContainer = document.querySelector(`#${sliderId}`);
-                var parentElement = mainContainer.parentElement;
-                var mediaQueryList = window.matchMedia(mediaQuery);
-
-                function handleMediaQueryChange(event) {
-                    if (event.matches) {
-                        parentElement.classList.remove(className);
-                    } else {
-                        parentElement.classList.add(className);
-                    }
-                }
-                handleMediaQueryChange(mediaQueryList);
-                mediaQueryList.addEventListener('change', handleMediaQueryChange);
-            }
-
-            var mediaQuery = '(max-width: 766px)';
-            var classNameToRemove = 't4s-container';
-            removeClassOnMediaQueryBanner(mediaQuery, classNameToRemove);
-        </script>
-        <script>
-            var subCollectionSlider = document.getElementById("subcollection-slider");
-            var subCollectionSize = 6
-            if (window.innerWidth >= 768 && subCollectionSize < 3) {
-                subCollectionSlider.style.display = "none";
-            } else if (window.innerWidth >= 768 && subCollectionSize >= 3) {
-                subCollectionSlider.style.display = "flex";
-            }
-        </script>
-
-
-    </div>
+    </section>
     <section id="shopify-section-template--16885348434166__8c4f56e8-411a-4a0d-9354-cacd75a338f3" class="shopify-section t4s-section t4s-section-all t4s_tp_cdt t4s_tp_cd t4s_tp_istope t4s-banner"><!-- section/banner.liquid -->
         <div class="t4s-section-inner t4s_nt_se_template--16885348434166__8c4f56e8-411a-4a0d-9354-cacd75a338f3 t4s_se_template--16885348434166__8c4f56e8-411a-4a0d-9354-cacd75a338f3 t4s-container-wrap " style="--bg-color: ;--bg-gradient: ;--border-cl: ;--mg-top: ;--mg-right: auto;--mg-bottom: 50px;--mg-left:auto;--pd-top: ;--pd-right: ;--pd-bottom: ;--pd-left: ;--mgtb-top: ;--mgtb-right: auto;--mgtb-bottom: 50px;--mgtb-left: auto;--pdtb-top: ;--pdtb-right: ;--pdtb-bottom: ;--pdtb-left: ;--mgmb-top: ;--mgmb-right: auto;--mgmb-bottom: 30px;--mgmb-left: auto;--pdmb-top: ;--pdmb-right: ;--pdmb-bottom: ;--pdmb-left: ;">
             <div class="t4s-container">

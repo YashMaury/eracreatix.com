@@ -24,7 +24,7 @@ include "include/header.php";
                                     </a>
                                 </div>
                                 <div class="t4s-cate-wrapper">
-                                    <a class="t4s-cat-title" href="collections.php?item=bedsheets" target="_self">
+                                    <a class="t4s-cat-title" href="collections.php?cid=<?php echo $row['id']; ?>" target="_self">
                                         <span class="t4s-text"><?php echo $row['categoryName']; ?></span>
                                     </a>
                                 </div>

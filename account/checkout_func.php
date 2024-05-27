@@ -8,13 +8,18 @@ if (isset($_POST['submit'])) {
     } else {
         if ($_POST['form_type'] == "place_order") {
             $order_id = uniqid('order_');
+            if(!empty($_POST['gstn'])){
+                $gstn = $_POST['gstn'];
+            } else {
+                $gstn = 'null';
+            }
             $cart = mysqli_query($con, "select * from cart where `userId` = '" . $_SESSION['id'] . "' ");
             $fetch_cart = mysqli_fetch_array($cart);
             foreach ($_POST['method'] as $methods) {
                 $method = $methods;
             }
             foreach ($cart as $key => $value) {
-                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,GSTN,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $_POST['address'] . "','" . $order_id . "','".$_POST['gstn']."','" . date("Y-m-d h:i:s") . "', '" . $method . "')");
+                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,GSTN,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $_POST['address'] . "','" . $order_id . "',".$gstn.",'" . date("Y-m-d h:i:s") . "', '" . $method . "')");
                 mysqli_query($con, "DELETE FROM cart WHERE `cart`.`id` = '" . $value['id'] . "'");
             }
             $_SESSION['message'] = "Order placed successfully";
@@ -22,6 +27,11 @@ if (isset($_POST['submit'])) {
             exit();
         } elseif ($_POST['form_type'] == "place_order_with_address") {
             $order_id = uniqid('order_');
+            if(!empty($_POST['gstn'])){
+                $gstn = $_POST['gstn'];
+            } else {
+                $gstn = 'null';
+            }
             $cart = mysqli_query($con, "select * from cart where `userId` = '" . $_SESSION['id'] . "' ");
             $fetch_cart = mysqli_fetch_array($cart);
             if (isset($_POST['save'])) {
@@ -33,7 +43,7 @@ if (isset($_POST['submit'])) {
                 $method = $methods;
             }
             foreach ($cart as $key => $value) {
-                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,GSTN,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $lastInsertedID . "','" . $order_id . "','".$_POST['gstn']."','" . date("Y-m-d h:i:s") . "', '" . $method . "')");
+                mysqli_query($con, "insert into orders(userId,productId,quantity,address,order_id,GSTN,orderDate, paymentMethod) values('" . $_SESSION['id'] . "','" . $value['productId'] . "','" . $value['quantity'] . "','" . $lastInsertedID . "','" . $order_id . "',".$gstn.",'" . date("Y-m-d h:i:s") . "', '" . $method . "')");
                 mysqli_query($con, "DELETE FROM cart WHERE `cart`.`id` = '" . $value['id'] . "'");
             }
             $_SESSION['message'] = "Order placed successfully";

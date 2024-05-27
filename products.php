@@ -38,7 +38,6 @@ if (isset($_POST['submit'])) {
         <?php
         $ret = mysqli_query($con, "select * from products where id='" . $_GET['pid'] . "' ");
         while ($rws = mysqli_fetch_array($ret)) {
-
         ?>
 
 
@@ -163,9 +162,15 @@ if (isset($_POST['submit'])) {
                                     </div>
                                     <div class="price_review_container">
                                         <div id="pdp-price-reviews" class="t4s-product__price-review t4s-col-item" style="--price-size:20px;--price-weight:400;--price-color:#262727;--price-sale-color:#ba4444;">
-
-
-                                            <div class="t4s-product-price" data-pr-price="" data-product-price="" data-saletype="1">MRP ₹<?php echo htmlentities($rws['productPrice']); ?><small><del>₹<?php echo htmlentities($rws['productPriceBeforeDiscount']); ?></del></small>
+                                            <div class="t4s-product-price" data-pr-price="" data-product-price="" data-saletype="1">
+                                                MRP ₹<?php echo htmlentities($rws['productPrice']); ?>
+                                                <small>
+                                                    <del>
+                                                        ₹<?php echo htmlentities($rws['productPriceBeforeDiscount']); ?>
+                                                    </del>
+                                                </small>
+                                                <span class="price_separator"></span>
+                                                <span class="t4s-badge-price"><?php echo round(100 - (($rws['productPrice'] / $rws['productPriceBeforeDiscount']) * 100), 2); ?>% OFF</span>
                                             </div>
                                         </div>
                                         <div class="tax_text t4s-col-item">Inclusion of all taxes</div>
@@ -209,10 +214,10 @@ if (isset($_POST['submit'])) {
                                                             <!-- <a style="border: 3px solid #e8c463" href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
                                                             </a> -->
-                                                            <button id="add_to_cart" style="border: 3px solid #e8c463" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <button id="add_to_cart" style="min-width: unset;border: 3px solid #e8c463" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
                                                             </button>
-                                                            <button id="buy_now_btn" style="margin: 5px;" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                            <button id="buy_now_btn" style="min-width: unset;margin: 5px;" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Buy Now
                                                             </button>
                                                         </div>
@@ -239,6 +244,176 @@ if (isset($_POST['submit'])) {
                                                 }
                                             }
                                         </script>
+                                    </div>
+                                    <div id="t4s-delivery" class="t4s-pr_delivery  t4s-ch t4s-dn section delivery-return-section" data-order-delivery="{ &quot;timezone&quot;:false, &quot;format_day&quot;:&quot;t44, t45 t46&quot;, &quot;mode&quot;:&quot;1&quot;, &quot;cut_day&quot;: &quot;SAT,SUN&quot;, &quot;estimateStartDate&quot;: 3, &quot;estimateEndDate&quot;: 5, &quot;time&quot;:&quot;16:00:00&quot;, &quot;hideWithPreorder&quot;:true }" style="display: block;">
+                                        <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
+                                        <div class="section">
+                                            <div class="section-heading-container">
+                                                <img class="map-pin-delivery" height="16" src="cdn/shop/t/130/assets/map-pin-delivery.svg" width="16">
+                                                <span class="section-heading">Check Delivery Time</span>
+                                            </div>
+                                            <div class="section-input-container">
+                                                <span class="input-info enter-pincode-text" style="display:none">Please enter PIN code to check delivery time</span>
+                                                <div class="locate-container">
+                                                    <form id="input-container" class="input-container">
+                                                        <img class="check_tick_img" height="16" src="cdn/shop/t/130/assets/check-circle-tick.svg" width="16" style="display: block;">
+                                                        <input type="tel" placeholder="Enter PIN code" id="pincode-input" class="pincode-input" maxlength="6" onfocusout="focusOutInput()" style="border: 1px solid var(--discount-badge); font-weight: 600; color: var(--discount-badge); padding-left: 36px;">
+                                                        <span class="verified-icon" style="display: block;">
+                                                        </span>
+                                                        <button type="submit" id="check-button" class="check-button" style="opacity: 0.25;">Applied</button>
+                                                        <div class="t4s-cart-ld__bar t4s-pe-none t4s-dn spinner-pincode">
+                                                            <span>
+                                                                <svg width="16" height="16" class="t4s-cart-spinner" focusable="false" role="presentation" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle class="t4s-path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                    </form>
+                                                    <div class="locate-pincode-wrapper" onclick="getLocationPincode()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#clip0_505_32035)">
+                                                                <path d="M9.9987 16.6663C13.6806 16.6663 16.6654 13.6816 16.6654 9.99967C16.6654 6.31778 13.6806 3.33301 9.9987 3.33301C6.3168 3.33301 3.33203 6.31778 3.33203 9.99967C3.33203 13.6816 6.3168 16.6663 9.9987 16.6663Z" stroke="#262727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M10.276 11.5003C11.1965 11.5003 11.9427 10.7541 11.9427 9.83366C11.9427 8.91318 11.1965 8.16699 10.276 8.16699C9.35557 8.16699 8.60938 8.91318 8.60938 9.83366C8.60938 10.7541 9.35557 11.5003 10.276 11.5003Z" stroke="#262727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M18.3333 10H15" stroke="#262727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M5.0013 10H1.66797" stroke="#262727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M10 5.00033V1.66699" stroke="#262727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M10 18.3333V15" stroke="#262727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_505_32035">
+                                                                    <rect width="20" height="20" fill="white"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        Locate</div>
+                                                </div>
+
+                                                <div class="pincode-error-banner t4s-swatch_banner_animator" style="display:none">
+                                                    <!-- <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10.5 2L17.8612 14.75H3.13878L10.5 2Z" fill="#ED546F" stroke="#ED546F" stroke-width="2"/>
+  <path d="M11.22 11.552H10.068V5.504H11.22V11.552ZM9.876 13.28C9.876 13.064 9.952 12.88 10.104 12.728C10.264 12.568 10.452 12.488 10.668 12.488C10.884 12.488 11.068 12.568 11.22 12.728C11.38 12.88 11.46 13.064 11.46 13.28C11.46 13.496 11.38 13.684 11.22 13.844C11.068 13.996 10.884 14.072 10.668 14.072C10.452 14.072 10.264 13.996 10.104 13.844C9.952 13.684 9.876 13.496 9.876 13.28Z" fill="white"/>
+</svg> -->
+                                                    <span class="error-message">Delivery not available on pincode</span>
+                                                </div>
+
+                                                <div class="default-estimate-delivery-info" style="display: none;">
+                                                    <img alt="Delivery Time Icon" class="mib0 fastDlvyIcon" height="16" loading="lazy" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/fastDlvry.png?v=1711973284" width="26">
+                                                    <span>Estimated delivery by </span>
+                                                    <span class="t4s-default-end_delivery">9:00PM on Fri, 31st May</span>
+                                                </div>
+
+                                                <div class="section-delivery-return-container" style="display: flex;">
+                                                    <div class="delivery-info" style="display: flex;">
+                                                        <img alt="Delivery Time Icon" class="mib0 fastDlvyIcon" height="16" loading="lazy" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/fastDlvry.png?v=1711973284" width="26">
+                                                        <div class="estimate-delivery-info">
+                                                            <span>Get it by </span>
+                                                            <span class="t4s-end_delivery">9:00PM on Fri, 31st May</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="delivery-fbv-container">
+
+                                                    <link rel="stylesheet" href="cdn/shop/t/130/assets/delivery_date_fbv.css">
+                                                    <div class="delivery-info-fbv " id="delivery_date_wrapper_fbv_8357838979318" style="display:none">
+                                                        <svg width="51" height="20" viewBox="0 0 51 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fbv-icon">
+                                                            <rect width="50.9091" height="20" rx="10" fill="#E8C463"></rect>
+                                                            <path d="M16.7308 5.8277C16.7761 5.63729 16.6317 5.45453 16.436 5.45453H11.0139C10.8748 5.45453 10.7536 5.54916 10.7199 5.68406L10.4926 6.59315C10.4448 6.78441 10.5895 6.96968 10.7866 6.96968H16.2197C16.36 6.96968 16.482 6.87332 16.5145 6.73679L16.7308 5.8277Z" fill="#262727"></path>
+                                                            <path d="M25.0608 5.45453C25.2494 5.45453 25.3922 5.62493 25.3591 5.8106L25.1561 6.95279C25.1304 7.09742 25.0046 7.20278 24.8577 7.20278H21.6633C21.5157 7.20278 21.3897 7.30901 21.3646 7.45439L21.1323 8.80378C21.1004 8.98897 21.243 9.15823 21.4309 9.15823H23.4785C23.6678 9.15823 23.8108 9.33003 23.7764 9.51627L23.5775 10.5937C23.551 10.7374 23.4257 10.8417 23.2795 10.8417H21.0151C20.8679 10.8417 20.7419 10.9476 20.7166 11.0926L20.1568 14.2946C20.1314 14.4396 20.0055 14.5454 19.8583 14.5454H18.2597C18.0713 14.5454 17.9286 14.3753 17.9613 14.1897L19.4601 5.70485C19.4857 5.56007 19.6115 5.45453 19.7585 5.45453H25.0608Z" fill="#262727"></path>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M33.2167 7.81143C33.1218 8.34669 32.9016 8.79131 32.5563 9.14528C32.3515 9.3552 32.1224 9.52716 31.869 9.66117C31.73 9.73472 31.7349 10.0187 31.8699 10.0995C32.05 10.2072 32.2054 10.3467 32.3361 10.518C32.5865 10.846 32.7117 11.2302 32.7117 11.6705C32.7117 11.8087 32.6987 11.9425 32.6728 12.072C32.5433 12.8317 32.1721 13.4361 31.5591 13.885C30.9462 14.3253 30.1649 14.5454 29.2152 14.5454H25.3418C25.1533 14.5454 25.0106 14.3753 25.0434 14.1897L26.5421 5.70485C26.5677 5.56007 26.6935 5.45453 26.8405 5.45453H30.6785C31.4987 5.45453 32.1333 5.62288 32.5822 5.95958C33.0311 6.29628 33.2556 6.76248 33.2556 7.35818C33.2556 7.50495 33.2426 7.65603 33.2167 7.81143ZM29.5907 9.14528C29.962 9.14528 30.2598 9.06327 30.4843 8.89924C30.7088 8.7352 30.8469 8.49778 30.8987 8.18698C30.9073 8.13519 30.9116 8.06612 30.9116 7.97978C30.9116 7.72942 30.8296 7.53948 30.6656 7.40998C30.5016 7.27185 30.2598 7.20278 29.9404 7.20278H28.745C28.5976 7.20278 28.4716 7.30883 28.4464 7.45406L28.2148 8.7905C28.1827 8.97579 28.3253 9.14528 28.5134 9.14528H29.5907ZM30.4713 11.7741C30.4886 11.6705 30.4972 11.5928 30.4972 11.541C30.4972 11.2907 30.4066 11.0964 30.2253 10.9583C30.044 10.8115 29.7936 10.7381 29.4742 10.7381H28.1224C27.9755 10.7381 27.8497 10.8436 27.8241 10.9883L27.5689 12.4283C27.536 12.614 27.6787 12.7842 27.8672 12.7842H29.1375C29.5174 12.7842 29.8195 12.6979 30.044 12.5252C30.2685 12.3526 30.4109 12.1022 30.4713 11.7741Z" fill="#262727"></path>
+                                                            <path d="M38.2691 11.4707C38.1363 11.7343 37.7435 11.6719 37.6989 11.3802L36.8326 5.71178C36.81 5.56382 36.6827 5.45453 36.533 5.45453H34.7981C34.6095 5.45453 34.4667 5.62499 34.4998 5.81068L36.0106 14.2955C36.0364 14.4401 36.1621 14.5454 36.309 14.5454H38.6443C38.7564 14.5454 38.8593 14.4836 38.9119 14.3846L43.4202 5.89975C43.5275 5.69791 43.3812 5.45453 43.1526 5.45453H41.4865C41.3721 5.45453 41.2674 5.51901 41.2159 5.62122L38.2691 11.4707Z" fill="#262727"></path>
+                                                            <path d="M11.3986 9.48854C11.426 9.34571 11.5509 9.24241 11.6963 9.24241H15.6508C15.8436 9.24241 15.9874 9.42019 15.9471 9.60879L15.7528 10.5179C15.7229 10.6577 15.5994 10.7576 15.4564 10.7576H11.5225C11.3323 10.7576 11.1892 10.5844 11.2249 10.3976L11.3986 9.48854Z" fill="#262727"></path>
+                                                            <path d="M15.2604 13.3856C15.2929 13.2002 15.1502 13.0303 14.962 13.0303H7.98358C7.84453 13.0303 7.72332 13.1249 7.68959 13.2598L7.46232 14.1689C7.41451 14.3602 7.55916 14.5454 7.7563 14.5454H14.8026C14.9497 14.5454 15.0756 14.4397 15.101 14.2947L15.2604 13.3856Z" fill="#262727"></path>
+                                                        </svg>
+                                                        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="thundering-icon">
+                                                            <path d="M6.85918 1L0.90918 9.4H5.80918L4.75918 15L10.7092 6.6H5.80918L6.85918 1Z" fill="#E8C463" stroke="#262727" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+
+                                                        <span class="t4s-end_delivery-fbv" id="t4s-end_delivery_fbv_8357838979318"></span>
+
+                                                        <svg width="12" height="12" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fbv_info">
+                                                            <g clip-path="url(#clip0_11707_2075)">
+                                                                <path d="M8.90934 14.6667C12.5912 14.6667 15.576 11.6819 15.576 8.00001C15.576 4.31811 12.5912 1.33334 8.90934 1.33334C5.22744 1.33334 2.24268 4.31811 2.24268 8.00001C2.24268 11.6819 5.22744 14.6667 8.90934 14.6667Z" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M6.96924 6.00001C7.12597 5.55446 7.43534 5.17875 7.84254 4.93944C8.24974 4.70012 8.7285 4.61264 9.19402 4.69249C9.65954 4.77234 10.0818 5.01436 10.386 5.3757C10.6901 5.73703 10.8566 6.19436 10.8559 6.66668C10.8559 8.00001 8.8559 8.66668 8.8559 8.66668" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8.90918 11.3333H8.91501" stroke="#7A7A7A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_11707_2075">
+                                                                    <rect width="16" height="16" fill="white" transform="translate(0.90918)"></rect>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+
+
+
+                                                    </div>
+                                                    <div style="display:none">
+
+                                                        <div class="return-delivery-info">
+                                                            <span><svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M7 0C3.13542 0 0 3.07789 0 6.87158V6.85712C0 7.35818 0.401042 7.75186 0.911458 7.75186C1.42188 7.75186 1.82292 7.35818 1.82292 6.85712V6.87158C1.82292 4.08 4.13802 1.78947 7 1.78947C9.86198 1.78947 12.1771 4.06211 12.1771 6.87158C12.1771 9.68105 9.84375 11.9537 7 11.9537H3.73698L5.61458 10.2537C5.97917 9.91368 6.01562 9.35895 5.66927 8.98316C5.32292 8.62526 4.75781 8.58947 4.375 8.92947L0.783854 12.1863C0.601562 12.3474 0.492187 12.5979 0.492187 12.8484C0.492187 13.0989 0.601562 13.3316 0.783854 13.5105L4.375 16.7674C4.55729 16.9284 4.77604 17 4.99479 17C5.23177 17 5.48698 16.9105 5.66927 16.7137C6.01562 16.3558 5.9974 15.7832 5.61458 15.4432L3.73698 13.7432H7C10.8646 13.7432 14 10.6653 14 6.87158C14 3.07789 10.8646 0 7 0Z" fill="#37474F"></path>
+                                                                </svg>
+                                                            </span>
+                                                            <div class="return-info">
+                                                                Free Returns Within 48 hours*
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="check-delivery-badges-wrapper">
+                                                    <div class="check-delivery-badge-container" onclick="openModal('https://cdn.shopify.com/s/files/1/0632/2526/6422/files/fastdelivery.png?v=1711651779', 'Free Delivery', '<div class=discount-bage-info-text>Free delivery all over India<br/>No minimum purchase value</div>')">
+                                                        <div class="check-delivery-badges">
+                                                            <img class="delivery-badges-img" height="32" src="cdn/shop/t/130/assets/fastdelivery.svg" width="32">
+                                                            <img class="delivery-badges-info-img" height="12" src="cdn/shop/t/130/assets/help-circle.svg" width="12">
+
+                                                        </div>
+                                                        <div class="check-delivery-badge-text">
+                                                            Free<br>
+                                                            Delivery
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="check-delivery-badge-container" id="return-policy-badge" onclick="openModal(  'https://cdn.shopify.com/s/files/1/0632/2526/6422/files/return.png?v=1711651779',  'Free return within 48 hours' ,  '<ol class=discount-bage-info-text><li>1. Return within 48 hour of delivery under the following conditions:<br/>&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbspa: Damaged or defective product <br/>&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbspb: Wrong or missing product</li><li>2. Product cannot be returned once used.</li><li>3. One free replacement allowed for undamaged products.</li><li>4. Read more about Return &amp; Exchange policy here : <a href=https://vaaree.com/policies/refund-policy>Refund policy</a> </li></ol>'  )">
+                                                        <div class="check-delivery-badges">
+                                                            <img class="delivery-badges-img" height="32" src="cdn/shop/t/130/assets/freereturn.svg" width="32">
+                                                            <img class="delivery-badges-info-img" height="12" src="cdn/shop/t/130/assets/help-circle.svg" width="12">
+
+                                                        </div>
+                                                        <div class="check-delivery-badge-text">
+
+                                                            48 Hour <br> Returnable
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="check-delivery-badge-container" onclick="openModal('https://cdn.shopify.com/s/files/1/0632/2526/6422/files/cod.png', 'Cash on delivery', '<div class=discount-bage-info-text>COD option available for orders valued between ₹500 and ₹10,000. Available in selected PIN codes only.</div>')">
+                                                        <div class="check-delivery-badges">
+                                                            <img class="delivery-badges-img" height="32" src="cdn/shop/t/130/assets/cod.svg" width="32">
+                                                            <img class="delivery-badges-info-img" height="12" src="cdn/shop/t/130/assets/help-circle.svg" width="12">
+
+                                                        </div>
+                                                        <div class="check-delivery-badge-text">
+                                                            Cash On<br>
+                                                            Delivery*
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="prepaid-badge" class="check-delivery-badge-container" style="display:none" onclick="openModal('https://cdn.shopify.com/s/files/1/0632/2526/6422/files/save30.png?v=1711651779', 'Save with prepaid', '<div class=discount-bage-info-text>Save additional FLAT Rs.30 OFF on orders above Rs.999 on UPI or Card payments.<br/>+ more pre-paid discounts available in checkout page</div>')">
+
+                                                        <div class="check-delivery-badges">
+                                                            <img class="delivery-badges-img" height="32" src="cdn/shop/t/130/assets/save30.svg" width="32">
+                                                            <img class="delivery-badges-info-img" height="12" src="cdn/shop/t/130/assets/help-circle.svg" width="12">
+
+                                                        </div>
+                                                        <div class="check-delivery-badge-text">
+                                                            With Prepaid<br>
+                                                            Order
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <link rel="stylesheet" href="cdn/shop/t/130/assets/estimate-delivery-return.css" media="all">
