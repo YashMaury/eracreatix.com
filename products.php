@@ -295,13 +295,13 @@ if (isset($_POST['submit'])) {
                                                     <span class="error-message">Delivery not available on pincode</span>
                                                 </div>
 
-                                                <div class="default-estimate-delivery-info" style="display: none;">
+                                                <div class="default-estimate-delivery-info" style="display: block;">
                                                     <img alt="Delivery Time Icon" class="mib0 fastDlvyIcon" height="16" loading="lazy" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/fastDlvry.png?v=1711973284" width="26">
                                                     <span>Estimated delivery by </span>
                                                     <span class="t4s-default-end_delivery">9:00PM on Fri, 31st May</span>
                                                 </div>
 
-                                                <div class="section-delivery-return-container" style="display: flex;">
+                                                <div class="section-delivery-return-container" style="display: none;">
                                                     <div class="delivery-info" style="display: flex;">
                                                         <img alt="Delivery Time Icon" class="mib0 fastDlvyIcon" height="16" loading="lazy" src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/fastDlvry.png?v=1711973284" width="26">
                                                         <div class="estimate-delivery-info">
@@ -381,9 +381,7 @@ if (isset($_POST['submit'])) {
 
                                                         </div>
                                                         <div class="check-delivery-badge-text">
-
                                                             48 Hour <br> Returnable
-
                                                         </div>
                                                     </div>
 
@@ -415,6 +413,161 @@ if (isset($_POST['submit'])) {
                                             </div>
                                         </div>
                                     </div>
+
+                                    <script src="https://cdn.hyperspeed.me/script/vaaree.com/cdn/shop/t/130/assets/edd.js?v=52919982383748354741716714791"></script>
+                                    <script>
+                                        var pageType = `product`;
+                                        var apiUsername = "EraCreatix".trim();
+                                        var apiKey = "666df8a8-f2e9-4fdf-a9cf-30350459b629".trim();
+                                        var vendorPincodeStr = JSON.stringify({
+                                            "Bagooze": "132103",
+                                            "Mark Home": "400053",
+                                            "Linen Design Company Private Limited": "122003",
+                                            "Jaipur Fabric": "302015",
+                                            "Jaipur Prime": "302029",
+                                            "Kotton Culture": "452010",
+                                            "Mrid Cera": "303107",
+                                            "Erahome": "132103",
+                                            "Haber Living": "641603",
+                                            "Lush & Beyond": "122002",
+                                            "Hitkari": "121003",
+                                            "Indus People": "110030",
+                                            "Easy Goods": "302039",
+                                            "Rajasthani Kart": "302018",
+                                            "Smart Serve": "400064",
+                                            "Green Heirloom": "682016",
+                                            "The White Ink Decor": "201312",
+                                            "Rena Germany": "396230",
+                                            "Chhavi India": "132103",
+                                            "Devarsh Handicrafts": "302029",
+                                            "Export House": "140308",
+                                            "Shreshmo": "400002",
+                                            "Preciso Fashion": "600018",
+                                            "Green Girgit": "121009",
+                                            "Naksh": "400062",
+                                            "Blessing Crafts": "244001",
+                                            "Kanpur Flower Cycling Pvt. Ltd": "209305",
+                                            "Vedas Exports": "342008",
+                                            "KRJ Retail Private Limited": "201301",
+                                            "Mahadev Mill": "380002",
+                                            "Aashi Gifts": "302022",
+                                            "Tree Of Life": "110020",
+                                            "Rad Living": "201305",
+                                            "Lighting Hours": "302029",
+                                            "New Era Enterprises": "110015",
+                                            "Ugaoo Agritech Private Limited": "410507",
+                                            "Sino India": "132103",
+                                            "Abstract India": "132103",
+                                            "JD creations": "201012",
+                                            "Femora": "302013",
+                                            "Halos": "201010",
+                                            "Clasiko India": "132103",
+                                            "Decor Mart": "201301",
+                                            "Athena": "421302",
+                                            "Gayatri Attraction": "302029",
+                                            "Shree Radhe": "360003",
+                                            "Rajasthan Decor": "302017",
+                                            "Klotthe": "245101",
+                                            "Home Studios": "382445",
+                                            "Edya Home": "281001",
+                                            "Blocks Of India": "302029",
+                                            "LIT Lamps": "400037",
+                                            "The Conversion": "122001",
+                                            "Duli India": "110074",
+                                            "Embassy": "560018",
+                                            "Nestroots": "122016",
+                                            "Kolorabia Designs": "122001",
+                                            "Wisdom Decor": "132103",
+                                            "Hiyanshi Creations": "132103",
+                                            "Tailoring India": "394210",
+                                            "Urban Dream": "132103",
+                                            "Homesake": "201307",
+                                            "999 Store": "110047",
+                                            "Bella True": "132103",
+                                            "Bella Casa": "302022",
+                                            "Good Homes": "302001",
+                                            "Artment": "110030",
+                                            "Art Street": "201308",
+                                            "Sambhav Clothings": "560053",
+                                            "Elemntl Designs": "201301",
+                                            "Arrabi": "245101",
+                                            "Aarohi Creations": "302029",
+                                            "Sundram Hastkala": "201010",
+                                            "The Table Fable": "122003",
+                                            "Allo Innoware": "401028",
+                                            "Auram Cookware": "400086",
+                                            "Advance Cork International": "201301",
+                                            "Era Creatix": "132103",
+                                            "Asian Handicrafts": "201010",
+                                            "Gopalas": "302022",
+                                            "Fourwalls": "201301",
+                                            "DA Studios": "110025",
+                                            "Sourcing India Inc": "131029",
+                                            "Craftsman India Online": "686671",
+                                            "The Wishing Chair": "110049",
+                                            "Akeeratly": "110052",
+                                            "Era Creatix Panipat": "132103",
+                                            "Flag Bearer": "110037",
+                                            "Lock N Lock": "421302",
+                                            "Curio Cart": "201301",
+                                            "Decor Mart Khurja": "203131",
+                                            "Posh N Plush": "282002",
+                                            "The Scented Stories": "560062",
+                                            "Basik Innovation LLP": "396191",
+                                            "SATVIK": "110035",
+                                            "Rago Inc": "132103",
+                                            "Casa Decor": "201310",
+                                            "Coral Tree": "122001",
+                                            "AsianHandicrafts": "403505",
+                                            "Era Creatix": "403001",
+                                            "TreeOfLife": "403901"
+                                        });
+                                        var vendorPincode = JSON.parse(vendorPincodeStr);
+                                        var vendorName = "Sojourn Retail Pvt Ltd";
+                                        var productTags = ["badge__Deal Of The Day", "DOD", "Gift Box", "Gifting \u0026 Sets", "Mothers Day", "Mothers2024", "Valentines"];
+                                        var fbvFilterTagName = "FBV" || "fbv";
+                                        var defaultNumberOfDays = 7;
+                                        var defaultNumberOfDaysFBV = 3;
+
+                                        function init() {
+                                            if (pageType === 'product') {
+                                                var pincodeInputContainer = document.getElementById("input-container");
+                                                var defaultEstimateDeliveryInfo = document.getElementsByClassName("default-estimate-delivery-info")[0];
+                                                var deliveryTextElement = document.getElementsByClassName(`t4s-default-end_delivery`)[0];
+                                                var deliveryInfoFbv = document.getElementsByClassName("delivery-info-fbv")[0];
+                                                var estimateDeliveryDateElementFbv = document.getElementsByClassName("t4s-end_delivery-fbv")[0];
+                                                if (fbvTagExist(productTags)) {
+                                                    deliveryInfoFbv.style.display = "flex";
+                                                    defaultEstimateDeliveryInfo.style.display = "none";
+                                                    estimateDeliveryDateElementFbv.textContent = `3 Day Delivery`;
+                                                } else if (deliveryTextElement) {
+                                                    deliveryTextElement.textContent = `9:00PM on ${calculateDeliveryDate(defaultNumberOfDays, 0)}`;
+                                                }
+                                                var pincodeInput = document.getElementById("pincode-input");
+                                                pincodeInputContainer.addEventListener("submit", handleCheckButton);
+                                                pincodeInput.addEventListener("input", handlePincodeInput);
+                                                pincodeInputContainer.addEventListener("click", () => focusOnInput('pincode-input'));
+                                                var storedPincode = getLocalStorageItem(localStorageKeys.deliveryPincode) || document.getElementById("pincode-input").value;
+                                                storedPincode && showEstimateDeliveryDate(storedPincode, productTags);
+                                            } else {
+                                                var pincodeInputContainer = document.getElementById("edd-form-pincode");
+                                                setDefaultDateInCollectionPage(defaultNumberOfDays, 8268665290998, productTags);
+                                                // var doesPincodeExists = getLocalStorageItem('delivery-pincode');
+                                                if (window.innerWidth < 768 && document.querySelector('.sticky-filter-sort-container')) {
+                                                    document.querySelector('.sticky-filter-sort-container').style.top = '95px';
+                                                }
+                                                var storedPincode = getLocalStorageItem(localStorageKeys.deliveryPincode);
+                                                pincodeInputContainer && pincodeInputContainer.addEventListener("click", () => focusOnInput('pincode-input-plp'));
+                                                storedPincode && showEstimateDeliveryDateonPlpPage(storedPincode, 8268665290998, productTags);
+                                                window.addEventListener('popstate', function(event) {
+                                                    if (event.state && event.state.page === '/collections.php') {
+                                                        window.location.reload();
+                                                    }
+                                                });
+                                            }
+                                        }
+                                        init();
+                                    </script>
 
                                     <link rel="stylesheet" href="cdn/shop/t/130/assets/estimate-delivery-return.css" media="all">
                                     <script async="" src="cdn/shop/t/130/assets/custom-modal.js"></script>
@@ -595,7 +748,7 @@ if (isset($_POST['submit'])) {
                         try {
                             await navigator.share({
                                 title: shareProductTitle,
-                                text: `Hey, I found this really nice product on Vaaree! Have a look.\n${shareProductTitle}\n`,
+                                text: `Hey, I found this really nice product on Era Creatix! Have a look.\n${shareProductTitle}\n`,
                                 url: window.location.href
                             });
                         } catch (error) {
@@ -648,7 +801,7 @@ if (isset($_POST['submit'])) {
                 </symbol>
             </svg>
         </template>
-        <link href="//vaaree.com/cdn/shop/t/130/assets/sticky-atc.aio.min.css?v=94651858915836691241708928284" rel="stylesheet" media="all" onload="this.media='all'"><template class="t4s-d-none" id="t4s-sticky-atc-temp">
+        <link href="cdn/shop/t/130/assets/sticky-atc.aio.min.css" rel="stylesheet" media="all" onload="this.media='all'"><template class="t4s-d-none" id="t4s-sticky-atc-temp">
             <div data-sticky-addtocart="" class="t4s-sticky-atc sticky_layout_mb--minimal t4s-pf t4s-b-0 t4s-l-0 t4s-r-0 t4s-op-0 t4s-pe-none">
 
 
@@ -661,8 +814,8 @@ if (isset($_POST['submit'])) {
 
                 <div class="t4s-sticky-atc__product">
                     <div data-sticky-img="" class="t4s-sticky-atc__img t4s-pr">
-                        <img loading="lazy" class="lazyloadt4s t4s-lz--fadeIn" data-orginal="//vaaree.com/cdn/shop/files/Untitled-1_0001_MHMP044_01.jpg?v=1714030754&amp;width=1" data-src="//vaaree.com/cdn/shop/files/Untitled-1_0001_MHMP044_01.jpg?v=1714030754&amp;width=1" data-widths="[65,120]" data-optimumx="2" data-sizes="auto" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20800%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" width="800" height="800" alt="Vida Storage Box">
-                        <span class="lazyloadt4s-loader is-bg-img" style="background: url(//vaaree.com/cdn/shop/files/Untitled-1_0001_MHMP044_01.jpg?v=1714030754&amp;width=1)"></span>
+                        <img loading="lazy" class="lazyloadt4s t4s-lz--fadeIn" data-orginal="cdn/shop/files/Untitled-1_0001_MHMP044_01.jpg" data-optimumx="2" data-sizes="auto" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20800%20800%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" width="800" height="800" alt="Vida Storage Box">
+                        <span class="lazyloadt4s-loader is-bg-img" style="background: url(cdn/shop/files/Untitled-1_0001_MHMP044_01.jpg)"></span>
                     </div>
                     <!-- <div class="t4s-sticky-atc__infos">
         <div class="t4s-sticky-atc__title">Vida Storage Box</div>
@@ -811,7 +964,7 @@ if (isset($_POST['submit'])) {
                 const timeRemaining = targetTimestamp - currentTimestamp;
                 const hoursRemaining = Math.floor(timeRemaining / (1000 * 60 * 60));
                 const minutesRemaining = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-                const clockSvg = `<img src=${"vaaree.com/cdn/shop/t/130/assets/clock.svg?v=178405084131402220231711985983"} height=12 width=12 alt="clock svg">`
+                const clockSvg = `<img src=${"cdn/shop/t/130/assets/clock.svg"} height=12 width=12 alt="clock svg">`
 
                 const countdownElement = document.getElementById("countdown-inline");
                 if (countdownElement) {

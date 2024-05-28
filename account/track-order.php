@@ -43,7 +43,7 @@ if (!empty($_POST['order_id'])) {
         </tr>
         <tr height="30">
           <td class="fontkink1"><b>order Id:</b></td>
-          <td class="fontkink"><b><?=$oid; ?></b></td>
+          <td class="fontkink"><b><?= $oid; ?></b></td>
         </tr>
         <?php
         $ret = mysqli_query($con, "SELECT * FROM ordertrackhistory WHERE orderId='$oid'");
@@ -65,6 +65,10 @@ if (!empty($_POST['order_id'])) {
             <tr height="20">
               <td class="fontkink1"><b>Remark:</b></td>
               <td class="fontkink"><?php echo $row['remark']; ?></td>
+            </tr>
+            <tr height="20">
+              <td class="fontkink1"><b>Message:</b></td>
+              <td class="fontkink"><?php echo $row['message']; ?></td>
             </tr>
 
 

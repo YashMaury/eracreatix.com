@@ -7,10 +7,13 @@ if (strlen($_SESSION['alogin']) == 0) {
   if (isset($_POST['submit2'])) {
     $status = $_POST['status'];
     $remark = $_POST['remark']; //space char
+    $message = $_POST['message'];
 
-    $query = mysqli_query($con, "insert into ordertrackhistory(orderId,status,remark) values('$oid','$status','$remark')");
+    $query = mysqli_query($con, "insert into ordertrackhistory(orderId,status,remark, message) values('$oid','$status','$remark','$message')");
     $sql = mysqli_query($con, "update orders set orderStatus='$status' where id='$oid'");
     echo "<script>alert('Order updated sucessfully...');</script>";
+    echo "<script>window.location.href = window.location.href;</script>";
+
     //}
   }
 
@@ -70,6 +73,10 @@ if (strlen($_SESSION['alogin']) == 0) {
               <td class="fontkink1"><b>Remark:</b></td>
               <td class="fontkink"><?php echo $row['remark']; ?></td>
             </tr>
+            <tr height="20">
+              <td class="fontkink1"><b>Message:</b></td>
+              <td class="fontkink"><?php echo $row['message']; ?></td>
+            </tr>
 
 
             <tr>
@@ -116,6 +123,14 @@ if (strlen($_SESSION['alogin']) == 0) {
                     <option value="Product ready for Shipping"> Product ready for Shipping</option>
                   </select>
                 </span></td>
+            </tr>
+            <tr style='height: 150px;'>
+              <td class="fontkink1">Message:</td>
+              <td class="fontkink" align="justify">
+                <span class="fontkink">
+                  <textarea cols="50" rows="7" name="message" required="required"></textarea>
+                </span>
+              </td>
             </tr>
             <tr>
               <td class="fontkink1">&nbsp;</td>
