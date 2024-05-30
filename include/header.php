@@ -62,6 +62,10 @@ if (isset($_SESSION['id'])) {
     DeltaX Media optimization Tag Added By AKO 30 11 23-->
     <!-- End of DeltaX Media optimization Tag -->
     <script src="cdn/shop/t/130/assets/starRatingGenerator6987.js?v=143208796052626417531708928283"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
     <script>
         /* Add Reusable function here */
         function setSessionStorageItem(key, value) {
