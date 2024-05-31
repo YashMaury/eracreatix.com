@@ -63,7 +63,7 @@ if (isset($_SESSION['id'])) {
     <!-- End of DeltaX Media optimization Tag -->
     <script src="cdn/shop/t/130/assets/starRatingGenerator6987.js?v=143208796052626417531708928283"></script>
     <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  src="cdn/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous"></script>
     <script>

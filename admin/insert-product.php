@@ -12,6 +12,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$productcompany = $_POST['productCompany'];
 		$productprice = $_POST['productprice'];
 		$productpricebd = $_POST['productpricebd'];
+		$size = $_POST['size'];
+		$color = $_POST['color'];
 		$producthighlight = $_POST['producthighlight'];
 		$additionalInfo = $_POST['additionalInfo'];
 		$refundandExchange = $_POST['refundandExchange'];
@@ -35,7 +37,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		move_uploaded_file($_FILES["productimage1"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage1"]["name"]);
 		move_uploaded_file($_FILES["productimage2"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage2"]["name"]);
 		move_uploaded_file($_FILES["productimage3"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage3"]["name"]);
-		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
+		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','$size','$color','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
 		 $_SESSION['msg'] = "Product Inserted Successfully !!";
 	}
 
@@ -170,6 +172,18 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">Product Price After Discount(Selling Price)</label>
 											<div class="controls">
 												<input type="text" name="productprice" placeholder="Enter Product Price" class="span8 tip" required>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Size</label>
+											<div class="controls">
+												<input type="text" name="size" placeholder="Enter Product Size" class="span8 tip" required>
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Color</label>
+											<div class="controls">
+												<input type="text" name="color" placeholder="Enter Product Color" class="span8 tip" required>
 											</div>
 										</div>
 

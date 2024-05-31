@@ -597,8 +597,61 @@ if (isset($_POST['submit'])) {
                                                     <div class="product-highlight-content">
                                                         <div class="trust-banner-container">
                                                             <span>
-
                                                                 <p><?= $rws['producthighlight']; ?></p>
+                                                                <p>
+                                                                    <?php if (isset($rws['size'])) {
+                                                                        echo "Size - " . $rws['size'];
+                                                                    } ?>
+                                                                </p>
+                                                                <p id="GFG_UP">
+                                                                    <?php if (isset($rws['color'])) {
+                                                                        echo "Color - " . $rws['color'];
+                                                                    } ?>
+                                                                </p>
+
+                                                                <input type="hidden" id="input" value="<?= $rws['color']; ?>" type="text" />
+                                                                <p id="GFG_DOWN">
+                                                                </p>
+
+                                                                <script>
+                                                                    var el_up = document.getElementById("GFG_UP");
+                                                                    var el_down = document.getElementById("GFG_DOWN");
+                                                                    // el_up.innerHTML = "Type color and click on the button.";
+                                                                    gfg_Run();
+
+                                                                    function getVal(color) {
+
+                                                                        // Setting the text color
+                                                                        // of el_up element.
+                                                                        el_up.style.color = color;
+                                                                    }
+
+                                                                    function convert(rgb) {
+                                                                        rgb = rgb.match(/^rgb\((\d+), \s*(\d+), \s*(\d+)\)$/);
+
+                                                                        function hexCode(i) {
+
+                                                                            // Take the last 2 characters and convert
+                                                                            // them to Hexadecimal.
+                                                                            return ("0" + parseInt(i).toString(16)).slice(-2);
+                                                                        }
+                                                                        return "#" + hexCode(rgb[1]) + hexCode(rgb[2]) +
+                                                                            hexCode(rgb[3]);
+                                                                    }
+
+                                                                    function gfg_Run() {
+
+                                                                        // Taking the input
+                                                                        var color = document.getElementById('input').value;
+
+                                                                        getVal(color);
+
+                                                                        // Getting the Color in RGB format
+                                                                        var rgb = window.getComputedStyle(el_up).color;
+                                                                        // el_down.innerHTML = "The HexCode value of " +
+                                                                        //     color + " is " + convert(rgb);
+                                                                    }
+                                                                </script>
 
                                                             </span>
                                                         </div>
@@ -890,7 +943,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="col-sm-4 text-center">
                             <h3 class="mt-4 mb-3">Write Review Here</h3>
-                            <button type="button" id="add_review" class="btn btn-primary" disabled>Review</button>
+                            <button type="button" id="add_review" class="btn btn-primary">Review</button>
                         </div>
                     </div>
                 </div>
@@ -916,9 +969,9 @@ if (isset($_POST['submit'])) {
                         </h4>
                         <div class="form-group">
 
-                            <input type="hidden" name="user_id" value="<?php if (isset($_SESSION["USER_ID"])) echo $_SESSION["USER_ID"]; ?>" id="user_id" />
+                            <input type="hidden" name="user_id" value="<?php if (isset($_SESSION["id"])) echo $_SESSION["id"]; ?>" id="user_id" />
 
-                            <input type="hidden" name="business_owner" value="<?php if (isset($result->records[0]->id)) echo $result->records[0]->id; ?>" id="business_owner" />
+                            <input type="hidden" name="business_owner" value="<?php echo $_GET['pid']; ?>" id="business_owner" />
                             <input type="text" name="user_name" id="user_name" class="form-control" placeholder="Enter Your Name" autocomplete="off" />
                         </div>
                         <br>
@@ -1006,17 +1059,17 @@ if (isset($_POST['submit'])) {
                     return false;
                 } else {
                     $.ajax({
-                        url: "admin/submit_rating.php",
+                        url: "admin/insert_rating.php",
                         method: "POST",
                         data: {
                             rating_data: rating_data,
                             user_name: user_name,
                             user_id: user_id,
-                            business_owner: business_owner,
+                            product_id: business_owner,
                             user_review: user_review
                         },
                         success: function(data) {
-                            // alert(data);
+                            alert(data);
                             $('#review_modal').modal('hide');
 
                             if (data == "session_expire") {
@@ -1025,9 +1078,10 @@ if (isset($_POST['submit'])) {
                             } else if (data == "success") {
                                 alert("Your Review & Rating Successfully Submitted");
                             }
-
                             load_rating_data();
-
+                        },
+                        error: function(data) {
+                            alert(data);
                         }
                     })
                 }
@@ -1094,7 +1148,8 @@ if (isset($_POST['submit'])) {
 
                                 html += '<div class="card">';
 
-                                html += '<div class="card-header d-flex align-items-center"><div class="rounded-circle bg-secondary p-2 mx-2" style="max-width:50px;"><h3 class="m-0 text-center">' + data.review_data[count].user_name.charAt(0) + '</h3></div><b>' + data.review_data[count].user_name + '</b>&nbsp;~&nbsp;<a class="text-decoration-underline" role="button" data-bs-toggle="collapse" data-bs-target="#collapse' + count + '" aria-expanded="true" aria-controls="collapseOne">reply</a></div>';
+                                // html += '<div class="card-header d-flex align-items-center"><div class="rounded-circle bg-secondary p-2 mx-2" style="max-width:50px;"><h3 class="m-0 text-center">' + data.review_data[count].user_name.charAt(0) + '</h3></div><b>' + data.review_data[count].user_name + '</b>&nbsp;~&nbsp;<a class="text-decoration-underline" role="button" data-bs-toggle="collapse" data-bs-target="#collapse' + count + '" aria-expanded="true" aria-controls="collapseOne">reply</a></div>';
+                                html += '<div class="card-header d-flex align-items-center"><div class="rounded-circle bg-secondary p-2 mx-2" style="max-width:50px;"><h3 class="m-0 text-center">' + data.review_data[count].user_name.charAt(0) + '</h3></div><b>' + data.review_data[count].user_name + '</b></div>';
 
                                 html += '<div class="card-body">';
 

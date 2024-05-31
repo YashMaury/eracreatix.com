@@ -1,7 +1,7 @@
 <?php
 include "include/config.php";
-$_POST['pid'] = 1;
-$query = mysqli_query($con, "Select * from review_table where product_id='" . $_POST['pid'] . "'");
+// $_POST['pid'] = 1;
+$query = mysqli_query($con, "Select * from review_table where product_id='" . $_POST['product_id'] . "'");
 // print_r($query);
 
 $average_rating = 0;
