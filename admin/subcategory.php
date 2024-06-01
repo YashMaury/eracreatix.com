@@ -24,7 +24,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 			$_SESSION['delmsg'] = "Failed to upload image !!";
 		}
 		$_SESSION['msg'] = "SubCategory Created !!";
-		header("Location: subcategory.php");
+		//header("Location: subcategory.php");
 
 		exit();
 	}
