@@ -37,7 +37,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		move_uploaded_file($_FILES["productimage1"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage1"]["name"]);
 		move_uploaded_file($_FILES["productimage2"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage2"]["name"]);
 		move_uploaded_file($_FILES["productimage3"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage3"]["name"]);
-		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','$size','$color','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
+		echo $sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','$size','$color','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
 		 $_SESSION['msg'] = "Product Inserted Successfully !!";
 	}
 
