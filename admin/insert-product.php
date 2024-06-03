@@ -37,8 +37,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 		move_uploaded_file($_FILES["productimage1"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage1"]["name"]);
 		move_uploaded_file($_FILES["productimage2"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage2"]["name"]);
 		move_uploaded_file($_FILES["productimage3"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage3"]["name"]);
-		echo $sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','$size','$color','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
-		 $_SESSION['msg'] = "Product Inserted Successfully !!";
+		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','" . implode(', ', array_values($size)) . "','" . implode(', ', array_values($color)) . "','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
+		$_SESSION['msg'] = "Product Inserted Successfully !!";
 	}
 
 
@@ -115,8 +115,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<br />
 
 									<form class="form-horizontal row-fluid" name="insertproduct" method="post" enctype="multipart/form-data">
-									
-									<div class="control-group">
+
+										<div class="control-group">
 											<label class="control-label" for="basicinput">SKU-ID</label>
 											<div class="controls">
 												<input type="text" name="skuId" placeholder="Enter Product SKU ID" class="span8 tip" required>
@@ -177,13 +177,19 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Size</label>
 											<div class="controls">
-												<input type="text" name="size" placeholder="Enter Product Size" class="span8 tip" required>
+												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
+												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
+												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
+												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
 											</div>
 										</div>
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Color</label>
 											<div class="controls">
-												<input type="text" name="color" placeholder="Enter Product Color" class="span8 tip" required>
+												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
+												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
+												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
+												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
 											</div>
 										</div>
 

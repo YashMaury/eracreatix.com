@@ -247,6 +247,23 @@ if (isset($_POST['submit'])) {
                                             }
                                         </script>
                                     </div>
+                                    <br>
+                                    <p>
+                                        <?php if (!empty($rws['size'])) {
+                                            echo "Size - " . $rws['size'];
+                                        } ?>
+                                    </p>
+                                    <div style="display: flex;">
+                                        Color -
+                                        <?php if (!empty($rws['color'])) {
+                                            $color = explode(',', $rws['color']);
+                                            foreach ($color as $item) {
+                                        ?>
+                                                <p style="background-color: <?= $item ?>; width: 30px;height:30px;margin: 5px"></p>
+                                        <?php }
+                                        } ?>
+                                    </div>
+
                                     <div id="t4s-delivery" class="t4s-pr_delivery  t4s-ch t4s-dn section delivery-return-section" data-order-delivery="{ &quot;timezone&quot;:false, &quot;format_day&quot;:&quot;t44, t45 t46&quot;, &quot;mode&quot;:&quot;1&quot;, &quot;cut_day&quot;: &quot;SAT,SUN&quot;, &quot;estimateStartDate&quot;: 3, &quot;estimateEndDate&quot;: 5, &quot;time&quot;:&quot;16:00:00&quot;, &quot;hideWithPreorder&quot;:true }" style="display: block;">
                                         <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
                                         <div class="section">
@@ -598,61 +615,6 @@ if (isset($_POST['submit'])) {
                                                         <div class="trust-banner-container">
                                                             <span>
                                                                 <p><?= $rws['producthighlight']; ?></p>
-                                                                <p>
-                                                                    <?php if (isset($rws['size'])) {
-                                                                        echo "Size - " . $rws['size'];
-                                                                    } ?>
-                                                                </p>
-                                                                <p id="GFG_UP">
-                                                                    <?php if (isset($rws['color'])) {
-                                                                        echo "Color - " . $rws['color'];
-                                                                    } ?>
-                                                                </p>
-
-                                                                <input type="hidden" id="input" value="<?= $rws['color']; ?>" type="text" />
-                                                                <p id="GFG_DOWN">
-                                                                </p>
-
-                                                                <script>
-                                                                    var el_up = document.getElementById("GFG_UP");
-                                                                    var el_down = document.getElementById("GFG_DOWN");
-                                                                    // el_up.innerHTML = "Type color and click on the button.";
-                                                                    gfg_Run();
-
-                                                                    function getVal(color) {
-
-                                                                        // Setting the text color
-                                                                        // of el_up element.
-                                                                        el_up.style.color = color;
-                                                                    }
-
-                                                                    function convert(rgb) {
-                                                                        rgb = rgb.match(/^rgb\((\d+), \s*(\d+), \s*(\d+)\)$/);
-
-                                                                        function hexCode(i) {
-
-                                                                            // Take the last 2 characters and convert
-                                                                            // them to Hexadecimal.
-                                                                            return ("0" + parseInt(i).toString(16)).slice(-2);
-                                                                        }
-                                                                        return "#" + hexCode(rgb[1]) + hexCode(rgb[2]) +
-                                                                            hexCode(rgb[3]);
-                                                                    }
-
-                                                                    function gfg_Run() {
-
-                                                                        // Taking the input
-                                                                        var color = document.getElementById('input').value;
-
-                                                                        getVal(color);
-
-                                                                        // Getting the Color in RGB format
-                                                                        var rgb = window.getComputedStyle(el_up).color;
-                                                                        // el_down.innerHTML = "The HexCode value of " +
-                                                                        //     color + " is " + convert(rgb);
-                                                                    }
-                                                                </script>
-
                                                             </span>
                                                         </div>
                                                     </div>
