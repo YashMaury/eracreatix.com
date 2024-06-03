@@ -55,6 +55,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
+												<th>Sku-Id</th>
 												<th>Product Name</th>
 												<th>Category </th>
 												<th>Subcategory</th>
@@ -65,12 +66,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 										</thead>
 										<tbody>
 
-											<?php $query = mysqli_query($con, "select products.*,category.categoryName,subcategory.subcategory from products join category on category.id=products.category join subcategory on subcategory.id=products.subCategory");
+											<?php $query = mysqli_query($con, "select products.*,category.categoryName,skuId,subcategory.subcategory from products join category on category.id=products.category join subcategory on subcategory.id=products.subCategory");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query)) {
 											?>
 												<tr>
 													<td><?php echo htmlentities($cnt); ?></td>
+													<td><?php echo htmlentities($row['skuId']); ?></td>
 													<td><?php echo htmlentities($row['productName']); ?></td>
 													<td><?php echo htmlentities($row['categoryName']); ?></td>
 													<td> <?php echo htmlentities($row['subcategory']); ?></td>
