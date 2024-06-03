@@ -97,7 +97,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 								</div>
 								<div class="module-body">
 
-									<?php if (isset($_POST['submit'])) { ?>
+										<?php if (isset($_POST['submit'])) { ?>
 										<div class="alert alert-success">
 											<button type="button" class="close" data-dismiss="alert">×</button>
 											<strong>Well done!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>

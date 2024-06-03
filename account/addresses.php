@@ -1,9 +1,8 @@
 <?php
 include "include/header.php";
-$address = mysqli_query($con, "select * from address where `user_id` = '" . $_SESSION['id'] . "' and `for_order` is null");
+$address = mysqli_query($con, "select * from address where user_id = '" . $_SESSION['id'] . "' and  for_order is null");
 $count_address = mysqli_query($con, "select count(id) as count from address where `user_id` = '" . $_SESSION['id'] . "' and `for_order` is null ");
 $fetch_count_address = mysqli_fetch_array($count_address);
-
 ?>
 
 <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
