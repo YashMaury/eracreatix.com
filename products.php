@@ -37,6 +37,10 @@ if (isset($_POST['submit'])) {
     <section id="shopify-section-template--16885347778806__main" class="shopify-section t4s-section t4s-section-main t4s-section-main-product t4s_tp_flickity">
         <link href="cdn/shop/t/130/assets/popup-styles.aio.min.css" rel="stylesheet" type="text/css" media="all">
         <?php
+        if (isset($_GET['msg'])) {
+            // echo $_GET['msg'];
+            echo "<script>alert('" . $_GET['msg'] . "');window.location.href = 'products.php?pid=" . $_GET['pid'] . "'</script>";
+        }
         $ret = mysqli_query($con, "select * from products where id='" . $_GET['pid'] . "' ");
         while ($rws = mysqli_fetch_array($ret)) {
         ?>
