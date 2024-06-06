@@ -60,10 +60,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display table-responsive">
 										<thead>
 											<tr>
+											<tr>
 												<th>#</th>
+												<th>Order_id</th>
 												<th> Name</th>
 												<th width="50">Email /Contact no</th>
+												<th>Order Status</th>
 												<th>Shipping Address</th>
+												<th>Billing Address</th>
 												<th>Billing Address</th>
 												<th>Product </th>
 												<th>Qty </th>
@@ -71,6 +75,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<th>Order Status</th>
 												<th>Order Date</th>
 												<th>Action</th>
+
+
+											</tr>
 
 
 											</tr>
@@ -85,7 +92,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 											while ($row = mysqli_fetch_array($query)) {
 											?>
 												<tr>
-													<td><?php echo htmlentities($cnt); ?></td>
+												<td><?php echo htmlentities($cnt); ?></td>
+													<td><?php echo htmlentities($row['order_id']); ?></td>
 													<td><?php echo htmlentities($row['username']); ?></td>
 													<td><?php echo htmlentities($row['useremail']); ?>/<?php echo htmlentities($row['usercontact']); ?></td>
 													<td><?php echo htmlentities($row['shippingaddress'] . "," . $row['shippingcity'] . "," . $row['shippingstate'] . "-" . $row['shippingpincode']); ?><br><?php echo isset($row['mobile_no']) ? "Mobile no.- " . $row['mobile_no'] : ""; ?></td>
