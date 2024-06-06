@@ -6,7 +6,7 @@ if (isset($_POST['pid']) && $_POST['buy_now'] == "buy_now") {
     if (!isset($_SESSION['login'])) {
         header('location: ../login.php');
     } else {
-        mysqli_query($con, "insert into cart(userId,productId,quantity) values('" . $_SESSION['id'] . "','" . $_POST['pid'] . "','" . $_POST['quantity'] . "')");
+        mysqli_query($con, "insert into cart(userId,productId,quantity,size,color) values('" . $_SESSION['id'] . "','" . $_POST['pid'] . "','" . $_POST['quantity'] . "','" . $_POST['size'] . "','" . $_POST['color'] . "')");
         // if ($_POST['buy_now'] === 'buy_now') {
         header('location: checkout.php');
         // } else {
@@ -19,7 +19,7 @@ if (isset($_POST['pid']) && $_POST['action'] == "cart") {
     if (!isset($_SESSION['login'])) {
         header('location: ../login.php');
     } else {
-        mysqli_query($con, "insert into cart(userId,productId,quantity) values('" . $_SESSION['id'] . "','" . $_POST['pid'] . "','" . $_POST['quantity'] . "')");
+        mysqli_query($con, "insert into cart(userId,productId,quantity,size,color) values('" . $_SESSION['id'] . "','" . $_POST['pid'] . "','" . $_POST['quantity'] . "','" . $_POST['size'] . "','" . $_POST['color'] . "')");
         header('location: ' . $_SERVER['HTTP_REFERER']);
     }
 }

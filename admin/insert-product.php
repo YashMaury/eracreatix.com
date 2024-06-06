@@ -178,47 +178,46 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">Size</label>
 											<div class="controls">
 												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
-												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
-												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
-												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
+												<button type="button" class="btn btn-success btn-lg" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+													<i class="fa fa-plus"></i>
+												</button>
+											</div>
+											<div class="controls" id="size_area">
 											</div>
 										</div>
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Color</label>
 											<div class="controls">
 												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
-												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
-												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
-												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
+												<button type="button" class="btn btn-success btn-lg" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+													<i class="fa fa-plus"></i>
+												</button>
+											</div>
+											<div class="controls" id="color_area">
 											</div>
 										</div>
-
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Product Description</label>
 											<div class="controls">
-												<textarea name="productDescription" placeholder="Enter Product Description" rows="6" class="span8 tip">
-</textarea>
+												<textarea name="productDescription" placeholder="Enter Product Description" rows="6" class="span8 tip"></textarea>
 											</div>
 										</div>
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Product Highlight</label>
 											<div class="controls">
-												<textarea name="producthighlight" placeholder="Enter Product Highlight" rows="6" class="span8 tip">
-</textarea>
+												<textarea name="producthighlight" placeholder="Enter Product Highlight" rows="6" class="span8 tip"></textarea>
 											</div>
 										</div>
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Additional Info</label>
 											<div class="controls">
-												<textarea name="additionalInfo" placeholder="Enter Product Additional Info" rows="6" class="span8 tip">
-</textarea>
+												<textarea name="additionalInfo" placeholder="Enter Product Additional Info" rows="6" class="span8 tip"></textarea>
 											</div>
 										</div>
 										<div class="control-group">
 											<label class="control-label" for="basicinput">Refund and Exchange Policy</label>
 											<div class="controls">
-												<textarea name="refundandExchange" placeholder="Enter Product Refund Exchange" rows="6" class="span8 tip">
-</textarea>
+												<textarea name="refundandExchange" placeholder="Enter Product Refund Exchange" rows="6" class="span8 tip"></textarea>
 											</div>
 										</div>
 
@@ -284,6 +283,50 @@ if (strlen($_SESSION['alogin']) == 0) {
 				</div>
 			</div><!--/.container-->
 		</div><!--/.wrapper-->
+
+
+		<div id="blank_size_field" style="display: none;">
+			<div class="flex-grow-1 pr-3">
+				<div class="form-group">
+					<input type="text" class="span8 tip" name="size[]" id="size" placeholder="Enter Product Size" />
+					<button type="button" class="btn btn-danger btn-lg" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
+						<i class="fa fa-minus"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="blank_color_field" style="display: none;">
+			<div class="flex-grow-1 pr-3">
+				<div class="form-group">
+					<input type="text" class="span8 tip" name="color[]" id="color" placeholder="Enter Product Color" />
+					<button type="button" class="btn btn-danger btn-lg" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
+						<i class="fa fa-minus"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			function appendSize() {
+				var blank_requirement = $('#blank_size_field').html();
+				$('#size_area').append(blank_requirement);
+			}
+
+			function removeSize(sizeElem) {
+				$(sizeElem).parent().parent().remove();
+			}
+
+
+			function appendColor() {
+				var blank_requirement = $('#blank_color_field').html();
+				$('#color_area').append(blank_requirement);
+			}
+
+			function removeColor(sizeElem) {
+				$(sizeElem).parent().parent().remove();
+			}
+		</script>
 
 		<?php include('include/footer.php'); ?>
 

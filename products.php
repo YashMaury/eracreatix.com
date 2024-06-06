@@ -186,14 +186,14 @@ if (isset($_POST['submit'])) {
 
                                     </div>
 
-                                    <div class="t4s-liquid_0a41e004-c096-4334-9d23-1052de9af88a t4s-pr__custom-liquid t4s-rte t4s-col-item"></div>
-                                    <link href="cdn/shop/t/130/assets/accordion-pdp.aio.min.css" rel="stylesheet" type="text/css" media="all">
-                                    <div class="t4s-col-item product_form_container">
-                                        <div class="horizontal-divider-pdp"></div>
+                                    <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                                        <div class="t4s-liquid_0a41e004-c096-4334-9d23-1052de9af88a t4s-pr__custom-liquid t4s-rte t4s-col-item"></div>
+                                        <link href="cdn/shop/t/130/assets/accordion-pdp.aio.min.css" rel="stylesheet" type="text/css" media="all">
+                                        <div class="t4s-col-item product_form_container">
+                                            <div class="horizontal-divider-pdp"></div>
 
-                                        <div class="t4s-product-form__variants is-no-pick__false  is-remove-soldout-false is-btn-full-width__false is-btn-atc-txt-3 is-btn-ck-txt-3 is--fist-ratio-false" style=" --wishlist-color: #222222;--wishlist-hover-color: #56cfe1;--wishlist-active-color: #e81e1e;--compare-color: #222222;--compare-hover-color: #56cfe1;--compare-active-color: #222222;">
-                                            <div>
-                                                <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                                            <div class="t4s-product-form__variants is-no-pick__false  is-remove-soldout-false is-btn-full-width__false is-btn-atc-txt-3 is-btn-ck-txt-3 is--fist-ratio-false" style=" --wishlist-color: #222222;--wishlist-hover-color: #56cfe1;--wishlist-active-color: #e81e1e;--compare-color: #222222;--compare-hover-color: #56cfe1;--compare-active-color: #222222;">
+                                                <div>
                                                     <input name="pid" value="<?= $_GET['pid']; ?>" type="hidden">
                                                     <input id="action" name="action" value="cart" type="hidden">
                                                     <input id="buy_now" name="buy_now" value="buy_now" type="hidden">
@@ -224,45 +224,53 @@ if (isset($_POST['submit'])) {
                                                             </button>
                                                         </div>
                                                     </div>
-                                                </form>
-                                                <script>
-                                                    $("#buy_now_btn").click(function() {
-                                                        $("#action").remove();
-                                                    });
-                                                    $("#add_to_cart").click(function() {
-                                                        $("#buy_now").remove();
-                                                    });
-                                                </script>
-                                                <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
+                                                    <script>
+                                                        $("#buy_now_btn").click(function() {
+                                                            $("#action").remove();
+                                                        });
+                                                        $("#add_to_cart").click(function() {
+                                                            $("#buy_now").remove();
+                                                        });
+                                                    </script>
+                                                    <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <script>
-                                            window.onload = function() {
-                                                var url = new URL(window.location.href);
-                                                var params = new URLSearchParams(url.search);
-                                                if (params.has('variant')) {
-                                                    const element = document.querySelector(".t4s-swatch_banner");
-                                                    if (element) element.style.display = "none";
+                                            <script>
+                                                window.onload = function() {
+                                                    var url = new URL(window.location.href);
+                                                    var params = new URLSearchParams(url.search);
+                                                    if (params.has('variant')) {
+                                                        const element = document.querySelector(".t4s-swatch_banner");
+                                                        if (element) element.style.display = "none";
+                                                    }
                                                 }
-                                            }
-                                        </script>
-                                    </div>
-                                    <br>
-                                    <p>
-                                        <?php if (!empty($rws['size'])) {
-                                            echo "Size - " . $rws['size'];
-                                        } ?>
-                                    </p>
-                                    <div style="display: flex;">
-                                        Color -
-                                        <?php if (!empty($rws['color'])) {
-                                            $color = explode(',', $rws['color']);
-                                            foreach ($color as $item) {
-                                        ?>
-                                                <p style="background-color: <?= $item ?>; width: 30px;height:30px;margin: 5px"></p>
-                                        <?php }
-                                        } ?>
-                                    </div>
+                                            </script>
+                                        </div>
+                                        <br>
+                                        <p>
+                                            Size -
+                                            <?php if (!empty($rws['size'])) {
+                                                $size = explode(',', $rws['size']);
+                                                foreach ($size as $item) {
+                                            ?>
+                                                    <?= $item ?>
+                                                    <input type="radio" name="size" value="<?= $item ?>" id="size">
+                                            <?php }
+                                            } ?>
+                                        </p>
+                                        <div style="display: flex;">
+                                            Color -
+                                            <?php if (!empty($rws['color'])) {
+                                                $color = explode(',', $rws['color']);
+                                                foreach ($color as $item) {
+                                            ?>
+                                                    <p style="background-color: <?= $item ?>; width: 30px;height:30px;margin: 5px">
+                                                        <input type="radio" name="color" value="<?= $item ?>" id="color">
+                                                    </p>
+                                            <?php }
+                                            } ?>
+                                        </div>
+                                    </form>
 
                                     <div id="t4s-delivery" class="t4s-pr_delivery  t4s-ch t4s-dn section delivery-return-section" data-order-delivery="{ &quot;timezone&quot;:false, &quot;format_day&quot;:&quot;t44, t45 t46&quot;, &quot;mode&quot;:&quot;1&quot;, &quot;cut_day&quot;: &quot;SAT,SUN&quot;, &quot;estimateStartDate&quot;: 3, &quot;estimateEndDate&quot;: 5, &quot;time&quot;:&quot;16:00:00&quot;, &quot;hideWithPreorder&quot;:true }" style="display: block;">
                                         <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
