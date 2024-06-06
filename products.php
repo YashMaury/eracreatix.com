@@ -1,6 +1,5 @@
 <?php
 include "include/header.php";
-
 if (isset($_POST['submit'])) {
     $qty = $_POST['quality'];
     $price = $_POST['price'];
