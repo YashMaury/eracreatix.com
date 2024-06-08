@@ -76,6 +76,8 @@ $fetch_count_orders = mysqli_fetch_array($count_orders);
                             <th class="cart-product-name item">Product Name</th>
 
                             <th class="cart-qty item">Quantity</th>
+                            <th class="cart-qty item">Size</th>
+                            <th class="cart-qty item">Color</th>
                             <th class="cart-sub-total item">Price Per unit</th>
                             <th class="cart-sub-total item">Shipping Charge</th>
                             <th class="cart-total item">Grandtotal</th>
@@ -88,7 +90,7 @@ $fetch_count_orders = mysqli_fetch_array($count_orders);
 
                     <tbody>
 
-                        <?php $query = mysqli_query($con, "select products.productImage1 as pimg1,products.productName as pname,products.id as proid,orders.productId as opid,orders.quantity as qty,orders.order_id as order_id, products.productPrice as pprice,products.shippingCharge as shippingcharge,orders.paymentMethod as paym,orders.orderDate as odate,orders.id as orderid from orders join products on orders.productId=products.id where orders.userId='" . $_SESSION['id'] . "' and orders.paymentMethod is not null");
+                        <?php $query = mysqli_query($con, "select products.productImage1 as pimg1,products.productName as pname,products.id as proid,orders.productId as opid,orders.quantity as qty,orders.size as size,orders.color as color, orders.order_id as order_id, products.productPrice as pprice,products.shippingCharge as shippingcharge,orders.paymentMethod as paym,orders.orderDate as odate,orders.id as orderid from orders join products on orders.productId=products.id where orders.userId='" . $_SESSION['id'] . "' and orders.paymentMethod is not null");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($query)) {
                         ?>
@@ -102,13 +104,14 @@ $fetch_count_orders = mysqli_fetch_array($count_orders);
                                 <td class="cart-product-name-info">
                                     <h4 class='cart-product-description'>
                                         <a href="../products.php?pid=<?php echo $row['opid']; ?>">
-                                            <?php echo $row['pname']; ?></a></h4>
+                                            <?php echo $row['pname']; ?></a>
+                                    </h4>
 
 
                                 </td>
-                                <td class="cart-product-quantity">
-                                    <?php echo $qty = $row['qty']; ?>
-                                </td>
+                                <td class="cart-product-quantity"><?php echo $qty = $row['qty']; ?></td>
+                                <td class="cart-product-quantity"><?php echo $size = $row['size']; ?></td>
+                                <td class="cart-product-quantity"><?php echo $color = $row['color']; ?></td>
                                 <td class="cart-product-sub-total"><?php echo $price = $row['pprice']; ?> </td>
                                 <td class="cart-product-sub-total"><?php echo $shippcharge = $row['shippingcharge']; ?> </td>
                                 <td class="cart-product-grand-total"><?php echo (($qty * $price) + $shippcharge); ?></td>

@@ -249,29 +249,38 @@ if (isset($_POST['submit'])) {
                                                 }
                                             </script>
                                         </div>
+
                                         <br>
-                                        <p>
-                                            Size -
+
+                                        <div style="display:flex">
                                             <?php if (!empty($rws['size'])) {
+                                                echo "Size -";
                                                 $size = explode(',', $rws['size']);
                                                 foreach ($size as $item) {
                                             ?>
-                                                    <?= $item ?>
-                                                    <input type="radio" name="size" value="<?= $item ?>" id="size">
-                                            <?php }
-                                            } ?>
-                                        </p>
+                                                    <div style="border: 1px solid #000;margin: 2px;padding: 2px">
+                                                        <?= $item ?>
+                                                        <input type="radio" name="size" value="<?= $item ?>" id="size">
+                                                    </div>
+                                                <?php }
+                                            } else { ?>
+                                                <input type="hidden" name="size" value="null" id="size">
+                                            <?php } ?>
+                                        </div>
                                         <div style="display: flex;">
-                                            Color -
                                             <?php if (!empty($rws['color'])) {
+                                                echo "Color -";
                                                 $color = explode(',', $rws['color']);
                                                 foreach ($color as $item) {
                                             ?>
-                                                    <p style="background-color: <?= $item ?>; width: 30px;height:30px;margin: 5px">
+                                                    <div style="border: 1px solid #000;margin: 2px;padding: 2px">
+                                                        <?= $item ?>
                                                         <input type="radio" name="color" value="<?= $item ?>" id="color">
-                                                    </p>
-                                            <?php }
-                                            } ?>
+                                                    </div>
+                                                <?php }
+                                            } else { ?>
+                                                <input type="hidden" name="color" value="null" id="color">
+                                            <?php } ?>
                                         </div>
                                     </form>
 
