@@ -81,6 +81,8 @@ include "include/header.php";
                                         products.id,
                                         cart.id as cartId,
                                         cart.quantity,
+                                        cart.size,
+                                        cart.color,
                                         products.productName, 
                                         products.productImage1,
                                         products.productPrice,
@@ -140,6 +142,11 @@ include "include/header.php";
                                                             </span>
                                                         </form>
                                                     </div>
+                                                    <div style="color: #000;">
+                                                        <ins>Size - <?php echo $row['size']; ?></ins>
+                                                        <br>
+                                                        <ins>Color - <?php echo $row['color']; ?></ins>
+                                                    </div>
 
                                                     <div class="mobile-view-right-block">
                                                         <p>
@@ -163,10 +170,13 @@ include "include/header.php";
                                                     <div class="t4s-cart_price">
                                                         <div class="vertical-alignment">
                                                             <del>MRP ₹<?php echo $row['productPriceBeforeDiscount']; ?></del>
+                                                            <ins>₹<?php echo $row['productPrice'] ?></ins>
                                                         </div>
-                                                        <ins>₹<?php echo $row['productPrice'] ?></ins>
-                                                        <br>
                                                         <ins>Total Price ₹<?php echo $row['productPrice'] * $row['quantity']; ?></ins>
+                                                        <br>
+                                                        <ins>Size - <?php echo $row['size']; ?></ins>
+                                                        <br>
+                                                        <ins>Color - <?php echo $row['color']; ?></ins>
                                                     </div>
                                                 </div>
                                             </div>

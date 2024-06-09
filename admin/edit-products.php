@@ -12,16 +12,18 @@ if (!isset($_SESSION['alogin'])) {
 		$productcompany = $_POST['productCompany'];
 		$productprice = $_POST['productprice'];
 		$productpricebd = $_POST['productpricebd'];
-		$producthighlight = $_POST['producthighlight'];
+		$size = $_POST['size'];
+		$color = $_POST['color'];
+		$productHighlight = $_POST['productHighlight'];
 		$additionalInfo = $_POST['additionalInfo'];
-		$refundandExchange = $_POST['refundandExchange'];
+		$productrefundandExchange = $_POST['productrefundandExchange'];
 		$productdescription = $_POST['productDescription'];
 		$productscharge = $_POST['productShippingcharge'];
 		$productavailability = $_POST['productAvailability'];
 		$productimage1 = $_FILES["productimage1"]["name"];
 		$productimage2 = $_FILES["productimage2"]["name"];
 		$productimage3 = $_FILES["productimage3"]["name"];
-		$sql = mysqli_query($con, "update  products set  skuId='$skuId',category='$category',subCategory='$subcat',productName='$productname',productCompany='$productcompany',productPrice='$productprice', producthighlight='$producthighlight', additionalInfo='$additionalInfo', refundandExchange='$refundandExchange', productDescription='$productdescription',shippingCharge='$productscharge',productAvailability='$productavailability',productPriceBeforeDiscount='$productpricebd' where id='$pid' ");
+		$sql = mysqli_query($con, "update  products set  skuId='$skuId',category='$category',subCategory='$subcat',productName='$productname',productCompany='$productcompany',productPrice='$productprice', productHighlight='$productHighlight', additionalInfo='$additionalInfo', productrefundandExchange='$productrefundandExchange', productDescription='$productdescription',shippingCharge='$productscharge',productAvailability='$productavailability',productPriceBeforeDiscount='$productpricebd', size = '" . implode(', ', array_values($size)) . "', color = '" . implode(', ', array_values($color)) . "' where id='$pid' ");
 		$_SESSION['msg'] = "Product Updated Successfully !!";
 	}
 
@@ -136,7 +138,7 @@ if (!isset($_SESSION['alogin'])) {
 													<input type="text" name="skuId" placeholder="Enter Product Comapny Name" value="<?php echo htmlentities($row['skuId']); ?>" class="span8 tip" required>
 												</div>
 											</div>
-	
+
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Sub Category</label>
 												<div class="controls">
@@ -174,11 +176,64 @@ if (!isset($_SESSION['alogin'])) {
 													<input type="text" name="productprice" placeholder="Enter Product Price" value="<?php echo htmlentities($row['productPrice']); ?>" class="span8 tip" required>
 												</div>
 											</div>
+
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product Size</label>
+												<div class="controls" id="size_area">
+													<?php if (!empty($row['size'])) {
+														$size = explode(',', $row['size']);
+														foreach ($size as $item) {
+													?>
+															<div class="flex-grow-1 pr-3">
+																<div class="form-group">
+																	<input class="span8 tip" type="text" name="size[]" value="<?= $item ?>" id="size">
+																	<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
+																		<!-- <i class="fa fa-minus"></i> -->
+																		 Remove
+																	</button>
+																</div>
+															</div>
+														<?php }
+													} else { ?>
+													<?php } ?>
+													<A type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+														<!-- <i class="fa fa-plus"></i> -->
+														 Add
+													</button>
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product Size</label>
+												<div class="controls" id="color_area">
+													<?php if (!empty($row['color'])) {
+														$color = explode(',', $row['color']);
+														foreach ($color as $item) {
+													?>
+															<div class="flex-grow-1 pr-3">
+																<div class="form-group">
+																	<input class="span8 tip" type="text" name="color[]" value="<?= $item ?>" id="color">
+																	<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
+																		<!-- <i class="fa fa-minus"></i> -->
+																		 Remove
+																	</button>
+																</div>
+															</div>
+														<?php }
+													} else { ?>
+													<?php } ?>
+													<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+														<!-- <i class="fa fa-plus"></i> -->
+														Add
+													</button>
+												</div>
+											</div>
+
+
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Highlights</label>
 												<div class="controls">
-													<textarea name="producthighlight" placeholder="Enter Product Description" rows="6" class="span8 tip">
-                                                    <?php echo htmlentities($row['producthighlight']); ?>
+													<textarea name="productHighlight" placeholder="Enter Product Description" rows="6" class="span8 tip">
+                                                    <?php echo htmlentities($row['productHighlight']); ?>
 </textarea>
 												</div>
 
@@ -196,13 +251,13 @@ if (!isset($_SESSION['alogin'])) {
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Refund and Exchange</label>
 												<div class="controls">
-													<textarea name="refundandExchange" placeholder="Enter Product Description" rows="6" class="span8 tip">
-<?php echo htmlentities($row['refundandExchange']); ?>
+													<textarea name="productrefundandExchange" placeholder="Enter Product Description" rows="6" class="span8 tip">
+<?php echo htmlentities($row['productrefundandExchange']); ?>
 </textarea>
 												</div>
 
 											</div>
-											
+
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Description</label>
@@ -275,6 +330,51 @@ if (!isset($_SESSION['alogin'])) {
 				</div>
 			</div><!--/.container-->
 		</div><!--/.wrapper-->
+
+		<div id="blank_size_field" style="display: none;">
+			<div class="flex-grow-1 pr-3">
+				<div class="form-group">
+					<input type="text" class="span8 tip" name="size[]" id="size" placeholder="Enter Product Size" />
+					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
+						<!-- <i class="fa fa-minus"></i> -->
+						 Remove
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="blank_color_field" style="display: none;">
+			<div class="flex-grow-1 pr-3">
+				<div class="form-group">
+					<input type="text" class="span8 tip" name="color[]" id="color" placeholder="Enter Product Color" />
+					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
+						<!-- <i class="fa fa-minus"></i> -->
+						 Remove
+					</button>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			function appendSize() {
+				var blank_requirement = $('#blank_size_field').html();
+				$('#size_area').append(blank_requirement);
+			}
+
+			function removeSize(sizeElem) {
+				$(sizeElem).parent().parent().remove();
+			}
+
+
+			function appendColor() {
+				var blank_requirement = $('#blank_color_field').html();
+				$('#color_area').append(blank_requirement);
+			}
+
+			function removeColor(sizeElem) {
+				$(sizeElem).parent().parent().remove();
+			}
+		</script>
 
 		<?php include('include/footer.php'); ?>
 

@@ -178,8 +178,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">Size</label>
 											<div class="controls">
 												<input type="text" name="size[]" placeholder="Enter Product Size" class="span8 tip">
-												<button type="button" class="btn btn-success btn-lg" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
-													<i class="fa fa-plus"></i>
+												<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+													<!-- <i class="fa fa-plus"></i> -->
+													 Add
 												</button>
 											</div>
 											<div class="controls" id="size_area">
@@ -189,8 +190,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">Color</label>
 											<div class="controls">
 												<input type="text" name="color[]" placeholder="Enter Product Color" class="span8 tip">
-												<button type="button" class="btn btn-success btn-lg" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
-													<i class="fa fa-plus"></i>
+												<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+													<!-- <i class="fa fa-plus"></i> -->
+													 Add
 												</button>
 											</div>
 											<div class="controls" id="color_area">
@@ -289,8 +291,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 			<div class="flex-grow-1 pr-3">
 				<div class="form-group">
 					<input type="text" class="span8 tip" name="size[]" id="size" placeholder="Enter Product Size" />
-					<button type="button" class="btn btn-danger btn-lg" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
-						<i class="fa fa-minus"></i>
+					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
+						<!-- <i class="fa fa-minus"></i> -->
+						 Remove
 					</button>
 				</div>
 			</div>
@@ -299,8 +302,9 @@ if (strlen($_SESSION['alogin']) == 0) {
 			<div class="flex-grow-1 pr-3">
 				<div class="form-group">
 					<input type="text" class="span8 tip" name="color[]" id="color" placeholder="Enter Product Color" />
-					<button type="button" class="btn btn-danger btn-lg" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
-						<i class="fa fa-minus"></i>
+					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
+						<!-- <i class="fa fa-minus"></i> -->
+						 Remove
 					</button>
 				</div>
 			</div>
