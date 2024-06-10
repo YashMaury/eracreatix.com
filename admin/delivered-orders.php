@@ -70,7 +70,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<th>Billing Address</th>
 												<th>Billing Address</th>
 												<th>Product </th>
-												<th>Qty </th>
+												<th>Qty / Size / Color</th>
 												<th>Amount </th>
 												<th>Order Status</th>
 												<th>Order Date</th>
@@ -87,7 +87,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<?php
 											$st = 'Delivered';
 											// $query = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.quantity as quantity,orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus='$st'");
-											$query = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,address.mobile_no as mobile_no, address.billingAddress as billingaddress,address.billingCity as billingcity,address.billingState as billingstate,address.billingPincode as billingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.orderStatus as orderstatus,orders.quantity as quantity,orders.order_id as order_id, orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus='$st'");
+											$query = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,address.mobile_no as mobile_no, address.billingAddress as billingaddress,address.billingCity as billingcity,address.billingState as billingstate,address.billingPincode as billingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.orderStatus as orderstatus,orders.quantity as quantity,orders.order_id as order_id,orders.size as size,orders.color as color, orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus='$st'");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query)) {
 											?>
@@ -99,7 +99,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													<td><?php echo htmlentities($row['shippingaddress'] . "," . $row['shippingcity'] . "," . $row['shippingstate'] . "-" . $row['shippingpincode']); ?><br><?php echo isset($row['mobile_no']) ? "Mobile no.- " . $row['mobile_no'] : ""; ?></td>
 													<td><?php echo htmlentities($row['billingaddress'] . "," . $row['billingcity'] . "," . $row['billingstate'] . "-" . $row['billingpincode']); ?></td>
 													<td><?php echo htmlentities($row['productname']); ?></td>
-													<td><?php echo htmlentities($row['quantity']); ?></td>
+													<td><?php echo htmlentities($row['quantity']); ?> / <?php echo htmlentities($row['size']); ?> / <?php echo htmlentities($row['color']); ?></td>
 													<td><?php echo htmlentities($row['quantity'] * $row['productprice'] + $row['shippingcharge']); ?></td>
 													<td><?php echo htmlentities($row['orderstatus']); ?></td>
 													<td><?php echo htmlentities($row['orderdate']); ?></td>

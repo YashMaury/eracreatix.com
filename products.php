@@ -79,6 +79,13 @@ if (isset($_POST['submit'])) {
                                                     <span class="lazyloadt4s-loader"></span>
                                                 </div>
                                             </div>
+                                            <div style="width: 100%;" class="mySlides t4s-col-md-6 t4s-col-12 t4s-col-item t4s-product__media-item " data-media-id="33152435978486" data-nt-media-id="template--16885347778806__main-33152435978486" data-media-type="image" data-grname="" data-grpvl="">
+                                                <div data-t4s-gallery--open="" class="t4s_ratio t4s-product__media" style="--aspect-ratioapt:1.0;--mw-media:800px">
+                                                    <noscript><img src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage4']); ?>" alt="" width="1090" height="1090" loading="lazy" class="t4s-img-noscript" sizes="(min-width: 1500px) 1500px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"></noscript>
+                                                    <img loading="lazy" class="t4s-lz--fadeIn lazyautosizes lazyloadt4sed" src="admin/productimages/<?php echo htmlentities($rws['id']); ?>/<?php echo htmlentities($rws['productImage4']); ?>" width="800" height="800" alt="">
+                                                    <span class="lazyloadt4s-loader"></span>
+                                                </div>
+                                            </div>
                                         </div>
                                         <center>
                                             <div style="margin:8px;" class="t4s-d-block t4s-align-items-center">
@@ -642,7 +649,7 @@ if (isset($_POST['submit'])) {
                                                     <div class="product-highlight-content">
                                                         <div class="trust-banner-container">
                                                             <span>
-                                                                <p><?= $rws['producthighlight']; ?></p>
+                                                                <p><?= $rws['productHighlight']; ?></p>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -760,7 +767,7 @@ if (isset($_POST['submit'])) {
                                                             <span class="return-exchange-text">Free Returns in 48 hours</span> -->
                                                     </div>
                                                     <div class="return-exchange-policy-details">
-                                                        <?= $rws['refundandExchange']; ?>
+                                                        <?= $rws['productrefundandExchange']; ?>
                                                     </div>
                                                 </div>
                                             </div>

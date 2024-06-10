@@ -7,6 +7,9 @@ if (!empty($_POST['order_id'])) {
   $oid = $fetch_id['id'];
 } else {
   $oid = intval($_GET['oid']);
+  $orderid = mysqli_query($con, "select * from orders where `id` = '" . $oid . "' ");
+  $fetch_id = mysqli_fetch_array($orderid);
+  $order_id = $fetch_id['order_id'];
 }
 ?>
 <script language="javascript" type="text/javascript">
@@ -43,7 +46,7 @@ if (!empty($_POST['order_id'])) {
         </tr>
         <tr height="30">
           <td class="fontkink1"><b>order Id:</b></td>
-          <td class="fontkink"><b><?= $oid; ?></b></td>
+          <td class="fontkink"><b><?= $order_id; ?></b></td>
         </tr>
         <?php
         $ret = mysqli_query($con, "SELECT * FROM ordertrackhistory WHERE orderId='$oid'");

@@ -328,6 +328,14 @@ if (!isset($_SESSION['alogin'])) {
 													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage3']); ?>" width="200" height="100"> <a href="update-image3.php?id=<?php echo $row['id']; ?>">Change Image</a>
 												</div>
 											</div>
+
+
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product Image4</label>
+												<div class="controls">
+													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage4']); ?>" width="200" height="100"> <a href="update-image4.php?id=<?php echo $row['id']; ?>">Change Image</a>
+												</div>
+											</div>
 										<?php } ?>
 										<div class="control-group">
 											<div class="controls">

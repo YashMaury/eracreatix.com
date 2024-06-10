@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
         header('location: ../login.php');
     } else {
         if ($_POST['form_type'] == "place_order") {
-            $order_id = uniqid('order_');
+            $order_id = uniqid('era_');
             if (!empty($_POST['gstn'])) {
                 $gstn = $_POST['gstn'];
             } else {
@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
             header("Location: shipping-details-page.php");
             exit();
         } elseif ($_POST['form_type'] == "place_order_with_address") {
-            $order_id = uniqid('order_');
+            $order_id = uniqid('era_');
             if (!empty($_POST['gstn'])) {
                 $gstn = $_POST['gstn'];
             } else {

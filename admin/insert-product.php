@@ -23,6 +23,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		$productimage1 = $_FILES["productimage1"]["name"];
 		$productimage2 = $_FILES["productimage2"]["name"];
 		$productimage3 = $_FILES["productimage3"]["name"];
+		$productimage4 = $_FILES["productimage4"]["name"];
 		//for getting product id
 		$query = mysqli_query($con, "select max(id) as pid from products");
 		//print_r($query);
@@ -37,7 +38,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 		move_uploaded_file($_FILES["productimage1"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage1"]["name"]);
 		move_uploaded_file($_FILES["productimage2"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage2"]["name"]);
 		move_uploaded_file($_FILES["productimage3"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage3"]["name"]);
-		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','" . implode(', ', array_values($size)) . "','" . implode(', ', array_values($color)) . "','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
+		move_uploaded_file($_FILES["productimage4"]["tmp_name"], "productimages/$productid/" . $_FILES["productimage4"]["name"]);
+		$sql = mysqli_query($con, "insert into products(skuId,category,subCategory,productName,productCompany,productPrice,size,color,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productImage4,productPriceBeforeDiscount,producthighlight,additionalInfo,productrefundandExchange) values('$skuId','$category','$subcat','$productname','$productcompany','$productprice','" . implode(', ', array_values($size)) . "','" . implode(', ', array_values($color)) . "','$productdescription','$productscharge','$productavailability','$productimage1','$productimage2','$productimage3','$productimage4','$productpricebd','$producthighlight','$additionalInfo','$refundandExchange')");
 		$_SESSION['msg'] = "Product Inserted Successfully !!";
 	}
 
@@ -264,6 +266,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<label class="control-label" for="basicinput">Product Image3</label>
 											<div class="controls">
 												<input type="file" name="productimage3" class="span8 tip">
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="basicinput">Product Image4</label>
+											<div class="controls">
+												<input type="file" name="productimage4" class="span8 tip">
 											</div>
 										</div>
 
