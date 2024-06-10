@@ -177,64 +177,81 @@ if (!isset($_SESSION['alogin'])) {
 												</div>
 											</div>
 
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Size</label>
-												<div class="controls" id="size_area">
-													<?php if (!empty($row['size'])) {
+											<?php if (!empty($row['size'])) { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Size</label>
+													<div class="controls" id="size_area">
+														<?php
 														$size = explode(',', $row['size']);
 														foreach ($size as $item) {
-													?>
+														?>
 															<div class="flex-grow-1 pr-3">
 																<div class="form-group">
 																	<input class="span8 tip" type="text" name="size[]" value="<?= $item ?>" id="size">
 																	<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
-																		<!-- <i class="fa fa-minus"></i> -->
-																		 Remove
+																		Remove
 																	</button>
 																</div>
 															</div>
-														<?php }
-													} else { ?>
-													<?php } ?>
-													<A type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
-														<!-- <i class="fa fa-plus"></i> -->
-														 Add
-													</button>
+														<?php } ?>
+														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+															Add
+														</button>
+													</div>
 												</div>
-											</div>
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Size</label>
-												<div class="controls" id="color_area">
-													<?php if (!empty($row['color'])) {
+											<?php } else { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Size</label>
+													<div class="controls" id="size_area">
+														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+															Add
+														</button>
+													</div>
+												</div>
+											<?php } ?>
+
+
+											<?php if (!empty($row['color'])) { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Color</label>
+													<div class="controls" id="color_area">
+														<?php
 														$color = explode(',', $row['color']);
 														foreach ($color as $item) {
-													?>
+														?>
 															<div class="flex-grow-1 pr-3">
 																<div class="form-group">
 																	<input class="span8 tip" type="text" name="color[]" value="<?= $item ?>" id="color">
 																	<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
-																		<!-- <i class="fa fa-minus"></i> -->
-																		 Remove
+																		Remove
 																	</button>
 																</div>
 															</div>
-														<?php }
-													} else { ?>
-													<?php } ?>
-													<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
-														<!-- <i class="fa fa-plus"></i> -->
-														Add
-													</button>
+														<?php } ?>
+														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+															Add
+														</button>
+													</div>
 												</div>
-											</div>
+											<?php } else { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Color</label>
+													<div class="controls" id="color_area">
+														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+															Add
+														</button>
+													</div>
+												</div>
+											<?php } ?>
+											<br>
 
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Highlights</label>
 												<div class="controls">
 													<textarea name="productHighlight" placeholder="Enter Product Description" rows="6" class="span8 tip">
-                                                    <?php echo htmlentities($row['productHighlight']); ?>
-</textarea>
+                                                    	<?php echo htmlentities($row['productHighlight']); ?>
+													</textarea>
 												</div>
 
 											</div>
@@ -337,7 +354,7 @@ if (!isset($_SESSION['alogin'])) {
 					<input type="text" class="span8 tip" name="size[]" id="size" placeholder="Enter Product Size" />
 					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
 						<!-- <i class="fa fa-minus"></i> -->
-						 Remove
+						Remove
 					</button>
 				</div>
 			</div>
@@ -348,7 +365,7 @@ if (!isset($_SESSION['alogin'])) {
 					<input type="text" class="span8 tip" name="color[]" id="color" placeholder="Enter Product Color" />
 					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
 						<!-- <i class="fa fa-minus"></i> -->
-						 Remove
+						Remove
 					</button>
 				</div>
 			</div>

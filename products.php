@@ -189,100 +189,108 @@ if (isset($_POST['submit'])) {
 
                                     </div>
 
-                                    <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-                                        <div class="t4s-liquid_0a41e004-c096-4334-9d23-1052de9af88a t4s-pr__custom-liquid t4s-rte t4s-col-item"></div>
-                                        <link href="cdn/shop/t/130/assets/accordion-pdp.aio.min.css" rel="stylesheet" type="text/css" media="all">
-                                        <div class="t4s-col-item product_form_container">
-                                            <div class="horizontal-divider-pdp"></div>
+                                    <link href="cdn/shop/t/130/assets/accordion-pdp.aio.min.css" rel="stylesheet" type="text/css" media="all">
+                                    <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
+                                    <?php if ($rws['productAvailability'] == 'In Stock') { ?>
 
-                                            <div class="t4s-product-form__variants is-no-pick__false  is-remove-soldout-false is-btn-full-width__false is-btn-atc-txt-3 is-btn-ck-txt-3 is--fist-ratio-false" style=" --wishlist-color: #222222;--wishlist-hover-color: #56cfe1;--wishlist-active-color: #e81e1e;--compare-color: #222222;--compare-hover-color: #56cfe1;--compare-active-color: #222222;">
-                                                <div>
-                                                    <input name="pid" value="<?= $_GET['pid']; ?>" type="hidden">
-                                                    <input id="action" name="action" value="cart" type="hidden">
-                                                    <input id="buy_now" name="buy_now" value="buy_now" type="hidden">
-                                                    <div class="t4s-product-form__buttons" style="--pr-btn-round:40px;">
-                                                        <div class="t4s-d- t4s-flex-wrap">
-                                                            <div class="t4s-quantity-wrapper t4s-product-form__qty">
-                                                                <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
-                                                                    <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
-                                                                        <path d="M10 0v2H0V0z" fill="currentColor"></path>
-                                                                    </svg>
-                                                                </button>
-                                                                <input type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
-                                                                <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
-                                                                    <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
-                                                                        <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
-                                                                    </svg>
-                                                                </button>
-                                                            </div>
-                                                            <!-- render t4s_wis_cp.liquid -->
-                                                            <!-- <a style="border: 3px solid #e8c463" href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                        <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true">
+                                            <input type="hidden" name="form_type" value="product">
+                                            <input type="hidden" name="utf8" value="✓">
+                                            <div class="t4s-liquid_0a41e004-c096-4334-9d23-1052de9af88a t4s-pr__custom-liquid t4s-rte t4s-col-item"></div>
+                                            <div class="t4s-col-item product_form_container">
+                                                <div class="horizontal-divider-pdp"></div>
+
+                                                <div class="t4s-product-form__variants is-no-pick__false  is-remove-soldout-false is-btn-full-width__false is-btn-atc-txt-3 is-btn-ck-txt-3 is--fist-ratio-false" style=" --wishlist-color: #222222;--wishlist-hover-color: #56cfe1;--wishlist-active-color: #e81e1e;--compare-color: #222222;--compare-hover-color: #56cfe1;--compare-active-color: #222222;">
+                                                    <div>
+                                                        <input name="pid" value="<?= $_GET['pid']; ?>" type="hidden">
+                                                        <input id="action" name="action" value="cart" type="hidden">
+                                                        <input id="buy_now" name="buy_now" value="buy_now" type="hidden">
+                                                        <div class="t4s-product-form__buttons" style="--pr-btn-round:40px;">
+                                                            <div class="t4s-d- t4s-flex-wrap">
+                                                                <div class="t4s-quantity-wrapper t4s-product-form__qty">
+                                                                    <button type="button" class="t4s-quantity-selector is--minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" aria-label="ATC reduce quantity">
+                                                                        <svg focusable="false" class="icon icon--minus" viewBox="0 0 10 2" role="presentation">
+                                                                            <path d="M10 0v2H0V0z" fill="currentColor"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input type="number" class="t4s-quantity-input" step="1" min="1" max="50" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric" aria-label="ATC quantity">
+                                                                    <button type="button" class="t4s-quantity-selector is--plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" aria-label="ATC increase quantity">
+                                                                        <svg focusable="false" class="icon icon--plus" viewBox="0 0 10 10" role="presentation">
+                                                                            <path d="M6 4h4v2H6v4H4V6H0V4h4V0h2v4z" fill="currentColor" fill-rule="evenodd"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                                <!-- render t4s_wis_cp.liquid -->
+                                                                <!-- <a style="border: 3px solid #e8c463" href="account/cart.php?pid=<?php echo htmlentities($rws['id']) ?>&&action=cart" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
                                                                 Add to Cart
                                                             </a> -->
-                                                            <button id="add_to_cart" style="min-width: unset;border: 3px solid #e8c463" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
-                                                                Add to Cart
-                                                            </button>
-                                                            <button id="buy_now_btn" style="min-width: unset;margin: 5px;" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
-                                                                Buy Now
-                                                            </button>
+                                                                <button id="add_to_cart" style="min-width: unset;border: 3px solid #e8c463" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                                    Add to Cart
+                                                                </button>
+                                                                <button id="buy_now_btn" style="min-width: unset;margin: 5px;" type="submit" class="t4s-product-form__submit t4s-btn t4s-btn-style-default t4s-btn-color-primary t4s-w-100 t4s-justify-content-center  t4s-btn-effect-sweep-to-top t4s-btn-loading__svg">
+                                                                    Buy Now
+                                                                </button>
+                                                            </div>
                                                         </div>
+                                                        <script>
+                                                            $("#buy_now_btn").click(function() {
+                                                                $("#action").remove();
+                                                            });
+                                                            $("#add_to_cart").click(function() {
+                                                                $("#buy_now").remove();
+                                                            });
+                                                        </script>
                                                     </div>
-                                                    <script>
-                                                        $("#buy_now_btn").click(function() {
-                                                            $("#action").remove();
-                                                        });
-                                                        $("#add_to_cart").click(function() {
-                                                            $("#buy_now").remove();
-                                                        });
-                                                    </script>
-                                                    <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
                                                 </div>
-                                            </div>
-                                            <script>
-                                                window.onload = function() {
-                                                    var url = new URL(window.location.href);
-                                                    var params = new URLSearchParams(url.search);
-                                                    if (params.has('variant')) {
-                                                        const element = document.querySelector(".t4s-swatch_banner");
-                                                        if (element) element.style.display = "none";
+                                                <script>
+                                                    window.onload = function() {
+                                                        var url = new URL(window.location.href);
+                                                        var params = new URLSearchParams(url.search);
+                                                        if (params.has('variant')) {
+                                                            const element = document.querySelector(".t4s-swatch_banner");
+                                                            if (element) element.style.display = "none";
+                                                        }
                                                     }
-                                                }
-                                            </script>
-                                        </div>
+                                                </script>
+                                            </div>
 
-                                        <br>
+                                            <br>
 
-                                        <div style="display:flex">
-                                            <?php if (!empty($rws['size'])) {
-                                                echo "Size -";
-                                                $size = explode(',', $rws['size']);
-                                                foreach ($size as $item) {
-                                            ?>
-                                                    <div style="border: 1px solid #000;margin: 2px;padding: 2px">
-                                                        <?= $item ?>
-                                                        <input type="radio" name="size" value="<?= $item ?>" id="size">
-                                                    </div>
-                                                <?php }
-                                            } else { ?>
-                                                <input type="hidden" name="size" value="null" id="size">
-                                            <?php } ?>
-                                        </div>
-                                        <div style="display: flex;">
-                                            <?php if (!empty($rws['color'])) {
-                                                echo "Color -";
-                                                $color = explode(',', $rws['color']);
-                                                foreach ($color as $item) {
-                                            ?>
-                                                    <div style="border: 1px solid #000;margin: 2px;padding: 2px">
-                                                        <?= $item ?>
-                                                        <input type="radio" name="color" value="<?= $item ?>" id="color">
-                                                    </div>
-                                                <?php }
-                                            } else { ?>
-                                                <input type="hidden" name="color" value="null" id="color">
-                                            <?php } ?>
-                                        </div>
-                                    </form>
+                                            <div style="display:flex">
+                                                <?php if (!empty($rws['size'])) {
+                                                    echo "Size -";
+                                                    $size = explode(',', $rws['size']);
+                                                    foreach ($size as $item) {
+                                                ?>
+                                                        <div style="border: 1px solid #000;margin: 2px;padding: 2px">
+                                                            <?= $item ?>
+                                                            <input type="radio" name="size" value="<?= $item ?>" id="size">
+                                                        </div>
+                                                    <?php }
+                                                } else { ?>
+                                                    <input type="hidden" name="size" value="null" id="size">
+                                                <?php } ?>
+                                            </div>
+                                            <div style="display: flex;">
+                                                <?php if (!empty($rws['color'])) {
+                                                    echo "Color -";
+                                                    $color = explode(',', $rws['color']);
+                                                    foreach ($color as $item) {
+                                                ?>
+                                                        <div style="border: 1px solid #000;margin: 2px;padding: 2px">
+                                                            <?= $item ?>
+                                                            <input type="radio" name="color" value="<?= $item ?>" id="color">
+                                                        </div>
+                                                    <?php }
+                                                } else { ?>
+                                                    <input type="hidden" name="color" value="null" id="color">
+                                                <?php } ?>
+                                            </div>
+                                        </form>
+
+                                    <?php } else { ?>
+                                        <div class="action" style="color:red">Out of Stock</div>
+                                    <?php } ?>
 
                                     <div id="t4s-delivery" class="t4s-pr_delivery  t4s-ch t4s-dn section delivery-return-section" data-order-delivery="{ &quot;timezone&quot;:false, &quot;format_day&quot;:&quot;t44, t45 t46&quot;, &quot;mode&quot;:&quot;1&quot;, &quot;cut_day&quot;: &quot;SAT,SUN&quot;, &quot;estimateStartDate&quot;: 3, &quot;estimateEndDate&quot;: 5, &quot;time&quot;:&quot;16:00:00&quot;, &quot;hideWithPreorder&quot;:true }" style="display: block;">
                                         <link href="cdn/shop/t/130/assets/ani-atc.min.css" rel="stylesheet" media="all" onload="this.media='all'">
