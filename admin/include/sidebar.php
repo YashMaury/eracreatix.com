@@ -56,11 +56,20 @@
 							// $rt = mysqli_query($con, "SELECT * FROM Orders where orderStatus='$status'");
 							// $num1 = mysqli_num_rows($rt); { 
 							?>
-								<b class="label green pull-right">
-									<?php //echo htmlentities($num1); ?>
-								</b>
-							<?php //} ?>
+							<b class="label green pull-right">
+								<?php //echo htmlentities($num1); 
+								?>
+							</b>
+							<?php //} 
+							?>
 
+						</a>
+					</li>
+					<li>
+						<a href="cancelled-orders.php">
+							<i class="icon-inbox"></i>
+							Cancelled Orders
+							<b class="label green pull-right"></b>
 						</a>
 					</li>
 				</ul>

@@ -203,7 +203,41 @@ if (isset($_POST['submit'])) {
                                         <form method="post" action="account/cart.php" accept-charset="UTF-8" class="t4s-form__product is--main-sticky" enctype="multipart/form-data" data-productid="8520322056438" novalidate="novalidate" data-type="add-to-cart-form" data-disable-swatch="true">
                                             <input type="hidden" name="form_type" value="product">
                                             <input type="hidden" name="utf8" value="✓">
+                                            
                                             <div class="t4s-liquid_0a41e004-c096-4334-9d23-1052de9af88a t4s-pr__custom-liquid t4s-rte t4s-col-item"></div>
+
+                                            <div style="display:flex">
+                                                <?php if (!empty($rws['size'])) {
+                                                    echo "Size -";
+                                                    $size = explode(',', $rws['size']);
+                                                    foreach ($size as $item) {
+                                                ?>
+                                                        <div style="border: 1px solid #000; border-radius: 15px;margin: 2px;padding: 2px">
+                                                            <?= $item ?>
+                                                            <input type="radio" name="size" value="<?= $item ?>" id="size">
+                                                        </div>
+                                                    <?php }
+                                                } else { ?>
+                                                    <input type="hidden" name="size" value="null" id="size">
+                                                <?php } ?>
+                                            </div>
+                                            <div style="display: flex;">
+                                                <?php if (!empty($rws['color'])) {
+                                                    echo "Color -";
+                                                    $color = explode(',', $rws['color']);
+                                                    foreach ($color as $item) {
+                                                ?>
+                                                        <div style="border: 1px solid #000; border-radius: 15px;margin: 2px;padding: 2px">
+                                                            <?= $item ?>
+                                                            <input type="radio" name="color" value="<?= $item ?>" id="color">
+                                                        </div>
+                                                    <?php }
+                                                } else { ?>
+                                                    <input type="hidden" name="color" value="null" id="color">
+                                                <?php } ?>
+                                            </div>
+
+
                                             <div class="t4s-col-item product_form_container">
                                                 <div class="horizontal-divider-pdp"></div>
 
@@ -259,39 +293,6 @@ if (isset($_POST['submit'])) {
                                                         }
                                                     }
                                                 </script>
-                                            </div>
-
-                                            <br>
-
-                                            <div style="display:flex">
-                                                <?php if (!empty($rws['size'])) {
-                                                    echo "Size -";
-                                                    $size = explode(',', $rws['size']);
-                                                    foreach ($size as $item) {
-                                                ?>
-                                                        <div style="border: 1px solid #000;margin: 2px;padding: 2px">
-                                                            <?= $item ?>
-                                                            <input type="radio" name="size" value="<?= $item ?>" id="size">
-                                                        </div>
-                                                    <?php }
-                                                } else { ?>
-                                                    <input type="hidden" name="size" value="null" id="size">
-                                                <?php } ?>
-                                            </div>
-                                            <div style="display: flex;">
-                                                <?php if (!empty($rws['color'])) {
-                                                    echo "Color -";
-                                                    $color = explode(',', $rws['color']);
-                                                    foreach ($color as $item) {
-                                                ?>
-                                                        <div style="border: 1px solid #000;margin: 2px;padding: 2px">
-                                                            <?= $item ?>
-                                                            <input type="radio" name="color" value="<?= $item ?>" id="color">
-                                                        </div>
-                                                    <?php }
-                                                } else { ?>
-                                                    <input type="hidden" name="color" value="null" id="color">
-                                                <?php } ?>
                                             </div>
                                         </form>
 
