@@ -60,46 +60,44 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 									<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display table-responsive">
 										<thead>
-											<tr>
+												<tr>
 												<th>#</th>
 												<th>Order_id</th>
 												<th> Name</th>
 												<th width="50">Email /Contact no</th>
-												<th>Order Status</th>
 												<th>Shipping Address</th>
 												<th>Billing Address</th>
 												<th>Product </th>
-												<th>Qty / Size / Color</th>
+												<th>Qty</th>
 												<th>Amount </th>
-												<th>Payment Status/Method</th>
 												<th>Order Date</th>
+												<th>Payment Status/Method</th>
 												<th>Action</th>
 
 
 											</tr>
+
 										</thead>
 
 										<tbody>
 											<?php
 											$status = 'Delivered';
-											$query1 = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,address.mobile_no as mobile_no, address.billingAddress as billingaddress,address.billingCity as billingcity,address.billingState as billingstate,address.billingPincode as billingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.orderStatus as orderstatus,orders.quantity as quantity,orders.order_id as order_id,orders.size as size,orders.color as color, orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id,orders.paymentMethod as pyamentmethod  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus!='$status' or orders.orderStatus is null");
+											$query1 = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,address.mobile_no as mobile_no, address.billingAddress as billingaddress,address.billingCity as billingcity,address.billingState as billingstate,address.billingPincode as billingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.orderStatus as orderstatus, orders.paymentMethod as paymentMethod,orders.quantity as quantity,orders.order_id as order_id,orders.size as size,orders.color as color, orders.orderDate as orderdate, ,orders.paymentMethod as pyamentmethod,orders.GSTN as gstn,products.productPrice as productprice, orders.id as id,products.skuId as skuid from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus!='$status' or orders.orderStatus is null");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query1)) {
 											?>
-												<tr>
+											<tr>
 													<td><?php echo htmlentities($cnt); ?></td>
 													<td><?php echo htmlentities($row['order_id']); ?></td>
 													<td><?php echo htmlentities($row['username']); ?></td>
 													<td><?php echo htmlentities($row['useremail']); ?>/<?php echo htmlentities($row['usercontact']); ?></td>
-													<td><?php echo htmlentities($row['orderstatus']) ; ?></td>
-													<td><?php echo htmlentities($row['shippingaddress'] . "," . $row['shippingcity'] . "," . $row['shippingstate'] . "-" . $row['shippingpincode']); ?><br><?php echo isset($row['mobile_no']) ? "Mobile no.- ".$row['mobile_no'] : ""; ?></td>
-													<td><?php echo htmlentities($row['billingaddress'] . "," . $row['billingcity'] . "," . $row['billingstate'] . "-" . $row['billingpincode']); ?></td>
-													<td><?php echo htmlentities($row['productname']); ?></td>
-													<td><?php echo htmlentities($row['quantity']); ?> / <?php echo htmlentities($row['size']); ?> / <?php echo htmlentities($row['color']); ?></td>
+													<td><?php echo htmlentities($row['shippingaddress'] . "," . $row['shippingcity'] . "," . $row['shippingstate'] . "-" . $row['shippingpincode']); ?><br><?php echo isset($row['mobile_no']) ? "Mobile no.- " . $row['mobile_no'] : ""; ?></td>
+													<td><?php echo htmlentities($row['billingaddress'] . "," . $row['billingcity'] . "," . $row['billingstate'] . "-" . $row['billingpincode']); ?> GSTN-<?php echo htmlentities($row['gstn']); ?></td>
+													<td><?php echo htmlentities($row['productname']); ?> <br> Color-<?php echo htmlentities($row['color']); ?> Size-<?php echo htmlentities($row['size']); ?> SKUID-<?php echo htmlentities($row['skuid']); ?> </td>
+													<td><?php echo htmlentities($row['quantity']); ?></td>
 													<td><?php echo htmlentities($row['quantity'] * $row['productprice'] + $row['shippingcharge']); ?></td>
-													<td><?php echo htmlentities($row['pyamentmethod'] ); ?></td>
-													
-													<td><?php echo htmlentities($row['orderdate']) ; ?></td>
+													<td><?php echo htmlentities($row['orderdate']); ?></td>
+													<td><?php echo htmlentities($row['paymentMethod']); ?></td>
 													<td> <a href="updateorder.php?oid=<?php echo htmlentities($row['id']); ?>" title="Update order" target="_blank"><i class="icon-edit"></i></a>
 													</td>
 												</tr>
