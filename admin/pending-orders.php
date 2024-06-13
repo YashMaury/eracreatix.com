@@ -60,7 +60,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 									<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display table-responsive">
 										<thead>
-												<tr>
+											<tr>
 												<th>#</th>
 												<th>Order_id</th>
 												<th> Name</th>
@@ -84,40 +84,40 @@ if (strlen($_SESSION['alogin']) == 0) {
 											$status = 'Delivered';
 											$status1 = 'Cancelled';
 											$query1 = mysqli_query($con, "
-													select users.name as username,
-														   users.email as useremail,
-														   users.contactno as usercontact,
-														   address.shippingAddress as shippingaddress,
-														   address.shippingCity as shippingcity,
-														   address.shippingState as shippingstate,
-														   address.shippingPincode as shippingpincode,
-														   address.mobile_no as mobile_no, 
-														   address.billingAddress as billingaddress,
-														   address.billingCity as billingcity,
-														   address.billingState as billingstate,
-														   address.billingPincode as billingpincode,
-														   products.productName as productname,
-														   products.productPrice as productprice,
-														   products.shippingCharge as shippingcharge,
-														   orders.orderStatus as orderstatus,
-														   orders.order_id as order_id,
-														   orders.quantity as quantity,
-														   orders.size as size,
-														   orders.color as color,
-														   orders.orderDate as orderdate,
-														   orders.paymentMethod as paymentMethod,
-														   orders.GSTN as gstn,
-														   orders.id as id,
-														   products.skuId as skuid 
-														   from orders 
-														   join users on  orders.userId=users.id 
-														   join address on users.id=address.user_id 
-														   join products on products.id=orders.productId 
-														   where orders.orderStatus!='$status' or orders.orderStatus!='$status1' or orders.orderStatus is null");
+															select users.name as username,
+															users.email as useremail,
+															users.contactno as usercontact,
+															address.shippingAddress as shippingaddress,
+															address.shippingCity as shippingcity,
+															address.shippingState as shippingstate,
+															address.shippingPincode as shippingpincode,
+															address.mobile_no as mobile_no, 
+															address.billingAddress as billingaddress,
+															address.billingCity as billingcity,
+															address.billingState as billingstate,
+															address.billingPincode as billingpincode,
+															products.productName as productname,
+															products.productPrice as productprice,
+															products.shippingCharge as shippingcharge,
+															orders.orderStatus as orderstatus,
+															orders.order_id as order_id,
+															orders.quantity as quantity,
+															orders.size as size,
+															orders.color as color,
+															orders.orderDate as orderdate,
+															orders.paymentMethod as paymentMethod,
+															orders.GSTN as gstn,
+															orders.id as id,
+															products.skuId as skuid 
+															from orders 
+															join users on  orders.userId=users.id 
+															join address on orders.address=address.id 
+															join products on products.id=orders.productId 
+															where orders.orderStatus!='$status' and orders.orderStatus!='$status1' or orders.orderStatus is null");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($query1)) {
 											?>
-											<tr>
+												<tr>
 													<td><?php echo htmlentities($cnt); ?></td>
 													<td><?php echo htmlentities($row['order_id']); ?></td>
 													<td><?php echo htmlentities($row['username']); ?></td>
