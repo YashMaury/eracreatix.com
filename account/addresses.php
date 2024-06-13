@@ -713,7 +713,7 @@ $fetch_count_address = mysqli_fetch_array($count_address);
 
                             <div id="NoAddress" class="no-address-desktop-container">
                                 <div class="heading">No Address Found</div>
-                                <div class="subheading">Add your address and get your favorite Vaaree products right to your doorstep!</div>
+                                <div class="subheading">Add your address and get your favorite  products right to your doorstep!</div>
                                 <div class="add-btn">
                                     <button class="t4s_btn_black customer-sticky-button add-address-default" type="submit" name="submit" id="add-address">
                                         Add Address

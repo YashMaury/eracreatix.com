@@ -188,42 +188,6 @@ if (isset($_POST['submit'])) {
                                         <div class="tax_text t4s-col-item">Inclusion of all taxes</div>
                                     </div>
 
-<!-- product size and color -->
-
-<br>
-
-                                            <div style="display:flex">
-                                                <?php if (!empty($rws['size'])) {
-                                                    echo "Size -";
-                                                    $size = explode(',', $rws['size']);
-                                                    foreach ($size as $item) {
-                                                ?>
-                                                        <div style="border: 1px solid #000;margin: 2px;padding: 2px">
-                                                            <?= $item ?>
-                                                            <input type="radio" name="size" value="<?= $item ?>" id="size">
-                                                        </div>
-                                                    <?php }
-                                                } else { ?>
-                                                    <input type="hidden" name="size" value="null" id="size">
-                                                <?php } ?>
-                                            </div>
-                                            <div style="display: flex;">
-                                                <?php if (!empty($rws['color'])) {
-                                                    echo "Color -";
-                                                    $color = explode(',', $rws['color']);
-                                                    foreach ($color as $item) {
-                                                ?>
-                                                        <div style="border: 1px solid #000;margin: 2px;padding: 2px">
-                                                            <?= $item ?>
-                                                            <input type="radio" name="color" value="<?= $item ?>" id="color">
-                                                        </div>
-                                                    <?php }
-                                                } else { ?>
-                                                    <input type="hidden" name="color" value="null" id="color">
-                                                <?php } ?>
-                                            </div>
-
-<!--  -->
                                     <div class="t4s-col-item">
                                         <script src="cdn/shop/t/130/assets/dynamic-offers.js"></script>
                                         <link href="cdn/shop/t/130/assets/best-offers-popup.css" rel="stylesheet" type="text/css" media="all">
