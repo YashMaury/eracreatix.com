@@ -86,7 +86,7 @@ if (strlen($_SESSION['alogin']) == 0) {
             </tr>
           <?php } ?>
           <?php
-          $st = 'Delivered';
+          $st = 'Cancelled';
           $rt = mysqli_query($con, "SELECT * FROM orders WHERE id='$oid'");
           while ($num = mysqli_fetch_array($rt)) {
             $currrentSt = $num['orderStatus'];
@@ -94,7 +94,7 @@ if (strlen($_SESSION['alogin']) == 0) {
           if ($st == $currrentSt) { ?>
             <tr>
               <td colspan="2"><b>
-                  Product Delivered </b></td>
+                  Product Cancelled </b></td>
             <?php } else {
             ?>
 
@@ -121,6 +121,7 @@ if (strlen($_SESSION['alogin']) == 0) {
                     <option value="Product delivered successfully"> Product delivered successfully</option>
                     <option value="Product out for delivery"> Product out for delivery</option>
                     <option value="Product ready for Shipping"> Product ready for Shipping</option>
+                    <option value="Product cancelled"> Product Cancelled</option>
                   </select>
                 </span></td>
             </tr>

@@ -56,59 +56,20 @@
 							// $rt = mysqli_query($con, "SELECT * FROM Orders where orderStatus='$status'");
 							// $num1 = mysqli_num_rows($rt); { 
 							?>
-								<b class="label green pull-right">
-									<?php //echo htmlentities($num1); ?>
-								</b>
-							<?php //} ?>
+							<b class="label green pull-right">
+								<?php //echo htmlentities($num1); 
+								?>
+							</b>
+							<?php //} 
+							?>
 
 						</a>
 					</li>
 					<li>
-						<a href="refund-orders.php">
+						<a href="cancelled-orders.php">
 							<i class="icon-inbox"></i>
-							Refund Orders
-							<?php
-							// $status = 'Delivered';
-							// $rt = mysqli_query($con, "SELECT * FROM Orders where orderStatus='$status'");
-							// $num1 = mysqli_num_rows($rt); { 
-							?>
-								<b class="label green pull-right">
-									<?php //echo htmlentities($num1); ?>
-								</b>
-							<?php //} ?>
-
-						</a>
-					</li>
-					<li>
-						<a href="cancel-orders.php">
-							<i class="icon-inbox"></i>
-							Cancel Orders
-							<?php
-							// $status = 'Delivered';
-							// $rt = mysqli_query($con, "SELECT * FROM Orders where orderStatus='$status'");
-							// $num1 = mysqli_num_rows($rt); { 
-							?>
-								<b class="label green pull-right">
-									<?php //echo htmlentities($num1); ?>
-								</b>
-							<?php //} ?>
-
-						</a>
-					</li>
-					<li>
-						<a href="exchange-orders.php">
-							<i class="icon-inbox"></i>
-							Exchange Orders
-							<?php
-							// $status = 'Delivered';
-							// $rt = mysqli_query($con, "SELECT * FROM Orders where orderStatus='$status'");
-							// $num1 = mysqli_num_rows($rt); { 
-							?>
-								<b class="label green pull-right">
-									<?php //echo htmlentities($num1); ?>
-								</b>
-							<?php //} ?>
-
+							Cancelled Orders
+							<b class="label green pull-right"></b>
 						</a>
 					</li>
 				</ul>

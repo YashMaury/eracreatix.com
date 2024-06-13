@@ -3,7 +3,6 @@ include('include/config.php');
 if (strlen($_SESSION['alogin']) == 0) {
 	header('location:index.php');
 } else {
-
 	date_default_timezone_set('Asia/Kolkata'); // change according timezone
 	$currentTime = date('d-m-Y h:i:s A', time());
 
@@ -15,7 +14,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Admin| Pending Orders</title>
+		<title>Admin| Cancelled Orders</title>
 		<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -45,7 +44,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<div class="module">
 								<div class="module-head">
-									<h3>Pending Orders</h3>
+									<h3>Cancelled Orders</h3>
 								</div>
 								<div class="module-body table">
 									<?php if (isset($_GET['del'])) { ?>
@@ -60,6 +59,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 									<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display table-responsive">
 										<thead>
+											<tr>
+											<tr>
 												<tr>
 												<th>#</th>
 												<th>Order_id</th>
@@ -77,45 +78,17 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 											</tr>
 
+
+											</tr>
 										</thead>
 
 										<tbody>
 											<?php
-											$status = 'Delivered';
-											$status1 = 'Cancelled';
-											$query1 = mysqli_query($con, "
-													select users.name as username,
-														   users.email as useremail,
-														   users.contactno as usercontact,
-														   address.shippingAddress as shippingaddress,
-														   address.shippingCity as shippingcity,
-														   address.shippingState as shippingstate,
-														   address.shippingPincode as shippingpincode,
-														   address.mobile_no as mobile_no, 
-														   address.billingAddress as billingaddress,
-														   address.billingCity as billingcity,
-														   address.billingState as billingstate,
-														   address.billingPincode as billingpincode,
-														   products.productName as productname,
-														   products.productPrice as productprice,
-														   products.shippingCharge as shippingcharge,
-														   orders.orderStatus as orderstatus,
-														   orders.order_id as order_id,
-														   orders.quantity as quantity,
-														   orders.size as size,
-														   orders.color as color,
-														   orders.orderDate as orderdate,
-														   orders.paymentMethod as paymentMethod,
-														   orders.GSTN as gstn,
-														   orders.id as id,
-														   products.skuId as skuid 
-														   from orders 
-														   join users on  orders.userId=users.id 
-														   join address on users.id=address.user_id 
-														   join products on products.id=orders.productId 
-														   where orders.orderStatus!='$status' or orders.orderStatus!='$status1' or orders.orderStatus is null");
+											$st = 'Cancelled';
+											// $query = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,products.productName as productname,products.shippingCharge as shippingcharge,orders.quantity as quantity,orders.orderDate as orderdate,products.productPrice as productprice,orders.id as id  from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus='$st'");
+											$query = mysqli_query($con, "select users.name as username,users.email as useremail,users.contactno as usercontact,address.shippingAddress as shippingaddress,address.shippingCity as shippingcity,address.shippingState as shippingstate,address.shippingPincode as shippingpincode,address.mobile_no as mobile_no, address.billingAddress as billingaddress,address.billingCity as billingcity,address.billingState as billingstate,address.billingPincode as billingpincode,products.productName as productname,products.shippingCharge as shippingcharge, orders.GSTN as gsthn, orders.orderStatus as orderstatus,orders.size as size, orders.color, orders.quantity as quantity,orders.paymentMethod as paymentMethod, orders.order_id as order_id, orders.orderDate as orderdate,products.productPrice as productprice,products.skuid as skuid,orders.GSTN as gstn,orders.id as id from orders join users on  orders.userId=users.id join address on users.id=address.user_id join products on products.id=orders.productId where orders.orderStatus='$st'");
 											$cnt = 1;
-											while ($row = mysqli_fetch_array($query1)) {
+											while ($row = mysqli_fetch_array($query)) {
 											?>
 											<tr>
 													<td><?php echo htmlentities($cnt); ?></td>
