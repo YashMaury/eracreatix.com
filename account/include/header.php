@@ -6,7 +6,7 @@ if (isset($_SESSION['login'])) {
     header("Location: ../index.php");
 }
 
-if (isset($_SESSION['id'])) {
+if (isset($_SESSION['login'])) {
     $num_cart = mysqli_query($con, "select count(id) as items from cart where `userId` = '" . $_SESSION['id'] . "'");
     $count_of_cart = mysqli_fetch_array($num_cart);
 } else {
