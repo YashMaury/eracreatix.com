@@ -114,9 +114,14 @@ if (strlen($_SESSION['alogin']) == 0) {
 															join address on orders.address=address.id 
 															join products on products.id=orders.productId 
 															where orders.orderStatus!='$status' and orders.orderStatus!='$status1' or orders.orderStatus is null");
-											$cnt = 1;
-											while ($row = mysqli_fetch_array($query1)) {
-											?>
+											// $cnt = 1;
+											// while ($row = mysqli_fetch_array($query1)) {
+											//
+
+                             $row = mysqli_fetch_array($query1);
+							//  $a=count($row);
+                        For($cnt=0;  $ctn<=($row); $cnt++){
+						?>
 												<tr>	
 													<td><?php echo htmlentities($cnt); ?></td>
 													<td><?php echo htmlentities($row['order_id']); ?></td>
@@ -133,7 +138,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													</td>
 												</tr>
 
-											<?php $cnt = $cnt + 1;
+											<?php //$cnt = $cnt + 1;
 											} ?>
 										</tbody>
 									</table>
