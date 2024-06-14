@@ -58,7 +58,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<br />
 
 
-									<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display table-responsive">
+									<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered display table-responsive">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -113,11 +113,20 @@ if (strlen($_SESSION['alogin']) == 0) {
 															join users on  orders.userId=users.id 
 															join address on orders.address=address.id 
 															join products on products.id=orders.productId 
-															where orders.orderStatus!='$status' and orders.orderStatus!='$status1' or orders.orderStatus is null");
-											$cnt = 1;
+															where orders.orderStatus!='$status' and orders.orderStatus!='$status1' or orders.orderStatus is null order by orders.order_id");
+											$cnt = 0;
+											$last_order_id = 1;
 											while ($row = mysqli_fetch_array($query1)) {
+												if ($last_order_id !== $row['order_id']) {
+													$cnt = $cnt + 1;
+												}
+												if ($last_order_id !== $row['order_id']) {
 											?>
-												<tr>	
+													<tr style="background-color: black; color: white;">
+													<?php } else {
+													?>
+													<tr>
+													<?php } ?>
 													<td><?php echo htmlentities($cnt); ?></td>
 													<td><?php echo htmlentities($row['order_id']); ?></td>
 													<td><?php echo htmlentities($row['username']); ?></td>
@@ -131,9 +140,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 													<td><?php echo htmlentities($row['paymentMethod']); ?></td>
 													<td> <a href="updateorder.php?oid=<?php echo htmlentities($row['id']); ?>" title="Update order" target="_blank"><i class="icon-edit"></i></a>
 													</td>
-												</tr>
+													<?php if ($last_order_id == $row['order_id']) { ?>
+													</tr>
+												<?php } ?>
 
-											<?php $cnt = $cnt + 1;
+											<?php
+												$last_order_id = $row['order_id'];
 											} ?>
 										</tbody>
 									</table>

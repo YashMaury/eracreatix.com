@@ -676,7 +676,7 @@ $fetch_count_address = mysqli_fetch_array($count_address);
                                 </div>
                             </div>
                             <div class="t4s_field t4s-pr">
-                                <input type="text" class="t4s_frm_input" name="mobile_no" id="mobile_no">
+                                <input type="text" class="t4s_frm_input" name="mobile_no" id="mobile_no" required>
                                 <label for="mobile_no">Mobile No.</label>
                             </div>
                             <div style="margin-top: 10px;">

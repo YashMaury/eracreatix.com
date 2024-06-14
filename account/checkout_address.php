@@ -668,7 +668,7 @@ $address = mysqli_query($con, "select * from address where `user_id` = '" . $_SE
                                 </div>
                             </div>
                             <div class="t4s_field t4s-pr">
-                                <input type="text" class="t4s_frm_input" name="mobile_no" id="mobile_no">
+                                <input type="text" class="t4s_frm_input" name="mobile_no" id="mobile_no" required>
                                 <label for="mobile_no">Mobile No.</label>
                             </div>
                             <br>
