@@ -114,13 +114,38 @@ if (strlen($_SESSION['alogin']) == 0) {
 															join address on orders.address=address.id 
 															join products on products.id=orders.productId 
 															where orders.orderStatus!='$status' and orders.orderStatus!='$status1' or orders.orderStatus is null");
-											// $cnt = 1;
-											// while ($row = mysqli_fetch_array($query1)) {
-											//
-
-                             $row = mysqli_fetch_array($query1);
-							//  $a=count($row);
-                        For($cnt=0;  $ctn<=($row); $cnt++){
+											 
+											
+															for ($x = 0; $x <= 10; $x++) {
+																echo "The number is: $x <br>";
+															  }
+													
+											        $cnt = 1;
+												    echo count($row = mysqli_fetch_array($query1, MYSQLI_ASSOC));
+											        for($cnt = 1; $cnt < count($row = mysqli_fetch_array($query1,MYSQLI_ASSOC)); $cnt++);
+												   {
+											//  while ($row = mysqli_fetch_array($query1)) {
+											// 	$test=array();
+											// //	$row = mysqli_fetch_array($query1, MYSQLI_ASSOC);
+											// 	//echo count($row);
+											// 	foreach ($row as $key => $value) {
+											// 		//echo $key ."****" ;
+											// 		 if ($key==0) {
+											// 		$test=array($row['order_id'], $row['productname'], $row['username'],$row['shippingaddress'],$row['billingaddress'],$row['productname'],$row['skuid'],$row['quantity'],$row['orderdate']);
+											// 		 list ($a, $b, $c, $d, $e, $f,$g, $h,$i) = $test;
+											// 	}
+													
+											// 		else{
+													
+											// 		$b=$b.$row['productname'];
+											// 		//echo $b;
+											// 		//Consol.log($b);
+													
+											// 	}
+												
+											// }         
+											//echo $a."/". $b."/".$c."/".$d."/".$e."/".$f."/".$g."/".$h."<br>";
+											// echo "****"             
 						?>
 												<tr>	
 													<td><?php echo htmlentities($cnt); ?></td>
@@ -138,7 +163,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													</td>
 												</tr>
 
-											<?php //$cnt = $cnt + 1;
+											<?php echo $cnt = $cnt + 1;
 											} ?>
 										</tbody>
 									</table>
