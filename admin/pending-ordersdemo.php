@@ -123,7 +123,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 					$x=array_unique(explode(",",$row['ordersd']));
 			
 				$prod=array_unique(explode(",",$row['products']));
-				
+				print_r($x);
+				// print_r($prod);
 											?>
 											
 										
