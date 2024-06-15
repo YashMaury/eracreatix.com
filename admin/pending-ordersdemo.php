@@ -162,6 +162,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													
 													<td style="padding-bottom:0px;margin-bottom:0px"><?php 
 													$total=0;
+													$totalshiipingcharge=0;
 													for($k=0;$k<sizeof($x);$k++){
 												
 													     $price=explode(":",$prod[$k]);
@@ -169,7 +170,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													//	 echo (explode(":",$x[$k])[0]*$price[2])."<br><br>";
 														 $shippingcharge= (explode(":",$x[$k])[0]*$price[2]) ."<br><br>";
 														 $totalshiipingcharge=$shippingcharge+$totalshiipingcharge;
-													   $total+=explode(":",$x[$k])[0]*$price[1]+$price[2]+$totalshiipingcharge;
+													   $total+=explode(":",$x[$k])[0]*$price[1]+$shippingcharge;
 													    
 													  
 													}
