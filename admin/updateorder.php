@@ -10,7 +10,7 @@ if (strlen($_SESSION['alogin']) == 0) {
     $message = $_POST['message'];
 
     $query = mysqli_query($con, "insert into ordertrackhistory(orderId,status,remark, message) values('$oid','$status','$remark','$message')");
-    echo "kkkkkkkkkkkk".$sql = mysqli_query($con, "update orders set orderStatus='$status' where id='$oid'");
+    echo $sql = mysqli_query($con, "update orders set orderStatus='$status' where id='$oid'");
     echo "<script>alert('Order updated sucessfully...');</script>";
     // echo "<script>window.location.href = window.location.href;</script>";
 
