@@ -3,16 +3,16 @@ include_once 'include/config.php';
 if (strlen($_SESSION['alogin']) == 0) {
   header('location:index.php');
 } else {
-   echo $oid = intval($_GET['oid']);
+    $oid = $_GET['order'];
   if (isset($_POST['submit2'])) {
     $status = $_POST['status'];
     $remark = $_POST['remark']; //space char
     $message = $_POST['message'];
 
     $query = mysqli_query($con, "insert into ordertrackhistory(orderId,status,remark, message) values('$oid','$status','$remark','$message')");
-    echo $sql = mysqli_query($con, "update orders set orderStatus='$status' where id='$oid'");
+     $sql = mysqli_query($con, "update orders set orderStatus='$status' where order_id='$oid'");
     echo "<script>alert('Order updated sucessfully...');</script>";
-    // echo "<script>window.location.href = window.location.href;</script>";
+    echo "<script>window.location.href = window.location.href;</script>";
 
     //}
   }
@@ -87,7 +87,7 @@ if (strlen($_SESSION['alogin']) == 0) {
           <?php } ?>
           <?php
           $st = 'Cancelled';
-          $rt = mysqli_query($con, "SELECT * FROM orders WHERE id='$oid'");
+          $rt = mysqli_query($con, "SELECT * FROM orders WHERE order_id='$oid'");
           while ($num = mysqli_fetch_array($rt)) {
             $currrentSt = $num['orderStatus'];
           }

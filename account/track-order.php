@@ -4,10 +4,10 @@ include_once 'include/config.php';
 if (!empty($_POST['order_id'])) {
   $orderid = mysqli_query($con, "select * from orders where `order_id` = '" . $_POST['order_id'] . "' ");
   $fetch_id = mysqli_fetch_array($orderid);
-  $oid = $fetch_id['id'];
+  $oid = $fetch_id['order_id'];
 } else {
-  $oid = intval($_GET['oid']);
-  $orderid = mysqli_query($con, "select * from orders where `id` = '" . $oid . "' ");
+  $oid = ($_GET['oid']);
+  $orderid = mysqli_query($con, "select * from orders where `order_id` = '" . $oid . "' ");
   $fetch_id = mysqli_fetch_array($orderid);
   $order_id = $fetch_id['order_id'];
 }
@@ -88,7 +88,7 @@ if (!empty($_POST['order_id'])) {
           </tr>
         <?php  }
         $st = 'Delivered';
-        $rt = mysqli_query($con, "SELECT * FROM orders WHERE id='$oid'");
+        $rt = mysqli_query($con, "SELECT * FROM orders WHERE order_id='$oid'");
         while ($num = mysqli_fetch_array($rt)) {
           $currrentSt = $num['orderStatus'];
         }

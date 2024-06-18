@@ -108,7 +108,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														   orders.GSTN as gstn,
 														   orders.id as id,
 														   products.skuId as skuid,
-														    GROUP_CONCAT(orders.quantity,':',orders.size,':',orders.color) as ordersd
+														    GROUP_CONCAT(orders.quantity,':',orders.size,':',orders.color,':',orders.productId) as ordersd
 														   from orders 
 														   join users on  orders.userId=users.id 
 														   join address on users.id=address.user_id 
@@ -118,11 +118,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 										
 											$cnt = 1;
 											while ($row = mysqli_fetch_assoc($query1)) {
+											    //print_r(explode(",",$row['ordersd']));
 		
-					                 $x=array_unique(explode(",",$row['ordersd']));
+					$x=array_unique(explode(",",$row['ordersd']));
 			
-				                    $prod=array_unique(explode(",",$row['products']));
-				
+				$prod=array_unique(explode(",",$row['products']));
+				//print_r($x);
+				// print_r($prod);
 											?>
 											
 										
@@ -134,6 +136,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													<td><?php echo htmlentities($row['useremail']); ?>/<?php echo htmlentities($row['usercontact']); ?></td>
 													<td><?php echo htmlentities($row['shippingaddress'] . "," . $row['shippingcity'] . "," . $row['shippingstate'] . "-" . $row['shippingpincode']); ?><br><?php echo isset($row['mobile_no']) ? "Mobile no.- " . $row['mobile_no'] : ""; ?></td>
 													<td><?php echo htmlentities($row['billingaddress'] . "," . $row['billingcity'] . "," . $row['billingstate'] . "-" . $row['billingpincode']); ?> GSTN-<?php echo htmlentities($row['gstn']); ?></td>
+														<!-- Grand Total Calculate in this Colume -->
 													<td><?php 
 										    	 for($i=0;$i<sizeof($x);$i++){
 										    	     $prop=explode(":",$x[$i]);
@@ -142,6 +145,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 													      echo "size :".$prop[1]."<br><br>"; 
 													} 
 													
+													 echo "Shipping Charge:"."<br>";
 													 echo "Grand Total :"
 													
 											
@@ -150,25 +154,37 @@ if (strlen($_SESSION['alogin']) == 0) {
 													   	<td><?php for($j=0;$j<sizeof($x);$j++){
 													     
 													    echo explode(":",$x[$j])[0]."<br><br><br><br>"; 
+														
 													  
 													}
+													  
 													
 													?></td>
+													
 													<td style="padding-bottom:0px;margin-bottom:0px"><?php 
 													$total=0;
+													$totalshiipingcharge=0;
 													for($k=0;$k<sizeof($x);$k++){
 												
 													     $price=explode(":",$prod[$k]);
-													    $total+=explode(":",$x[$k])[0]*$price[1]+$price[2];
-													    echo explode(":",$x[$k])[0]*$price[1]+$price[2]."<br><br>";
+													     echo (explode(":",$x[$k])[0]*$price[1])."<br><br>";
+													//	 echo (explode(":",$x[$k])[0]*$price[2])."<br><br>";
+														 $shippingcharge= (explode(":",$x[$k])[0]*$price[2]) ."<br><br>";
+														 $totalshiipingcharge=$shippingcharge+$totalshiipingcharge;
+													   $total+=explode(":",$x[$k])[0]*$price[1]+$shippingcharge;
+													    
 													  
 													}
-													echo "<p style='margin: 100% 0 1px;>".$total."</p>";
+
+													    echo $totalshiipingcharge;
+													    echo ""."<p style='margin: 100% 0 1px'>".$total."</p>";
+													
+						
 												
 													?></td>
 													<td><?php echo htmlentities($row['orderdate']); ?></td>
 													<td><?php echo htmlentities($row['paymentMethod']); ?></td>
-													<td> <a href="updateorder.php?oid=<?php echo htmlentities($row['id']); ?>" title="Update order" target="_blank"><i class="icon-edit"></i></a>
+													<td> <a href="updateorder.php?order=<?php echo htmlentities($row['order_id']); ?>" title="Update order" target="_blank"><i class="icon-edit"></i></a>
 													</td>
 												</tr>
 												

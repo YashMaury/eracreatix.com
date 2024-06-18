@@ -120,7 +120,7 @@ $fetch_count_orders = mysqli_fetch_array($count_orders);
                                 <td class="cart-product-sub-total"><?php echo $row['odate']; ?> </td>
 
                                 <td>
-                                    <a href="javascript:void(0);" onClick="popUpWindow('track-order.php?oid=<?php echo htmlentities($row['orderid']); ?>');" title="Track order">
+                                    <a href="javascript:void(0);" onClick="popUpWindow('track-order.php?oid=<?php echo htmlentities($row['order_id']); ?>');" title="Track order">
                                         Track | Cancel | Refund
                                 </td>
                             </tr>
