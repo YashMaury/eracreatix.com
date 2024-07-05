@@ -1,0 +1,42 @@
+[02-Jun-2024 15:27:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home2/glintqnj/eracreatix.com/include/config.php:7
+Stack trace:
+#0 /home2/glintqnj/eracreatix.com/include/config.php(7): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'eracreatix')
+#1 /home2/glintqnj/eracreatix.com/include/header.php(3): include('/home2/glintqnj...')
+#2 /home2/glintqnj/eracreatix.com/index.php(2): include('/home2/glintqnj...')
+#3 {main}
+  thrown in /home2/glintqnj/eracreatix.com/include/config.php on line 7
+[03-Jun-2024 08:15:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'glintqnj_eracreatixclone'@'localhost' (using password: YES) in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php:18
+Stack trace:
+#0 /home2/glintqnj/glintel.com/eracreatixclone/include/config.php(18): mysqli_connect('localhost', 'glintqnj_eracre...', Object(SensitiveParameterValue), 'glintqnj_eracre...')
+#1 /home2/glintqnj/glintel.com/eracreatixclone/include/header.php(3): include('/home2/glintqnj...')
+#2 /home2/glintqnj/glintel.com/eracreatixclone/collections.php(2): include('/home2/glintqnj...')
+#3 {main}
+  thrown in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php on line 18
+[03-Jun-2024 08:15:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'glintqnj_eracreatixclone'@'localhost' (using password: YES) in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php:18
+Stack trace:
+#0 /home2/glintqnj/glintel.com/eracreatixclone/include/config.php(18): mysqli_connect('localhost', 'glintqnj_eracre...', Object(SensitiveParameterValue), 'glintqnj_eracre...')
+#1 /home2/glintqnj/glintel.com/eracreatixclone/include/header.php(3): include('/home2/glintqnj...')
+#2 /home2/glintqnj/glintel.com/eracreatixclone/index.php(2): include('/home2/glintqnj...')
+#3 {main}
+  thrown in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php on line 18
+[03-Jun-2024 08:15:18 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'glintqnj_eracreatixclone'@'localhost' (using password: YES) in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php:18
+Stack trace:
+#0 /home2/glintqnj/glintel.com/eracreatixclone/include/config.php(18): mysqli_connect('localhost', 'glintqnj_eracre...', Object(SensitiveParameterValue), 'glintqnj_eracre...')
+#1 /home2/glintqnj/glintel.com/eracreatixclone/include/header.php(3): include('/home2/glintqnj...')
+#2 /home2/glintqnj/glintel.com/eracreatixclone/index.php(2): include('/home2/glintqnj...')
+#3 {main}
+  thrown in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php on line 18
+[03-Jun-2024 08:15:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'glintqnj_eracreatixclone'@'localhost' (using password: YES) in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php:18
+Stack trace:
+#0 /home2/glintqnj/glintel.com/eracreatixclone/include/config.php(18): mysqli_connect('localhost', 'glintqnj_eracre...', Object(SensitiveParameterValue), 'glintqnj_eracre...')
+#1 /home2/glintqnj/glintel.com/eracreatixclone/include/header.php(3): include('/home2/glintqnj...')
+#2 /home2/glintqnj/glintel.com/eracreatixclone/index.php(2): include('/home2/glintqnj...')
+#3 {main}
+  thrown in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php on line 18
+[03-Jun-2024 08:16:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'glintqnj_eracreatixclone'@'localhost' (using password: YES) in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php:18
+Stack trace:
+#0 /home2/glintqnj/glintel.com/eracreatixclone/include/config.php(18): mysqli_connect('localhost', 'glintqnj_eracre...', Object(SensitiveParameterValue), 'glintqnj_eracre...')
+#1 /home2/glintqnj/glintel.com/eracreatixclone/include/header.php(3): include('/home2/glintqnj...')
+#2 /home2/glintqnj/glintel.com/eracreatixclone/index.php(2): include('/home2/glintqnj...')
+#3 {main}
+  thrown in /home2/glintqnj/glintel.com/eracreatixclone/include/config.php on line 18
