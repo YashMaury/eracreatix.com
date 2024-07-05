@@ -13,7 +13,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 		unlink("productimages/".$_GET['id']."/".$fetch['productImage2']);
 		unlink("productimages/".$_GET['id']."/".$fetch['productImage3']);
 		unlink("productimages/".$_GET['id']."/".$fetch['productImage4']);
-		unlink("productimages/".$_GET['id']);
+		rmdir("productimages/".$_GET['id']);
 		mysqli_query($con, "delete from products where id = '" . $_GET['id'] . "'");
 		$_SESSION['delmsg'] = "Product deleted !!";
 	}
