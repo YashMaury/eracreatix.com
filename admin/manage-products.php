@@ -7,6 +7,13 @@ if (strlen($_SESSION['alogin']) == 0) {
 	$currentTime = date('d-m-Y h:i:s A', time());
 
 	if (isset($_GET['del'])) {
+		$query = mysqli_query($con, "select * from products where id = '" . $_GET['id'] . "'");
+		$fetch = mysqli_fetch_array($query);
+		unlink("productimages/".$_GET['id']."/".$fetch['productImage1']);
+		unlink("productimages/".$_GET['id']."/".$fetch['productImage2']);
+		unlink("productimages/".$_GET['id']."/".$fetch['productImage3']);
+		unlink("productimages/".$_GET['id']."/".$fetch['productImage4']);
+		unlink("productimages/".$_GET['id']);
 		mysqli_query($con, "delete from products where id = '" . $_GET['id'] . "'");
 		$_SESSION['delmsg'] = "Product deleted !!";
 	}
