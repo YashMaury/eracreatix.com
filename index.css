@@ -1376,9 +1376,9 @@ background: #e8c463;
                 display: initial;
                 background: #e8c463;
             }
-
+            /* header background css mobile */
             .t4s-section-header__mid {
-                background: #099bb4;
+                background: #d9f4f9;
             }
 
             .sticky-header-bar {
@@ -1386,12 +1386,13 @@ background: #e8c463;
                 top: 0px;
             }
         }
-
+        
+        /* header background css */
         .is-header--stuck .t4s-header__wrapper {
             --h-text-color: #222222;
             --h-text-color-rgb: 34, 34, 34;
             --h-text-color-hover: #222222;
-            --h-bg-color: #099bb4;
+            --h-bg-color: #d9f4f9;
         }
 
         .is-header--stuck .header__sticky-logo {

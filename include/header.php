@@ -34,8 +34,8 @@ if (isset($_SESSION['id'])) {
     <meta property="og:title" content="Buy Best Home Decor Items &amp; Essentials Online At Best Prices">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Home Décor- Buy Home Decorative Items &amp; essentials Online in India. Choose from a wide range of premium home decor products at Decor We. Buy house decoration items online at best prices.">
-    <meta property="og:image" content="http://Decor We.com/media/logo.jpeg">
-    <meta property="og:image:secure_url" content="https://Decor We.com/media/logo.jpeg">
+    <meta property="og:image" content="http://Decor We.com/media/logo.png">
+    <meta property="og:image:secure_url" content="https://Decor We.com/media/logo.png">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="536">
     <meta name="twitter:site" content="@Decor We">
@@ -140,14 +140,14 @@ if (isset($_SESSION['id'])) {
                                     <rect y="14" width="30" height="1.5"></rect>
                                 </svg>
                                 <!-- <a class="cg" href="mailto:Decor We@gmail.com">Decor We@gmail.com</a> -->
-                                <!-- <img src="media/logo.jpeg" class="t4s-d-lg-block" width="50" height="43" alt="Decor We" style="width: 50px"> -->
+                                <!-- <img src="media/logo.png" class="t4s-d-lg-block" width="50" height="43" alt="Decor We" style="width: 50px"> -->
                             </div>
                             <div class="t4s-col-lg-3 t4s-col-md-4 t4s-col-6 t4s-text-center t4s-text-lg-start t4s-col-item">
                                 <div class=" t4s-header__logo t4s-lh-1">
                                     <a class="t4s-d-inline-block" href="index.php">
-                                        <img src="media/logo.jpeg" class="header__normal-logo t4s-d-none t4s-d-lg-block" alt="Decor We" style="width: 100px;">
-                                        <img src="media/logo.jpeg" class="header__sticky-logo t4s-d-none t4s-d-none" alt="Decor We" style="width: 100px !important;">
-                                        <img src="media/logo.jpeg" class="header__mobile-logo t4s-d-lg-none" alt="Decor We" style="width: 80px;">
+                                        <img src="media/logo.png" class="header__normal-logo t4s-d-none t4s-d-lg-block" alt="Decor We" style="width: 100px;">
+                                        <img src="media/logo.png" class="header__sticky-logo t4s-d-none t4s-d-none" alt="Decor We" style="width: 100px !important;">
+                                        <img src="media/logo.png" class="header__mobile-logo t4s-d-lg-none" alt="Decor We" style="width: 80px;">
                                     </a>
                                 </div>
                             </div>
