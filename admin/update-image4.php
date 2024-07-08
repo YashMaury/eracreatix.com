@@ -7,8 +7,10 @@ if (strlen($_SESSION['alogin']) == 0) {
 	if (isset($_POST['submit'])) {
 		$productname = $_POST['productName'];
 		$productimage4 = $_FILES["productimage4"]["name"];
-
-
+		$sql = mysqli_query($con, "select productimage4 from products where `id`='" . $_GET['id'] . "'");
+		while ($row = mysqli_fetch_array($sql)) {
+			unlink('productimages/' . $pid . '/' . $row['productimage4']);
+		}
 
 		move_uploaded_file($_FILES["productimage4"]["tmp_name"], "productimages/$pid/" . $_FILES["productimage4"]["name"]);
 		$sql = mysqli_query($con, "update  products set productImage4='$productimage4' where id='$pid' ");

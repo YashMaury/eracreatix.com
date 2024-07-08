@@ -1,5 +1,5 @@
 <?php
-include('include/config.php');
+include ('include/config.php');
 if (!isset($_SESSION['alogin'])) {
 	header('location:index.php');
 } else {
@@ -12,8 +12,17 @@ if (!isset($_SESSION['alogin'])) {
 		$productcompany = $_POST['productCompany'];
 		$productprice = $_POST['productprice'];
 		$productpricebd = $_POST['productpricebd'];
-		$size = $_POST['size'];
-		$color = $_POST['color'];
+		if (isset($_POST['size'])) {
+			$size = $_POST['size'];
+		} else {
+			$size = array();
+			;
+		}
+		if (isset($_POST['color'])) {
+			$color = $_POST['color'];
+		} else {
+			$color = array();
+		}
 		$productHighlight = $_POST['productHighlight'];
 		$additionalInfo = $_POST['additionalInfo'];
 		$productrefundandExchange = $_POST['productrefundandExchange'];
@@ -28,7 +37,7 @@ if (!isset($_SESSION['alogin'])) {
 	}
 
 
-?>
+	?>
 	<!DOCTYPE html>
 	<html lang="en">
 
@@ -40,7 +49,8 @@ if (!isset($_SESSION['alogin'])) {
 		<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 		<link type="text/css" href="css/theme.css" rel="stylesheet">
 		<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
-		<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
+		<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'
+			rel='stylesheet'>
 		<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			bkLib.onDomLoaded(nicEditors.allTextAreas);
@@ -52,7 +62,7 @@ if (!isset($_SESSION['alogin'])) {
 					type: "POST",
 					url: "get_subcat.php",
 					data: 'cat_id=' + val,
-					success: function(data) {
+					success: function (data) {
 						$("#subcategory").html(data);
 					}
 				});
@@ -68,12 +78,12 @@ if (!isset($_SESSION['alogin'])) {
 	</head>
 
 	<body>
-		<?php include('include/header.php'); ?>
+		<?php include ('include/header.php'); ?>
 
 		<div class="wrapper">
 			<div class="container">
 				<div class="row">
-					<?php include('include/sidebar.php'); ?>
+					<?php include ('include/sidebar.php'); ?>
 					<div class="span9">
 						<div class="content">
 
@@ -86,7 +96,9 @@ if (!isset($_SESSION['alogin'])) {
 									<?php if (isset($_POST['submit'])) { ?>
 										<div class="alert alert-success">
 											<button type="button" class="close" data-dismiss="alert">×</button>
-											<strong>Well done!</strong> <?php echo htmlentities($_SESSION['msg']); ?><?php echo htmlentities($_SESSION['msg'] = ""); ?>
+											<strong>Well done!</strong>
+											<?php echo htmlentities($_SESSION['msg']); ?>
+											<?php echo htmlentities($_SESSION['msg'] = ""); ?>
 										</div>
 									<?php } ?>
 
@@ -94,13 +106,16 @@ if (!isset($_SESSION['alogin'])) {
 									<?php if (isset($_GET['del'])) { ?>
 										<div class="alert alert-error">
 											<button type="button" class="close" data-dismiss="alert">×</button>
-											<strong>Oh snap!</strong> <?php echo htmlentities($_SESSION['delmsg']); ?><?php echo htmlentities($_SESSION['delmsg'] = ""); ?>
+											<strong>Oh snap!</strong>
+											<?php echo htmlentities($_SESSION['delmsg']); ?>
+											<?php echo htmlentities($_SESSION['delmsg'] = ""); ?>
 										</div>
 									<?php } ?>
 
 									<br />
 
-									<form class="form-horizontal row-fluid" name="insertproduct" method="post" enctype="multipart/form-data">
+									<form class="form-horizontal row-fluid" name="insertproduct" method="post"
+										enctype="multipart/form-data">
 
 										<?php
 
@@ -110,23 +125,28 @@ if (!isset($_SESSION['alogin'])) {
 
 
 
-										?>
+											?>
 
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Category</label>
 												<div class="controls">
-													<select name="category" class="span8 tip" onChange="getSubcat(this.value);" required>
-														<option value="<?php echo htmlentities($row['cid']); ?>"><?php echo htmlentities($row['catname']); ?></option>
+													<select name="category" class="span8 tip" onChange="getSubcat(this.value);"
+														required>
+														<option value="<?php echo htmlentities($row['cid']); ?>">
+															<?php echo htmlentities($row['catname']); ?>
+														</option>
 														<?php $query = mysqli_query($con, "select * from category");
 														while ($rw = mysqli_fetch_array($query)) {
 															if ($row['catname'] == $rw['categoryName']) {
 																continue;
 															} else {
-														?>
+																?>
 
-																<option value="<?php echo $rw['id']; ?>"><?php echo $rw['categoryName']; ?></option>
-														<?php }
+																<option value="<?php echo $rw['id']; ?>">
+																	<?php echo $rw['categoryName']; ?>
+																</option>
+															<?php }
 														} ?>
 													</select>
 												</div>
@@ -135,7 +155,9 @@ if (!isset($_SESSION['alogin'])) {
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product SKU-ID</label>
 												<div class="controls">
-													<input type="text" name="skuId" placeholder="Enter Product Comapny Name" value="<?php echo htmlentities($row['skuId']); ?>" class="span8 tip" required>
+													<input type="text" name="skuId" placeholder="Enter Product Comapny Name"
+														value="<?php echo htmlentities($row['skuId']); ?>" class="span8 tip"
+														required>
 												</div>
 											</div>
 
@@ -144,7 +166,9 @@ if (!isset($_SESSION['alogin'])) {
 												<div class="controls">
 
 													<select name="subcategory" id="subcategory" class="span8 tip" required>
-														<option value="<?php echo htmlentities($row['subcatid']); ?>"><?php echo htmlentities($row['subcatname']); ?></option>
+														<option value="<?php echo htmlentities($row['subcatid']); ?>">
+															<?php echo htmlentities($row['subcatname']); ?>
+														</option>
 													</select>
 												</div>
 											</div>
@@ -153,27 +177,37 @@ if (!isset($_SESSION['alogin'])) {
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Name</label>
 												<div class="controls">
-													<input type="text" name="productName" placeholder="Enter Product Name" value="<?php echo htmlentities($row['productName']); ?>" class="span8 tip">
+													<input type="text" name="productName" placeholder="Enter Product Name"
+														value="<?php echo htmlentities($row['productName']); ?>"
+														class="span8 tip">
 												</div>
 											</div>
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Company</label>
 												<div class="controls">
-													<input type="text" name="productCompany" placeholder="Enter Product Comapny Name" value="<?php echo htmlentities($row['productCompany']); ?>" class="span8 tip" required>
+													<input type="text" name="productCompany"
+														placeholder="Enter Product Comapny Name"
+														value="<?php echo htmlentities($row['productCompany']); ?>"
+														class="span8 tip" required>
 												</div>
 											</div>
 											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Price Before Discount</label>
+												<label class="control-label" for="basicinput">Product Price Before
+													Discount</label>
 												<div class="controls">
-													<input type="text" name="productpricebd" placeholder="Enter Product Price" value="<?php echo htmlentities($row['productPriceBeforeDiscount']); ?>" class="span8 tip" required>
+													<input type="text" name="productpricebd" placeholder="Enter Product Price"
+														value="<?php echo htmlentities($row['productPriceBeforeDiscount']); ?>"
+														class="span8 tip" required>
 												</div>
 											</div>
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Price</label>
 												<div class="controls">
-													<input type="text" name="productprice" placeholder="Enter Product Price" value="<?php echo htmlentities($row['productPrice']); ?>" class="span8 tip" required>
+													<input type="text" name="productprice" placeholder="Enter Product Price"
+														value="<?php echo htmlentities($row['productPrice']); ?>"
+														class="span8 tip" required>
 												</div>
 											</div>
 
@@ -184,26 +218,39 @@ if (!isset($_SESSION['alogin'])) {
 														<?php
 														$size = explode(',', $row['size']);
 														foreach ($size as $item) {
-														?>
+															?>
 															<div class="flex-grow-1 pr-3">
 																<div class="form-group">
-																	<input class="span8 tip" type="text" name="size[]" value="<?= $item ?>" id="size">
-																	<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
+																	<input class="span8 tip" type="text" name="size[]"
+																		value="<?= $item ?>" id="size">
+																	<button type="button" class="btn btn-danger btn-sm"
+																		style="margin-top: 0px;" name="button"
+																		onclick="removeSize(this)">
 																		Remove
 																	</button>
 																</div>
 															</div>
 														<?php } ?>
-														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+														<button type="button" class="btn btn-success btn-sm"
+															style="margin-top: 0px;" name="button" onclick="appendSize(this)">
 															Add
 														</button>
 													</div>
 												</div>
 											<?php } else { ?>
 												<div class="control-group">
-													<label class="control-label" for="basicinput">Product Size</label>
+													<label class="control-label" for="basicinput">Size</label>
+													<!-- <div class="controls">
+														<input type="text" name="size[]" placeholder="Enter Product Size"
+															class="span8 tip">
+														<button type="button" class="btn btn-success btn-sm"
+															style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+															Add
+														</button>
+													</div> -->
 													<div class="controls" id="size_area">
-														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendSize(this)">
+														<button type="button" class="btn btn-success btn-sm"
+															style="margin-top: 0px;" name="button" onclick="appendSize(this)">
 															Add
 														</button>
 													</div>
@@ -218,17 +265,21 @@ if (!isset($_SESSION['alogin'])) {
 														<?php
 														$color = explode(',', $row['color']);
 														foreach ($color as $item) {
-														?>
+															?>
 															<div class="flex-grow-1 pr-3">
 																<div class="form-group">
-																	<input class="span8 tip" type="text" name="color[]" value="<?= $item ?>" id="color">
-																	<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
+																	<input class="span8 tip" type="text" name="color[]"
+																		value="<?= $item ?>" id="color">
+																	<button type="button" class="btn btn-danger btn-sm"
+																		style="margin-top: 0px;" name="button"
+																		onclick="removeColor(this)">
 																		Remove
 																	</button>
 																</div>
 															</div>
 														<?php } ?>
-														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+														<button type="button" class="btn btn-success btn-sm"
+															style="margin-top: 0px;" name="button" onclick="appendColor(this)">
 															Add
 														</button>
 													</div>
@@ -237,7 +288,8 @@ if (!isset($_SESSION['alogin'])) {
 												<div class="control-group">
 													<label class="control-label" for="basicinput">Product Color</label>
 													<div class="controls" id="color_area">
-														<button type="button" class="btn btn-success btn-sm" style="margin-top: 0px;" name="button" onclick="appendColor(this)">
+														<button type="button" class="btn btn-success btn-sm"
+															style="margin-top: 0px;" name="button" onclick="appendColor(this)">
 															Add
 														</button>
 													</div>
@@ -245,13 +297,21 @@ if (!isset($_SESSION['alogin'])) {
 											<?php } ?>
 											<br>
 
+											<div class="control-group">
+												<label class="control-label" for="basicinput">Product Description</label>
+												<div class="controls">
+													<textarea name="productDescription" placeholder="Enter Product Description"
+														rows="6"
+														class="span8 tip"><?php echo htmlentities($row['productDescription']); ?></textarea>
+												</div>
+											</div>
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Highlights</label>
 												<div class="controls">
-													<textarea name="productHighlight" placeholder="Enter Product Description" rows="6" class="span8 tip">
-                                                    	<?php echo htmlentities($row['productHighlight']); ?>
-													</textarea>
+													<textarea name="productHighlight" placeholder="Enter Product Description"
+														rows="6"
+														class="span8 tip"><?php echo htmlentities($row['productHighlight']); ?></textarea>
 												</div>
 
 											</div>
@@ -259,44 +319,41 @@ if (!isset($_SESSION['alogin'])) {
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Additional Info</label>
 												<div class="controls">
-													<textarea name="additionalInfo" placeholder="Enter Product Description" rows="6" class="span8 tip">
-<?php echo htmlentities($row['additionalInfo']); ?>
-</textarea>
+													<textarea name="additionalInfo" placeholder="Enter Product Description"
+														rows="6"
+														class="span8 tip"><?php echo htmlentities($row['additionalInfo']); ?></textarea>
 												</div>
 
 											</div>
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Refund and Exchange</label>
 												<div class="controls">
-													<textarea name="productrefundandExchange" placeholder="Enter Product Description" rows="6" class="span8 tip">
-<?php echo htmlentities($row['productrefundandExchange']); ?>
-</textarea>
+													<textarea name="productrefundandExchange"
+														placeholder="Enter Product Description" rows="6"
+														class="span8 tip"><?php echo htmlentities($row['productrefundandExchange']); ?></textarea>
 												</div>
 
-											</div>
-
-
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Description</label>
-												<div class="controls">
-													<textarea name="productDescription" placeholder="Enter Product Description" rows="6" class="span8 tip">
-<?php echo htmlentities($row['productDescription']); ?>
-</textarea>
-												</div>
 											</div>
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Shipping Charge</label>
 												<div class="controls">
-													<input type="text" name="productShippingcharge" placeholder="Enter Product Shipping Charge" value="<?php echo htmlentities($row['shippingCharge']); ?>" class="span8 tip" required>
+													<input type="text" name="productShippingcharge"
+														placeholder="Enter Product Shipping Charge"
+														value="<?php echo htmlentities($row['shippingCharge']); ?>"
+														class="span8 tip" required>
 												</div>
 											</div>
 
 											<div class="control-group">
 												<label class="control-label" for="basicinput">Product Availability</label>
 												<div class="controls">
-													<select name="productAvailability" id="productAvailability" class="span8 tip" required>
-														<option value="<?php echo htmlentities($row['productAvailability']); ?>"><?php echo htmlentities($row['productAvailability']); ?></option>
+													<select name="productAvailability" id="productAvailability"
+														class="span8 tip" required>
+														<option
+															value="<?php echo htmlentities($row['productAvailability']); ?>">
+															<?php echo htmlentities($row['productAvailability']); ?>
+														</option>
 														<option value="In Stock">In Stock</option>
 														<option value="Out of Stock">Out of Stock</option>
 													</select>
@@ -304,38 +361,46 @@ if (!isset($_SESSION['alogin'])) {
 											</div>
 
 
-
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Image1</label>
-												<div class="controls">
-													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage1']); ?>" width="200" height="100"> <a href="update-image1.php?id=<?php echo $row['id']; ?>">Change Image</a>
+											<?php if (!empty($row['productImage1'])) { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Image1</label>
+													<div class="controls">
+														<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage1']); ?>"
+															width="200" height="100"> <a
+															href="update-image1.php?id=<?php echo $row['id']; ?>">Change Image</a>
+													</div>
 												</div>
-											</div>
-
-
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Image2</label>
-												<div class="controls">
-													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage2']); ?>" width="200" height="100"> <a href="update-image2.php?id=<?php echo $row['id']; ?>">Change Image</a>
+											<?php } ?>
+											<?php if (!empty($row['productImage2'])) { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Image2</label>
+													<div class="controls">
+														<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage2']); ?>"
+															width="200" height="100"> <a
+															href="update-image2.php?id=<?php echo $row['id']; ?>">Change Image</a>
+													</div>
 												</div>
-											</div>
-
-
-
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Image3</label>
-												<div class="controls">
-													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage3']); ?>" width="200" height="100"> <a href="update-image3.php?id=<?php echo $row['id']; ?>">Change Image</a>
+											<?php } ?>
+											<?php if (!empty($row['productImage3'])) { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Image3</label>
+													<div class="controls">
+														<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage3']); ?>"
+															width="200" height="100"> <a
+															href="update-image3.php?id=<?php echo $row['id']; ?>">Change Image</a>
+													</div>
 												</div>
-											</div>
-
-
-											<div class="control-group">
-												<label class="control-label" for="basicinput">Product Image4</label>
-												<div class="controls">
-													<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage4']); ?>" width="200" height="100"> <a href="update-image4.php?id=<?php echo $row['id']; ?>">Change Image</a>
+											<?php } ?>
+											<?php if (!empty($row['productImage4'])) { ?>
+												<div class="control-group">
+													<label class="control-label" for="basicinput">Product Image4</label>
+													<div class="controls">
+														<img src="productimages/<?php echo htmlentities($pid); ?>/<?php echo htmlentities($row['productImage4']); ?>"
+															width="200" height="100"> <a
+															href="update-image4.php?id=<?php echo $row['id']; ?>">Change Image</a>
+													</div>
 												</div>
-											</div>
+											<?php } ?>
 										<?php } ?>
 										<div class="control-group">
 											<div class="controls">
@@ -360,7 +425,8 @@ if (!isset($_SESSION['alogin'])) {
 			<div class="flex-grow-1 pr-3">
 				<div class="form-group">
 					<input type="text" class="span8 tip" name="size[]" id="size" placeholder="Enter Product Size" />
-					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeSize(this)">
+					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button"
+						onclick="removeSize(this)">
 						<!-- <i class="fa fa-minus"></i> -->
 						Remove
 					</button>
@@ -371,7 +437,8 @@ if (!isset($_SESSION['alogin'])) {
 			<div class="flex-grow-1 pr-3">
 				<div class="form-group">
 					<input type="text" class="span8 tip" name="color[]" id="color" placeholder="Enter Product Color" />
-					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button" onclick="removeColor(this)">
+					<button type="button" class="btn btn-danger btn-sm" style="margin-top: 0px;" name="button"
+						onclick="removeColor(this)">
 						<!-- <i class="fa fa-minus"></i> -->
 						Remove
 					</button>
@@ -401,7 +468,7 @@ if (!isset($_SESSION['alogin'])) {
 			}
 		</script>
 
-		<?php include('include/footer.php'); ?>
+		<?php include ('include/footer.php'); ?>
 
 		<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
@@ -409,7 +476,7 @@ if (!isset($_SESSION['alogin'])) {
 		<script src="scripts/flot/jquery.flot.js" type="text/javascript"></script>
 		<script src="scripts/datatables/jquery.dataTables.js"></script>
 		<script>
-			$(document).ready(function() {
+			$(document).ready(function () {
 				$('.datatable-1').dataTable();
 				$('.dataTables_paginate').addClass("btn-group datatable-pagination");
 				$('.dataTables_paginate > a').wrapInner('<span />');
